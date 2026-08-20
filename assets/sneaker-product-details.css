@@ -1,0 +1,22 @@
+.sneaker-product-details { border-top: .1rem solid rgba(var(--color-foreground), .12); }
+.sneaker-product-details__desktop { display: flex; gap: 2.4rem; border-bottom: .1rem solid rgba(var(--color-foreground), .15); overflow-x: auto; }
+.sneaker-product-details__desktop button { appearance: none; background: transparent; border: 0; border-bottom: .2rem solid transparent; color: rgb(var(--color-foreground)); cursor: pointer; font: inherit; font-size: 1.3rem; font-weight: 600; letter-spacing: .04em; padding: 1.4rem 0 1.2rem; text-transform: uppercase; white-space: nowrap; }
+.sneaker-product-details__desktop button[aria-selected='true'] { border-color: rgb(var(--color-foreground)); }
+.sneaker-product-details__panels { max-width: 104rem; padding-top: 2.8rem; }
+.sneaker-product-details__copy { max-width: 76rem; }
+.sneaker-product-specs { border-collapse: collapse; max-width: 74rem; width: 100%; }
+.sneaker-product-specs th, .sneaker-product-specs td { border: .1rem solid rgba(var(--color-foreground), .15); padding: 1.2rem 1.6rem; text-align: left; }
+.sneaker-product-specs th { background: rgba(var(--color-foreground), .035); font-weight: 600; width: 36%; }
+.sneaker-product-details__mobile { display: none; }
+
+@media screen and (max-width: 749px) {
+  .sneaker-product-details__desktop, .sneaker-product-details__panels { display: none; }
+  .sneaker-product-details__mobile { display: block; }
+  .sneaker-product-details__mobile details { border-bottom: .1rem solid rgba(var(--color-foreground), .15); }
+  .sneaker-product-details__mobile summary { cursor: pointer; font-size: 1.5rem; font-weight: 600; list-style: none; padding: 1.6rem 3.4rem 1.6rem 0; position: relative; }
+  .sneaker-product-details__mobile summary::-webkit-details-marker { display: none; }
+  .sneaker-product-details__mobile summary::after { content: '+'; font-size: 2rem; font-weight: 400; position: absolute; right: .4rem; top: 1.1rem; }
+  .sneaker-product-details__mobile details[open] summary::after { content: '–'; }
+  .sneaker-product-details__mobile details > div { padding: 0 0 1.8rem; }
+  .sneaker-product-specs th, .sneaker-product-specs td { padding: 1rem 1.2rem; }
+}

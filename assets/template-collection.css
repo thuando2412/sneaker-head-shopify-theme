@@ -1,0 +1,136 @@
+@media screen and (max-width: 749px) {
+  .collection .grid__item:only-child {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .collection .slider.slider--tablet {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.collection .loading-overlay {
+  position: absolute;
+  z-index: 1;
+  width: 1.8rem;
+}
+
+@media screen and (max-width: 749px) {
+  .collection .loading-overlay {
+    top: 0;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .collection .loading-overlay {
+    left: 0;
+  }
+}
+
+.collection .loading-overlay {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  padding: 0 1.5rem;
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 750px) {
+  .collection .loading-overlay {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+.collection.loading .loading-overlay {
+  display: block;
+}
+
+.collection--empty .title-wrapper {
+  margin-top: 10rem;
+  margin-bottom: 15rem;
+}
+
+@media screen and (max-width: 989px) {
+  .collection .slider--tablet.product-grid {
+    scroll-padding-left: 1.5rem;
+  }
+}
+
+.collection__description > * {
+  margin: 0;
+}
+
+.collection__title.title-wrapper {
+  margin-bottom: 2.5rem;
+}
+
+.collection__title .title:not(:only-child) {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 990px) {
+  .collection__title--desktop-slider .title {
+    margin-bottom: 2.5rem;
+  }
+
+  .collection__title.title-wrapper--self-padded-tablet-down {
+    padding: 0 5rem;
+  }
+
+  .collection slider-component:not(.page-width-desktop) {
+    padding: 0;
+  }
+
+  .collection--full-width slider-component:not(.slider-component-desktop) {
+    padding: 0 1.5rem;
+    max-width: none;
+  }
+}
+
+.collection__view-all a:not(.link) {
+  margin-top: 1rem;
+}
+
+.sh-infinite-scroll.is-enhanced .pagination-wrapper {
+  display: none;
+}
+
+.sh-infinite-scroll__sentinel {
+  align-items: center;
+  display: none;
+  justify-content: center;
+  min-height: 7.2rem;
+  padding-block: 2.4rem;
+  text-align: center;
+}
+
+.sh-infinite-scroll.is-enhanced .sh-infinite-scroll__sentinel {
+  display: flex;
+}
+
+.sh-infinite-scroll__sentinel.is-loading::before {
+  animation: sh-infinite-scroll-spin 0.8s linear infinite;
+  border: 0.2rem solid rgba(var(--color-foreground), 0.18);
+  border-radius: 50%;
+  border-top-color: rgb(var(--color-foreground));
+  content: '';
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.sh-infinite-scroll__sentinel.is-loading [data-infinite-scroll-status] {
+  margin-left: 1rem;
+}
+
+@keyframes sh-infinite-scroll-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

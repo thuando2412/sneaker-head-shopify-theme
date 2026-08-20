@@ -1,0 +1,16 @@
+.sneaker-colorway-links { width: 100%; }
+.sneaker-colorway-links .page-width { margin: 0; max-width: none; padding-left: 0; padding-right: 0; }
+.sneaker-colorway-links__header { align-items: baseline; display: flex; gap: 1rem; justify-content: space-between; }
+.sneaker-colorway-links__header p { margin: 0; }
+.sneaker-colorway-links__active { color: rgba(var(--color-foreground), .65); font-size: 1.2rem; overflow: hidden; text-align: right; text-overflow: ellipsis; white-space: nowrap; }
+.sneaker-colorway-links__list { display: grid; gap: .8rem; grid-template-columns: repeat(auto-fill, minmax(7.2rem, 7.2rem)); }
+.sneaker-colorway-links__item { aspect-ratio: 1; background: #f3f3f3; border: .1rem solid #e2e2e2; display: block; overflow: hidden; padding: .4rem; width: 7.2rem; }
+.sneaker-colorway-links__item:hover, .sneaker-colorway-links__item:focus-visible { border-color: rgb(var(--color-foreground)); }
+.sneaker-colorway-links__item.is-active { border: .2rem solid rgb(var(--color-foreground)); padding: .1rem; }
+.sneaker-colorway-links__image, .sneaker-colorway-links__fallback { display: block; height: 100%; object-fit: contain; width: 100%; }
+.sneaker-colorway-links__fallback { background: #e6e6e1; }
+
+@media screen and (max-width: 749px) {
+  .sneaker-colorway-links__list { grid-template-columns: repeat(auto-fill, minmax(6.4rem, 6.4rem)); }
+  .sneaker-colorway-links__item { width: 6.4rem; }
+}

@@ -1,0 +1,25 @@
+{% liquid
+  assign quick_add_context = context | default: 'deal-card'
+  assign card_section_id = section_id | append: '-' | append: quick_add_context
+  assign show_card_colorways = true
+%}
+
+<article class="sh-home-deal-card sh-home-rail{% if featured %} sh-home-deal-card--hero{% else %} sh-home-deal-card--compact{% endif %}">
+  {% if featured %}<span class="sh-home-deal-card__ribbon">Top deal</span>{% endif %}
+  {% render 'card-product',
+    card_product: product,
+    media_aspect_ratio: 'square',
+    image_shape: 'default',
+    show_secondary_image: true,
+    show_vendor: true,
+    show_colorways: show_card_colorways,
+    show_savings: featured,
+    show_rating: false,
+    quick_add: false,
+    quick_add_in_media: true,
+    quick_add_below_info: featured,
+    quick_add_label: 'Grab this deal',
+    quick_add_context: quick_add_context,
+    section_id: card_section_id
+  %}
+</article>

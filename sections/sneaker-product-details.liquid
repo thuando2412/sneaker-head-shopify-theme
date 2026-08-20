@@ -1,0 +1,124 @@
+{{ 'sneaker-product-details.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'sneaker-pdp.js' | asset_url }}" defer="defer"></script>
+
+{%- liquid
+  assign gender = product.metafields.custom.gender.value | default: ''
+  assign use_case = product.metafields.custom.use_case.value | default: ''
+  assign surface = product.metafields.custom.surface.value | default: ''
+  assign fit = product.metafields.custom.fit.value | default: ''
+  assign width = product.metafields.custom.width.value | default: ''
+  assign cushioning = product.metafields.custom.cushioning.value | default: ''
+  assign upper = product.metafields.custom.upper.value | default: ''
+  assign outsole = product.metafields.custom.outsole.value | default: ''
+  assign drop = product.metafields.custom.heel_to_toe_drop.value | default: ''
+
+  if gender == blank
+    assign gender = 'Unisex'
+  endif
+  if use_case == blank
+    if product.type contains 'Trail'
+      assign use_case = 'Trail running'
+    elsif product.type contains 'Running'
+      assign use_case = 'Road running'
+    elsif product.type contains 'Slide'
+      assign use_case = 'Recovery and everyday wear'
+    elsif product.type contains 'Socks'
+      assign use_case = 'Everyday training'
+    elsif product.type contains 'Care'
+      assign use_case = 'Sneaker care'
+    else
+      assign use_case = 'Everyday wear'
+    endif
+  endif
+  if surface == blank
+    if product.type contains 'Trail'
+      assign surface = 'Trail'
+    elsif product.type contains 'Running'
+      assign surface = 'Road'
+    else
+      assign surface = 'Everyday'
+    endif
+  endif
+  if fit == blank
+    assign fit = 'Regular'
+  endif
+  if width == blank
+    assign width = 'Standard'
+  endif
+-%}
+
+<section class="sneaker-product-details color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding" data-product-details>
+  <div class="page-width">
+    <div class="sneaker-product-details__desktop" role="tablist" aria-label="Product information">
+      <button type="button" role="tab" aria-selected="true" aria-controls="ProductDetails-{{ section.id }}" id="ProductDetailsTab-{{ section.id }}" data-product-tab="ProductDetails-{{ section.id }}">{{ section.settings.details_heading | escape }}</button>
+      <button type="button" role="tab" aria-selected="false" aria-controls="ProductSpecs-{{ section.id }}" id="ProductSpecsTab-{{ section.id }}" data-product-tab="ProductSpecs-{{ section.id }}">{{ section.settings.specs_heading | escape }}</button>
+      <button type="button" role="tab" aria-selected="false" aria-controls="ProductDelivery-{{ section.id }}" id="ProductDeliveryTab-{{ section.id }}" data-product-tab="ProductDelivery-{{ section.id }}">{{ section.settings.delivery_heading | escape }}</button>
+      <button type="button" role="tab" aria-selected="false" aria-controls="ProductCare-{{ section.id }}" id="ProductCareTab-{{ section.id }}" data-product-tab="ProductCare-{{ section.id }}">{{ section.settings.care_heading | escape }}</button>
+      <button type="button" role="tab" aria-selected="false" aria-controls="ProductStorage-{{ section.id }}" id="ProductStorageTab-{{ section.id }}" data-product-tab="ProductStorage-{{ section.id }}">{{ section.settings.storage_heading | escape }}</button>
+    </div>
+
+    <div class="sneaker-product-details__panels">
+      <div role="tabpanel" tabindex="0" id="ProductDetails-{{ section.id }}" aria-labelledby="ProductDetailsTab-{{ section.id }}" data-product-panel>
+        <div class="sneaker-product-details__copy rte">{{ product.description | default: section.settings.details_fallback }}</div>
+      </div>
+      <div role="tabpanel" tabindex="0" id="ProductSpecs-{{ section.id }}" aria-labelledby="ProductSpecsTab-{{ section.id }}" data-product-panel hidden>
+        <table class="sneaker-product-specs">
+          <tbody>
+            <tr><th>Brand</th><td>{{ product.vendor | escape }}</td></tr>
+            <tr><th>Product type</th><td>{{ product.type | escape }}</td></tr>
+            <tr><th>Gender</th><td>{{ gender | escape }}</td></tr>
+            <tr><th>Best for</th><td>{{ use_case | escape }}</td></tr>
+            <tr><th>Surface</th><td>{{ surface | escape }}</td></tr>
+            <tr><th>Fit</th><td>{{ fit | escape }}</td></tr>
+            <tr><th>Width</th><td>{{ width | escape }}</td></tr>
+            {%- if cushioning != blank -%}<tr><th>Cushioning</th><td>{{ cushioning | escape }}</td></tr>{%- endif -%}
+            {%- if upper != blank -%}<tr><th>Upper</th><td>{{ upper | escape }}</td></tr>{%- endif -%}
+            {%- if outsole != blank -%}<tr><th>Outsole</th><td>{{ outsole | escape }}</td></tr>{%- endif -%}
+            {%- if drop != blank -%}<tr><th>Heel-to-toe drop</th><td>{{ drop | escape }}</td></tr>{%- endif -%}
+          </tbody>
+        </table>
+      </div>
+      <div role="tabpanel" tabindex="0" id="ProductDelivery-{{ section.id }}" aria-labelledby="ProductDeliveryTab-{{ section.id }}" data-product-panel hidden><div class="sneaker-product-details__copy rte">{{ section.settings.delivery_content }}</div></div>
+      <div role="tabpanel" tabindex="0" id="ProductCare-{{ section.id }}" aria-labelledby="ProductCareTab-{{ section.id }}" data-product-panel hidden><div class="sneaker-product-details__copy rte">{{ product.metafields.custom.care_instructions | metafield_tag | default: section.settings.care_content }}</div></div>
+      <div role="tabpanel" tabindex="0" id="ProductStorage-{{ section.id }}" aria-labelledby="ProductStorageTab-{{ section.id }}" data-product-panel hidden><div class="sneaker-product-details__copy rte">{{ section.settings.storage_content }}</div></div>
+    </div>
+
+    <div class="sneaker-product-details__mobile">
+      <details open><summary>{{ section.settings.details_heading | escape }}</summary><div class="rte">{{ product.description | default: section.settings.details_fallback }}</div></details>
+      <details><summary>{{ section.settings.specs_heading | escape }}</summary><div class="sneaker-product-specs__mobile">{% for row in (1..1) %}<table class="sneaker-product-specs"><tbody><tr><th>Brand</th><td>{{ product.vendor | escape }}</td></tr><tr><th>Product type</th><td>{{ product.type | escape }}</td></tr><tr><th>Gender</th><td>{{ gender | escape }}</td></tr><tr><th>Best for</th><td>{{ use_case | escape }}</td></tr><tr><th>Surface</th><td>{{ surface | escape }}</td></tr><tr><th>Fit</th><td>{{ fit | escape }}</td></tr><tr><th>Width</th><td>{{ width | escape }}</td></tr>{% if cushioning != blank %}<tr><th>Cushioning</th><td>{{ cushioning | escape }}</td></tr>{% endif %}{% if upper != blank %}<tr><th>Upper</th><td>{{ upper | escape }}</td></tr>{% endif %}{% if outsole != blank %}<tr><th>Outsole</th><td>{{ outsole | escape }}</td></tr>{% endif %}{% if drop != blank %}<tr><th>Heel-to-toe drop</th><td>{{ drop | escape }}</td></tr>{% endif %}</tbody></table>{% endfor %}</div></details>
+      <details><summary>{{ section.settings.delivery_heading | escape }}</summary><div class="rte">{{ section.settings.delivery_content }}</div></details>
+      <details><summary>{{ section.settings.care_heading | escape }}</summary><div class="rte">{{ product.metafields.custom.care_instructions | metafield_tag | default: section.settings.care_content }}</div></details>
+      <details><summary>{{ section.settings.storage_heading | escape }}</summary><div class="rte">{{ section.settings.storage_content }}</div></details>
+    </div>
+  </div>
+</section>
+
+{% style %}
+  .section-{{ section.id }}-padding { padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px; padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px; }
+  @media screen and (min-width: 750px) { .section-{{ section.id }}-padding { padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px; } }
+{% endstyle %}
+
+{% schema %}
+{
+  "name": "Sneaker product details",
+  "tag": "section",
+  "class": "section",
+  "enabled_on": { "templates": ["product"] },
+  "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color scheme", "default": "scheme-1" },
+    { "type": "text", "id": "details_heading", "label": "Details heading", "default": "Product details" },
+    { "type": "richtext", "id": "details_fallback", "label": "Details fallback", "default": "<p>A considered everyday product, selected for comfort and versatile wear.</p>" },
+    { "type": "text", "id": "specs_heading", "label": "Specifications heading", "default": "Specifications" },
+    { "type": "text", "id": "delivery_heading", "label": "Delivery heading", "default": "Delivery & returns" },
+    { "type": "richtext", "id": "delivery_content", "label": "Delivery content", "default": "<p>Delivery options are confirmed at checkout. Contact us before placing an order if you need help with sizing or a return request.</p>" },
+    { "type": "text", "id": "care_heading", "label": "Care heading", "default": "Care guide" },
+    { "type": "richtext", "id": "care_content", "label": "Care fallback", "default": "<p>Brush away dry dirt first. Use a soft cloth and a cleaner suited to the material. Keep away from direct heat.</p>" },
+    { "type": "text", "id": "storage_heading", "label": "Storage heading", "default": "Storage guide" },
+    { "type": "richtext", "id": "storage_content", "label": "Storage content", "default": "<p>Store in a cool, dry place away from direct sunlight. Let footwear dry naturally before storing.</p>" },
+    { "type": "header", "content": "Section spacing" },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "Top padding", "default": 36 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "Bottom padding", "default": 36 }
+  ],
+  "presets": [{ "name": "Sneaker product details" }]
+}
+{% endschema %}

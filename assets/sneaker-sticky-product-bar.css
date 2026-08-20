@@ -1,0 +1,15 @@
+.sneaker-sticky-product-bar { display: none; }
+
+@media screen and (max-width: 749px) {
+  main[data-template="product"] { padding-bottom: calc(7.2rem + env(safe-area-inset-bottom)); }
+  .sneaker-sticky-product-bar { background: rgb(var(--color-background)); border-top: .1rem solid rgba(var(--color-foreground), .16); bottom: 0; box-shadow: 0 -.4rem 1.8rem rgba(0, 0, 0, .08); display: block; left: 0; padding: .8rem 0 calc(.8rem + env(safe-area-inset-bottom)); position: fixed; transform: translateY(110%); transition: transform .2s ease; width: 100%; z-index: 6; }
+  .sneaker-sticky-product-bar.is-visible { transform: translateY(0); }
+  .sneaker-sticky-product-bar__inner { align-items: center; display: flex; gap: 1rem; justify-content: space-between; padding-bottom: 0; padding-top: 0; }
+  .sneaker-sticky-product-bar__product { align-items: center; display: flex; gap: .8rem; min-width: 0; }
+  .sneaker-sticky-product-bar__image { background: #f1f1ee; height: 4.4rem; object-fit: contain; width: 4.4rem; }
+  .sneaker-sticky-product-bar__vendor, .sneaker-sticky-product-bar__title, .sneaker-sticky-product-bar__price { line-height: 1.2; margin: 0; }
+  .sneaker-sticky-product-bar__vendor { font-size: 1rem; letter-spacing: .06em; text-transform: uppercase; }
+  .sneaker-sticky-product-bar__title { font-size: 1.2rem; font-weight: 600; margin-top: .2rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .sneaker-sticky-product-bar__price { font-size: 1.1rem; margin-top: .3rem; }
+  .sneaker-sticky-product-bar__button { flex: 0 0 auto; font-size: 1.15rem; min-height: 4.4rem; padding: 0 1.4rem; }
+}

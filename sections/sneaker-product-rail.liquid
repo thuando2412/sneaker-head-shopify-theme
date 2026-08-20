@@ -1,0 +1,61 @@
+{% liquid
+  assign rail_collection = section.settings.collection
+  assign product_limit = section.settings.products_to_show
+%}
+{% if rail_collection != blank and rail_collection.products_count > 0 %}
+  <section class="sh-home-section page-width">
+    <sneaker-home-rail class="sh-home-rail" data-desktop-page-size="5" data-tablet-page-size="4" data-mobile-page-size="4">
+      <div class="sh-home-head">
+        <h2 class="sh-home-title">{{ section.settings.heading | escape }}</h2>
+        {% if section.settings.show_view_all %}<a class="sh-home-link" href="{{ rail_collection.url }}">{{ section.settings.view_all_label | escape }}</a>{% endif %}
+      </div>
+      <div class="sh-home-rail__viewport">
+        <ul class="sh-home-rail__list" data-rail-list role="list">
+          {% liquid
+            assign rendered_products = 0
+            assign seen_colorway_families = '|'
+          %}
+          {% for product in rail_collection.products limit: 50 %}
+            {% liquid
+              assign product_colorway_family = product.metafields.custom.colorway_family.value | first
+              assign family_key = product_colorway_family.system.handle | default: product_colorway_family.id | default: product.id
+              assign family_marker = '|' | append: family_key | append: '|'
+            %}
+            {% unless seen_colorway_families contains family_marker %}
+              <li class="sh-home-rail__item">
+                {% render 'card-product', card_product: product, media_aspect_ratio: 'square', image_shape: 'default', show_secondary_image: true, show_vendor: true, show_colorways: true, show_rating: false, quick_add: false, quick_add_in_media: true, section_id: section.id %}
+              </li>
+              {% liquid
+                assign seen_colorway_families = seen_colorway_families | append: family_key | append: '|'
+                assign rendered_products = rendered_products | plus: 1
+              %}
+              {% if rendered_products >= product_limit %}{% break %}{% endif %}
+            {% endunless %}
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="sh-home-rail__footer">
+        <div class="sh-home-rail__status"><div class="sh-home-rail__progress" data-rail-progress aria-hidden="true"><span></span></div><span class="sh-home-rail__count" data-rail-count>1 / 1</span></div>
+        <div class="sh-home-rail__controls">
+          <button class="sh-home-icon-button" type="button" data-rail-prev aria-label="Previous products">‹</button>
+          <button class="sh-home-icon-button" type="button" data-rail-next aria-label="Next products">›</button>
+        </div>
+      </div>
+      {% if section.settings.show_view_all %}<a class="sh-home-mobile-view-all" href="{{ rail_collection.url }}">{{ section.settings.view_all_label | escape }}</a>{% endif %}
+    </sneaker-home-rail>
+  </section>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Sneaker product rail",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Trending now" },
+    { "type": "collection", "id": "collection", "label": "Collection" },
+    { "type": "range", "id": "products_to_show", "min": 4, "max": 20, "step": 1, "label": "Products to show", "default": 12 },
+    { "type": "checkbox", "id": "show_view_all", "label": "Show view all", "default": true },
+    { "type": "text", "id": "view_all_label", "label": "View all label", "default": "View all" }
+  ],
+  "presets": [{ "name": "Sneaker product rail" }]
+}
+{% endschema %}

@@ -1,0 +1,77 @@
+{% style %}
+  #shopify-section-{{ section.id }} .sh-brand-navigation { padding-block: {{ section.settings.padding_top }}px {{ section.settings.padding_bottom }}px; }
+{% endstyle %}
+<section class="sh-brand-navigation color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width">
+    <div class="sh-brand-navigation__header">
+      {% if section.settings.heading != blank %}<h2 class="inline-richtext sh-heading sh-heading--section">{{ section.settings.heading }}</h2>{% endif %}
+      {% if section.settings.view_all_label != blank and section.settings.view_all_link != blank %}
+        <a class="sh-section-view-all" href="{{ section.settings.view_all_link }}">{{ section.settings.view_all_label | escape }}</a>
+      {% endif %}
+    </div>
+    <nav aria-label="{{ section.settings.navigation_label | default: section.settings.heading | escape }}">
+      <ul class="sh-brand-navigation__list list-unstyled" role="list">
+        {% for block in section.blocks %}
+          {% if block.settings.label != blank %}
+            <li {{ block.shopify_attributes }}>
+              <a
+                class="sh-brand-navigation__link"
+                aria-label="{{ block.settings.label | escape }}"
+                {% if block.settings.link != blank %}href="{{ block.settings.link }}"{% else %}aria-disabled="true"{% endif %}
+              >
+                {% if block.settings.logo != blank %}
+                  {{
+                    block.settings.logo
+                    | image_url: width: 320
+                    | image_tag:
+                      class: 'sh-brand-navigation__logo',
+                      widths: '120, 180, 240, 320',
+                      sizes: '(max-width: 749px) 120px, 160px',
+                      loading: 'lazy',
+                      alt: ''
+                  }}
+                {% else %}
+                  {% render 'sneaker-brand-mark', label: block.settings.label %}
+                {% endif %}
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+    {% if section.settings.view_all_label != blank and section.settings.view_all_link != blank %}
+      <a class="sh-home-mobile-view-all" href="{{ section.settings.view_all_link }}">{{ section.settings.view_all_label | escape }}</a>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Sneaker brand navigation",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": { "groups": ["header", "footer"] },
+  "settings": [
+    { "type": "inline_richtext", "id": "heading", "label": "Heading", "default": "Shop by brand" },
+    { "type": "text", "id": "navigation_label", "label": "Navigation label", "default": "Shop by brand" },
+    { "type": "text", "id": "view_all_label", "label": "View all label", "default": "Shop all sneakers" },
+    { "type": "url", "id": "view_all_link", "label": "View all link" },
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color scheme", "default": "scheme-1" },
+    { "type": "range", "id": "padding_top", "label": "Top padding", "min": 0, "max": 100, "step": 4, "unit": "px", "default": 56 },
+    { "type": "range", "id": "padding_bottom", "label": "Bottom padding", "min": 0, "max": 100, "step": 4, "unit": "px", "default": 56 }
+  ],
+  "blocks": [
+    {
+      "type": "brand",
+      "name": "Brand link",
+      "settings": [
+        { "type": "text", "id": "label", "label": "Brand name", "default": "Nike" },
+        { "type": "image_picker", "id": "logo", "label": "Brand logo" },
+        { "type": "url", "id": "link", "label": "Link" }
+      ]
+    }
+  ],
+  "max_blocks": 8,
+  "presets": [{ "name": "Sneaker brand navigation", "blocks": [{ "type": "brand" }, { "type": "brand" }, { "type": "brand" }, { "type": "brand" }] }]
+}
+{% endschema %}

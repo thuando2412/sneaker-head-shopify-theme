@@ -1,0 +1,86 @@
+<sneaker-home-hero
+  class="sh-home-hero"
+  data-autoplay="{{ section.settings.auto_rotate }}"
+  data-interval="{{ section.settings.change_slides_speed | times: 1000 }}"
+  aria-roledescription="carousel"
+  aria-label="{{ section.settings.accessibility_info | escape }}"
+>
+  <div class="sh-home-hero__track" data-hero-track>
+    {% for block in section.blocks %}
+      <article class="sh-home-hero__slide" data-hero-slide {{ block.shopify_attributes }}>
+        <div class="sh-home-hero__media">
+          <picture>
+            {% if block.settings.mobile_image != blank %}
+              <source media="(max-width: 749px)" srcset="{{ block.settings.mobile_image | image_url: width: 900 }}">
+            {% endif %}
+            {% if block.settings.image != blank %}
+              {{ block.settings.image | image_url: width: 2400 | image_tag: widths: '750, 1100, 1500, 2000, 2400', sizes: '100vw', loading: 'eager', fetchpriority: 'high', alt: block.settings.image.alt | default: block.settings.heading }}
+            {% elsif block.settings.fallback_image == 'brand' %}
+              <img src="{{ 'sh-home-hero-prototype.webp' | asset_url }}" alt="{{ block.settings.heading | escape }}" width="1200" height="500" loading="eager" fetchpriority="high">
+            {% elsif block.settings.fallback_image == 'member' %}
+              <img src="{{ 'sh-home-member-week.png' | asset_img_url: '2000x' }}" alt="{{ block.settings.heading | escape }}" width="2000" height="900" loading="eager">
+            {% elsif block.settings.fallback_image == 'running' %}
+              <img src="{{ 'sh-home-running.png' | asset_img_url: '2000x' }}" alt="{{ block.settings.heading | escape }}" width="2000" height="900" loading="eager">
+            {% elsif block.settings.fallback_image == 'retro' %}
+              <img src="{{ 'sh-home-collab.jpg' | asset_img_url: '2000x' }}" alt="{{ block.settings.heading | escape }}" width="2000" height="900" loading="eager">
+            {% elsif block.settings.fallback_image == 'race' %}
+              <img src="{{ 'sh-home-summer.png' | asset_img_url: '2000x' }}" alt="{{ block.settings.heading | escape }}" width="2000" height="900" loading="eager">
+            {% else %}
+              {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
+            {% endif %}
+          </picture>
+        </div>
+        <div class="sh-home-hero__overlay"></div>
+        <div class="page-width sh-home-hero__content">
+          {% if block.settings.eyebrow != blank %}<p class="sh-home-hero__eyebrow">{{ block.settings.eyebrow | escape }}</p>{% endif %}
+          {% if block.settings.heading != blank %}<div class="sh-home-hero__title">{{ block.settings.heading | escape }}</div>{% endif %}
+          {% if block.settings.copy != blank %}<div class="sh-home-hero__copy rte">{{ block.settings.copy }}</div>{% endif %}
+          <div class="sh-home-hero__actions">
+            {% if block.settings.button_label != blank and block.settings.button_link != blank %}<a class="button" href="{{ block.settings.button_link }}">{{ block.settings.button_label | escape }}</a>{% endif %}
+            {% if block.settings.secondary_button_label != blank and block.settings.secondary_button_link != blank %}<a class="button button--secondary" href="{{ block.settings.secondary_button_link }}">{{ block.settings.secondary_button_label | escape }}</a>{% endif %}
+          </div>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+  {% if section.blocks.size > 1 %}
+    <div class="sh-home-hero__controls">
+      <div class="sh-home-hero__dots" role="tablist" aria-label="Slides">
+        {% for block in section.blocks %}<button type="button" class="sh-home-hero__dot" data-hero-dot aria-label="Go to slide {{ forloop.index }}" aria-current="{% if forloop.first %}true{% else %}false{% endif %}"></button>{% endfor %}
+      </div>
+      <div class="sh-home-hero__arrows">
+        <button type="button" class="sh-home-icon-button" data-hero-prev aria-label="Previous slide">‹</button>
+        <button type="button" class="sh-home-icon-button" data-hero-next aria-label="Next slide">›</button>
+      </div>
+    </div>
+  {% endif %}
+</sneaker-home-hero>
+
+{% schema %}
+{
+  "name": "Sneaker Head hero",
+  "max_blocks": 4,
+  "settings": [
+    { "type": "text", "id": "accessibility_info", "label": "Accessibility label", "default": "Featured campaigns" },
+    { "type": "checkbox", "id": "auto_rotate", "label": "Auto-rotate slides", "default": false },
+    { "type": "range", "id": "change_slides_speed", "min": 4, "max": 10, "step": 1, "unit": "s", "label": "Change slides every", "default": 6 }
+  ],
+  "blocks": [{
+    "type": "slide",
+    "name": "Slide",
+    "settings": [
+      { "type": "image_picker", "id": "image", "label": "Desktop image" },
+      { "type": "image_picker", "id": "mobile_image", "label": "Mobile image" },
+      { "type": "select", "id": "fallback_image", "label": "Built-in fallback image", "default": "brand", "options": [{ "value": "brand", "label": "Brand campaign" }, { "value": "member", "label": "Member week" }, { "value": "running", "label": "Running" }, { "value": "retro", "label": "Retro runners" }, { "value": "race", "label": "Race day" }] },
+      { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "NEW SEASON / 2026" },
+      { "type": "text", "id": "heading", "label": "Heading", "default": "Find your everyday icon." },
+      { "type": "richtext", "id": "copy", "label": "Copy", "default": "<p>Curated performance and lifestyle essentials for every version of you.</p>" },
+      { "type": "text", "id": "button_label", "label": "Primary button label", "default": "Shop new arrivals" },
+      { "type": "url", "id": "button_link", "label": "Primary button link" },
+      { "type": "text", "id": "secondary_button_label", "label": "Secondary button label", "default": "Shop running" },
+      { "type": "url", "id": "secondary_button_link", "label": "Secondary button link" }
+    ]
+  }],
+  "presets": [{ "name": "Sneaker Head hero", "blocks": [{ "type": "slide" }] }]
+}
+{% endschema %}

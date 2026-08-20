@@ -1,0 +1,36 @@
+{{ 'sneaker-colorway-links.css' | asset_url | stylesheet_tag }}
+
+<section class="section-{{ section.id }}-padding">
+  <div class="page-width">
+    {% render 'sneaker-colorway-picker', product: product, colorway_blocks: section.blocks, heading: section.settings.heading, show_active_label: section.settings.show_active_label %}
+  </div>
+</section>
+
+{% style %}
+  .section-{{ section.id }}-padding { padding-top: {{ section.settings.padding_top | times: 3 | divided_by: 4 }}px; padding-bottom: {{ section.settings.padding_bottom | times: 3 | divided_by: 4 }}px; }
+  @media screen and (min-width: 750px) { .section-{{ section.id }}-padding { padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px; } }
+{% endstyle %}
+
+{% schema %}
+{
+  "name": "Colorway product links",
+  "blocks": [
+    {
+      "type": "colorway",
+      "name": "Colorway product",
+      "settings": [
+        { "type": "product", "id": "product", "label": "Colorway product" },
+        { "type": "text", "id": "colorway_label", "label": "Colorway label", "info": "Shown to shoppers and screen readers, for example Sky Blue." },
+        { "type": "text", "id": "colorway_group", "label": "Colorway group", "info": "Use the same group name for every colorway in one style family." }
+      ]
+    }
+  ],
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Color" },
+    { "type": "checkbox", "id": "show_active_label", "label": "Show selected colorway label", "default": true },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 60, "step": 4, "unit": "px", "label": "Top padding", "default": 0 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 60, "step": 4, "unit": "px", "label": "Bottom padding", "default": 12 }
+  ],
+  "presets": [{ "name": "Colorway product links" }]
+}
+{% endschema %}

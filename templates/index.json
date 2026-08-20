@@ -1,0 +1,106 @@
+{
+  "sections": {
+    "sneaker_hero": {
+      "type": "sneaker-hero",
+      "blocks": {
+        "brand_story": { "type": "slide", "settings": { "fallback_image": "brand", "eyebrow": "NEW SEASON / 2026", "heading": "Find your everyday icon.", "copy": "<p>Fresh drops from Nike, ASICS and HOKA.</p>", "button_label": "Shop new arrivals", "button_link": "/collections/new-arrivals", "secondary_button_label": "", "secondary_button_link": "" } },
+        "member_week": { "type": "slide", "settings": { "fallback_image": "member", "eyebrow": "MEMBER WEEK", "heading": "Extra 20% off everyday icons.", "copy": "<p>Limited-time member savings across selected styles.</p>", "button_label": "Shop the sale", "button_link": "/collections/sale", "secondary_button_label": "Shop all", "secondary_button_link": "/collections/all" } },
+        "retro_drop": { "type": "slide", "settings": { "fallback_image": "retro", "eyebrow": "HERITAGE COLLECTION", "heading": "Retro runners, back on track.", "copy": "<p>Y2K silhouettes reissued—the racers that started it all.</p>", "button_label": "Shop retro icons", "button_link": "/collections/everyday-sneakers", "secondary_button_label": "", "secondary_button_link": "" } },
+        "race_drop": { "type": "slide", "settings": { "fallback_image": "race", "eyebrow": "RACE SEASON", "heading": "Fly on race day.", "copy": "<p>Featherlight racers built for the marathon block ahead.</p>", "button_label": "Shop race day", "button_link": "/collections/running-training", "secondary_button_label": "", "secondary_button_link": "" } }
+      },
+      "block_order": ["brand_story", "member_week", "retro_drop", "race_drop"],
+      "settings": { "accessibility_info": "Featured Sneaker Head campaigns", "auto_rotate": false, "change_slides_speed": 6 }
+    },
+    "quick_shop": {
+      "type": "sneaker-quick-shop",
+      "blocks": {
+        "men": { "type": "link", "settings": { "label": "Men's shoes", "link": "/collections/mens-shoes" } },
+        "women": { "type": "link", "settings": { "label": "Women's shoes", "link": "/collections/womens-shoes" } },
+        "kids": { "type": "link", "settings": { "label": "Kids' shoes", "link": "/collections/kids-shoes" } },
+        "sale": { "type": "link", "settings": { "label": "Sale", "link": "/collections/sale" } },
+        "accessories": { "type": "link", "settings": { "label": "Accessories", "link": "/collections/accessories" } },
+        "clothing": { "type": "link", "settings": { "label": "Clothing", "link": "/collections/clothing" } }
+      },
+      "block_order": ["men", "women", "kids", "sale", "accessories", "clothing"],
+      "settings": { "heading": "Quick shop", "navigation_label": "Quick shop", "color_scheme": "scheme-1", "padding_top": 20, "padding_bottom": 20 }
+    },
+    "shop_by_activity": {
+      "type": "sneaker-activity-grid",
+      "blocks": {
+        "everyday": { "type": "activity", "settings": { "heading": "Everyday", "copy": "Icons made for daily rotation.", "link": "/collections/everyday-sneakers" } },
+        "running": { "type": "activity", "settings": { "heading": "Running", "copy": "Road, race and daily training.", "link": "/collections/running-training" } },
+        "basketball": { "type": "activity", "settings": { "heading": "Basketball", "copy": "Court-ready grip and impact control.", "link": "/collections/basketball" } },
+        "tennis": { "type": "activity", "settings": { "heading": "Tennis", "copy": "Fast cuts and durable traction.", "link": "/collections/tennis" } },
+        "training": { "type": "activity", "settings": { "heading": "Training", "copy": "Stable support for every session.", "link": "/collections/training" } },
+        "trail": { "type": "activity", "settings": { "heading": "Hiking", "copy": "Grip and protection beyond the road.", "link": "/collections/trail-outdoor" } },
+        "football": { "type": "activity", "settings": { "heading": "Football", "copy": "Control and speed on the pitch.", "link": "/collections/football" } },
+        "skateboarding": { "type": "activity", "settings": { "heading": "Skateboarding", "copy": "Boardfeel, grip and street-ready durability.", "link": "/collections/lifestyle-sneakers" } }
+      },
+      "block_order": ["everyday", "running", "basketball", "tennis", "training", "trail", "football", "skateboarding"],
+      "settings": { "heading": "Shop by activity", "view_all_label": "Shop all", "view_all_link": "/collections/all" }
+    },
+    "hot_deals": { "type": "sneaker-hot-deals", "settings": { "heading": "Hot deals", "collection": "sale", "featured_product": "hoka-speedgoat-6-men-white-neon", "end_date": "2026-12-31T23:59:00-05:00", "ended_label": "Deal ended", "view_all_label": "View all deals" } },
+    "trending": { "type": "sneaker-product-rail", "settings": { "heading": "Trending now", "collection": "new-arrivals", "products_to_show": 20, "show_view_all": true, "view_all_label": "View all" } },
+    "brand_navigation": {
+      "type": "sneaker-brand-navigation",
+      "blocks": {
+        "nike": { "type": "brand", "settings": { "label": "Nike", "link": "/collections/brand-nike" } },
+        "adidas": { "type": "brand", "settings": { "label": "adidas", "link": "/collections/brand-adidas" } },
+        "hoka": { "type": "brand", "settings": { "label": "HOKA", "link": "/collections/brand-hoka" } },
+        "ua": { "type": "brand", "settings": { "label": "Under Armour", "link": "/collections/brand-under-armour" } },
+        "asics": { "type": "brand", "settings": { "label": "ASICS", "link": "/collections/brand-asics" } },
+        "mizuno": { "type": "brand", "settings": { "label": "Mizuno", "link": "/collections/brand-mizuno" } },
+        "on": { "type": "brand", "settings": { "label": "On Running", "link": "/collections/brand-on-running" } },
+        "puma": { "type": "brand", "settings": { "label": "PUMA", "link": "/collections/brand-puma" } }
+      },
+      "block_order": ["nike", "adidas", "hoka", "ua", "asics", "mizuno", "on", "puma"],
+      "settings": { "heading": "Shop by brand", "navigation_label": "Shop by brand", "view_all_label": "Shop all brands", "view_all_link": "/collections/all", "color_scheme": "scheme-1", "padding_top": 56, "padding_bottom": 0 }
+    },
+    "new_collections": {
+      "type": "sneaker-collection-carousel",
+      "blocks": {
+        "collabs": { "type": "collection", "settings": { "collection": "new-arrivals", "fallback_image": "collab", "eyebrow": "Limited · Drops", "heading": "Limited collabs.", "copy": "Small-batch releases before they sell out.", "button_label": "Shop limited drops" } },
+        "summer": { "type": "collection", "settings": { "collection": "running-training", "fallback_image": "summer", "eyebrow": "Seasonal · Summer 2026", "heading": "Summer miles.", "copy": "Light, breathable pairs built for hot-weather running.", "button_label": "Shop summer miles" } },
+        "trail": { "type": "collection", "settings": { "collection": "trail-outdoor", "fallback_image": "trail", "eyebrow": "Seasonal · Fall preview", "heading": "Trail season.", "copy": "Grip and protection for golden-hour trails.", "button_label": "Shop trail season" } },
+        "marathon": { "type": "collection", "settings": { "collection": "running-training", "fallback_image": "marathon", "eyebrow": "Training block", "heading": "Marathon prep.", "copy": "Daily trainers and tempo shoes for the big build.", "button_label": "Shop marathon prep" } },
+        "cushion": { "type": "collection", "settings": { "collection": "walking", "fallback_image": "cushion", "eyebrow": "Comfort edit", "heading": "Max cushion.", "copy": "The plushest stacks for long, easy miles.", "button_label": "Shop max cushion" } },
+        "rain": { "type": "collection", "settings": { "collection": "trail-outdoor", "fallback_image": "rain", "eyebrow": "Weatherproof edit", "heading": "Rainy-day ready.", "copy": "Water-repellent uppers and wet-grip outsoles.", "button_label": "Shop weatherproof" } }
+      },
+      "block_order": ["collabs", "summer", "trail", "marathon", "cushion", "rain"],
+      "settings": { "heading": "New collections", "view_all_label": "View all collections", "view_all_link": "/collections" }
+    },
+    "top_picks": { "type": "sneaker-product-rail", "settings": { "heading": "Top picks", "collection": "running-training", "products_to_show": 20, "show_view_all": true, "view_all_label": "View all" } },
+    "flagship_spotlight": { "type": "sneaker-flagship-spotlight", "settings": { "product": "men-s-nike-dunk-low-retro-sneakers-black-hf5441-100", "eyebrow": "FEATURED", "heading": "The hoops icon. Off the court.", "copy": "<p>The Dunk Low returns with crisp leather, classic color blocking and everyday comfort.</p>", "show_price": true, "benefit_1": "Premium leather upper", "benefit_2": "Classic low-profile fit", "benefit_3": "Durable rubber traction", "button_label": "Shop Nike Dunk Low", "color_scheme": "scheme-1", "padding_top": 64, "padding_bottom": 0 } },
+    "clothing": { "type": "sneaker-clothing", "settings": { "heading": "Clothing", "collection": "clothing", "view_all_label": "View all clothing", "eyebrow": "New drop · Apparel", "editorial_heading": "Layer up for every run.", "copy": "<p>Tees, shorts and shells that work as hard as you do.</p>", "button_label": "Shop new drop" } },
+    "accessories": {
+      "type": "sneaker-accessories",
+      "blocks": {
+        "bags": { "type": "editorial", "settings": { "link": "/collections/bags-packs", "eyebrow": "Collection", "heading": "Bags & packs", "copy": "Carry the essentials wherever training takes you.", "button_label": "Shop bags" } },
+        "socks": { "type": "editorial", "settings": { "link": "/collections/run-socks", "eyebrow": "Collection", "heading": "Run socks", "copy": "Comfort, support and fewer distractions.", "button_label": "Shop socks" } },
+        "care": { "type": "editorial", "settings": { "link": "/collections/shoe-care", "eyebrow": "Collection", "heading": "Shoe care", "copy": "Clean, protect and keep every pair fresh.", "button_label": "Shop care" } }
+      },
+      "block_order": ["bags", "socks", "care"],
+      "settings": { "heading": "Accessories", "collection": "accessories", "view_all_label": "View all accessories" }
+    },
+    "sneaker_journal": { "type": "featured-blog", "settings": { "blog": "news", "post_limit": 3, "heading": "Sneaker Journal", "heading_size": "h2", "columns_desktop": 3, "show_view_all": true, "show_image": true, "show_date": true, "show_author": false, "color_scheme": "scheme-1", "padding_top": 64, "padding_bottom": 0 } },
+    "app_promo": { "type": "sneaker-app-promo", "settings": { "eyebrow": "Sneaker Head app", "heading": "Download the app. Never miss a drop.", "copy": "<p>Early access to new drops, member-only prices and instant size alerts.</p>" } },
+    "sneaker_trust": {
+      "type": "sneaker-trust",
+      "blocks": {
+        "shipping": { "type": "point", "settings": { "heading": "Free shipping", "copy": "On orders over $100", "link": "/pages/shipping" } },
+        "returns": { "type": "point", "settings": { "heading": "30-day returns", "copy": "Easy returns and exchanges", "link": "/pages/returns" } },
+        "authentic": { "type": "point", "settings": { "heading": "Authenticity guaranteed", "copy": "Verified product selection", "link": "/pages/authenticity" } },
+        "secure": { "type": "point", "settings": { "heading": "Secure payments", "copy": "Safe and secure checkout", "link": "/pages/secure-payments" } }
+      },
+      "block_order": ["shipping", "returns", "authentic", "secure"],
+      "settings": { "color_scheme": "scheme-1" }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": { "heading": { "type": "heading", "settings": { "heading": "Be the first to know", "heading_size": "h2" } }, "paragraph": { "type": "paragraph", "settings": { "text": "<p>New drops, honest gear notes and early access.</p>" } }, "email": { "type": "email_form", "settings": {} } },
+      "block_order": ["heading", "paragraph", "email"],
+      "settings": { "color_scheme": "scheme-1", "full_width": true, "button_label": "Sign me up", "privacy_note": "Get updates. Unsubscribe anytime.", "privacy_link_label": "Privacy policy", "privacy_link": "/policies/privacy-policy", "padding_top": 20, "padding_bottom": 20 }
+    }
+  },
+  "order": ["sneaker_hero", "quick_shop", "shop_by_activity", "hot_deals", "trending", "brand_navigation", "new_collections", "top_picks", "flagship_spotlight", "clothing", "accessories", "sneaker_journal", "app_promo", "sneaker_trust", "newsletter"]
+}

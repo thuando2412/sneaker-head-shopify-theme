@@ -1,0 +1,204 @@
+{% liquid
+  assign deal_collection = section.settings.collection
+  assign featured_deal = section.settings.featured_product
+  if featured_deal == blank and deal_collection != blank
+    assign deepest_discount_score = 0
+    assign deepest_savings = 0
+    for candidate in deal_collection.products limit: 50
+      assign candidate_sale_price = candidate.price
+      assign candidate_compare_price = candidate.compare_at_price_max
+      if candidate.available and candidate_compare_price > candidate_sale_price
+        assign candidate_savings = candidate_compare_price | minus: candidate_sale_price
+        assign candidate_discount_score = candidate_savings | times: 10000 | divided_by: candidate_compare_price
+        if candidate_discount_score > deepest_discount_score
+          assign featured_deal = candidate
+          assign deepest_discount_score = candidate_discount_score
+          assign deepest_savings = candidate_savings
+        elsif candidate_discount_score == deepest_discount_score
+          if candidate_savings > deepest_savings
+            assign featured_deal = candidate
+            assign deepest_savings = candidate_savings
+          endif
+        endif
+      endif
+    endfor
+    if featured_deal == blank
+      for candidate in deal_collection.products limit: 50
+        if candidate.available
+          assign featured_deal = candidate
+          break
+        endif
+      endfor
+    endif
+    assign featured_deal = featured_deal | default: deal_collection.products.first
+  endif
+  assign featured_family = featured_deal.metafields.custom.colorway_family.value | first
+  assign featured_family_key = featured_family.system.handle | default: featured_family.id | default: featured_deal.id
+  assign featured_family_marker = '|' | append: featured_family_key | append: '|'
+%}
+{% if deal_collection != blank and deal_collection.products_count > 0 %}
+  <section class="sh-home-deals">
+    <div class="page-width">
+      <div class="sh-home-head">
+        <h2 class="sh-home-title">{{ section.settings.heading | escape }}</h2>
+        {% if section.settings.end_date != blank %}<span class="sh-home-countdown" data-countdown-end="{{ section.settings.end_date | escape }}" data-ended-label="{{ section.settings.ended_label | escape }}"></span>{% endif %}
+        <a class="sh-home-link" href="{{ deal_collection.url }}">{{ section.settings.view_all_label | escape }}</a>
+      </div>
+      <sneaker-home-rail class="sh-home-deals__carousel sh-home-deals__carousel--wide" data-desktop-page-size="1" data-mobile-page-size="4" data-autoplay="false" data-interval="5000">
+        <div class="sh-home-deals__viewport">
+          <div class="sh-home-deals__track" data-rail-list>
+            <div class="sh-home-deals__page sh-home-deals__page--lead">
+              {% render 'sneaker-home-deal-card', product: featured_deal, featured: true, section_id: section.id, context: 'deals-wide-hero' %}
+              {% assign visible_index = 0 %}
+              {% assign seen_families = featured_family_marker %}
+              {% for product in deal_collection.products limit: 24 %}
+                {% liquid
+                  assign product_family = product.metafields.custom.colorway_family.value | first
+                  assign product_family_key = product_family.system.handle | default: product_family.id | default: product.id
+                  assign product_family_marker = '|' | append: product_family_key | append: '|'
+                %}
+                {% unless seen_families contains product_family_marker %}
+                  {% if visible_index < 8 %}{% render 'sneaker-home-deal-card', product: product, section_id: section.id, context: 'deals-wide' %}{% endif %}
+                  {% assign seen_families = seen_families | append: product_family_key | append: '|' %}
+                  {% assign visible_index = visible_index | plus: 1 %}
+                {% endunless %}
+              {% endfor %}
+            </div>
+            {% assign visible_index = 0 %}
+            {% assign remaining_count = 0 %}
+            {% assign seen_families = featured_family_marker %}
+            {% for product in deal_collection.products limit: 36 %}
+              {% liquid
+                assign product_family = product.metafields.custom.colorway_family.value | first
+                assign product_family_key = product_family.system.handle | default: product_family.id | default: product.id
+                assign product_family_marker = '|' | append: product_family_key | append: '|'
+              %}
+              {% unless seen_families contains product_family_marker %}{% if visible_index >= 8 and remaining_count < 12 %}{% assign remaining_count = remaining_count | plus: 1 %}{% endif %}{% assign seen_families = seen_families | append: product_family_key | append: '|' %}{% assign visible_index = visible_index | plus: 1 %}{% endunless %}
+            {% endfor %}
+            {% assign visible_index = 0 %}
+            {% assign seen_families = featured_family_marker %}
+            {% for product in deal_collection.products limit: 36 %}
+              {% liquid
+                assign product_family = product.metafields.custom.colorway_family.value | first
+                assign product_family_key = product_family.system.handle | default: product_family.id | default: product.id
+                assign product_family_marker = '|' | append: product_family_key | append: '|'
+              %}
+              {% unless seen_families contains product_family_marker %}
+                {% if visible_index >= 8 and visible_index < 20 %}
+                  {% assign remaining_index = visible_index | minus: 8 %}
+                  {% assign page_mod = remaining_index | modulo: 12 %}
+                  {% if page_mod == 0 %}<div class="sh-home-deals__page">{% endif %}{% render 'sneaker-home-deal-card', product: product, section_id: section.id, context: 'deals-wide' %}
+                  {% assign close_index = remaining_index | plus: 1 %}
+                  {% assign close_mod = close_index | modulo: 12 %}
+                  {% if close_mod == 0 or close_index == remaining_count %}</div>{% endif %}
+                {% endif %}
+                {% assign seen_families = seen_families | append: product_family_key | append: '|' %}
+                {% assign visible_index = visible_index | plus: 1 %}
+              {% endunless %}
+            {% endfor %}
+          </div>
+        </div>
+        <div class="sh-home-rail__footer sh-home-deals__footer">
+          <div class="sh-home-rail__status"><div class="sh-home-rail__progress" data-rail-progress aria-hidden="true"><span></span></div><span class="sh-home-rail__count" data-rail-count>1 / 1</span></div>
+          <div class="sh-home-rail__controls"><button class="sh-home-icon-button" type="button" data-rail-prev aria-label="Previous deals">&lsaquo;</button><button class="sh-home-icon-button" type="button" data-rail-next aria-label="Next deals">&rsaquo;</button></div>
+        </div>
+      </sneaker-home-rail>
+      <sneaker-home-rail class="sh-home-deals__carousel sh-home-deals__carousel--tablet" data-desktop-page-size="1" data-mobile-page-size="4" data-autoplay="false" data-interval="5000">
+        <div class="sh-home-deals__viewport">
+          <div class="sh-home-deals__track" data-rail-list>
+            <div class="sh-home-deals__page sh-home-deals__page--lead">
+              {% render 'sneaker-home-deal-card', product: featured_deal, featured: true, section_id: section.id, context: 'deals-tablet-hero' %}
+              {% assign visible_index = 0 %}
+              {% assign seen_families = featured_family_marker %}
+              {% for product in deal_collection.products limit: 20 %}
+                {% liquid
+                  assign product_family = product.metafields.custom.colorway_family.value | first
+                  assign product_family_key = product_family.system.handle | default: product_family.id | default: product.id
+                  assign product_family_marker = '|' | append: product_family_key | append: '|'
+                %}
+                {% unless seen_families contains product_family_marker %}
+                  {% if visible_index < 4 %}{% render 'sneaker-home-deal-card', product: product, section_id: section.id, context: 'deals-tablet' %}{% endif %}
+                  {% assign seen_families = seen_families | append: product_family_key | append: '|' %}
+                  {% assign visible_index = visible_index | plus: 1 %}
+                {% endunless %}
+              {% endfor %}
+            </div>
+            {% assign visible_index = 0 %}
+            {% assign remaining_count = 0 %}
+            {% assign seen_families = featured_family_marker %}
+            {% for product in deal_collection.products limit: 36 %}
+              {% liquid
+                assign product_family = product.metafields.custom.colorway_family.value | first
+                assign product_family_key = product_family.system.handle | default: product_family.id | default: product.id
+                assign product_family_marker = '|' | append: product_family_key | append: '|'
+              %}
+              {% unless seen_families contains product_family_marker %}{% if visible_index >= 4 and remaining_count < 16 %}{% assign remaining_count = remaining_count | plus: 1 %}{% endif %}{% assign seen_families = seen_families | append: product_family_key | append: '|' %}{% assign visible_index = visible_index | plus: 1 %}{% endunless %}
+            {% endfor %}
+            {% assign visible_index = 0 %}
+            {% assign seen_families = featured_family_marker %}
+            {% for product in deal_collection.products limit: 36 %}
+              {% liquid
+                assign product_family = product.metafields.custom.colorway_family.value | first
+                assign product_family_key = product_family.system.handle | default: product_family.id | default: product.id
+                assign product_family_marker = '|' | append: product_family_key | append: '|'
+              %}
+              {% unless seen_families contains product_family_marker %}
+                {% if visible_index >= 4 and visible_index < 20 %}
+                  {% assign remaining_index = visible_index | minus: 4 %}
+                  {% assign page_mod = remaining_index | modulo: 8 %}
+                  {% if page_mod == 0 %}<div class="sh-home-deals__page">{% endif %}{% render 'sneaker-home-deal-card', product: product, section_id: section.id, context: 'deals-tablet' %}
+                  {% assign close_index = remaining_index | plus: 1 %}
+                  {% assign close_mod = close_index | modulo: 8 %}
+                  {% if close_mod == 0 or close_index == remaining_count %}</div>{% endif %}
+                {% endif %}
+                {% assign seen_families = seen_families | append: product_family_key | append: '|' %}
+                {% assign visible_index = visible_index | plus: 1 %}
+              {% endunless %}
+            {% endfor %}
+          </div>
+        </div>
+        <div class="sh-home-rail__footer sh-home-deals__footer">
+          <div class="sh-home-rail__status"><div class="sh-home-rail__progress" data-rail-progress aria-hidden="true"><span></span></div><span class="sh-home-rail__count" data-rail-count>1 / 1</span></div>
+          <div class="sh-home-rail__controls"><button class="sh-home-icon-button" type="button" data-rail-prev aria-label="Previous deals">&lsaquo;</button><button class="sh-home-icon-button" type="button" data-rail-next aria-label="Next deals">&rsaquo;</button></div>
+        </div>
+      </sneaker-home-rail>
+      <div class="sh-home-deals__mobile" aria-label="Hot deals products">
+        {% render 'sneaker-home-deal-card', product: featured_deal, featured: true, section_id: section.id, context: 'deals-mobile-hero' %}
+        <sneaker-home-rail class="sh-home-deals__mobile-products" data-desktop-page-size="4" data-mobile-page-size="4">
+          <div class="sh-home-deals__mobile-rail" data-rail-list>
+            {% assign seen_families = featured_family_marker %}
+            {% assign visible_index = 0 %}
+            {% for product in deal_collection.products limit: 36 %}
+              {% liquid
+                assign product_family = product.metafields.custom.colorway_family.value | first
+                assign product_family_key = product_family.system.handle | default: product_family.id | default: product.id
+                assign product_family_marker = '|' | append: product_family_key | append: '|'
+              %}
+              {% unless seen_families contains product_family_marker %}{% if visible_index < 20 %}{% render 'sneaker-home-deal-card', product: product, section_id: section.id, context: 'deals-mobile' %}{% endif %}{% assign seen_families = seen_families | append: product_family_key | append: '|' %}{% assign visible_index = visible_index | plus: 1 %}{% endunless %}
+            {% endfor %}
+          </div>
+          <div class="sh-home-rail__footer">
+            <div class="sh-home-rail__status"><div class="sh-home-rail__progress" data-rail-progress aria-hidden="true"><span></span></div><span class="sh-home-rail__count" data-rail-count>1 / 1</span></div>
+            <div class="sh-home-rail__controls"><button class="sh-home-icon-button" type="button" data-rail-prev aria-label="Previous deals">&lsaquo;</button><button class="sh-home-icon-button" type="button" data-rail-next aria-label="Next deals">&rsaquo;</button></div>
+          </div>
+        </sneaker-home-rail>
+        <a class="sh-home-deals__mobile-link" href="{{ deal_collection.url }}">{{ section.settings.view_all_label | escape }}</a>
+      </div>
+    </div>
+  </section>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Sneaker hot deals",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Hot deals" },
+    { "type": "collection", "id": "collection", "label": "Deals collection" },
+    { "type": "product", "id": "featured_product", "label": "Top deal product", "info": "Optional. Leave blank to automatically feature the available product with the highest discount percentage." },
+    { "type": "text", "id": "end_date", "label": "End date (ISO format)", "info": "Example: 2026-12-31T23:59:00-05:00" },
+    { "type": "text", "id": "ended_label", "label": "Ended label", "default": "Deal ended" },
+    { "type": "text", "id": "view_all_label", "label": "View all label", "default": "Shop all deals" }
+  ],
+  "presets": [{ "name": "Sneaker hot deals" }]
+}
+{% endschema %}

@@ -1,0 +1,24 @@
+{%- liquid
+  assign brand_key = label | downcase | strip
+-%}
+{%- case brand_key -%}
+  {%- when 'nike' -%}
+    <svg class="sh-brand-mark sh-brand-mark--symbol" viewBox="0 0 24 24" role="img" aria-label="Nike">
+      <path fill="currentColor" d="M24 7.8 6.442 15.276c-1.456.616-2.679.925-3.668.925-1.12 0-1.933-.392-2.437-1.177-.317-.504-.41-1.143-.28-1.918.13-.775.476-1.6 1.036-2.478.467-.71 1.232-1.643 2.297-2.8a6.122 6.122 0 0 0-.784 1.848c-.28 1.195-.028 2.072.756 2.632.373.261.886.392 1.54.392.522 0 1.11-.084 1.764-.252L24 7.8Z"/>
+    </svg>
+  {%- when 'adidas' -%}
+    <svg class="sh-brand-mark sh-brand-mark--symbol" viewBox="0 0 84 56" role="img" aria-label="adidas">
+      <path fill="currentColor" d="m8 39 13-22 11 7-9 15H8Zm22 0 15-26 11 7-11 19H30Zm23 0 13-22 11 7-9 15H53Z"/>
+      <text x="42" y="53" text-anchor="middle" fill="currentColor" font-family="Arial,sans-serif" font-size="13" font-weight="700">adidas</text>
+    </svg>
+  {%- when 'puma' -%}
+    <span class="sh-brand-wordmark sh-brand-wordmark--wide">PUMA</span>
+  {%- when 'hoka' -%}
+    <span class="sh-brand-wordmark sh-brand-wordmark--wide">HOKA</span>
+  {%- when 'skechers' -%}
+    <span class="sh-brand-wordmark sh-brand-wordmark--wide">SKECHERS</span>
+  {%- when 'jason markk' -%}
+    <span class="sh-brand-wordmark sh-brand-wordmark--stacked">JASON<br>MARKK</span>
+  {%- else -%}
+    <span class="sh-brand-wordmark">{{ label | escape }}</span>
+{%- endcase -%}

@@ -1,0 +1,75 @@
+<section class="sh-home-section sh-home-activity page-width">
+  <div class="sh-home-head">
+    {% if section.settings.heading != blank %}<h2 class="sh-home-title">{{ section.settings.heading | escape }}</h2>{% endif %}
+    {% if section.settings.view_all_label != blank and section.settings.view_all_link != blank %}<a class="sh-home-link" href="{{ section.settings.view_all_link }}">{{ section.settings.view_all_label | escape }}</a>{% endif %}
+  </div>
+  <sneaker-home-rail class="sh-home-editorial-rail" data-desktop-page-size="4" data-mobile-page-size="1">
+  <div class="sh-home-activity__track" data-rail-list>
+    {% for block in section.blocks %}
+      {% liquid
+        assign activity_link = block.settings.link
+        if activity_link == blank and block.settings.collection != blank
+          assign activity_link = block.settings.collection.url
+        endif
+        assign show_block = false
+        if activity_link != blank and block.settings.heading != blank
+          assign show_block = true
+        endif
+      %}
+      {% if show_block %}
+        <a class="sh-home-activity-card" href="{{ activity_link }}" {{ block.shopify_attributes }}>
+          {% if block.settings.image != blank %}
+            {{ block.settings.image | image_url: width: 1200 | image_tag: widths: '360, 520, 760, 980, 1200', sizes: '(min-width: 990px) 25vw, 76vw', loading: 'lazy', alt: block.settings.image.alt | default: block.settings.heading }}
+          {% else %}
+            {% case forloop.index %}
+              {% when 1 %}{% assign fallback = 'sh-home-activity-running.webp' %}
+              {% when 2 %}{% assign fallback = 'sh-home-activity-everyday.webp' %}
+              {% when 3 %}{% assign fallback = 'sh-home-activity-trail.webp' %}
+              {% when 4 %}{% assign fallback = 'sh-home-activity-walking.webp' %}
+              {% when 5 %}{% assign fallback = 'sh-home-training.png' %}
+              {% when 6 %}{% assign fallback = 'sh-home-basketball.png' %}
+              {% when 7 %}{% assign fallback = 'sh-home-tennis.png' %}
+              {% when 8 %}{% assign fallback = 'sh-home-football.png' %}
+            {% endcase %}
+            <img src="{{ fallback | asset_url }}" alt="{{ block.settings.heading | escape }}" width="980" height="1225" loading="lazy">
+          {% endif %}
+          <div class="sh-home-activity-card__content">
+            <h3 class="sh-home-activity-card__title">{{ block.settings.heading | escape }}</h3>
+            {% if block.settings.copy != blank %}<p class="sh-home-activity-card__copy">{{ block.settings.copy | escape }}</p>{% endif %}
+            <span class="sh-home-editorial-cta">Shop {{ block.settings.heading | escape }}</span>
+          </div>
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="sh-home-rail__footer">
+    <div class="sh-home-rail__status"><div class="sh-home-rail__progress" data-rail-progress aria-hidden="true"><span></span></div><span class="sh-home-rail__count" data-rail-count>1 / 1</span></div>
+    <div class="sh-home-rail__controls">
+      <button class="sh-home-icon-button" type="button" data-rail-prev aria-label="Previous activities">‹</button>
+      <button class="sh-home-icon-button" type="button" data-rail-next aria-label="Next activities">›</button>
+    </div>
+  </div>
+  </sneaker-home-rail>
+  {% if section.settings.view_all_label != blank and section.settings.view_all_link != blank %}
+    <a class="sh-home-mobile-view-all" href="{{ section.settings.view_all_link }}">{{ section.settings.view_all_label | escape }}</a>
+  {% endif %}
+</section>
+{% schema %}
+{
+  "name": "Sneaker activity grid",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Shop by activity" },
+    { "type": "text", "id": "view_all_label", "label": "View all label" },
+    { "type": "url", "id": "view_all_link", "label": "View all link" }
+  ],
+  "blocks": [{ "type": "activity", "name": "Activity card", "settings": [
+    { "type": "image_picker", "id": "image", "label": "Image" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Running" },
+    { "type": "text", "id": "copy", "label": "Short description", "default": "Performance for every mile." },
+    { "type": "collection", "id": "collection", "label": "Collection" },
+    { "type": "url", "id": "link", "label": "Custom link override" }
+  ] }],
+  "max_blocks": 8,
+  "presets": [{ "name": "Sneaker activity grid", "blocks": [{ "type": "activity" }, { "type": "activity" }, { "type": "activity" }, { "type": "activity" }] }]
+}
+{% endschema %}

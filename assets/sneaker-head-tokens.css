@@ -1,0 +1,125 @@
+:root {
+  /* Brand color system */
+  --sh-color-ink: #101318;
+  --sh-color-surface: #f6f5f2;
+  --sh-color-surface-muted: #ecebe7;
+  --sh-color-white: #ffffff;
+  --sh-color-volt: #c7ff32;
+  --sh-color-text-muted: rgba(16, 19, 24, 0.68);
+  --sh-color-border: rgba(16, 19, 24, 0.18);
+  --sh-color-border-light: rgba(16, 19, 24, 0.12);
+
+  /* Backwards-compatible aliases used by existing Sneaker Head sections */
+  --sh-ink: var(--sh-color-ink);
+  --sh-surface: var(--sh-color-surface);
+  --sh-accent: var(--sh-color-volt);
+
+  /* Typography families and weights */
+  --sh-font-display: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+  --sh-font-body: 'Inter', Arial, sans-serif;
+  --sh-font-weight-regular: 400;
+  --sh-font-weight-medium: 500;
+  --sh-font-weight-semibold: 600;
+  --sh-font-weight-bold: 700;
+  --sh-font-weight-extrabold: 800;
+
+  /* Complete type scale: 1rem equals 10px in Dawn's root scale */
+  --sh-font-size-2xs: 1rem;
+  --sh-font-size-xs: 1.1rem;
+  --sh-font-size-sm: 1.2rem;
+  --sh-font-size-md: 1.4rem;
+  --sh-font-size-base: 1.6rem;
+  --sh-font-size-lg: 1.8rem;
+  --sh-font-size-xl: 2rem;
+  --sh-font-size-2xl: 2.4rem;
+  --sh-font-size-3xl: 3.2rem;
+  --sh-font-size-4xl: 4rem;
+  --sh-font-size-5xl: 4.8rem;
+  --sh-font-size-6xl: 5.6rem;
+
+  /* Semantic responsive display scale */
+  --sh-font-size-label: var(--sh-font-size-sm);
+  --sh-font-size-caption: var(--sh-font-size-sm);
+  --sh-font-size-body-small: var(--sh-font-size-md);
+  --sh-font-size-body: var(--sh-font-size-base);
+  --sh-font-size-body-large: var(--sh-font-size-lg);
+  --sh-font-size-card-title: clamp(1.4rem, 1.1vw, 1.6rem);
+  --sh-font-size-h6: 1.6rem;
+  --sh-font-size-h5: clamp(1.8rem, 1.6vw, 2.2rem);
+  --sh-font-size-h4: clamp(2.4rem, 2.2vw, 3.2rem);
+  --sh-font-size-h3: clamp(2.8rem, 3vw, 4rem);
+  --sh-font-size-h2: clamp(4rem, 4vw, 5.6rem);
+  --sh-font-size-h1: clamp(5.6rem, 6vw, 8rem);
+  --sh-font-size-feature: clamp(5rem, 5vw, 8.8rem);
+  --sh-font-size-display: clamp(7.2rem, 8vw, 11.2rem);
+
+  /* Line height roles */
+  --sh-line-height-display: 0.84;
+  --sh-line-height-heading: 0.92;
+  --sh-line-height-title: 1.08;
+  --sh-line-height-compact: 1.25;
+  --sh-line-height-body: 1.5;
+  --sh-line-height-relaxed: 1.65;
+
+  /* Tracking roles */
+  --sh-letter-spacing-display: -0.03em;
+  --sh-letter-spacing-heading: -0.02em;
+  --sh-letter-spacing-tight: -0.01em;
+  --sh-letter-spacing-normal: 0;
+  --sh-letter-spacing-ui: 0.02em;
+  --sh-letter-spacing-label: 0.08em;
+  --sh-letter-spacing-wide: 0.12em;
+
+  /* Four-pixel spacing scale */
+  --sh-space-0-5: 0.4rem;
+  --sh-space-1: 0.8rem;
+  --sh-space-1-5: 1.2rem;
+  --sh-space-2: 1.6rem;
+  --sh-space-3: 2.4rem;
+  --sh-space-4: 3.2rem;
+  --sh-space-5: 4rem;
+  --sh-space-6: 4.8rem;
+  --sh-space-8: 6.4rem;
+  --sh-space-9: 7.2rem;
+  --sh-space-12: 9.6rem;
+
+  /* Semantic spacing roles */
+  --sh-space-text-tight: var(--sh-space-0-5);
+  --sh-space-text: var(--sh-space-1);
+  --sh-space-content: var(--sh-space-2);
+  --sh-space-component: var(--sh-space-3);
+  --sh-space-block: var(--sh-space-4);
+  --sh-space-section-compact: clamp(4rem, 4vw, 6.4rem);
+  --sh-space-after-label: var(--sh-space-text);
+  --sh-space-after-card-title: var(--sh-space-text);
+  --sh-space-after-section-title: var(--sh-space-component);
+  --sh-space-after-page-title: var(--sh-space-block);
+  --sh-space-after-paragraph: var(--sh-space-content);
+
+  /* Readable measure */
+  --sh-measure-copy: 68ch;
+  --sh-measure-narrow: 48ch;
+
+  /* Layout */
+  --sh-container-max: 176rem;
+  --sh-gutter: clamp(2.4rem, 2.5vw, 4.8rem);
+  --sh-section-gap: clamp(7.2rem, 5vw, 9.6rem);
+  --sh-grid-gap: clamp(1.6rem, 1.7vw, 2.4rem);
+
+  /* Shape, motion and media */
+  --sh-radius-control: 0.2rem;
+  --sh-radius-card: 0.4rem;
+  --sh-radius-pill: 999px;
+  --sh-duration-fast: 160ms;
+  --sh-duration-base: 240ms;
+  --sh-ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --sh-product-ratio: 1 / 1;
+}
+
+@media screen and (max-width: 749px) {
+  :root {
+    --sh-gutter: 1.6rem;
+    --sh-section-gap: clamp(4rem, 11vw, 5.6rem);
+    --sh-grid-gap: 1.6rem;
+  }
+}

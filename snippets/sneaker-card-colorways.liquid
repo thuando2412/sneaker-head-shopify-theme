@@ -1,0 +1,146 @@
+{%- liquid
+  assign colorway_families = card_product.metafields.custom.colorway_family.value
+  assign colorway_family = colorway_families | first
+  assign colorway_products = colorway_family.products.value
+  assign colorway_count = colorway_products.count | default: 1
+  assign active_size_count = 0
+  for product_option in card_product.options_with_values
+    assign option_name = product_option.name | downcase
+    if option_name == 'size' or option_name contains 'size'
+      for option_value in product_option.values
+        if option_value.available
+          assign active_size_count = active_size_count | plus: 1
+        endif
+      endfor
+      break
+    endif
+  endfor
+-%}
+
+<div class="sh-card-colorways" role="group" aria-label="Product choices">
+  <div class="sh-card-colorways__list">
+    {%- if colorway_products != blank and colorway_products.count > 1 -%}
+      {%- for colorway_product in colorway_products limit: 4 -%}
+        {%- liquid
+          assign colorway_label = colorway_product.title
+          assign colorway_size_count = 0
+          for colorway_option in colorway_product.options_with_values
+            assign colorway_option_name = colorway_option.name | downcase
+            if colorway_option_name == 'color' or colorway_option_name == 'colour'
+              assign colorway_label = colorway_option.selected_value
+            endif
+            if colorway_option_name == 'size' or colorway_option_name contains 'size'
+              for colorway_size_value in colorway_option.values
+                if colorway_size_value.available
+                  assign colorway_size_count = colorway_size_count | plus: 1
+                endif
+              endfor
+            endif
+          endfor
+          if colorway_size_count > 0
+            if colorway_size_count == 1
+              assign choice_summary = '1 size available'
+              assign choice_summary_short = '1 size'
+            else
+              assign choice_summary = colorway_size_count | append: ' sizes available'
+              assign choice_summary_short = colorway_size_count | append: ' sizes'
+            endif
+          else
+            assign choice_summary = colorway_products.count | append: ' colors'
+            assign choice_summary_short = choice_summary
+          endif
+          assign color_parts = colorway_label | split: '/'
+          capture swatch_color_1
+            render 'sneaker-color-value', color_name: color_parts[0]
+          endcapture
+          capture swatch_color_2
+            render 'sneaker-color-value', color_name: color_parts[1]
+          endcapture
+          assign swatch_color_1 = swatch_color_1 | strip
+          assign swatch_color_2 = swatch_color_2 | strip
+          assign colorway_compare_price = colorway_product.compare_at_price_max
+          assign colorway_sale_price = colorway_product.price
+          assign colorway_discount = 0
+          assign colorway_savings = 0
+          if colorway_compare_price > colorway_sale_price
+            assign colorway_discount_difference = colorway_compare_price | minus: colorway_sale_price | times: 100.0
+            assign colorway_discount = colorway_discount_difference | divided_by: colorway_compare_price | round
+            assign colorway_savings = colorway_compare_price | minus: colorway_sale_price
+          endif
+        -%}
+        <button
+          class="sh-card-colorways__button{% if colorway_product.id == card_product.id %} is-active{% endif %}"
+          type="button"
+          aria-label="{{ colorway_label | escape }}"
+          aria-pressed="{% if colorway_product.id == card_product.id %}true{% else %}false{% endif %}"
+          data-card-colorway
+          data-choice-summary="{{ choice_summary }}"
+          data-choice-summary-short="{{ choice_summary_short }}"
+          data-product-url="{{ colorway_product.url }}"
+          data-product-title="{{ colorway_product.title | escape }}"
+          data-product-price="{{ colorway_product.price | money_with_currency | escape }}"
+          data-product-compare-price="{{ colorway_compare_price | money_with_currency | escape }}"
+          data-product-on-sale="{% if colorway_compare_price > colorway_sale_price %}true{% else %}false{% endif %}"
+          data-product-discount="{{ colorway_discount }}"
+          data-product-savings="{{ colorway_savings | money_with_currency | escape }}"
+          data-product-available="{% if colorway_product.available %}true{% else %}false{% endif %}"
+          data-product-variant-id="{{ colorway_product.selected_or_first_available_variant.id }}"
+          {% if colorway_product.featured_media != blank %}
+            data-image-src="{{ colorway_product.featured_media.preview_image | image_url: width: 720 }}"
+            data-image-srcset="{{ colorway_product.featured_media.preview_image | image_url: width: 360 }} 360w, {{ colorway_product.featured_media.preview_image | image_url: width: 533 }} 533w, {{ colorway_product.featured_media.preview_image | image_url: width: 720 }} 720w"
+          {% endif %}
+          data-secondary-image-src="{% if colorway_product.media[1] != blank %}{{ colorway_product.media[1].preview_image | image_url: width: 720 }}{% endif %}"
+          data-secondary-image-srcset="{% if colorway_product.media[1] != blank %}{{ colorway_product.media[1].preview_image | image_url: width: 360 }} 360w, {{ colorway_product.media[1].preview_image | image_url: width: 533 }} 533w, {{ colorway_product.media[1].preview_image | image_url: width: 720 }} 720w{% endif %}"
+        >
+          <span
+            class="sh-card-colorways__swatch"
+            style="background: {% if color_parts.size > 1 %}linear-gradient(90deg, {{ swatch_color_1 }} 0 calc(50% - .5px), #fff calc(50% - .5px) calc(50% + .5px), {{ swatch_color_2 }} calc(50% + .5px) 100%){% else %}{{ swatch_color_1 }}{% endif %};"
+            aria-hidden="true"
+          ></span>
+        </button>
+      {%- endfor -%}
+      {%- if colorway_products.count > 4 -%}
+        <span class="sh-card-colorways__more">+{{ colorway_products.count | minus: 4 }}</span>
+      {%- endif -%}
+    {%- else -%}
+      {%- liquid
+        assign single_color_label = card_product.title
+        for single_option in card_product.options_with_values
+          assign single_option_name = single_option.name | downcase
+          if single_option_name == 'color' or single_option_name == 'colour'
+            assign single_color_label = single_option.selected_value
+            break
+          endif
+        endfor
+        assign single_color_parts = single_color_label | split: '/'
+        capture single_swatch_1
+          render 'sneaker-color-value', color_name: single_color_parts[0]
+        endcapture
+        capture single_swatch_2
+          render 'sneaker-color-value', color_name: single_color_parts[1]
+        endcapture
+        assign single_swatch_1 = single_swatch_1 | strip
+        assign single_swatch_2 = single_swatch_2 | strip
+      -%}
+      <span
+        class="sh-card-colorways__button sh-card-colorways__button--single"
+        title="{{ single_color_label | escape }}"
+      >
+        <span
+          class="sh-card-colorways__swatch"
+          style="background: {% if single_color_parts.size > 1 %}linear-gradient(90deg, {{ single_swatch_1 }} 0 calc(50% - .5px), #fff calc(50% - .5px) calc(50% + .5px), {{ single_swatch_2 }} calc(50% + .5px) 100%){% else %}{{ single_swatch_1 }}{% endif %};"
+          aria-hidden="true"
+        ></span>
+      </span>
+    {%- endif -%}
+  </div>
+  <p class="sh-card-size-summary" data-card-choice-summary>
+    {%- if active_size_count > 0 -%}
+      <span data-card-choice-summary-full>{{ active_size_count }} {% if active_size_count == 1 %}size{% else %}sizes{% endif %} available</span>
+      <span class="sh-card-size-summary__short" data-card-choice-summary-short>{{ active_size_count }} {% if active_size_count == 1 %}size{% else %}sizes{% endif %}</span>
+    {%- else -%}
+      <span data-card-choice-summary-full>{{ colorway_count }} {% if colorway_count == 1 %}color{% else %}colors{% endif %}</span>
+      <span class="sh-card-size-summary__short" data-card-choice-summary-short>{{ colorway_count }} {% if colorway_count == 1 %}color{% else %}colors{% endif %}</span>
+    {%- endif -%}
+  </p>
+</div>

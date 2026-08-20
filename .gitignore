@@ -1,0 +1,28 @@
+# Local Shopify CLI state and credentials
+.shopify-appdata/
+.shopify/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# OS and editor state
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Temporary QA and generated output
+*.log
+tmp/
+.tmp/
+qa-output/
+screenshots/
+
+# Local transfer archives
+*.zip
+*.bundle
+

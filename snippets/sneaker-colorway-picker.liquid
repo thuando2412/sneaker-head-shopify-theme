@@ -1,0 +1,51 @@
+{%- liquid
+  assign colorway_families = product.metafields.custom.colorway_family.value
+  assign colorway_family = colorway_families | first
+  assign colorway_products = colorway_family.products.value
+  assign active_colorway_label = product.title
+
+  for product_option in product.options_with_values
+    if product_option.name == 'Color' or product_option.name == 'Colour'
+      assign active_colorway_label = product_option.selected_value
+      break
+    endif
+  endfor
+-%}
+
+{%- if colorway_products != blank and colorway_products.count > 1 -%}
+  <div class="sneaker-colorway-links" data-colorway-links{% if shopify_attributes != blank %} {{ shopify_attributes }}{% endif %}>
+    <div class="sneaker-colorway-links__header">
+      <p class="form__label">{{ heading | escape }}</p>
+      {%- if show_active_label -%}
+        <p class="sneaker-colorway-links__active" data-colorway-active>{{ active_colorway_label | escape }}</p>
+      {%- endif -%}
+    </div>
+    <div class="sneaker-colorway-links__list" role="list">
+      {%- for colorway_product in colorway_products -%}
+        {%- liquid
+          assign colorway_label = colorway_product.title
+          for colorway_option in colorway_product.options_with_values
+            if colorway_option.name == 'Color' or colorway_option.name == 'Colour'
+              assign colorway_label = colorway_option.selected_value
+              break
+            endif
+          endfor
+        -%}
+        <a
+          class="sneaker-colorway-links__item{% if colorway_product.id == product.id %} is-active{% endif %}"
+          href="{{ colorway_product.url }}"
+          {% if colorway_product.id == product.id %}aria-current="page"{% endif %}
+          aria-label="{{ colorway_label | escape }}"
+          role="listitem"
+        >
+          {%- if colorway_product.featured_media != blank -%}
+            {{ colorway_product.featured_media.preview_image | image_url: width: 160 | image_tag: class: 'sneaker-colorway-links__image', widths: '60, 96, 120, 160', loading: 'lazy', alt: colorway_product.title }}
+          {%- else -%}
+            <span class="sneaker-colorway-links__fallback" aria-hidden="true"></span>
+          {%- endif -%}
+          <span class="visually-hidden">{{ colorway_label | escape }}</span>
+        </a>
+      {%- endfor -%}
+    </div>
+  </div>
+{%- endif -%}

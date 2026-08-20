@@ -1,0 +1,175 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "product_meta": {
+          "type": "product_meta",
+          "settings": {
+            "show_type": true,
+            "show_sku": true
+          }
+        },
+        "colorway_picker": {
+          "type": "colorway_picker",
+          "settings": {
+            "heading": "Color",
+            "show_active_label": true
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "size_guide": {
+          "type": "size_guide",
+          "settings": {
+            "guide_label": "Size guide",
+            "fit_label": "Fit",
+            "fit_value": "Regular"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "purchase_reassurance": {
+          "type": "purchase_reassurance",
+          "settings": {
+            "item_1": "Secure checkout with Shopify",
+            "item_2": "Returns policy shown at checkout",
+            "item_3": "Delivery options confirmed at checkout",
+            "item_4": "Authentic product information"
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "product_meta",
+        "colorway_picker",
+        "price",
+        "variant_picker",
+        "size_guide",
+        "quantity_selector",
+        "buy_buttons",
+        "purchase_reassurance",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "sticky_add_to_cart": {
+      "type": "sneaker-sticky-product-bar",
+      "settings": {
+        "main_section_id": "main"
+      }
+    },
+    "disclosures": {
+      "type": "disclosures",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "sneaker_product_details": {
+      "type": "sneaker-product-details",
+      "settings": {
+        "details_heading": "Product details",
+        "delivery_heading": "Delivery & returns",
+        "care_heading": "Care guide",
+        "storage_heading": "Storage guide",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "product_reviews": {
+      "type": "sneaker-product-reviews",
+      "settings": {
+        "heading": "Reviews & questions",
+        "empty_message": "Reviews will appear here when a Shopify reviews app is connected. No customer reviews have been published for this product yet.",
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sticky_add_to_cart",
+    "disclosures",
+    "sneaker_product_details",
+    "product_reviews",
+    "related-products"
+  ]
+}

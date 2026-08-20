@@ -1,0 +1,66 @@
+{% assign clothing_collection = section.settings.collection %}
+{% if clothing_collection != blank and clothing_collection.products_count > 0 %}
+  <section class="sh-home-section page-width sh-home-merch">
+    <div class="sh-home-head">
+      <h2 class="sh-home-title">{{ section.settings.heading | escape }}</h2>
+      <a class="sh-home-link" href="{{ clothing_collection.url }}">{{ section.settings.view_all_label | escape }}</a>
+    </div>
+    <div class="sh-home-merch__grid">
+      <a class="sh-home-merch__editorial" href="{{ clothing_collection.url }}">
+        {% if section.settings.image != blank %}
+          {{ section.settings.image | image_url: width: 1600 | image_tag: widths: '600, 900, 1200, 1600', sizes: '(min-width: 990px) 55vw, 100vw', loading: 'lazy', alt: section.settings.image.alt | default: section.settings.editorial_heading }}
+        {% else %}
+          <img src="{{ 'sh-home-clothing.png' | asset_img_url: '1600x' }}" alt="{{ section.settings.editorial_heading | escape }}" width="1200" height="900" loading="lazy">
+        {% endif %}
+        {% if section.settings.eyebrow != blank %}<span class="sh-home-merch__editorial-hint">{{ section.settings.eyebrow | escape }}</span>{% endif %}
+        <div class="sh-home-merch__editorial-content">
+          {% if section.settings.eyebrow != blank %}<p class="sh-home-collection-card__eyebrow">{{ section.settings.eyebrow | escape }}</p>{% endif %}
+          <h3 class="sh-home-merch__editorial-title">{{ section.settings.editorial_heading | escape }}</h3>
+          {% if section.settings.copy != blank %}<div class="sh-home-merch__editorial-copy rte">{{ section.settings.copy }}</div>{% endif %}
+          <span class="sh-home-collection-card__cta">{{ section.settings.button_label | escape }}</span>
+        </div>
+      </a>
+      <sneaker-home-rail class="sh-home-merch__products-rail" data-desktop-page-size="8" data-tablet-page-size="4" data-mobile-page-size="4">
+        <div class="sh-home-merch__products" data-rail-list>
+          {% liquid
+            assign rendered_products = 0
+            assign seen_colorway_families = '|'
+          %}
+          {% for product in clothing_collection.products limit: 50 %}
+            {% liquid
+              assign product_colorway_family = product.metafields.custom.colorway_family.value | first
+              assign family_key = product_colorway_family.system.handle | default: product_colorway_family.id | default: product.id
+              assign family_marker = '|' | append: family_key | append: '|'
+            %}
+            {% unless seen_colorway_families contains family_marker %}
+              <div class="sh-home-merch__product">{% render 'card-product', card_product: product, media_aspect_ratio: 'square', image_shape: 'default', show_secondary_image: true, show_vendor: true, show_colorways: true, show_rating: false, quick_add: false, quick_add_in_media: true, section_id: section.id %}</div>
+              {% liquid
+                assign seen_colorway_families = seen_colorway_families | append: family_key | append: '|'
+                assign rendered_products = rendered_products | plus: 1
+              %}
+              {% if rendered_products >= 24 %}{% break %}{% endif %}
+            {% endunless %}
+          {% endfor %}
+        </div>
+        <div class="sh-home-rail__footer"><div class="sh-home-rail__status"><div class="sh-home-rail__progress" data-rail-progress><span></span></div><span class="sh-home-rail__count" data-rail-count>1 / 1</span></div><div class="sh-home-rail__controls"><button class="sh-home-icon-button" type="button" data-rail-prev aria-label="Previous clothing">‹</button><button class="sh-home-icon-button" type="button" data-rail-next aria-label="Next clothing">›</button></div></div>
+      </sneaker-home-rail>
+    </div>
+    <a class="sh-home-mobile-view-all" href="{{ clothing_collection.url }}">{{ section.settings.view_all_label | escape }}</a>
+  </section>
+{% endif %}
+{% schema %}
+{
+  "name": "Sneaker clothing",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Clothing" },
+    { "type": "collection", "id": "collection", "label": "Clothing collection" },
+    { "type": "text", "id": "view_all_label", "label": "View all label", "default": "View all clothing" },
+    { "type": "image_picker", "id": "image", "label": "Editorial image" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "New drop · Apparel" },
+    { "type": "text", "id": "editorial_heading", "label": "Editorial heading", "default": "Layer up for every run." },
+    { "type": "richtext", "id": "copy", "label": "Editorial copy", "default": "<p>Tees, shorts and shells that work as hard as you do.</p>" },
+    { "type": "text", "id": "button_label", "label": "Button label", "default": "Shop new drop" }
+  ],
+  "presets": [{ "name": "Sneaker clothing" }]
+}
+{% endschema %}

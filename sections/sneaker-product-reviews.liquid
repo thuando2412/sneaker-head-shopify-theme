@@ -1,0 +1,52 @@
+<section class="sneaker-product-reviews section-{{ section.id }}-padding" aria-labelledby="ReviewsHeading-{{ section.id }}">
+  <div class="page-width">
+    <div class="sneaker-product-reviews__header">
+      <div>
+        <p class="caption-with-letter-spacing">CUSTOMER FEEDBACK</p>
+        <h2 id="ReviewsHeading-{{ section.id }}" class="h2">{{ section.settings.heading | escape }}</h2>
+      </div>
+      {%- if product.metafields.reviews.rating.value != blank -%}
+        <p class="sneaker-product-reviews__rating" aria-label="{{ product.metafields.reviews.rating.value.rating }} out of {{ product.metafields.reviews.rating.value.scale_max }} stars">
+          {{ product.metafields.reviews.rating.value.rating }} / {{ product.metafields.reviews.rating.value.scale_max }}
+        </p>
+      {%- endif -%}
+    </div>
+    <div class="sneaker-product-reviews__content">
+      {%- assign has_app_block = false -%}
+      {%- for block in section.blocks -%}
+        {%- if block.type == '@app' -%}
+          {%- assign has_app_block = true -%}
+          {% render block %}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- unless has_app_block -%}
+        <p>{{ section.settings.empty_message | escape }}</p>
+      {%- endunless -%}
+    </div>
+  </div>
+</section>
+
+{% style %}
+  .section-{{ section.id }}-padding { padding-top: {{ section.settings.padding_top | times: 3 | divided_by: 4 }}px; padding-bottom: {{ section.settings.padding_bottom | times: 3 | divided_by: 4 }}px; }
+  .sneaker-product-reviews { border-top: .1rem solid rgba(var(--color-foreground), .12); }
+  .sneaker-product-reviews__header { align-items: end; display: flex; justify-content: space-between; gap: 2rem; }
+  .sneaker-product-reviews__header p { margin: 0; }
+  .sneaker-product-reviews__header h2 { margin: .4rem 0 0; }
+  .sneaker-product-reviews__rating { font-weight: 600; }
+  .sneaker-product-reviews__content { border-top: .1rem solid rgba(var(--color-foreground), .12); margin-top: 2rem; padding-top: 1.8rem; }
+  @media screen and (min-width: 750px) { .section-{{ section.id }}-padding { padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px; } }
+{% endstyle %}
+
+{% schema %}
+{
+  "name": "Product reviews",
+  "blocks": [{ "type": "@app" }],
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Reviews & questions" },
+    { "type": "text", "id": "empty_message", "label": "Empty state", "default": "Reviews will appear here when a Shopify reviews app is connected. No customer reviews have been published for this product yet." },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "Top padding", "default": 28 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "Bottom padding", "default": 28 }
+  ],
+  "presets": [{ "name": "Product reviews" }]
+}
+{% endschema %}

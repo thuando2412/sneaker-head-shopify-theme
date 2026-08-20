@@ -1,0 +1,51 @@
+{{ 'sneaker-sticky-product-bar.css' | asset_url | stylesheet_tag }}
+
+{%- assign selected_variant = product.selected_or_first_available_variant -%}
+<aside
+  class="sneaker-sticky-product-bar"
+  data-sneaker-sticky-bar
+  data-main-form="product-form-{{ section.settings.main_section_id }}"
+  data-variants='{{ product.variants | json | escape }}'
+  aria-label="Quick add to cart"
+>
+  <div class="sneaker-sticky-product-bar__inner page-width">
+    <div class="sneaker-sticky-product-bar__product">
+      {%- if product.featured_media != blank -%}
+        {{ product.featured_media.preview_image | image_url: width: 120 | image_tag: class: 'sneaker-sticky-product-bar__image', widths: '60, 120', loading: 'lazy', alt: product.title }}
+      {%- endif -%}
+      <div>
+        <p class="sneaker-sticky-product-bar__vendor">{{ product.vendor | escape }}</p>
+        <p class="sneaker-sticky-product-bar__title">{{ product.title | escape }}</p>
+        <p class="sneaker-sticky-product-bar__price" data-sticky-price>{{ selected_variant.price | money_with_currency }}</p>
+      </div>
+    </div>
+    <button
+      type="button"
+      class="button button--primary sneaker-sticky-product-bar__button"
+      data-sticky-add
+      {% unless selected_variant.available %}disabled{% endunless %}
+    >
+      <span data-sticky-add-label>{% if selected_variant.available %}Add to cart{% else %}Sold out{% endif %}</span>
+    </button>
+  </div>
+</aside>
+
+{% schema %}
+{
+  "name": "Mobile sticky add to cart",
+  "settings": [
+    {
+      "type": "text",
+      "id": "main_section_id",
+      "label": "Main product section ID",
+      "default": "main",
+      "info": "Keep this aligned with the main product section ID in the product template."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Mobile sticky add to cart"
+    }
+  ]
+}
+{% endschema %}

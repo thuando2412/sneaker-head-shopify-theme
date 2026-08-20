@@ -1,0 +1,49 @@
+<section class="sh-trust color-{{ section.settings.color_scheme }}">
+  <div class="page-width sh-trust__grid">
+    {% for block in section.blocks %}
+      {% if block.settings.link != blank %}<a class="sh-trust__item sh-trust__item--link" href="{{ block.settings.link }}" {{ block.shopify_attributes }}>{% else %}<article class="sh-trust__item" {{ block.shopify_attributes }}>{% endif %}
+        <span class="sh-trust__number" aria-hidden="true">
+          {% case forloop.index %}
+            {% when 1 %}↗
+            {% when 2 %}↻
+            {% when 3 %}◈
+            {% else %}▣
+          {% endcase %}
+        </span>
+        <div>
+          <h3>{{ block.settings.heading }}</h3>
+          <p>{{ block.settings.copy }}</p>
+        </div>
+      {% if block.settings.link != blank %}</a>{% else %}</article>{% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Sneaker trust points",
+  "max_blocks": 4,
+  "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color scheme", "default": "scheme-1" }
+  ],
+  "blocks": [
+    {
+      "type": "point",
+      "name": "Trust point",
+      "settings": [
+        { "type": "text", "id": "heading", "label": "Heading", "default": "Curated pairs" },
+        { "type": "text", "id": "copy", "label": "Copy", "default": "A focused selection for running, everyday and trail." },
+        { "type": "url", "id": "link", "label": "Link" }
+      ]
+    }
+  ],
+  "presets": [{
+    "name": "Sneaker trust points",
+    "blocks": [
+      { "type": "point", "settings": { "heading": "Curated pairs", "copy": "A focused selection for running, everyday and trail." } },
+      { "type": "point", "settings": { "heading": "Easy size support", "copy": "Clear fit guidance before you add to cart." } },
+      { "type": "point", "settings": { "heading": "Ready to ship", "copy": "Fast, trackable delivery across Vietnam." } }
+    ]
+  }]
+}
+{% endschema %}
