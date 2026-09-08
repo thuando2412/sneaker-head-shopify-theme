@@ -102,6 +102,21 @@
     ]
   },
   {
+    "name": "Product media",
+    "settings": [
+      {
+        "type": "color",
+        "id": "product_media_background",
+        "label": "Product media background",
+        "default": "#F3F3F3"
+      },
+      {
+        "type": "paragraph",
+        "content": "Controls the shared background behind transparent product images across cards, product galleries, search and cart."
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.typography.name",
     "settings": [
       {

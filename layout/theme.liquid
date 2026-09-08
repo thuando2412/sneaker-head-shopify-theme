@@ -111,6 +111,7 @@
       }
 
       :root {
+        --sh-product-media-background: {{ settings.product_media_background | default: '#F3F3F3' }};
         --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
         --font-body-style: {{ settings.type_body_font.style }};
         --font-body-weight: {{ settings.type_body_font.weight }};
@@ -322,8 +323,8 @@
       {{ 'quick-add.css' | asset_url | stylesheet_tag }}
       <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
       <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
-      <script src="{{ 'sneaker-card-colorways.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+    <script src="{{ 'sneaker-card-colorways.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'sneaker-home-redesign.js' | asset_url }}" defer="defer"></script>
     <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
 

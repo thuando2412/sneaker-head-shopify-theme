@@ -253,11 +253,11 @@
 .template-index .sh-home-merch__products .card__inner [data-card-product-link]::after { z-index:5; }
 
 @media (hover:hover) and (pointer:fine) {
-  .template-index .sh-card--has-secondary .media--hover-effect>img { transition:opacity .25s ease; transform:none !important; }
+  .template-index .sh-card--has-secondary .media--hover-effect>img { visibility:visible; transform:scale(1) !important; transition:transform .28s cubic-bezier(.2,.65,.3,1) !important; will-change:transform; backface-visibility:hidden; }
   .template-index .sh-card--has-secondary .media--hover-effect>img:first-child { opacity:1 !important; }
   .template-index .sh-card--has-secondary .media--hover-effect>img+img:not([hidden]) { opacity:0 !important; }
-  .template-index .sh-card--has-secondary .card__inner:hover .media--hover-effect>img:first-child { opacity:0 !important; }
-  .template-index .sh-card--has-secondary .card__inner:hover .media--hover-effect>img+img:not([hidden]) { opacity:1 !important; }
+  .template-index .sh-card--has-secondary.is-media-hovered .media--hover-effect>img:first-child { opacity:0 !important; }
+  .template-index .sh-card--has-secondary.is-media-hovered .media--hover-effect>img+img:not([hidden]) { opacity:1 !important; transform:scale(1.04) !important; }
   .template-index .product-card-wrapper:not(.sh-card--has-secondary) .media--hover-effect>img:first-child { opacity:1 !important; transform:none !important; transition:transform .25s ease; }
   .template-index .product-card-wrapper:not(.sh-card--has-secondary) .card__inner:hover .media--hover-effect>img:first-child { transform:scale(1.04) !important; }
   .template-index .product-card-wrapper:hover .card__heading a { text-decoration:none; }

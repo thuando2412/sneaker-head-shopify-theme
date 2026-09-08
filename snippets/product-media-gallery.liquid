@@ -40,14 +40,26 @@
   elsif section.settings.media_size == 'small'
     assign media_width = 0.45
   endif
+
+
+  assign sh_media_family = 'accessories'
+  assign sh_product_type = product.type | downcase
+  if product.tags contains 'footwear' or sh_product_type contains 'shoe' or sh_product_type contains 'sneaker' or sh_product_type contains 'sandal' or sh_product_type contains 'slide' or sh_product_type contains 'boot'
+    assign sh_media_family = 'footwear'
+  elsif product.tags contains 'clothing' or product.tags contains 'apparel' or sh_product_type contains 'shirt' or sh_product_type contains 'tee' or sh_product_type contains 'top' or sh_product_type contains 'jacket' or sh_product_type contains 'short' or sh_product_type contains 'pant' or sh_product_type contains 'tight' or sh_product_type contains 'hoodie'
+    assign sh_media_family = 'clothing'
+  endif
+
+  assign sh_media_source_class = ''
+  if product.tags contains 'footlocker-source'
+    assign sh_media_source_class = ' sh-product-media-frame--source-footlocker'
+  endif
 -%}
 
 <media-gallery
   id="MediaGallery-{{ section.id }}"
   role="region"
-  {% if section.settings.enable_sticky_info %}
-    class="product__column-sticky"
-  {% endif %}
+  class="sh-product-media-frame sh-product-media-frame--{{ sh_media_family }}{{ sh_media_source_class }}{% if section.settings.enable_sticky_info %} product__column-sticky{% endif %}"
   aria-label="{{ 'products.product.media.gallery_viewer' | t }}"
   data-desktop-layout="{{ section.settings.gallery_layout }}"
 >

@@ -1,6 +1,17 @@
 # Sneaker Head theme handoff
 
-Last updated: 2026-08-20
+Last updated: 2026-09-08
+
+## Latest session checkpoint
+
+- Synced recent product media, hover and swatch changes from the local `sneaker-head-theme` checkout into this shared repository. Continue future work in this repository.
+- Live deployment target used in this session: `151150559325`, Sneaker Head - Homepage Redesign, at `sneakerheadvn.myshopify.com`.
+- Foot Locker footwear card images use `padding: calc(12% + 1.5px) 12%` and `translate: 0 calc(clamp(10px, 5%, 16px) + 8px)`. The latest user-approved change lowered the image another 5px after an earlier 3px shift. PDP and thumbnails keep their separate offset.
+- Homepage secondary-image hover uses decoded media and `is-media-hovered`; opacity swaps immediately, secondary zoom is 1.04 over 280ms. Single-image fallback zoom remains 1.04.
+- Shared media background is configurable through Product media theme settings. New transparent images use this background.
+- User performed visual QA for the latest positioning changes and requested direct targeted pushes without further browser QA.
+- A new homepage design is being prepared separately; do not infer that it has already been implemented here.
+- This is a source checkpoint, not a fresh full pull of the live theme. Existing repository templates and other unrelated baseline files were retained.
 
 ## Project
 
@@ -103,4 +114,3 @@ For every affected component verify:
 - product links, swatches and native quick add;
 - carousel count, final reachable item, pagination and responsive peek;
 - no nested vertical scrollbar or clipped text.
-

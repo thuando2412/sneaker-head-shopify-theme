@@ -222,3 +222,63 @@ document.querySelectorAll('[data-countdown-end]').forEach(node => {
   update();
   setInterval(update, 1000);
 });
+
+const prepareHomepageSecondaryImage = card => {
+  const image = card.querySelector('[data-card-secondary-image]');
+  if (!image || card.dataset.secondaryPreparing === 'true' || card.dataset.secondaryReady === 'true') return;
+
+  card.dataset.secondaryPreparing = 'true';
+  image.loading = 'eager';
+
+  const markReady = () => {
+    card.dataset.secondaryPreparing = 'false';
+    card.dataset.secondaryReady = 'true';
+    if (card.dataset.mediaPointerInside === 'true') card.classList.add('is-media-hovered');
+  };
+
+  const decode = () => {
+    if (typeof image.decode === 'function') image.decode().then(markReady).catch(markReady);
+    else markReady();
+  };
+
+  if (image.complete && image.naturalWidth > 0) decode();
+  else image.addEventListener('load', decode, { once:true });
+};
+
+const homepageSecondaryObserver = 'IntersectionObserver' in window
+  ? new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        prepareHomepageSecondaryImage(entry.target);
+        homepageSecondaryObserver.unobserve(entry.target);
+      });
+    }, { rootMargin:'320px 0px' })
+  : null;
+
+const initHomepageProductMedia = (root = document) => {
+  if (!document.body.classList.contains('template-index')) return;
+
+  root.querySelectorAll('.product-card-wrapper.sh-card--has-secondary').forEach(card => {
+    if (card.dataset.mediaHoverReady === 'true') return;
+    const media = card.querySelector('.card__inner');
+    if (!media) return;
+
+    card.dataset.mediaHoverReady = 'true';
+    media.addEventListener('pointerenter', event => {
+      if (event.pointerType && event.pointerType !== 'mouse' && event.pointerType !== 'pen') return;
+      card.dataset.mediaPointerInside = 'true';
+      if (card.dataset.secondaryReady === 'true') card.classList.add('is-media-hovered');
+      else prepareHomepageSecondaryImage(card);
+    });
+    media.addEventListener('pointerleave', () => {
+      card.dataset.mediaPointerInside = 'false';
+      card.classList.remove('is-media-hovered');
+    });
+
+    if (homepageSecondaryObserver) homepageSecondaryObserver.observe(card);
+    else prepareHomepageSecondaryImage(card);
+  });
+};
+
+initHomepageProductMedia();
+document.addEventListener('shopify:section:load', event => initHomepageProductMedia(event.target));
