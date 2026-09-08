@@ -1,0 +1,502 @@
+{
+  "generatedAt": "2026-09-08T10:41:03.848Z",
+  "mode": "dry-run",
+  "shop": {
+    "name": "Sneaker Head",
+    "myshopifyDomain": "thuandotest.myshopify.com"
+  },
+  "location": {
+    "id": "gid://shopify/Location/76188057693",
+    "name": "Shop location"
+  },
+  "publication": {
+    "id": "gid://shopify/Publication/148514111581",
+    "name": "Online Store"
+  },
+  "planned": {
+    "products": 53,
+    "families": 9
+  },
+  "products": [
+    {
+      "handle": "adidas-adizero-evo-sl-men-black-black-kh9858",
+      "title": "adidas Adizero Evo SL Men's Running Shoes - Black/Black",
+      "familyHandle": "adidas-adizero-evo-sl-men",
+      "variants": 13,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "adidas-adizero-evo-sl-men-black-white-jh6206",
+      "title": "adidas Adizero Evo SL Men's Running Shoes - Black/White",
+      "familyHandle": "adidas-adizero-evo-sl-men",
+      "variants": 13,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "adidas-adizero-evo-sl-men-black-white-jp7149",
+      "title": "adidas Adizero Evo SL Men's Running Shoes - Black/White",
+      "familyHandle": "adidas-adizero-evo-sl-men",
+      "variants": 13,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "adidas-adizero-evo-sl-men-black-yellow-red-kj6160",
+      "title": "adidas Adizero Evo SL Men's Running Shoes - Black/Yellow/Red",
+      "familyHandle": "adidas-adizero-evo-sl-men",
+      "variants": 10,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "adidas-adizero-evo-sl-men-grey-footwear-white-42112284",
+      "title": "adidas Adizero Evo SL Men's Running Shoes - Grey/Footwear White",
+      "familyHandle": "adidas-adizero-evo-sl-men",
+      "variants": 10,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "adidas-adizero-evo-sl-men-pure-ruby-bright-royal-footwear-white-42112883",
+      "title": "adidas Adizero Evo SL Men's Running Shoes - Pure Ruby/Bright Royal/Footwear White",
+      "familyHandle": "adidas-adizero-evo-sl-men",
+      "variants": 10,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "adidas-adizero-evo-sl-men-silver-red-ki3381",
+      "title": "adidas Adizero Evo SL Men's Running Shoes - Silver/Red",
+      "familyHandle": "adidas-adizero-evo-sl-men",
+      "variants": 10,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "hoka-clifton-10-men-asteroid-galactic-grey-2030gyst",
+      "title": "HOKA Clifton 10 Men's Running Shoes - Asteroid/Galactic Grey",
+      "familyHandle": "hoka-clifton-10-men",
+      "variants": 11,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "hoka-clifton-10-men-asteroid-silver-2030adsl",
+      "title": "HOKA Clifton 10 Men's Running Shoes - Asteroid/Silver",
+      "familyHandle": "hoka-clifton-10-men",
+      "variants": 11,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "hoka-clifton-10-men-black-black-2030bblc",
+      "title": "HOKA Clifton 10 Men's Running Shoes - Black/Black",
+      "familyHandle": "hoka-clifton-10-men",
+      "variants": 7,
+      "images": 5,
+      "action": "update",
+      "willPublish": true
+    },
+    {
+      "handle": "hoka-clifton-10-men-black-silver-2030bksv",
+      "title": "HOKA Clifton 10 Men's Running Shoes - Black/Silver",
+      "familyHandle": "hoka-clifton-10-men",
+      "variants": 1,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "hoka-clifton-10-men-black-varsity-navy-62030vck",
+      "title": "HOKA Clifton 10 Men's Running Shoes - Black/Varsity Navy",
+      "familyHandle": "hoka-clifton-10-men",
+      "variants": 6,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "hoka-clifton-10-men-carbon-black-satellite-grey-2030ccks",
+      "title": "HOKA Clifton 10 Men's Running Shoes - Carbon Black/Satellite Grey",
+      "familyHandle": "hoka-clifton-10-men",
+      "variants": 3,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "hoka-clifton-10-men-galactic-grey-asteroid-2032gyst",
+      "title": "HOKA Clifton 10 Men's Running Shoes - Galactic Grey/Asteroid",
+      "familyHandle": "hoka-clifton-10-men",
+      "variants": 14,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "hoka-clifton-10-men-oatmeal-oat-milk-2030oltm",
+      "title": "HOKA Clifton 10 Men's Running Shoes - Oatmeal/Oat Milk",
+      "familyHandle": "hoka-clifton-10-men",
+      "variants": 11,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "hoka-clifton-10-men-white-black-2030bwht",
+      "title": "HOKA Clifton 10 Men's Running Shoes - White/Black",
+      "familyHandle": "hoka-clifton-10-men",
+      "variants": 12,
+      "images": 5,
+      "action": "update",
+      "willPublish": true
+    },
+    {
+      "handle": "hoka-clifton-10-men-white-black-2030wblc",
+      "title": "HOKA Clifton 10 Men's Running Shoes - White/Black",
+      "familyHandle": "hoka-clifton-10-men",
+      "variants": 10,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "hoka-clifton-10-men-white-stellar-230stllr",
+      "title": "HOKA Clifton 10 Men's Running Shoes - White/Stellar",
+      "familyHandle": "hoka-clifton-10-men",
+      "variants": 10,
+      "images": 5,
+      "action": "update",
+      "willPublish": true
+    },
+    {
+      "handle": "hoka-rincon-4-men-black-black-130bblc",
+      "title": "HOKA Rincon 4 Men's Running Shoes - Black/Black",
+      "familyHandle": "hoka-rincon-4-men",
+      "variants": 7,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "hoka-rincon-4-men-black-white-5130bwht",
+      "title": "HOKA Rincon 4 Men's Running Shoes - Black/White",
+      "familyHandle": "hoka-rincon-4-men",
+      "variants": 1,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "hoka-rincon-4-men-white-black-5132bwht",
+      "title": "HOKA Rincon 4 Men's Running Shoes - White/Black",
+      "familyHandle": "hoka-rincon-4-men",
+      "variants": 1,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "hoka-rincon-4-men-white-marble-5130wblc",
+      "title": "HOKA Rincon 4 Men's Running Shoes - White/Marble",
+      "familyHandle": "hoka-rincon-4-men",
+      "variants": 10,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "jordan-air-patrol-backpack-adult-black-black-a0924blk",
+      "title": "Jordan Air Patrol Backpack Adult - Black/Black",
+      "familyHandle": "jordan-air-patrol-backpack-adult",
+      "variants": 1,
+      "images": 3,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "jordan-air-patrol-backpack-adult-black-white-a0924wr2",
+      "title": "Jordan Air Patrol Backpack Adult - Black/White",
+      "familyHandle": "jordan-air-patrol-backpack-adult",
+      "variants": 1,
+      "images": 4,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "lckr-basic-t-shirt-men-black-black-122kt1bk",
+      "title": "LCKR Basic T-Shirt Men's - Black/Black",
+      "familyHandle": "lckr-basic-t-shirt-men",
+      "variants": 8,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "lckr-basic-t-shirt-men-parchment-22kt1par",
+      "title": "LCKR Basic T-Shirt Men's - Parchment",
+      "familyHandle": "lckr-basic-t-shirt-men",
+      "variants": 5,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "lckr-basic-t-shirt-men-white-white-122kt1wh",
+      "title": "LCKR Basic T-Shirt Men's - White/White",
+      "familyHandle": "lckr-basic-t-shirt-men",
+      "variants": 8,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-6-pack-everyday-plus-cushioned-socks-men-black-white-6897010",
+      "title": "Nike 6 Pack Everyday Plus Cushioned Socks Men's - Black/White",
+      "familyHandle": "nike-6-pack-everyday-plus-cushioned-socks-men",
+      "variants": 3,
+      "images": 3,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-6-pack-everyday-plus-cushioned-socks-men-black-white-6897100",
+      "title": "Nike 6 Pack Everyday Plus Cushioned Socks Men's - Black/White",
+      "familyHandle": "nike-6-pack-everyday-plus-cushioned-socks-men",
+      "variants": 1,
+      "images": 3,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-tech-fleece-full-zip-windrunner-hoodie-men-black-birch-v0949051",
+      "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie Men's - Black/Birch",
+      "familyHandle": "nike-tech-fleece-full-zip-windrunner-hoodie-men",
+      "variants": 5,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-tech-fleece-full-zip-windrunner-hoodie-men-black-black-v0949010",
+      "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie Men's - Black/Black",
+      "familyHandle": "nike-tech-fleece-full-zip-windrunner-hoodie-men",
+      "variants": 7,
+      "images": 3,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-tech-fleece-full-zip-windrunner-hoodie-men-black-dark-grey-heather-v0949063",
+      "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie Men's - Black/Dark Grey Heather",
+      "familyHandle": "nike-tech-fleece-full-zip-windrunner-hoodie-men",
+      "variants": 7,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-tech-fleece-full-zip-windrunner-hoodie-men-black-green-v0949382",
+      "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie Men's - Black/Green",
+      "familyHandle": "nike-tech-fleece-full-zip-windrunner-hoodie-men",
+      "variants": 7,
+      "images": 3,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-tech-fleece-full-zip-windrunner-hoodie-men-black-grey-v0949011",
+      "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie Men's - Black/Grey",
+      "familyHandle": "nike-tech-fleece-full-zip-windrunner-hoodie-men",
+      "variants": 7,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-tech-fleece-full-zip-windrunner-hoodie-men-black-obsidian-v0949451",
+      "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie Men's - Black/Obsidian",
+      "familyHandle": "nike-tech-fleece-full-zip-windrunner-hoodie-men",
+      "variants": 7,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-tech-fleece-full-zip-windrunner-hoodie-men-blue-black-h0949476",
+      "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie Men's - Blue/Black",
+      "familyHandle": "nike-tech-fleece-full-zip-windrunner-hoodie-men",
+      "variants": 7,
+      "images": 3,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-tech-fleece-full-zip-windrunner-hoodie-men-blue-black-v0949407",
+      "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie Men's - Blue/Black",
+      "familyHandle": "nike-tech-fleece-full-zip-windrunner-hoodie-men",
+      "variants": 7,
+      "images": 3,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-tech-fleece-full-zip-windrunner-hoodie-men-lt-liquid-lime-anthracite-lt-smoke-grey-v0949361",
+      "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie Men's - Lt Liquid Lime/Anthracite/Lt Smoke Grey",
+      "familyHandle": "nike-tech-fleece-full-zip-windrunner-hoodie-men",
+      "variants": 7,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-tech-fleece-full-zip-windrunner-hoodie-men-obsidian-white-v0949100",
+      "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie Men's - Obsidian/White",
+      "familyHandle": "nike-tech-fleece-full-zip-windrunner-hoodie-men",
+      "variants": 6,
+      "images": 4,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-tech-fleece-full-zip-windrunner-hoodie-men-olive-black-v0949368",
+      "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie Men's - Olive/Black",
+      "familyHandle": "nike-tech-fleece-full-zip-windrunner-hoodie-men",
+      "variants": 6,
+      "images": 3,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-tech-fleece-full-zip-windrunner-hoodie-men-pencil-point-medium-ash-college-grey-v0949018",
+      "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie Men's - Pencil Point/Medium Ash/College Grey",
+      "familyHandle": "nike-tech-fleece-full-zip-windrunner-hoodie-men",
+      "variants": 5,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-tech-fleece-full-zip-windrunner-hoodie-men-red-black-v0949608",
+      "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie Men's - Red/Black",
+      "familyHandle": "nike-tech-fleece-full-zip-windrunner-hoodie-men",
+      "variants": 7,
+      "images": 3,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-tech-fleece-full-zip-windrunner-hoodie-men-red-black-v0949687",
+      "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie Men's - Red/Black",
+      "familyHandle": "nike-tech-fleece-full-zip-windrunner-hoodie-men",
+      "variants": 7,
+      "images": 3,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-tech-fleece-full-zip-windrunner-hoodie-men-work-blue-cool-grey-black-v0949486",
+      "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie Men's - Work Blue/Cool Grey/Black",
+      "familyHandle": "nike-tech-fleece-full-zip-windrunner-hoodie-men",
+      "variants": 5,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-varsity-elite-backpack-adult-black-university-red-metallic-gold-u3779657",
+      "title": "Nike Varsity Elite Backpack Adult - Black/University Red/Metallic Gold",
+      "familyHandle": "nike-varsity-elite-backpack-adult",
+      "variants": 1,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-varsity-elite-backpack-adult-metallic-silver-black-m9965010",
+      "title": "Nike Varsity Elite Backpack Adult - Metallic Silver/Black",
+      "familyHandle": "nike-varsity-elite-backpack-adult",
+      "variants": 1,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-varsity-elite-backpack-adult-safety-orange-black-wolf-grey-m9965819",
+      "title": "Nike Varsity Elite Backpack Adult - Safety Orange/Black/Wolf Grey",
+      "familyHandle": "nike-varsity-elite-backpack-adult",
+      "variants": 1,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-varsity-elite-backpack-adult-white-red-navy-u3779410",
+      "title": "Nike Varsity Elite Backpack Adult - White/Red/Navy",
+      "familyHandle": "nike-varsity-elite-backpack-adult",
+      "variants": 1,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "on-cloudmonster-void-men-alloy-black-30075831",
+      "title": "On Cloudmonster Void Men's Running Shoes - Alloy/Black",
+      "familyHandle": "on-cloudmonster-void-men",
+      "variants": 11,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "on-cloudmonster-void-men-black-black-49085831",
+      "title": "On Cloudmonster Void Men's Running Shoes - Black/Black",
+      "familyHandle": "on-cloudmonster-void-men",
+      "variants": 11,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "on-cloudmonster-void-men-fog-pearl-10911344",
+      "title": "On Cloudmonster Void Men's Running Shoes - Fog/Pearl",
+      "familyHandle": "on-cloudmonster-void-men",
+      "variants": 4,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "on-cloudmonster-void-men-iceberg-tin-10914415",
+      "title": "On Cloudmonster Void Men's Running Shoes - Iceberg/Tin",
+      "familyHandle": "on-cloudmonster-void-men",
+      "variants": 11,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "on-cloudmonster-void-men-ivory-blue-11095280",
+      "title": "On Cloudmonster Void Men's Running Shoes - Ivory/Blue",
+      "familyHandle": "on-cloudmonster-void-men",
+      "variants": 12,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    }
+  ],
+  "families": [],
+  "failures": [],
+  "verification": null
+}

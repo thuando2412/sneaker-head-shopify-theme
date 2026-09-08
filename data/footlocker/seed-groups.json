@@ -1,0 +1,1559 @@
+{
+  "generated_at": "2026-08-26T04:19:13.288Z",
+  "groups": [
+    {
+      "brand": "HOKA",
+      "category": "running",
+      "colorways": [
+        {
+          "availability": "InStock",
+          "color": "Oatmeal/Oat Milk",
+          "compare_at_price_usd": 155,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/2030OLTM"
+          ],
+          "price_usd": 123.99,
+          "sku": "2030OLTM",
+          "source_url": "https://www.footlocker.com/product/hoka-clifton-10-mens/2030OLTM.html",
+          "title": "HOKA Clifton 10 - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "White/Stellar",
+          "compare_at_price_usd": 155,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/230STLLR"
+          ],
+          "price_usd": 123.99,
+          "sku": "230STLLR",
+          "source_url": "https://www.footlocker.com/product/hoka-clifton-10-mens/230STLLR.html",
+          "title": "HOKA Clifton 10 - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "White/Black",
+          "compare_at_price_usd": 155,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/2030BWHT"
+          ],
+          "price_usd": 123.99,
+          "sku": "2030BWHT",
+          "source_url": "https://www.footlocker.com/product/hoka-clifton-10-mens/2030BWHT.html",
+          "title": "HOKA Clifton 10 - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Black/Black",
+          "compare_at_price_usd": 155,
+          "currency": "USD",
+          "images": [
+            "https://assets.footlocker.com/is/image/FLDM/2030BBLC_01",
+            "https://assets.footlocker.com/is/image/FLDM/2030BBLC_02",
+            "https://assets.footlocker.com/is/image/FLDM/2030BBLC_03",
+            "https://assets.footlocker.com/is/image/FLDM/2030BBLC_04",
+            "https://assets.footlocker.com/is/image/FLDM/2030BBLC_05"
+          ],
+          "price_usd": 123.99,
+          "sku": "2030BBLC",
+          "source_url": "https://www.footlocker.com/product/hoka-clifton-10-mens/2030BBLC.html",
+          "title": "HOKA Clifton 10 - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Asteroid/Galactic Grey",
+          "compare_at_price_usd": 155,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/2030GYST"
+          ],
+          "price_usd": 123.99,
+          "sku": "2030GYST",
+          "source_url": "https://www.footlocker.com/product/hoka-clifton-10-mens/2030GYST.html",
+          "title": "HOKA Clifton 10 - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Stucco/Virtual Blue",
+          "compare_at_price_usd": 155,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/2030SCCV"
+          ],
+          "price_usd": 123.99,
+          "sku": "2030SCCV",
+          "source_url": "https://www.footlocker.com/product/hoka-clifton-10-mens/2030SCCV.html",
+          "title": "HOKA Clifton 10 - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Carbon Black/Satellite Grey",
+          "compare_at_price_usd": 155,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/2030CCKS"
+          ],
+          "price_usd": 123.99,
+          "sku": "2030CCKS",
+          "source_url": "https://www.footlocker.com/product/hoka-clifton-10-mens/2030CCKS.html",
+          "title": "HOKA Clifton 10 - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Galactic Grey/Asteroid",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/2032GYST"
+          ],
+          "price_usd": 155,
+          "sku": "2032GYST",
+          "source_url": "https://www.footlocker.com/product/hoka-clifton-10-mens/2032GYST.html",
+          "title": "HOKA Clifton 10 - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "White/Black",
+          "compare_at_price_usd": 155,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/2030WBLC"
+          ],
+          "price_usd": 123.99,
+          "sku": "2030WBLC",
+          "source_url": "https://www.footlocker.com/product/hoka-clifton-10-mens/2030WBLC.html",
+          "title": "HOKA Clifton 10 - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Black/Varsity Navy",
+          "compare_at_price_usd": 155,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/62030VCK"
+          ],
+          "price_usd": 123.99,
+          "sku": "62030VCK",
+          "source_url": "https://www.footlocker.com/product/hoka-clifton-10-mens/62030VCK.html",
+          "title": "HOKA Clifton 10 - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Black/Silver",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/2030BKSV"
+          ],
+          "price_usd": 155,
+          "sku": "2030BKSV",
+          "source_url": "https://www.footlocker.com/product/hoka-clifton-10-mens/2030BKSV.html",
+          "title": "HOKA Clifton 10 - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Asteroid/Silver",
+          "compare_at_price_usd": 155,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/2030ADSL"
+          ],
+          "price_usd": 123.99,
+          "sku": "2030ADSL",
+          "source_url": "https://www.footlocker.com/product/hoka-clifton-10-mens/2030ADSL.html",
+          "title": "HOKA Clifton 10 - Men's"
+        }
+      ],
+      "description": "Unleash your full potential on the road or trail with the Hoka Clifton 10—where every step feels like running on clouds. Featuring a fine-tuned midsole geometry and an improved forefoot fit, these silhouettes provide exceptional comfort and support through every stride. The new double-lace lock system enables easy on and off, while the refined heel with an enhanced underfoot transition ensures a smooth and stable ride.  Boasting a redefined rearfoot-focused Active Foot Frame, these shoes improve stability and support for a seamless running experience. Push your limits and experience peak performance in the Hoka Clifton 10. Hoka Clifton 10 features:  Jacquard knit upper offers breathability and a snug fit. Molded EVA sockliner adds comfort and support. CMEVA midsole with Meta-Rocker technology delivers cushioning. Reflective upper details enhance low-light visibility. Inherently durable abrasion rubber outsole ensures excellent traction. Weight: 9.8 oz. Long runs, daily walks, and hours on your feet all feel easier in the HOKA Clifton 10. This updated favorite is built to keep your stride smooth and comfortable, pairing plush cushioning with a refined heel transition and an improved forefoot fit that helps you move confidently from the first mile to the last.Jacquard knit upper provides breathable, supportive comfort.Molded EVA sockliner adds step-in softness.CMEVA midsole and Meta-Rocker geometry help create a smooth, cushioned ride.Rearfoot-focused Active Foot Frame adds stability and support.Double-lace lock system helps make on and off easier.Reflective details and a durable abrasion rubber outsole round out the design.Weight: 9.8 oz. Size & Fit Guidance Most reviewers say the fit feels true to size and comfortable right away. For the best fit, we recommend starting with your usual size; if you prefer extra room through the forefoot or typically choose wide widths, a wide option may feel best. Best For Best for daily running, walking, and long hours on hard surfaces when you want lightweight cushioning and dependable support. Cushioning & Road Feel Reviewers consistently highlight the soft, cloud-like cushioning and smooth ride underfoot. The feel leans plush and protective for pavement, recovery miles, and all-day wear, with comfort prioritized over a close-to-the-ground ride. Break-In & Durability Many wearers say the Clifton 10 feels good from the first wear, so it does not ask for much break-in time. Repeat HOKA buyers also point to reliable everyday performance across running, walking, and work shifts. Care & Maintenance To keep the knit upper looking fresh, use gentle spot cleaning as needed. One longtime wearer noted the shoe continued to hold up well even after multiple washes.",
+      "model": 440858,
+      "observed_sizes": [
+        "7.0",
+        "7.5",
+        "8.0",
+        "8.5",
+        "9.0",
+        "9.5",
+        "10.0",
+        "10.5",
+        "11.0",
+        "11.5",
+        "12.0",
+        "12.5",
+        "13.0",
+        "14.0",
+        "15.0"
+      ],
+      "observed_sold_out_sizes": [
+        "7.0",
+        "7.5",
+        "10.5",
+        "11.0",
+        "12.0",
+        "12.5",
+        "14.0",
+        "15.0"
+      ],
+      "product_group_id": "440858",
+      "source": "Foot Locker US",
+      "source_url": "https://www.footlocker.com/product/~/2030BBLC.html",
+      "title": "HOKA Clifton 10 - Men's"
+    },
+    {
+      "brand": "HOKA",
+      "category": "running",
+      "colorways": [
+        {
+          "availability": "InStock",
+          "color": "Black/Black",
+          "compare_at_price_usd": 125,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/130BBLC"
+          ],
+          "price_usd": 99.99,
+          "sku": "130BBLC",
+          "source_url": "https://www.footlocker.com/product/hoka-rincon-4-mens/130BBLC.html",
+          "title": "HOKA Rincon 4 - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "White/Marble",
+          "compare_at_price_usd": 125,
+          "currency": "USD",
+          "images": [
+            "https://assets.footlocker.com/is/image/FLDM/5130WBLC_01",
+            "https://assets.footlocker.com/is/image/FLDM/5130WBLC_02",
+            "https://assets.footlocker.com/is/image/FLDM/5130WBLC_03",
+            "https://assets.footlocker.com/is/image/FLDM/5130WBLC_04",
+            "https://assets.footlocker.com/is/image/FLDM/5130WBLC_05"
+          ],
+          "price_usd": 89.99,
+          "sku": "5130WBLC",
+          "source_url": "https://www.footlocker.com/product/hoka-rincon-4-mens/5130WBLC.html",
+          "title": "HOKA Rincon 4 - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Black/White",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/5130BWHT"
+          ],
+          "price_usd": 125,
+          "sku": "5130BWHT",
+          "source_url": "https://www.footlocker.com/product/hoka-rincon-4-mens/5130BWHT.html",
+          "title": "HOKA Rincon 4 - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "White/Black",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/5132BWHT"
+          ],
+          "price_usd": 125,
+          "sku": "5132BWHT",
+          "source_url": "https://www.footlocker.com/product/hoka-rincon-4-mens/5132BWHT.html",
+          "title": "HOKA Rincon 4 - Men's"
+        }
+      ],
+      "description": "'Experience boundless comfort through the journey with the HOKA Rincon 4. Renowned for their startling cushion-to-weight ratio, these shoes are upgraded from top to bottom, ensuring uber-light softness that helps you chase miles. Built to last and ready to blast, the HOKA Rincon 4 offers you a more foot-hugging fit than ever before and makes sure every stride feels like a first.   Upgraded foam provides better rebound and works together with rubberized EVA to increase longevity and offer a softer feel. Podular outsole design delivers advanced traction and durability. Long runs, daily miles, and busy days on your feet call for comfort that stays light from start to finish. The HOKA Rincon 4 is built to help you move smoothly with soft cushioning, an even lighter feel, and a more foot-hugging fit that keeps every stride feeling fresh. Updated from top to bottom, it balances plush comfort with the responsive feel you want when the pace picks up.Upgraded foam delivers softer cushioning with improved rebound.Rubberized EVA helps add durability without weighing you down.Podular outsole design provides reliable traction for everyday movement.  Size &amp; Fit Guidance For the best fit, most reviewers say this pair feels true to size and comfortably secure. If you prefer a little extra room up front, especially for longer runs, going up a half size may work best.  Best For Best for runners and walkers who want a lightweight, cushioned shoe for everyday training, casual miles, and all-day comfort.  Cushioning &amp; Road Feel The Rincon 4 stands out for its strong cushion-to-weight ratio, giving you a soft, easy ride without feeling bulky. Underfoot, it keeps the feel smooth and light so daily miles stay comfortable while still offering enough responsiveness for a steady rhythm on the road.\"",
+      "model": 431549,
+      "observed_sizes": [
+        "7.0",
+        "7.5",
+        "8.0",
+        "8.5",
+        "9.0",
+        "9.5",
+        "10.0",
+        "10.5",
+        "11.0",
+        "11.5",
+        "12.0",
+        "12.5",
+        "13.0",
+        "14.0",
+        "15.0",
+        "16.0"
+      ],
+      "observed_sold_out_sizes": [
+        "7.0",
+        "8.5",
+        "12.5",
+        "14.0",
+        "15.0",
+        "16.0"
+      ],
+      "product_group_id": "431549",
+      "source": "Foot Locker US",
+      "source_url": "https://www.footlocker.com/product/~/5130WBLC.html",
+      "title": "HOKA Rincon 4 - Men's"
+    },
+    {
+      "brand": "On",
+      "category": "running",
+      "colorways": [
+        {
+          "availability": "InStock",
+          "color": "Iceberg/Tin",
+          "compare_at_price_usd": 170,
+          "currency": "USD",
+          "images": [
+            "https://assets.footlocker.com/is/image/FLDM/10914415_01",
+            "https://assets.footlocker.com/is/image/FLDM/10914415_03",
+            "https://assets.footlocker.com/is/image/FLDM/10914415_04",
+            "https://assets.footlocker.com/is/image/FLDM/10914415_05",
+            "https://assets.footlocker.com/is/image/FLDM/10914415_06"
+          ],
+          "price_usd": 129.99,
+          "sku": "10914415",
+          "source_url": "https://www.footlocker.com/product/on-cloudmonster-void-mens/10914415.html",
+          "title": "On Cloudmonster Void - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Fog/Pearl",
+          "compare_at_price_usd": 170,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/10911344"
+          ],
+          "price_usd": 119.99,
+          "sku": "10911344",
+          "source_url": "https://www.footlocker.com/product/on-cloudmonster-void-mens/10911344.html",
+          "title": "On Cloudmonster Void - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Alloy/Black",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/30075831"
+          ],
+          "price_usd": 170,
+          "sku": "30075831",
+          "source_url": "https://www.footlocker.com/product/on-cloudmonster-void-mens/30075831.html",
+          "title": "On Cloudmonster Void - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Ivory/Blue",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/11095280"
+          ],
+          "price_usd": 180,
+          "sku": "11095280",
+          "source_url": "https://www.footlocker.com/product/on-cloudmonster-void-mens/11095280.html",
+          "title": "On Cloudmonster Void - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Black/Black",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/49085831"
+          ],
+          "price_usd": 170,
+          "sku": "49085831",
+          "source_url": "https://www.footlocker.com/product/on-cloudmonster-void-mens/49085831.html",
+          "title": "On Cloudmonster Void - Men's"
+        }
+      ],
+      "description": "'Stay fresh and on the move with the ON Cloudmonster Void. Designed for everyday wear, this updated take on ON‚Äôs iconic silhouette features a lightweight haptic mesh upper that boosts breathability and adds a sleek, modern edge. The same CloudTec sole and Helion superfoam cushioning deliver soft, responsive comfort with every step. Durable TPU eyelet stays and upgraded branded details bring structure and style, while rubber pads on the outsole keep your grip strong wherever you go. Whether you‚Äôre heading out or winding down, the ON Cloudmonster Void is built to keep you feeling your best.  TPU eyelet stays offer durability. Weight 10.2 oz. Long days on your feet call for comfort that feels soft, light, and easy to wear. The On Cloudmonster Void refreshes one of the brand's standout silhouettes with a breathable haptic mesh upper, plush underfoot cushioning, and upgraded details that bring a clean, modern finish to your everyday rotation.Lightweight haptic mesh upper for breathable comfortCloudTec sole helps deliver a soft, smooth rideHelion superfoam cushioning adds responsive comfortTPU eyelet stays provide added durability and structureRubber pads on the outsole help maintain gripWeight: 10.2 oz.  Cushioning &amp; Road FeelBuilt around On's CloudTec sole and Helion superfoam, this silhouette leans into a cushioned feel without losing its sense of response. The result is a smooth, comfort-first ride that works well for everyday movement, from quick outings to all-day wear.\"",
+      "model": 458176,
+      "observed_sizes": [
+        "7.5",
+        "8.0",
+        "8.5",
+        "9.0",
+        "9.5",
+        "10.0",
+        "10.5",
+        "11.0",
+        "11.5",
+        "12.0",
+        "13.0"
+      ],
+      "observed_sold_out_sizes": [],
+      "product_group_id": "458176",
+      "source": "Foot Locker US",
+      "source_url": "https://www.footlocker.com/product/~/10914415.html",
+      "title": "On Cloudmonster Void - Men's"
+    },
+    {
+      "brand": "adidas",
+      "category": "running",
+      "colorways": [
+        {
+          "availability": "InStock",
+          "color": "Black/White",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/JH6206"
+          ],
+          "price_usd": 150,
+          "sku": "JH6206",
+          "source_url": "https://www.footlocker.com/product/adidas-adizero-evo-sl-mens/JH6206.html",
+          "title": "adidas Adizero Evo SL - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Black/White",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/JP7149"
+          ],
+          "price_usd": 150,
+          "sku": "JP7149",
+          "source_url": "https://www.footlocker.com/product/adidas-adizero-evo-sl-mens/JP7149.html",
+          "title": "adidas Adizero Evo SL - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Metallic Silver/Metallic Silver/Metallic Iron",
+          "compare_at_price_usd": 150,
+          "currency": "USD",
+          "images": [
+            "https://assets.footlocker.com/is/image/FLDM/JR3419_01",
+            "https://assets.footlocker.com/is/image/FLDM/JR3419_03",
+            "https://assets.footlocker.com/is/image/FLDM/JR3419_04",
+            "https://assets.footlocker.com/is/image/FLDM/JR3419_05",
+            "https://assets.footlocker.com/is/image/FLDM/JR3419_06"
+          ],
+          "price_usd": 104.99,
+          "sku": "JR3419",
+          "source_url": "https://www.footlocker.com/product/adidas-adizero-evo-sl-mens/JR3419.html",
+          "title": "adidas Adizero Evo SL - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Team Royal Blue/Pure Ruby/Footwear White",
+          "compare_at_price_usd": 150,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/JS4494"
+          ],
+          "price_usd": 104.99,
+          "sku": "JS4494",
+          "source_url": "https://www.footlocker.com/product/adidas-adizero-evo-sl-mens/JS4494.html",
+          "title": "adidas Adizero Evo SL - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Silver/Red",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/KI3381"
+          ],
+          "price_usd": 150,
+          "sku": "KI3381",
+          "source_url": "https://www.footlocker.com/product/adidas-adizero-evo-sl-mens/KI3381.html",
+          "title": "adidas Adizero Evo SL - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Black/Black",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/KH9858"
+          ],
+          "price_usd": 150,
+          "sku": "KH9858",
+          "source_url": "https://www.footlocker.com/product/adidas-adizero-evo-sl-mens/KH9858.html",
+          "title": "adidas Adizero Evo SL - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Black/Yellow/Red",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/KJ6160"
+          ],
+          "price_usd": 150,
+          "sku": "KJ6160",
+          "source_url": "https://www.footlocker.com/product/adidas-adizero-evo-sl-mens/KJ6160.html",
+          "title": "adidas Adizero Evo SL - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Ftwr White/Lucid Red/Court Green",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/JQ4440"
+          ],
+          "price_usd": 150,
+          "sku": "JQ4440",
+          "source_url": "https://www.footlocker.com/product/adidas-adizero-evo-sl-mens/JQ4440.html",
+          "title": "adidas Adizero Evo SL - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Yellow/Team Royal Blue/Iron Met",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/KK3673"
+          ],
+          "price_usd": 150,
+          "sku": "KK3673",
+          "source_url": "https://www.footlocker.com/product/adidas-adizero-evo-sl-mens/KK3673.html",
+          "title": "adidas Adizero Evo SL - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Mystery Ink/Ftwr White/Pure Ruby",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/KK3719"
+          ],
+          "price_usd": 150,
+          "sku": "KK3719",
+          "source_url": "https://www.footlocker.com/product/adidas-adizero-evo-sl-mens/KK3719.html",
+          "title": "adidas Adizero Evo SL - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Team Royal Blue/Yellow/Iron Met",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/KI1451"
+          ],
+          "price_usd": 150,
+          "sku": "KI1451",
+          "source_url": "https://www.footlocker.com/product/adidas-adizero-evo-sl-mens/KI1451.html",
+          "title": "adidas Adizero Evo SL - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Ftwr White/Ftwr White/Warm Sandstone",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/KI6923"
+          ],
+          "price_usd": 150,
+          "sku": "KI6923",
+          "source_url": "https://www.footlocker.com/product/adidas-adizero-evo-sl-mens/KI6923.html",
+          "title": "adidas Adizero Evo SL - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Pure Ruby/Bright Royal/Footwear White",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/42112883"
+          ],
+          "price_usd": 150,
+          "sku": "42112883",
+          "source_url": "https://www.footlocker.com/product/adidas-adizero-evo-sl-mens/42112883.html",
+          "title": "adidas Adizero Evo SL - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Grey/Footwear White",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/42112284"
+          ],
+          "price_usd": 150,
+          "sku": "42112284",
+          "source_url": "https://www.footlocker.com/product/adidas-adizero-evo-sl-mens/42112284.html",
+          "title": "adidas Adizero Evo SL - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Core White/Utility Black/Gray Two",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/KJ0430"
+          ],
+          "price_usd": 150,
+          "sku": "KJ0430",
+          "source_url": "https://www.footlocker.com/product/adidas-adizero-evo-sl-mens/KJ0430.html",
+          "title": "adidas Adizero Evo SL - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Silver/Black/White",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/KI4763"
+          ],
+          "price_usd": 150,
+          "sku": "KI4763",
+          "source_url": "https://www.footlocker.com/product/adidas-adizero-evo-sl-mens/KI4763.html",
+          "title": "adidas Adizero Evo SL - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Silver/Black/White",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/KI4764"
+          ],
+          "price_usd": 150,
+          "sku": "KI4764",
+          "source_url": "https://www.footlocker.com/product/adidas-adizero-evo-sl-mens/KI4764.html",
+          "title": "adidas Adizero Evo SL - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Khaki/Night Indigo/Khaki",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/KH9576"
+          ],
+          "price_usd": 150,
+          "sku": "KH9576",
+          "source_url": "https://www.footlocker.com/product/adidas-adizero-evo-sl-mens/KH9576.html",
+          "title": "adidas Adizero Evo SL - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Light Brown/Clay/Legend Ivy",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/KH9578"
+          ],
+          "price_usd": 150,
+          "sku": "KH9578",
+          "source_url": "https://www.footlocker.com/product/adidas-adizero-evo-sl-mens/KH9578.html",
+          "title": "adidas Adizero Evo SL - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Light Granite/Silver Metallic/Grey Strata",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/KI9874"
+          ],
+          "price_usd": 150,
+          "sku": "KI9874",
+          "source_url": "https://www.footlocker.com/product/adidas-adizero-evo-sl-mens/KI9874.html",
+          "title": "adidas Adizero Evo SL - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Collegiate Orange/Collegiate Navy/Tech Ink",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/KJ0431"
+          ],
+          "price_usd": 150,
+          "sku": "KJ0431",
+          "source_url": "https://www.footlocker.com/product/adidas-adizero-evo-sl-mens/KJ0431.html",
+          "title": "adidas Adizero Evo SL - Men's"
+        }
+      ],
+      "description": "Experience unmatched speed and an energetic performance boost with the adidas adiZero Evo SL. Inspired by the record-breaking EVO 1, these shoes combine innovative technology with lightweight materials to help you push your limits in every run. The synthetic and textile upper ensures durability, breathability, and targeted support, while the Lightstrike Pro technology delivers super-light cushioning to keep you fast and agile on your feet. Constructed with at least 20% recycled content, the adidas adiZero Evo SL brings peak performance and sustainability, making every step count. adidas adiZero Evo SL features:  Regular fit gives a relaxed feel. Lace closure provides a snug and customised fit. Textile lining maximises comfort. 3-Stripes add a bold, signature look. Small stiffening element ensures a little extra snap in each step. All-surface rubber outsole delivers grip and traction.  *Designed to be a standard fit, not too tight or too loose.**By reusing materials that have already been created, adidas helps to reduce waste and reliance on finite resources and reduce the footprint of the products.When your training week calls for one shoe that can handle easy miles, uptempo sessions, and everything in between, the adidas adiZero Evo SL is ready to go. Inspired by the record-breaking EVO 1, this running shoe combines a lightweight build with energetic cushioning to keep transitions smooth and your stride feeling fast, whether you’re logging daily miles or picking up the pace.  Synthetic and textile upper offers lightweight breathability and targeted support. Lightstrike Pro cushioning delivers a soft, springy, super-light ride. Small stiffening element adds a little extra snap through toe-off. Lace closure and textile lining help create a secure, comfortable fit. Rubber outsole provides reliable traction across surfaces. Made with at least 20% recycled content.  Size & Fit Guidance Most runners say the fit feels true to size with a secure, locked-in feel. For the best fit, we recommend going with your usual size, while runners who prefer a little more room in the forefoot or toe box may want to try a half size up. Best For Best for daily training, speed sessions, and long road runs when you want lightweight comfort with a lively toe-off. Cushioning & Road Feel Reviews consistently highlight the adiZero Evo SL for its bouncy, responsive ride and smooth energy return. It balances protective cushioning with a light, connected feel that works especially well for road miles, tempo efforts, and versatile training days. Break-In & Durability Most runners say the shoe feels comfortable right away, with the fit settling in even more naturally after the first few runs. Reviewers also describe it as a dependable choice for regular training rotations and repeat wear.",
+      "model": 445778,
+      "observed_sizes": [
+        "7.5",
+        "8.0",
+        "8.5",
+        "9.0",
+        "9.5",
+        "10.0",
+        "10.5",
+        "11.0",
+        "11.5",
+        "12.0",
+        "12.5",
+        "13.0",
+        "14.0"
+      ],
+      "observed_sold_out_sizes": [
+        "7.5",
+        "8.0",
+        "8.5",
+        "9.0",
+        "10.0",
+        "11.0",
+        "11.5",
+        "12.5",
+        "14.0"
+      ],
+      "product_group_id": "445778",
+      "source": "Foot Locker US",
+      "source_url": "https://www.footlocker.com/product/~/JR3419.html",
+      "title": "adidas Adizero Evo SL - Men's"
+    },
+    {
+      "brand": "Nike",
+      "category": "clothing",
+      "colorways": [
+        {
+          "availability": "InStock",
+          "color": "Black/Dark Grey Heather",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/V0949063"
+          ],
+          "price_usd": 140,
+          "sku": "V0949063",
+          "source_url": "https://www.footlocker.com/product/nike-tech-fleece-full-zip-windrunner-hoodie-mens/V0949063.html",
+          "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Red/Black",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/V0949687"
+          ],
+          "price_usd": 140,
+          "sku": "V0949687",
+          "source_url": "https://www.footlocker.com/product/nike-tech-fleece-full-zip-windrunner-hoodie-mens/V0949687.html",
+          "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Black/Grey",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://assets.footlocker.com/is/image/FLDM/V0949011_01",
+            "https://assets.footlocker.com/is/image/FLDM/V0949011_02",
+            "https://assets.footlocker.com/is/image/FLDM/V0949011_03",
+            "https://assets.footlocker.com/is/image/FLDM/V0949011_04",
+            "https://assets.footlocker.com/is/image/FLDM/V0949011_05",
+            "https://assets.footlocker.com/is/image/FLDM/V0949011_06",
+            "https://assets.footlocker.com/is/image/FLDM/V0949011_07",
+            "https://assets.footlocker.com/is/image/FLDM/V0949011_08"
+          ],
+          "price_usd": 140,
+          "sku": "V0949011",
+          "source_url": "https://www.footlocker.com/product/nike-tech-fleece-full-zip-windrunner-hoodie-mens/V0949011.html",
+          "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Black/Black",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/V0949010"
+          ],
+          "price_usd": 140,
+          "sku": "V0949010",
+          "source_url": "https://www.footlocker.com/product/nike-tech-fleece-full-zip-windrunner-hoodie-mens/V0949010.html",
+          "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Black/Obsidian",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/V0949451"
+          ],
+          "price_usd": 140,
+          "sku": "V0949451",
+          "source_url": "https://www.footlocker.com/product/nike-tech-fleece-full-zip-windrunner-hoodie-mens/V0949451.html",
+          "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Black/Birch",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/V0949051"
+          ],
+          "price_usd": 140,
+          "sku": "V0949051",
+          "source_url": "https://www.footlocker.com/product/nike-tech-fleece-full-zip-windrunner-hoodie-mens/V0949051.html",
+          "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Maroon/Maroon",
+          "compare_at_price_usd": 135,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/30949619"
+          ],
+          "price_usd": 101.25,
+          "sku": "30949619",
+          "source_url": "https://www.footlocker.com/product/nike-tech-fleece-full-zip-windrunner-hoodie-mens/30949619.html",
+          "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Olive/Black",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/V0949368"
+          ],
+          "price_usd": 140,
+          "sku": "V0949368",
+          "source_url": "https://www.footlocker.com/product/nike-tech-fleece-full-zip-windrunner-hoodie-mens/V0949368.html",
+          "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Lt Liquid Lime/Anthracite/Lt Smoke Grey",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/V0949361"
+          ],
+          "price_usd": 140,
+          "sku": "V0949361",
+          "source_url": "https://www.footlocker.com/product/nike-tech-fleece-full-zip-windrunner-hoodie-mens/V0949361.html",
+          "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Pencil Point/Medium Ash/College Grey",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/V0949018"
+          ],
+          "price_usd": 140,
+          "sku": "V0949018",
+          "source_url": "https://www.footlocker.com/product/nike-tech-fleece-full-zip-windrunner-hoodie-mens/V0949018.html",
+          "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Blue/Orange",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/H0949477"
+          ],
+          "price_usd": 140,
+          "sku": "H0949477",
+          "source_url": "https://www.footlocker.com/product/nike-tech-fleece-full-zip-windrunner-hoodie-mens/H0949477.html",
+          "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Blue/Black",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/H0949476"
+          ],
+          "price_usd": 140,
+          "sku": "H0949476",
+          "source_url": "https://www.footlocker.com/product/nike-tech-fleece-full-zip-windrunner-hoodie-mens/H0949476.html",
+          "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Work Blue/Cool Grey/Black",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/V0949486"
+          ],
+          "price_usd": 140,
+          "sku": "V0949486",
+          "source_url": "https://www.footlocker.com/product/nike-tech-fleece-full-zip-windrunner-hoodie-mens/V0949486.html",
+          "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Black/Green",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/V0949382"
+          ],
+          "price_usd": 140,
+          "sku": "V0949382",
+          "source_url": "https://www.footlocker.com/product/nike-tech-fleece-full-zip-windrunner-hoodie-mens/V0949382.html",
+          "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Lt Smoke Grey/Cool Grey/Photon Dust",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/V0949077"
+          ],
+          "price_usd": 140,
+          "sku": "V0949077",
+          "source_url": "https://www.footlocker.com/product/nike-tech-fleece-full-zip-windrunner-hoodie-mens/V0949077.html",
+          "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Light Pumice/Black/Silver Sage",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/V0949328"
+          ],
+          "price_usd": 140,
+          "sku": "V0949328",
+          "source_url": "https://www.footlocker.com/product/nike-tech-fleece-full-zip-windrunner-hoodie-mens/V0949328.html",
+          "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Blue Crystal/Black/Lt Smoke Grey",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/V0949453"
+          ],
+          "price_usd": 140,
+          "sku": "V0949453",
+          "source_url": "https://www.footlocker.com/product/nike-tech-fleece-full-zip-windrunner-hoodie-mens/V0949453.html",
+          "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Obsidian/White",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/V0949100"
+          ],
+          "price_usd": 140,
+          "sku": "V0949100",
+          "source_url": "https://www.footlocker.com/product/nike-tech-fleece-full-zip-windrunner-hoodie-mens/V0949100.html",
+          "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Blue/Black",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/V0949407"
+          ],
+          "price_usd": 140,
+          "sku": "V0949407",
+          "source_url": "https://www.footlocker.com/product/nike-tech-fleece-full-zip-windrunner-hoodie-mens/V0949407.html",
+          "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Red/Black",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/V0949608"
+          ],
+          "price_usd": 140,
+          "sku": "V0949608",
+          "source_url": "https://www.footlocker.com/product/nike-tech-fleece-full-zip-windrunner-hoodie-mens/V0949608.html",
+          "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Old Royal/Black",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/HV949417"
+          ],
+          "price_usd": 140,
+          "sku": "HV949417",
+          "source_url": "https://www.footlocker.com/product/nike-tech-fleece-full-zip-windrunner-hoodie-mens/HV949417.html",
+          "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Smoke Grey/Football Blue",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/HV949085"
+          ],
+          "price_usd": 140,
+          "sku": "HV949085",
+          "source_url": "https://www.footlocker.com/product/nike-tech-fleece-full-zip-windrunner-hoodie-mens/HV949085.html",
+          "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Black/Camo Green",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/V0949303"
+          ],
+          "price_usd": 140,
+          "sku": "V0949303",
+          "source_url": "https://www.footlocker.com/product/nike-tech-fleece-full-zip-windrunner-hoodie-mens/V0949303.html",
+          "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie - Men's"
+        }
+      ],
+      "description": "Make the best of your windy adventures with the Nike Tech Fleece Full-Zip Windrunner Hoodie. Made with durable, breathable, and lightweight fabric, this hoodie keeps you comfortable and ready to tackle the gusts of the great outdoors. The dropped shoulders offer a relaxed look and feel, while the elastic hem keeps the chilly winds out. Be prepared for the unexpected with the Nike Tech Fleece Full-Zip Windrunner Hoodie.  Side seam pockets enable convenient storage. Machine wash. 53% cotton/47% polyester. Imported.  ",
+      "model": 435832,
+      "observed_sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "3XL"
+      ],
+      "observed_sold_out_sizes": [],
+      "product_group_id": "435832",
+      "source": "Foot Locker US",
+      "source_url": "https://www.footlocker.com/product/~/V0949011.html",
+      "title": "Nike Tech Fleece Full-Zip Windrunner Hoodie - Men's"
+    },
+    {
+      "brand": "Nike",
+      "category": "clothing",
+      "colorways": [
+        {
+          "availability": "InStock",
+          "color": "Royal/White",
+          "compare_at_price_usd": 35,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/42388069"
+          ],
+          "price_usd": 24.99,
+          "sku": "42388069",
+          "source_url": "https://www.footlocker.com/product/nike-air-futura-t-shirt-mens/42388069.html",
+          "title": "Nike Air Futura T-Shirt - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Black/White",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://assets.footlocker.com/is/image/FLDM/2388006_01"
+          ],
+          "price_usd": 35,
+          "sku": "2388006",
+          "source_url": "https://www.footlocker.com/product/nike-air-futura-t-shirt-mens/2388006.html",
+          "title": "Nike Air Futura T-Shirt - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Black/White",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/42388005"
+          ],
+          "price_usd": 35,
+          "sku": "42388005",
+          "source_url": "https://www.footlocker.com/product/nike-air-futura-t-shirt-mens/42388005.html",
+          "title": "Nike Air Futura T-Shirt - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Red/Black",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/62388151"
+          ],
+          "price_usd": 35,
+          "sku": "62388151",
+          "source_url": "https://www.footlocker.com/product/nike-air-futura-t-shirt-mens/62388151.html",
+          "title": "Nike Air Futura T-Shirt - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "White/Carolina",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/42388167"
+          ],
+          "price_usd": 35,
+          "sku": "42388167",
+          "source_url": "https://www.footlocker.com/product/nike-air-futura-t-shirt-mens/42388167.html",
+          "title": "Nike Air Futura T-Shirt - Men's"
+        }
+      ],
+      "description": "Get a versatile look that adds an ‘Air’ of sophistication to your overall style with the Nike Air Futura T-Shirt. Made with lightweight and breathable fabric, this T-shirt keeps you relaxed and recharged from sun-up to sun-down. Whether it’s a weekend getaway or a binge-watching night at your friend’s house, the Nike Air Futura T-Shirt has your back for everything fun and casual.  100% cotton. Imported. ",
+      "model": 352637,
+      "observed_sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "3XL"
+      ],
+      "observed_sold_out_sizes": [],
+      "product_group_id": "352637",
+      "source": "Foot Locker US",
+      "source_url": "https://www.footlocker.com/product/~/2388006.html",
+      "title": "Nike Air Futura T-Shirt - Men's"
+    },
+    {
+      "brand": "LCKR",
+      "category": "clothing",
+      "colorways": [
+        {
+          "availability": "InStock",
+          "color": "White/White",
+          "compare_at_price_usd": 9.95,
+          "currency": "USD",
+          "images": [
+            "https://assets.footlocker.com/is/image/FLDM/122KT1WH_01",
+            "https://assets.footlocker.com/is/image/FLDM/122KT1WH_02",
+            "https://assets.footlocker.com/is/image/FLDM/122KT1WH_03",
+            "https://assets.footlocker.com/is/image/FLDM/122KT1WH_04",
+            "https://assets.footlocker.com/is/image/FLDM/122KT1WH_05"
+          ],
+          "price_usd": 8,
+          "sku": "122KT1WH",
+          "source_url": "https://www.footlocker.com/product/lckr-basic-t-shirt-mens/122KT1WH.html",
+          "title": "LCKR Basic T-Shirt - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Black/Black",
+          "compare_at_price_usd": 9.95,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/122KT1BK"
+          ],
+          "price_usd": 8,
+          "sku": "122KT1BK",
+          "source_url": "https://www.footlocker.com/product/lckr-basic-t-shirt-mens/122KT1BK.html",
+          "title": "LCKR Basic T-Shirt - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Blue/Blue",
+          "compare_at_price_usd": 9.95,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/122KT1BB"
+          ],
+          "price_usd": 8,
+          "sku": "122KT1BB",
+          "source_url": "https://www.footlocker.com/product/lckr-basic-t-shirt-mens/122KT1BB.html",
+          "title": "LCKR Basic T-Shirt - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Parchment",
+          "compare_at_price_usd": 9.95,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/22KT1PAR"
+          ],
+          "price_usd": 8,
+          "sku": "22KT1PAR",
+          "source_url": "https://www.footlocker.com/product/lckr-basic-t-shirt-mens/22KT1PAR.html",
+          "title": "LCKR Basic T-Shirt - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Heather Grey",
+          "compare_at_price_usd": 9.95,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/L122KTCS"
+          ],
+          "price_usd": 8,
+          "sku": "L122KTCS",
+          "source_url": "https://www.footlocker.com/product/lckr-basic-t-shirt-mens/L122KTCS.html",
+          "title": "LCKR Basic T-Shirt - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Red Alert",
+          "compare_at_price_usd": 9.95,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/L122KT1R"
+          ],
+          "price_usd": 8,
+          "sku": "L122KT1R",
+          "source_url": "https://www.footlocker.com/product/lckr-basic-t-shirt-mens/L122KT1R.html",
+          "title": "LCKR Basic T-Shirt - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Grey",
+          "compare_at_price_usd": 9.95,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/22KT1HG"
+          ],
+          "price_usd": 8,
+          "sku": "22KT1HG",
+          "source_url": "https://www.footlocker.com/product/lckr-basic-t-shirt-mens/22KT1HG.html",
+          "title": "LCKR Basic T-Shirt - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Charcoal Grey",
+          "compare_at_price_usd": 9.95,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/2KT1CHGR"
+          ],
+          "price_usd": 8,
+          "sku": "2KT1CHGR",
+          "source_url": "https://www.footlocker.com/product/lckr-basic-t-shirt-mens/2KT1CHGR.html",
+          "title": "LCKR Basic T-Shirt - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Griege",
+          "compare_at_price_usd": 9.95,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/2KT1GRIE"
+          ],
+          "price_usd": 8,
+          "sku": "2KT1GRIE",
+          "source_url": "https://www.footlocker.com/product/lckr-basic-t-shirt-mens/2KT1GRIE.html",
+          "title": "LCKR Basic T-Shirt - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Red Alert",
+          "compare_at_price_usd": 9.95,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/2KT1RDAL"
+          ],
+          "price_usd": 8,
+          "sku": "2KT1RDAL",
+          "source_url": "https://www.footlocker.com/product/lckr-basic-t-shirt-mens/2KT1RDAL.html",
+          "title": "LCKR Basic T-Shirt - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Primrose",
+          "compare_at_price_usd": 9.95,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/22KT1PRI"
+          ],
+          "price_usd": 8,
+          "sku": "22KT1PRI",
+          "source_url": "https://www.footlocker.com/product/lckr-basic-t-shirt-mens/22KT1PRI.html",
+          "title": "LCKR Basic T-Shirt - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Ancient Water",
+          "compare_at_price_usd": 9.95,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/2KT1ANWA"
+          ],
+          "price_usd": 8,
+          "sku": "2KT1ANWA",
+          "source_url": "https://www.footlocker.com/product/lckr-basic-t-shirt-mens/2KT1ANWA.html",
+          "title": "LCKR Basic T-Shirt - Men's"
+        }
+      ],
+      "description": "Claim basics as your own in the LCKR Mosswood Basic T-Shirt. Crafted to be the foundation of your style, this basic T-shirt embraces a minimalist approach while offering limitless versatility. Available in the comfiest regular fit and finished with ribbed trim at the neck, the LCKR Mosswood Basic T-Shirt keeps you ready for stylish weekdays and laid-back weekends.  Cotton jersey fabric offers a soft and cozy feel. 100% cotton. Imported.   ",
+      "model": 428127,
+      "observed_sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "3XL",
+        "4XL"
+      ],
+      "observed_sold_out_sizes": [],
+      "product_group_id": "428127",
+      "source": "Foot Locker US",
+      "source_url": "https://www.footlocker.com/product/~/122KT1WH.html",
+      "title": "LCKR Basic T-Shirt - Men's"
+    },
+    {
+      "brand": "Nike",
+      "category": "clothing",
+      "colorways": [
+        {
+          "availability": "InStock",
+          "color": "Old Royal/Grey",
+          "compare_at_price_usd": 35,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/IB824501"
+          ],
+          "price_usd": 17.5,
+          "sku": "IB824501",
+          "source_url": "https://www.footlocker.com/product/nike-futura-block-t-shirt-mens/IB824501.html",
+          "title": "Nike Futura Block T-Shirt - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Photon Dust/Black",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://assets.footlocker.com/is/image/FLDM/B8245021_01"
+          ],
+          "price_usd": 35,
+          "sku": "B8245021",
+          "source_url": "https://www.footlocker.com/product/nike-futura-block-t-shirt-mens/B8245021.html",
+          "title": "Nike Futura Block T-Shirt - Men's"
+        }
+      ],
+      "description": "Make a power move in your comfort game with the Nike Futura Block T-Shirt. Made with light, soft, and airy fabric, this T-shirt is all you need to introduce some casual-cool style to your day-to-day fashion mix. Flaunting a stylish screen print at the full front, the Nike Futura Block T-Shirt will complement almost everything you have in your everyday rotation.  100% cotton. Imported.  ",
+      "model": 446602,
+      "observed_sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "observed_sold_out_sizes": [],
+      "product_group_id": "446602",
+      "source": "Foot Locker US",
+      "source_url": "https://www.footlocker.com/product/~/B8245021.html",
+      "title": "Nike Futura Block T-Shirt - Men's"
+    },
+    {
+      "brand": "Nike",
+      "category": "accessories",
+      "colorways": [
+        {
+          "availability": "InStock",
+          "color": "Metallic Silver/Black",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://assets.footlocker.com/is/image/FLDM/M9965010_01",
+            "https://assets.footlocker.com/is/image/FLDM/M9965010_02",
+            "https://assets.footlocker.com/is/image/FLDM/M9965010_03",
+            "https://assets.footlocker.com/is/image/FLDM/M9965010_04",
+            "https://assets.footlocker.com/is/image/FLDM/M9965010_05",
+            "https://assets.footlocker.com/is/image/FLDM/M9965010_06",
+            "https://assets.footlocker.com/is/image/FLDM/M9965010_07",
+            "https://assets.footlocker.com/is/image/FLDM/M9965010_08",
+            "https://assets.footlocker.com/is/image/FLDM/M9965010_09"
+          ],
+          "price_usd": 95,
+          "sku": "M9965010",
+          "source_url": "https://www.footlocker.com/product/nike-varsity-elite-backpack-adult/M9965010.html",
+          "title": "Nike Varsity Elite Backpack - Adult"
+        },
+        {
+          "availability": "InStock",
+          "color": "Metallic Gold/White",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/M9965100"
+          ],
+          "price_usd": 95,
+          "sku": "M9965100",
+          "source_url": "https://www.footlocker.com/product/nike-varsity-elite-backpack-adult/M9965100.html",
+          "title": "Nike Varsity Elite Backpack - Adult"
+        },
+        {
+          "availability": "InStock",
+          "color": "Safety Orange/Black/Wolf Grey",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/M9965819"
+          ],
+          "price_usd": 95,
+          "sku": "M9965819",
+          "source_url": "https://www.footlocker.com/product/nike-varsity-elite-backpack-adult/M9965819.html",
+          "title": "Nike Varsity Elite Backpack - Adult"
+        },
+        {
+          "availability": "InStock",
+          "color": "White/Red/Navy",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/U3779410"
+          ],
+          "price_usd": 95,
+          "sku": "U3779410",
+          "source_url": "https://www.footlocker.com/product/nike-varsity-elite-backpack-adult/U3779410.html",
+          "title": "Nike Varsity Elite Backpack - Adult"
+        },
+        {
+          "availability": "InStock",
+          "color": "Light Magenta/Black/Light Photo Blue",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/M9965503"
+          ],
+          "price_usd": 95,
+          "sku": "M9965503",
+          "source_url": "https://www.footlocker.com/product/nike-varsity-elite-backpack-adult/M9965503.html",
+          "title": "Nike Varsity Elite Backpack - Adult"
+        },
+        {
+          "availability": "InStock",
+          "color": "Black/University Red/Metallic Gold",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/U3779657"
+          ],
+          "price_usd": 95,
+          "sku": "U3779657",
+          "source_url": "https://www.footlocker.com/product/nike-varsity-elite-backpack-adult/U3779657.html",
+          "title": "Nike Varsity Elite Backpack - Adult"
+        }
+      ],
+      "description": "Built to support you on your fitness journey, the Nike Varsity Elite Backpack can hold anything from your water bottle to recovery tools and sneakers. The top zippered plush lined pocket of this backpack keeps your tech and essentials secure, while the ventilated bottom zippered pocket ensures your wet clothes or shoes stay separated from the rest of your belongings. The Air Max shoulder straps let you carry this backpack around in absolute comfort. Stash your training gear in style with the Nike Varsity Elite Backpack.  Expandable gusseted side pocket provides easy access to drinks. Spot clean. Dimensions: 12\" W x 19\" H x 9\" D. 100% polyester.  ",
+      "model": 446065,
+      "observed_sizes": [],
+      "observed_sold_out_sizes": [],
+      "product_group_id": "446065",
+      "source": "Foot Locker US",
+      "source_url": "https://www.footlocker.com/product/~/M9965010.html",
+      "title": "Nike Varsity Elite Backpack - Adult"
+    },
+    {
+      "brand": "Nike",
+      "category": "accessories",
+      "colorways": [
+        {
+          "availability": "InStock",
+          "color": "Black/White",
+          "compare_at_price_usd": 28,
+          "currency": "USD",
+          "images": [
+            "https://assets.footlocker.com/is/image/FLDM/6897100_01",
+            "https://assets.footlocker.com/is/image/FLDM/6897100_a1",
+            "https://assets.footlocker.com/is/image/FLDM/6897100_a2"
+          ],
+          "price_usd": 19.99,
+          "sku": "6897100",
+          "source_url": "https://www.footlocker.com/product/nike-6-pack-everyday-plus-cushioned-socks-mens/6897100.html",
+          "title": "Nike 6 Pack Everyday Plus Cushioned Socks - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Black/White",
+          "compare_at_price_usd": 28,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/6897010"
+          ],
+          "price_usd": 19.99,
+          "sku": "6897010",
+          "source_url": "https://www.footlocker.com/product/nike-6-pack-everyday-plus-cushioned-socks-mens/6897010.html",
+          "title": "Nike 6 Pack Everyday Plus Cushioned Socks - Men's"
+        }
+      ],
+      "description": "Power through your workout with the Nike Everyday Plus + Cushion Crew Training Socks (6 Pair). &bull; Dri-FIT technology helps you stay dry and comfortable. &bull; Breathable mesh at the top of the foot for enhanced ventilation. &bull; Crew silhouette provides comfortable coverage around the ankle and calf. &bull; Arch band contours around the foot for a locked in fit. &bull; 67% cotton/30% polyester/2% spandex/1% nylon. Imported.",
+      "model": 304211,
+      "observed_sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "observed_sold_out_sizes": [
+        "S",
+        "L",
+        "XL"
+      ],
+      "product_group_id": "304211",
+      "source": "Foot Locker US",
+      "source_url": "https://www.footlocker.com/product/~/6897100.html",
+      "title": "Nike 6 Pack Everyday Plus Cushioned Socks - Men's"
+    },
+    {
+      "brand": "Crocs",
+      "category": "accessories",
+      "colorways": [],
+      "description": "Let your little hero swing into action with the Crocs Marvel Spider-Man x Crocs Backpack. This bold bag combines iconic web-slinger graphics with a molded front pocket featuring classic Crocs-inspired perforations. Padded shoulder straps and a dedicated laptop sleeve keep every adventure organized and comfortable.Spider-Man face graphic with web design on the upper frontPerforated molded front zip pocket for Jibbitz charms customizationSpacious main compartment includes a padded laptop sleevePadded airflow mesh back panel and adjustable shoulder strapsDual side slip pockets provide quick access to small essentialsMaterial & Care80% polyester/20% ethylene-vinyl acetateSize & FitDimensions: 18\" H x 13\" W x 5\" DAdjustable padded shoulder straps: 20\" - 35\"Top carry handle: 2.5\" drop",
+      "model": 486736,
+      "observed_sizes": [],
+      "observed_sold_out_sizes": [],
+      "product_group_id": "",
+      "source": "Foot Locker US",
+      "source_url": "https://www.footlocker.com/product/~/VKA1E634.html",
+      "title": "Crocs Marvel Spider-Man x Crocs Backpack - Adult"
+    },
+    {
+      "brand": "Jordan",
+      "category": "accessories",
+      "colorways": [
+        {
+          "availability": "InStock",
+          "color": "Black/White",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://assets.footlocker.com/is/image/FLDM/A0924WR2_01",
+            "https://assets.footlocker.com/is/image/FLDM/A0924WR2_03",
+            "https://assets.footlocker.com/is/image/FLDM/A0924WR2_04",
+            "https://assets.footlocker.com/is/image/FLDM/A0924WR2_05"
+          ],
+          "price_usd": 80,
+          "sku": "A0924WR2",
+          "source_url": "https://www.footlocker.com/product/jordan-air-patrol-backpack-adult/A0924WR2.html",
+          "title": "Jordan Air Patrol Backpack - Adult"
+        },
+        {
+          "availability": "InStock",
+          "color": "Black/Black",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/A0924BLK"
+          ],
+          "price_usd": 80,
+          "sku": "A0924BLK",
+          "source_url": "https://www.footlocker.com/product/jordan-air-patrol-backpack-adult/A0924BLK.html",
+          "title": "Jordan Air Patrol Backpack - Adult"
+        }
+      ],
+      "description": "Experience pro-level utility and on-the-go comfort with the Jordan Air Patrol Backpack. Featuring a main compartment with a two-way zip closure and an inner laptop sleeve, this backpack keeps everything organised and easily accessible. The small front compartment with an organisational pocket offers secure storage for your keys, earphones, and other belongings, while the side bottle pockets help you stay hydrated on the go. Whether you’re going for practice on the court or a short trip, the Jordan Air Patrol Backpack makes for an ideal option for carrying your essentials in style. Jordan Air Patrol Backpack features:  Durable woven exterior ensures long-lasting use. Front zip pocket enables easy access to essentials. Passport pocket provides room for passport, cards, and IDs. Adjustable, padded shoulder straps with a buckle connector allow comfortable carrying. Dimensions 19.5\" H x 13.25\" W x 7\" D. 100% polyester. ",
+      "model": 435035,
+      "observed_sizes": [],
+      "observed_sold_out_sizes": [],
+      "product_group_id": "435035",
+      "source": "Foot Locker US",
+      "source_url": "https://www.footlocker.com/product/~/A0924WR2.html",
+      "title": "Jordan Air Patrol Backpack - Adult"
+    }
+  ]
+}

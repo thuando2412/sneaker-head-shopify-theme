@@ -1,0 +1,33 @@
+{
+  "fetched": 87,
+  "failures": [
+    {
+      "sku": "JR3419",
+      "error": "Selected colorway data missing"
+    },
+    {
+      "sku": "JS4494",
+      "error": "Selected colorway data missing"
+    },
+    {
+      "sku": "KH9576",
+      "error": "Selected colorway data missing"
+    },
+    {
+      "sku": "30949619",
+      "error": "Selected colorway data missing"
+    },
+    {
+      "sku": "HV949417",
+      "error": "Selected colorway data missing"
+    },
+    {
+      "sku": "M9965100",
+      "error": "Selected colorway data missing"
+    },
+    {
+      "sku": "M9965503",
+      "error": "Selected colorway data missing"
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "generatedAt": "2026-09-08T10:39:24.927Z",
+  "source": "Foot Locker US",
+  "policy": {
+    "inStockOnly": true,
+    "minimumGalleryImages": 3,
+    "maximumGalleryImages": 5
+  },
+  "totals": {
+    "products": 53,
+    "variants": 371,
+    "images": 243,
+    "families": 9,
+    "excluded": 34
+  },
+  "families": [
+    {
+      "handle": "adidas-adizero-evo-sl-men",
+      "name": "adidas Adizero Evo SL Men's",
+      "products": 7
+    },
+    {
+      "handle": "hoka-clifton-10-men",
+      "name": "HOKA Clifton 10 Men's",
+      "products": 11
+    },
+    {
+      "handle": "hoka-rincon-4-men",
+      "name": "HOKA Rincon 4 Men's",
+      "products": 4
+    },
+    {
+      "handle": "jordan-air-patrol-backpack-adult",
+      "name": "Jordan Air Patrol Backpack Adult",
+      "products": 2
+    },
+    {
+      "handle": "lckr-basic-t-shirt-men",
+      "name": "LCKR Basic T-Shirt Men's",
+      "products": 3
+    },
+    {
+      "handle": "nike-6-pack-everyday-plus-cushioned-socks-men",
+      "name": "Nike 6 Pack Everyday Plus Cushioned Socks Men's",
+      "products": 2
+    },
+    {
+      "handle": "nike-tech-fleece-full-zip-windrunner-hoodie-men",
+      "name": "Nike Tech Fleece Full-Zip Windrunner Hoodie Men's",
+      "products": 15
+    },
+    {
+      "handle": "nike-varsity-elite-backpack-adult",
+      "name": "Nike Varsity Elite Backpack Adult",
+      "products": 4
+    },
+    {
+      "handle": "on-cloudmonster-void-men",
+      "name": "On Cloudmonster Void Men's",
+      "products": 5
+    }
+  ],
+  "excluded": [
+    {
+      "sku": "122KT1BB",
+      "family": "LCKR Basic T-Shirt - Men's",
+      "color": "Blue/Blue",
+      "reason": "gallery has 1 image(s)"
+    },
+    {
+      "sku": "2030SCCV",
+      "family": "HOKA Clifton 10 - Men's",
+      "color": "Stucco/Virtual Blue",
+      "reason": "gallery has 1 image(s)"
+    },
+    {
+      "sku": "22KT1HG",
+      "family": "LCKR Basic T-Shirt - Men's",
+      "color": "Grey",
+      "reason": "gallery has 1 image(s)"
+    },
+    {
+      "sku": "22KT1PRI",
+      "family": "LCKR Basic T-Shirt - Men's",
+      "color": "Primrose",
+      "reason": "gallery has 1 image(s)"
+    },
+    {
+      "sku": "2388006",
+      "family": "Nike Air Futura T-Shirt - Men's",
+      "color": "Black/White",
+      "reason": "gallery has 1 image(s)"
+    },
+    {
+      "sku": "2KT1ANWA",
+      "family": "LCKR Basic T-Shirt - Men's",
+      "color": "Ancient Water",
+      "reason": "gallery has 1 image(s)"
+    },
+    {
+      "sku": "2KT1CHGR",
+      "family": "LCKR Basic T-Shirt - Men's",
+      "color": "Charcoal Grey",
+      "reason": "gallery has 1 image(s)"
+    },
+    {
+      "sku": "2KT1GRIE",
+      "family": "LCKR Basic T-Shirt - Men's",
+      "color": "Griege",
+      "reason": "gallery has 1 image(s)"
+    },
+    {
+      "sku": "2KT1RDAL",
+      "family": "LCKR Basic T-Shirt - Men's",
+      "color": "Red Alert",
+      "reason": "gallery has 1 image(s)"
+    },
+    {
+      "sku": "42388005",
+      "family": "Nike Air Futura T-Shirt - Men's",
+      "color": "Black/White",
+      "reason": "gallery has 1 image(s)"
+    },
+    {
+      "sku": "42388069",
+      "family": "Nike Air Futura T-Shirt - Men's",
+      "color": "Royal/White",
+      "reason": "gallery has 1 image(s)"
+    },
+    {
+      "sku": "42388167",
+      "family": "Nike Air Futura T-Shirt - Men's",
+      "color": "White/Carolina",
+      "reason": "gallery has 1 image(s)"
+    },
+    {
+      "sku": "62388151",
+      "family": "Nike Air Futura T-Shirt - Men's",
+      "color": "Red/Black",
+      "reason": "gallery has 1 image(s)"
+    },
+    {
+      "sku": "B8245021",
+      "family": "Nike Futura Block T-Shirt - Men's",
+      "color": "Photon Dust/Black",
+      "reason": "no in-stock size"
+    },
+    {
+      "sku": "H0949477",
+      "family": "Nike Tech Fleece Full-Zip Windrunner Hoodie - Men's",
+      "color": "Blue/Orange",
+      "reason": "gallery has 2 image(s)"
+    },
+    {
+      "sku": "HV949085",
+      "family": "Nike Tech Fleece Full-Zip Windrunner Hoodie - Men's",
+      "color": "Smoke Grey/Football Blue",
+      "reason": "no in-stock size"
+    },
+    {
+      "sku": "IB824501",
+      "family": "Nike Futura Block T-Shirt - Men's",
+      "color": "Old Royal/Grey",
+      "reason": "gallery has 0 image(s)"
+    },
+    {
+      "sku": "JQ4440",
+      "family": "adidas Adizero Evo SL - Men's",
+      "color": "Ftwr White/Lucid Red/Court Green",
+      "reason": "no in-stock size"
+    },
+    {
+      "sku": "KH9578",
+      "family": "adidas Adizero Evo SL - Men's",
+      "color": "Light Brown/Clay/Legend Ivy",
+      "reason": "no in-stock size"
+    },
+    {
+      "sku": "KI1451",
+      "family": "adidas Adizero Evo SL - Men's",
+      "color": "Team Royal Blue/Yellow/Iron Met",
+      "reason": "no in-stock size"
+    },
+    {
+      "sku": "KI4763",
+      "family": "adidas Adizero Evo SL - Men's",
+      "color": "Silver/Black/White",
+      "reason": "no in-stock size"
+    },
+    {
+      "sku": "KI4764",
+      "family": "adidas Adizero Evo SL - Men's",
+      "color": "Silver/Black/White",
+      "reason": "no in-stock size"
+    },
+    {
+      "sku": "KI6923",
+      "family": "adidas Adizero Evo SL - Men's",
+      "color": "Ftwr White/Ftwr White/Warm Sandstone",
+      "reason": "no in-stock size"
+    },
+    {
+      "sku": "KI9874",
+      "family": "adidas Adizero Evo SL - Men's",
+      "color": "Light Granite/Silver Metallic/Grey Strata",
+      "reason": "no in-stock size"
+    },
+    {
+      "sku": "KJ0430",
+      "family": "adidas Adizero Evo SL - Men's",
+      "color": "Core White/Utility Black/Gray Two",
+      "reason": "no in-stock size"
+    },
+    {
+      "sku": "KJ0431",
+      "family": "adidas Adizero Evo SL - Men's",
+      "color": "Collegiate Orange/Collegiate Navy/Tech Ink",
+      "reason": "no in-stock size"
+    },
+    {
+      "sku": "KK3673",
+      "family": "adidas Adizero Evo SL - Men's",
+      "color": "Yellow/Team Royal Blue/Iron Met",
+      "reason": "no in-stock size"
+    },
+    {
+      "sku": "KK3719",
+      "family": "adidas Adizero Evo SL - Men's",
+      "color": "Mystery Ink/Ftwr White/Pure Ruby",
+      "reason": "no in-stock size"
+    },
+    {
+      "sku": "L122KT1R",
+      "family": "LCKR Basic T-Shirt - Men's",
+      "color": "Red Alert",
+      "reason": "gallery has 1 image(s)"
+    },
+    {
+      "sku": "L122KTCS",
+      "family": "LCKR Basic T-Shirt - Men's",
+      "color": "Heather Grey",
+      "reason": "gallery has 0 image(s)"
+    },
+    {
+      "sku": "V0949077",
+      "family": "Nike Tech Fleece Full-Zip Windrunner Hoodie - Men's",
+      "color": "Lt Smoke Grey/Cool Grey/Photon Dust",
+      "reason": "no in-stock size"
+    },
+    {
+      "sku": "V0949303",
+      "family": "Nike Tech Fleece Full-Zip Windrunner Hoodie - Men's",
+      "color": "Black/Camo Green",
+      "reason": "no in-stock size"
+    },
+    {
+      "sku": "V0949328",
+      "family": "Nike Tech Fleece Full-Zip Windrunner Hoodie - Men's",
+      "color": "Light Pumice/Black/Silver Sage",
+      "reason": "no in-stock size"
+    },
+    {
+      "sku": "V0949453",
+      "family": "Nike Tech Fleece Full-Zip Windrunner Hoodie - Men's",
+      "color": "Blue Crystal/Black/Lt Smoke Grey",
+      "reason": "no in-stock size"
+    }
+  ]
+}

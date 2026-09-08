@@ -12,6 +12,9 @@ Last updated: 2026-09-08
 - User performed visual QA for the latest positioning changes and requested direct targeted pushes without further browser QA.
 - A new homepage design is being prepared separately; do not infer that it has already been implemented here.
 - This is a source checkpoint, not a fresh full pull of the live theme. Existing repository templates and other unrelated baseline files were retained.
+- Published the first clean Foot Locker catalog batch on 2026-09-08: 53 active products, 371 variants, 243 Shopify-CDN images and 9 linked Colorway Family metaobjects. All 53 products passed Admin API verification with zero apply failures.
+- The batch intentionally includes only in-stock colorways with at least three valid gallery images. It does not yet cover the full women, kids, trail and sport assortment, so the old catalog remains untouched until replacement coverage is complete.
+- Shopify CLI/API operations must target the permanent shop domain `thuandotest.myshopify.com`; `sneakerheadvn.myshopify.com` is the current primary public domain and caused an OAuth callback mismatch when used as the CLI store identifier.
 
 ## Project
 
@@ -86,6 +89,9 @@ Always search the repository for the live selector/component before editing; fil
 - Colorway families are linked through the existing custom-data workflow; do not collapse a family into one Shopify product.
 - Future product batches use the approved two-pass import approach: product import first, colorway-link update second.
 - Product imagery should be visually consistent and use real, high-quality product assets.
+- Current Foot Locker source snapshot, crawler and batch scripts are in `data/footlocker`, `scripts/crawl-footlocker-catalog.mjs`, `scripts/build-footlocker-catalog-batch.mjs`, and `scripts/apply-footlocker-catalog-batch.mjs`.
+- Generated two-pass artifacts and apply verification are in `outputs/footlocker-catalog-batch/`: `products-import.csv`, `colorway-link-update.csv`, `source-audit.json`, and `api-apply-report.json`.
+- The apply script is repeatable and non-destructive to old products. Do not archive the old catalog until later source batches provide approved coverage for every live navigation category and homepage collection.
 
 ## Current open design topic
 
