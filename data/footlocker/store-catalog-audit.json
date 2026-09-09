@@ -1,0 +1,2379 @@
+{
+  "generatedAt": "2026-09-09T04:32:28.896Z",
+  "shop": {
+    "name": "Sneaker Head",
+    "myshopifyDomain": "thuandotest.myshopify.com"
+  },
+  "totals": {
+    "products": 278,
+    "active": 129,
+    "published": 129,
+    "clean": 129,
+    "cleanActivePublished": 129,
+    "legacy": 149
+  },
+  "cleanQuality": {
+    "zeroInventory": [],
+    "fewerThanThreeMedia": [],
+    "zeroVariants": []
+  },
+  "collections": [
+    {
+      "id": "gid://shopify/Collection/314889207901",
+      "handle": "accessories",
+      "title": "Accessories",
+      "kind": "automatic",
+      "adminMembers": 12,
+      "products": 8,
+      "clean": 8,
+      "legacy": 0,
+      "cleanHandles": [
+        "jordan-air-patrol-backpack-adult-black-black-a0924blk",
+        "jordan-air-patrol-backpack-adult-black-white-a0924wr2",
+        "nike-6-pack-everyday-plus-cushioned-socks-men-black-white-6897010",
+        "nike-6-pack-everyday-plus-cushioned-socks-men-black-white-6897100",
+        "nike-varsity-elite-backpack-adult-black-university-red-metallic-gold-u3779657",
+        "nike-varsity-elite-backpack-adult-metallic-silver-black-m9965010",
+        "nike-varsity-elite-backpack-adult-safety-orange-black-wolf-grey-m9965819",
+        "nike-varsity-elite-backpack-adult-white-red-navy-u3779410"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314092191837",
+      "handle": "adidas",
+      "title": "Adidas",
+      "kind": "automatic",
+      "adminMembers": 60,
+      "products": 19,
+      "clean": 19,
+      "legacy": 0,
+      "cleanHandles": [
+        "adidas-adizero-evo-sl-men-black-black-kh9858",
+        "adidas-adizero-evo-sl-men-black-white-jh6206",
+        "adidas-adizero-evo-sl-men-black-white-jp7149",
+        "adidas-adizero-evo-sl-men-black-yellow-red-kj6160",
+        "adidas-adizero-evo-sl-men-grey-footwear-white-42112284",
+        "adidas-adizero-evo-sl-men-pure-ruby-bright-royal-footwear-white-42112883",
+        "adidas-adizero-evo-sl-men-silver-red-ki3381",
+        "adidas-adizero-evo-sl-women-aurora-coffee-iron-metallic-blush-pink-kk1952",
+        "adidas-adizero-evo-sl-women-silver-met-lucid-red-iron-met-ki3383",
+        "adidas-adizero-evo-sl-women-white-blue-fusion-js4454",
+        "adidas-adizero-evo-sl-women-white-white-core-black-jh6208",
+        "adidas-adizero-evo-sl-women-wonder-white-crystal-linen-ki6951",
+        "adidas-3s-sprinter-shorts-women-aurora-coffee-sandy-pink-kc9006",
+        "adidas-3s-sprinter-shorts-women-black-white-kd7977",
+        "adidas-hyperglam-training-leggings-women-black-kc7673",
+        "adidas-originals-samba-women-footwear-white-coffee-metallic-gum-kk2504",
+        "adidas-originals-samba-women-gum-wonder-quartz-off-white-la6882",
+        "adidas-originals-samba-women-off-white-tropic-bloom-gum-la6395",
+        "adidas-samba-jane-satin-girls-grade-school-silver-metallic-footwear-white-gum-kj659987"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314092355677",
+      "handle": "asics-copy",
+      "title": "Mizuno",
+      "kind": "automatic",
+      "adminMembers": 8,
+      "products": 2,
+      "clean": 2,
+      "legacy": 0,
+      "cleanHandles": [
+        "mizuno-wave-rider-29-men-goblin-green-sailor-blue-4538sb4c",
+        "mizuno-wave-rider-29-men-white-curds-and-whey-45388t00"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314889240669",
+      "handle": "bags-packs",
+      "title": "Bags & Packs",
+      "kind": "automatic",
+      "adminMembers": 8,
+      "products": 6,
+      "clean": 6,
+      "legacy": 0,
+      "cleanHandles": [
+        "jordan-air-patrol-backpack-adult-black-black-a0924blk",
+        "jordan-air-patrol-backpack-adult-black-white-a0924wr2",
+        "nike-varsity-elite-backpack-adult-black-university-red-metallic-gold-u3779657",
+        "nike-varsity-elite-backpack-adult-metallic-silver-black-m9965010",
+        "nike-varsity-elite-backpack-adult-safety-orange-black-wolf-grey-m9965819",
+        "nike-varsity-elite-backpack-adult-white-red-navy-u3779410"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314889076829",
+      "handle": "basketball",
+      "title": "Basketball",
+      "kind": "automatic",
+      "adminMembers": 1,
+      "products": 0,
+      "clean": 0,
+      "legacy": 0,
+      "cleanHandles": []
+    },
+    {
+      "id": "gid://shopify/Collection/314198130781",
+      "handle": "brand-adidas",
+      "title": "adidas",
+      "kind": "automatic",
+      "adminMembers": 60,
+      "products": 19,
+      "clean": 19,
+      "legacy": 0,
+      "cleanHandles": [
+        "adidas-adizero-evo-sl-men-black-black-kh9858",
+        "adidas-adizero-evo-sl-men-black-white-jh6206",
+        "adidas-adizero-evo-sl-men-black-white-jp7149",
+        "adidas-adizero-evo-sl-men-black-yellow-red-kj6160",
+        "adidas-adizero-evo-sl-men-grey-footwear-white-42112284",
+        "adidas-adizero-evo-sl-men-pure-ruby-bright-royal-footwear-white-42112883",
+        "adidas-adizero-evo-sl-men-silver-red-ki3381",
+        "adidas-adizero-evo-sl-women-aurora-coffee-iron-metallic-blush-pink-kk1952",
+        "adidas-adizero-evo-sl-women-silver-met-lucid-red-iron-met-ki3383",
+        "adidas-adizero-evo-sl-women-white-blue-fusion-js4454",
+        "adidas-adizero-evo-sl-women-white-white-core-black-jh6208",
+        "adidas-adizero-evo-sl-women-wonder-white-crystal-linen-ki6951",
+        "adidas-3s-sprinter-shorts-women-aurora-coffee-sandy-pink-kc9006",
+        "adidas-3s-sprinter-shorts-women-black-white-kd7977",
+        "adidas-hyperglam-training-leggings-women-black-kc7673",
+        "adidas-originals-samba-women-footwear-white-coffee-metallic-gum-kk2504",
+        "adidas-originals-samba-women-gum-wonder-quartz-off-white-la6882",
+        "adidas-originals-samba-women-off-white-tropic-bloom-gum-la6395",
+        "adidas-samba-jane-satin-girls-grade-school-silver-metallic-footwear-white-gum-kj659987"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314198229085",
+      "handle": "brand-asics",
+      "title": "ASICS",
+      "kind": "automatic",
+      "adminMembers": 11,
+      "products": 1,
+      "clean": 1,
+      "legacy": 0,
+      "cleanHandles": [
+        "asics-gel-1130-women-white-brown-a256113"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314198163549",
+      "handle": "brand-hoka",
+      "title": "HOKA",
+      "kind": "automatic",
+      "adminMembers": 41,
+      "products": 18,
+      "clean": 18,
+      "legacy": 0,
+      "cleanHandles": [
+        "hoka-clifton-10-men-black-black-2030bblc",
+        "hoka-clifton-10-men-white-stellar-230stllr",
+        "hoka-clifton-10-men-white-black-2030bwht",
+        "hoka-clifton-10-men-asteroid-galactic-grey-2030gyst",
+        "hoka-clifton-10-men-asteroid-silver-2030adsl",
+        "hoka-clifton-10-men-black-silver-2030bksv",
+        "hoka-clifton-10-men-black-varsity-navy-62030vck",
+        "hoka-clifton-10-men-carbon-black-satellite-grey-2030ccks",
+        "hoka-clifton-10-men-galactic-grey-asteroid-2032gyst",
+        "hoka-clifton-10-men-oatmeal-oat-milk-2030oltm",
+        "hoka-clifton-10-men-white-black-2030wblc",
+        "hoka-rincon-4-men-black-black-130bblc",
+        "hoka-rincon-4-men-black-white-5130bwht",
+        "hoka-rincon-4-men-white-black-5132bwht",
+        "hoka-rincon-4-men-white-marble-5130wblc",
+        "hoka-clifton-10-women-vanilla-birch-62031vch",
+        "hoka-speedgoat-2-men-black-brown-2710bhlt",
+        "hoka-speedgoat-2-men-yellow-black-nz422710"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314198261853",
+      "handle": "brand-mizuno",
+      "title": "Mizuno",
+      "kind": "automatic",
+      "adminMembers": 8,
+      "products": 2,
+      "clean": 2,
+      "legacy": 0,
+      "cleanHandles": [
+        "mizuno-wave-rider-29-men-goblin-green-sailor-blue-4538sb4c",
+        "mizuno-wave-rider-29-men-white-curds-and-whey-45388t00"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314198098013",
+      "handle": "brand-nike",
+      "title": "Nike",
+      "kind": "automatic",
+      "adminMembers": 101,
+      "products": 57,
+      "clean": 57,
+      "legacy": 0,
+      "cleanHandles": [
+        "nike-6-pack-everyday-plus-cushioned-socks-men-black-white-6897010",
+        "nike-6-pack-everyday-plus-cushioned-socks-men-black-white-6897100",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-black-birch-v0949051",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-black-black-v0949010",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-black-dark-grey-heather-v0949063",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-black-green-v0949382",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-black-grey-v0949011",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-black-obsidian-v0949451",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-blue-black-h0949476",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-blue-black-v0949407",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-lt-liquid-lime-anthracite-lt-smoke-grey-v0949361",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-obsidian-white-v0949100",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-olive-black-v0949368",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-pencil-point-medium-ash-college-grey-v0949018",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-red-black-v0949608",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-red-black-v0949687",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-work-blue-cool-grey-black-v0949486",
+        "nike-varsity-elite-backpack-adult-black-university-red-metallic-gold-u3779657",
+        "nike-varsity-elite-backpack-adult-metallic-silver-black-m9965010",
+        "nike-varsity-elite-backpack-adult-safety-orange-black-wolf-grey-m9965819",
+        "nike-varsity-elite-backpack-adult-white-red-navy-u3779410",
+        "nike-air-force-1-low-easyon-boys-preschool-black-black-n0237001",
+        "nike-air-force-1-low-easyon-boys-preschool-sail-light-silver-n0237007",
+        "nike-air-max-270-boys-grade-school-black-black-black-q5776001",
+        "nike-air-max-270-boys-grade-school-black-white-evergreen-aura-43345042",
+        "nike-air-max-270-boys-grade-school-black-white-vivid-purple-43345044",
+        "nike-air-max-270-boys-grade-school-racer-blue-black-white-43345415",
+        "nike-air-max-270-boys-grade-school-white-white-metallic-silver-43345103",
+        "nike-air-zoom-pegasus-41-women-black-black-d2723001",
+        "nike-air-zoom-pegasus-41-women-black-white-d2723002",
+        "nike-air-zoom-pegasus-41-women-playful-pink-off-noir-d2723605",
+        "nike-air-zoom-pegasus-41-women-purple-dynasty-brt-violet-violet-mist-d2723503",
+        "nike-free-metcon-6-men-astronomy-blue-black-hyper-crimson-f7127401",
+        "nike-free-metcon-6-men-cannon-black-lt-silver-j7127007",
+        "nike-free-metcon-6-men-white-black-green-strike-j7127107",
+        "nike-free-metcon-6-men-white-gum-lt-brown-hemp-j7127105",
+        "nike-air-force-1-girls-grade-school-black-black-62244801",
+        "nike-air-force-1-girls-grade-school-pink-white-grey-ir65059",
+        "nike-air-force-1-girls-grade-school-white-pink-ct3839",
+        "nike-air-max-90-men-black-black-42454010",
+        "nike-air-max-90-men-black-black-black-n8490003",
+        "nike-air-max-90-men-blue-crystal-light-smoke-grey-white-m0029122",
+        "nike-air-max-90-men-iron-grey-white-dark-smoke-grey-n8490002",
+        "nike-air-max-90-men-phantom-phantom-med-olive-f5446003",
+        "nike-air-max-90-men-white-black-university-red-v2867100",
+        "nike-air-max-90-men-white-grey-red-m002902",
+        "nike-air-max-90-men-white-white-wolf-grey-n8490100",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-black-sail-ih011010",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-light-orewood-brown-white-ih011104",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-playful-pink-sail-h1011675",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-sail-lt-medium-blue-h1011460",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-sail-pink-foam-h1011663",
+        "nike-zoom-vomero-5-women-black-black-court-purple-j2028004",
+        "nike-zoom-vomero-5-women-black-chrome-v4311002",
+        "nike-zoom-vomero-5-women-grey-gold-7723001",
+        "nike-zoom-vomero-5-women-metallic-silver-photon-dust-pink-foam-f1877001",
+        "nike-zoom-vomero-5-women-photon-dust-charcoal-d0884025"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314198294621",
+      "handle": "brand-on-running",
+      "title": "On Running",
+      "kind": "automatic",
+      "adminMembers": 20,
+      "products": 14,
+      "clean": 14,
+      "legacy": 0,
+      "cleanHandles": [
+        "on-cloudmonster-void-men-alloy-black-30075831",
+        "on-cloudmonster-void-men-black-black-49085831",
+        "on-cloudmonster-void-men-fog-pearl-10911344",
+        "on-cloudmonster-void-men-iceberg-tin-10914415",
+        "on-cloudmonster-void-men-ivory-blue-11095280",
+        "on-cloudmonster-void-women-black-black-10491043",
+        "on-cloudmonster-void-women-iceberg-tin-10811344",
+        "on-cloudmonster-void-women-ivory-pink-10814561",
+        "on-cloudmonster-void-women-ivory-seashell-10814680",
+        "on-cloudmonster-void-women-linen-seedling-10814754",
+        "on-cloudmonster-void-women-purple-purple-10944928",
+        "on-cloudmonster-void-women-white-ivory-10943334",
+        "on-cloudmonster-void-women-white-white-10491200",
+        "on-cloudmonster-void-women-white-white-10811200"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314198327389",
+      "handle": "brand-puma",
+      "title": "PUMA",
+      "kind": "automatic",
+      "adminMembers": 11,
+      "products": 2,
+      "clean": 2,
+      "legacy": 0,
+      "cleanHandles": [
+        "puma-speedcat-etoile-women-pink-40767303",
+        "puma-speedcat-etoile-women-white-butter-40767301"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314198196317",
+      "handle": "brand-under-armour",
+      "title": "Under Armour",
+      "kind": "automatic",
+      "adminMembers": 12,
+      "products": 2,
+      "clean": 2,
+      "legacy": 0,
+      "cleanHandles": [
+        "under-armour-slipspeed-trainer-men-white-stellar-pink-metallic-silver-27049131",
+        "under-armour-slipspeed-trainer-men-white-white-white-27049125"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314889175133",
+      "handle": "clothing",
+      "title": "Clothing",
+      "kind": "automatic",
+      "adminMembers": 42,
+      "products": 26,
+      "clean": 26,
+      "legacy": 0,
+      "cleanHandles": [
+        "lckr-basic-t-shirt-men-black-black-122kt1bk",
+        "lckr-basic-t-shirt-men-parchment-22kt1par",
+        "lckr-basic-t-shirt-men-white-white-122kt1wh",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-black-birch-v0949051",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-black-black-v0949010",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-black-dark-grey-heather-v0949063",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-black-green-v0949382",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-black-grey-v0949011",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-black-obsidian-v0949451",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-blue-black-h0949476",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-blue-black-v0949407",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-lt-liquid-lime-anthracite-lt-smoke-grey-v0949361",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-obsidian-white-v0949100",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-olive-black-v0949368",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-pencil-point-medium-ash-college-grey-v0949018",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-red-black-v0949608",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-red-black-v0949687",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-work-blue-cool-grey-black-v0949486",
+        "adidas-3s-sprinter-shorts-women-aurora-coffee-sandy-pink-kc9006",
+        "adidas-3s-sprinter-shorts-women-black-white-kd7977",
+        "adidas-hyperglam-training-leggings-women-black-kc7673",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-black-sail-ih011010",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-light-orewood-brown-white-ih011104",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-playful-pink-sail-h1011675",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-sail-lt-medium-blue-h1011460",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-sail-pink-foam-h1011663"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/313861767261",
+      "handle": "everyday-sneakers",
+      "title": "Everyday Sneakers",
+      "kind": "automatic",
+      "adminMembers": 82,
+      "products": 37,
+      "clean": 37,
+      "legacy": 0,
+      "cleanHandles": [
+        "nike-air-force-1-low-easyon-boys-preschool-black-black-n0237001",
+        "nike-air-force-1-low-easyon-boys-preschool-sail-light-silver-n0237007",
+        "nike-air-max-270-boys-grade-school-black-black-black-q5776001",
+        "nike-air-max-270-boys-grade-school-black-white-evergreen-aura-43345042",
+        "nike-air-max-270-boys-grade-school-black-white-vivid-purple-43345044",
+        "nike-air-max-270-boys-grade-school-racer-blue-black-white-43345415",
+        "nike-air-max-270-boys-grade-school-white-white-metallic-silver-43345103",
+        "adidas-originals-samba-women-footwear-white-coffee-metallic-gum-kk2504",
+        "adidas-originals-samba-women-gum-wonder-quartz-off-white-la6882",
+        "adidas-originals-samba-women-off-white-tropic-bloom-gum-la6395",
+        "adidas-samba-jane-satin-girls-grade-school-silver-metallic-footwear-white-gum-kj659987",
+        "new-balance-530-women-angora-turtledove-52508353",
+        "new-balance-530-women-daybreak-silver-metallic-u53052n",
+        "new-balance-530-women-grey-white-mr530ck",
+        "new-balance-530-women-pink-silver-52530022",
+        "new-balance-530-women-sea-salt-brown-cw527988",
+        "new-balance-530-women-white-natural-indigo-mr530sg",
+        "new-balance-530-women-white-silver-mr530ema",
+        "nike-air-force-1-girls-grade-school-black-black-62244801",
+        "nike-air-force-1-girls-grade-school-pink-white-grey-ir65059",
+        "nike-air-force-1-girls-grade-school-white-pink-ct3839",
+        "nike-air-max-90-men-black-black-42454010",
+        "nike-air-max-90-men-black-black-black-n8490003",
+        "nike-air-max-90-men-blue-crystal-light-smoke-grey-white-m0029122",
+        "nike-air-max-90-men-iron-grey-white-dark-smoke-grey-n8490002",
+        "nike-air-max-90-men-phantom-phantom-med-olive-f5446003",
+        "nike-air-max-90-men-white-black-university-red-v2867100",
+        "nike-air-max-90-men-white-grey-red-m002902",
+        "nike-air-max-90-men-white-white-wolf-grey-n8490100",
+        "nike-zoom-vomero-5-women-black-black-court-purple-j2028004",
+        "nike-zoom-vomero-5-women-black-chrome-v4311002",
+        "nike-zoom-vomero-5-women-grey-gold-7723001",
+        "nike-zoom-vomero-5-women-metallic-silver-photon-dust-pink-foam-f1877001",
+        "nike-zoom-vomero-5-women-photon-dust-charcoal-d0884025",
+        "asics-gel-1130-women-white-brown-a256113",
+        "puma-speedcat-etoile-women-pink-40767303",
+        "puma-speedcat-etoile-women-white-butter-40767301"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314889142365",
+      "handle": "football",
+      "title": "Football",
+      "kind": "automatic",
+      "adminMembers": 0,
+      "products": 0,
+      "clean": 0,
+      "legacy": 0,
+      "cleanHandles": []
+    },
+    {
+      "id": "gid://shopify/Collection/299310350429",
+      "handle": "frontpage",
+      "title": "Home page",
+      "kind": "manual",
+      "adminMembers": 12,
+      "products": 12,
+      "clean": 12,
+      "legacy": 0,
+      "cleanHandles": [
+        "on-cloudmonster-void-women-white-white-10811200",
+        "salomon-xt-whisper-women-lilac-ash-fiesta-dawn-pink-l491859",
+        "under-armour-slipspeed-trainer-men-white-white-white-27049125",
+        "adidas-3s-sprinter-shorts-women-black-white-kd7977",
+        "adidas-hyperglam-training-leggings-women-black-kc7673",
+        "adidas-samba-jane-satin-girls-grade-school-silver-metallic-footwear-white-gum-kj659987",
+        "new-balance-530-women-white-silver-mr530ema",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-sail-pink-foam-h1011663",
+        "nike-zoom-vomero-5-women-photon-dust-charcoal-d0884025",
+        "asics-gel-1130-women-white-brown-a256113",
+        "mizuno-wave-rider-29-men-white-curds-and-whey-45388t00",
+        "puma-speedcat-etoile-women-white-butter-40767301"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314092290141",
+      "handle": "hoka-copy",
+      "title": "Asics",
+      "kind": "automatic",
+      "adminMembers": 11,
+      "products": 1,
+      "clean": 1,
+      "legacy": 0,
+      "cleanHandles": [
+        "asics-gel-1130-women-white-brown-a256113"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314198556765",
+      "handle": "homepage-new-arrivals",
+      "title": "Homepage New Arrivals",
+      "kind": "manual",
+      "adminMembers": 20,
+      "products": 20,
+      "clean": 20,
+      "legacy": 0,
+      "cleanHandles": [
+        "nike-air-max-90-men-iron-grey-white-dark-smoke-grey-n8490002",
+        "nike-air-max-90-men-phantom-phantom-med-olive-f5446003",
+        "nike-air-max-90-men-white-black-university-red-v2867100",
+        "nike-air-max-90-men-white-grey-red-m002902",
+        "nike-air-max-90-men-white-white-wolf-grey-n8490100",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-black-sail-ih011010",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-light-orewood-brown-white-ih011104",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-playful-pink-sail-h1011675",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-sail-lt-medium-blue-h1011460",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-sail-pink-foam-h1011663",
+        "nike-zoom-vomero-5-women-black-black-court-purple-j2028004",
+        "nike-zoom-vomero-5-women-black-chrome-v4311002",
+        "nike-zoom-vomero-5-women-grey-gold-7723001",
+        "nike-zoom-vomero-5-women-metallic-silver-photon-dust-pink-foam-f1877001",
+        "nike-zoom-vomero-5-women-photon-dust-charcoal-d0884025",
+        "asics-gel-1130-women-white-brown-a256113",
+        "mizuno-wave-rider-29-men-goblin-green-sailor-blue-4538sb4c",
+        "mizuno-wave-rider-29-men-white-curds-and-whey-45388t00",
+        "puma-speedcat-etoile-women-pink-40767303",
+        "puma-speedcat-etoile-women-white-butter-40767301"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314198589533",
+      "handle": "homepage-top-picks",
+      "title": "Homepage Top Picks",
+      "kind": "manual",
+      "adminMembers": 20,
+      "products": 20,
+      "clean": 20,
+      "legacy": 0,
+      "cleanHandles": [
+        "nike-6-pack-everyday-plus-cushioned-socks-men-black-white-6897100",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-work-blue-cool-grey-black-v0949486",
+        "nike-varsity-elite-backpack-adult-white-red-navy-u3779410",
+        "adidas-adizero-evo-sl-women-wonder-white-crystal-linen-ki6951",
+        "hoka-clifton-10-women-vanilla-birch-62031vch",
+        "hoka-speedgoat-2-men-yellow-black-nz422710",
+        "nike-air-zoom-pegasus-41-women-purple-dynasty-brt-violet-violet-mist-d2723503",
+        "nike-free-metcon-6-men-white-gum-lt-brown-hemp-j7127105",
+        "on-cloudmonster-void-women-white-white-10811200",
+        "salomon-xt-whisper-women-lilac-ash-fiesta-dawn-pink-l491859",
+        "under-armour-slipspeed-trainer-men-white-white-white-27049125",
+        "adidas-3s-sprinter-shorts-women-black-white-kd7977",
+        "adidas-hyperglam-training-leggings-women-black-kc7673",
+        "adidas-samba-jane-satin-girls-grade-school-silver-metallic-footwear-white-gum-kj659987",
+        "new-balance-530-women-white-silver-mr530ema",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-sail-pink-foam-h1011663",
+        "nike-zoom-vomero-5-women-photon-dust-charcoal-d0884025",
+        "asics-gel-1130-women-white-brown-a256113",
+        "mizuno-wave-rider-29-men-white-curds-and-whey-45388t00",
+        "puma-speedcat-etoile-women-white-butter-40767301"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314091831389",
+      "handle": "kids-shoes",
+      "title": "Kids' Shoes",
+      "kind": "automatic",
+      "adminMembers": 29,
+      "products": 11,
+      "clean": 11,
+      "legacy": 0,
+      "cleanHandles": [
+        "nike-air-force-1-low-easyon-boys-preschool-black-black-n0237001",
+        "nike-air-force-1-low-easyon-boys-preschool-sail-light-silver-n0237007",
+        "nike-air-max-270-boys-grade-school-black-black-black-q5776001",
+        "nike-air-max-270-boys-grade-school-black-white-evergreen-aura-43345042",
+        "nike-air-max-270-boys-grade-school-black-white-vivid-purple-43345044",
+        "nike-air-max-270-boys-grade-school-racer-blue-black-white-43345415",
+        "nike-air-max-270-boys-grade-school-white-white-metallic-silver-43345103",
+        "adidas-samba-jane-satin-girls-grade-school-silver-metallic-footwear-white-gum-kj659987",
+        "nike-air-force-1-girls-grade-school-black-black-62244801",
+        "nike-air-force-1-girls-grade-school-pink-white-grey-ir65059",
+        "nike-air-force-1-girls-grade-school-white-pink-ct3839"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314091667549",
+      "handle": "mens-shoes",
+      "title": "Men's Shoes",
+      "kind": "automatic",
+      "adminMembers": 133,
+      "products": 65,
+      "clean": 65,
+      "legacy": 0,
+      "cleanHandles": [
+        "hoka-clifton-10-men-black-black-2030bblc",
+        "hoka-clifton-10-men-white-stellar-230stllr",
+        "hoka-clifton-10-men-white-black-2030bwht",
+        "adidas-adizero-evo-sl-men-black-black-kh9858",
+        "adidas-adizero-evo-sl-men-black-white-jh6206",
+        "adidas-adizero-evo-sl-men-black-white-jp7149",
+        "adidas-adizero-evo-sl-men-black-yellow-red-kj6160",
+        "adidas-adizero-evo-sl-men-grey-footwear-white-42112284",
+        "adidas-adizero-evo-sl-men-pure-ruby-bright-royal-footwear-white-42112883",
+        "adidas-adizero-evo-sl-men-silver-red-ki3381",
+        "hoka-clifton-10-men-asteroid-galactic-grey-2030gyst",
+        "hoka-clifton-10-men-asteroid-silver-2030adsl",
+        "hoka-clifton-10-men-black-silver-2030bksv",
+        "hoka-clifton-10-men-black-varsity-navy-62030vck",
+        "hoka-clifton-10-men-carbon-black-satellite-grey-2030ccks",
+        "hoka-clifton-10-men-galactic-grey-asteroid-2032gyst",
+        "hoka-clifton-10-men-oatmeal-oat-milk-2030oltm",
+        "hoka-clifton-10-men-white-black-2030wblc",
+        "hoka-rincon-4-men-black-black-130bblc",
+        "hoka-rincon-4-men-black-white-5130bwht",
+        "hoka-rincon-4-men-white-black-5132bwht",
+        "hoka-rincon-4-men-white-marble-5130wblc",
+        "lckr-basic-t-shirt-men-black-black-122kt1bk",
+        "lckr-basic-t-shirt-men-parchment-22kt1par",
+        "lckr-basic-t-shirt-men-white-white-122kt1wh",
+        "nike-6-pack-everyday-plus-cushioned-socks-men-black-white-6897010",
+        "nike-6-pack-everyday-plus-cushioned-socks-men-black-white-6897100",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-black-birch-v0949051",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-black-black-v0949010",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-black-dark-grey-heather-v0949063",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-black-green-v0949382",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-black-grey-v0949011",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-black-obsidian-v0949451",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-blue-black-h0949476",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-blue-black-v0949407",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-lt-liquid-lime-anthracite-lt-smoke-grey-v0949361",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-obsidian-white-v0949100",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-olive-black-v0949368",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-pencil-point-medium-ash-college-grey-v0949018",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-red-black-v0949608",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-red-black-v0949687",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-work-blue-cool-grey-black-v0949486",
+        "on-cloudmonster-void-men-alloy-black-30075831",
+        "on-cloudmonster-void-men-black-black-49085831",
+        "on-cloudmonster-void-men-fog-pearl-10911344",
+        "on-cloudmonster-void-men-iceberg-tin-10914415",
+        "on-cloudmonster-void-men-ivory-blue-11095280",
+        "hoka-speedgoat-2-men-black-brown-2710bhlt",
+        "hoka-speedgoat-2-men-yellow-black-nz422710",
+        "nike-free-metcon-6-men-astronomy-blue-black-hyper-crimson-f7127401",
+        "nike-free-metcon-6-men-cannon-black-lt-silver-j7127007",
+        "nike-free-metcon-6-men-white-black-green-strike-j7127107",
+        "nike-free-metcon-6-men-white-gum-lt-brown-hemp-j7127105",
+        "under-armour-slipspeed-trainer-men-white-stellar-pink-metallic-silver-27049131",
+        "under-armour-slipspeed-trainer-men-white-white-white-27049125",
+        "nike-air-max-90-men-black-black-42454010",
+        "nike-air-max-90-men-black-black-black-n8490003",
+        "nike-air-max-90-men-blue-crystal-light-smoke-grey-white-m0029122",
+        "nike-air-max-90-men-iron-grey-white-dark-smoke-grey-n8490002",
+        "nike-air-max-90-men-phantom-phantom-med-olive-f5446003",
+        "nike-air-max-90-men-white-black-university-red-v2867100",
+        "nike-air-max-90-men-white-grey-red-m002902",
+        "nike-air-max-90-men-white-white-wolf-grey-n8490100",
+        "mizuno-wave-rider-29-men-goblin-green-sailor-blue-4538sb4c",
+        "mizuno-wave-rider-29-men-white-curds-and-whey-45388t00"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314091864157",
+      "handle": "new-arrivals",
+      "title": "New Arrivals",
+      "kind": "automatic",
+      "adminMembers": 275,
+      "products": 129,
+      "clean": 129,
+      "legacy": 0,
+      "cleanHandles": [
+        "hoka-clifton-10-men-black-black-2030bblc",
+        "hoka-clifton-10-men-white-stellar-230stllr",
+        "hoka-clifton-10-men-white-black-2030bwht",
+        "adidas-adizero-evo-sl-men-black-black-kh9858",
+        "adidas-adizero-evo-sl-men-black-white-jh6206",
+        "adidas-adizero-evo-sl-men-black-white-jp7149",
+        "adidas-adizero-evo-sl-men-black-yellow-red-kj6160",
+        "adidas-adizero-evo-sl-men-grey-footwear-white-42112284",
+        "adidas-adizero-evo-sl-men-pure-ruby-bright-royal-footwear-white-42112883",
+        "adidas-adizero-evo-sl-men-silver-red-ki3381",
+        "hoka-clifton-10-men-asteroid-galactic-grey-2030gyst",
+        "hoka-clifton-10-men-asteroid-silver-2030adsl",
+        "hoka-clifton-10-men-black-silver-2030bksv",
+        "hoka-clifton-10-men-black-varsity-navy-62030vck",
+        "hoka-clifton-10-men-carbon-black-satellite-grey-2030ccks",
+        "hoka-clifton-10-men-galactic-grey-asteroid-2032gyst",
+        "hoka-clifton-10-men-oatmeal-oat-milk-2030oltm",
+        "hoka-clifton-10-men-white-black-2030wblc",
+        "hoka-rincon-4-men-black-black-130bblc",
+        "hoka-rincon-4-men-black-white-5130bwht",
+        "hoka-rincon-4-men-white-black-5132bwht",
+        "hoka-rincon-4-men-white-marble-5130wblc",
+        "jordan-air-patrol-backpack-adult-black-black-a0924blk",
+        "jordan-air-patrol-backpack-adult-black-white-a0924wr2",
+        "lckr-basic-t-shirt-men-black-black-122kt1bk",
+        "lckr-basic-t-shirt-men-parchment-22kt1par",
+        "lckr-basic-t-shirt-men-white-white-122kt1wh",
+        "nike-6-pack-everyday-plus-cushioned-socks-men-black-white-6897010",
+        "nike-6-pack-everyday-plus-cushioned-socks-men-black-white-6897100",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-black-birch-v0949051",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-black-black-v0949010",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-black-dark-grey-heather-v0949063",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-black-green-v0949382",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-black-grey-v0949011",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-black-obsidian-v0949451",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-blue-black-h0949476",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-blue-black-v0949407",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-lt-liquid-lime-anthracite-lt-smoke-grey-v0949361",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-obsidian-white-v0949100",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-olive-black-v0949368",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-pencil-point-medium-ash-college-grey-v0949018",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-red-black-v0949608",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-red-black-v0949687",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-work-blue-cool-grey-black-v0949486",
+        "nike-varsity-elite-backpack-adult-black-university-red-metallic-gold-u3779657",
+        "nike-varsity-elite-backpack-adult-metallic-silver-black-m9965010",
+        "nike-varsity-elite-backpack-adult-safety-orange-black-wolf-grey-m9965819",
+        "nike-varsity-elite-backpack-adult-white-red-navy-u3779410",
+        "on-cloudmonster-void-men-alloy-black-30075831",
+        "on-cloudmonster-void-men-black-black-49085831",
+        "on-cloudmonster-void-men-fog-pearl-10911344",
+        "on-cloudmonster-void-men-iceberg-tin-10914415",
+        "on-cloudmonster-void-men-ivory-blue-11095280",
+        "adidas-adizero-evo-sl-women-aurora-coffee-iron-metallic-blush-pink-kk1952",
+        "adidas-adizero-evo-sl-women-silver-met-lucid-red-iron-met-ki3383",
+        "adidas-adizero-evo-sl-women-white-blue-fusion-js4454",
+        "adidas-adizero-evo-sl-women-white-white-core-black-jh6208",
+        "adidas-adizero-evo-sl-women-wonder-white-crystal-linen-ki6951",
+        "hoka-clifton-10-women-vanilla-birch-62031vch",
+        "hoka-speedgoat-2-men-black-brown-2710bhlt",
+        "hoka-speedgoat-2-men-yellow-black-nz422710",
+        "nike-air-force-1-low-easyon-boys-preschool-black-black-n0237001",
+        "nike-air-force-1-low-easyon-boys-preschool-sail-light-silver-n0237007",
+        "nike-air-max-270-boys-grade-school-black-black-black-q5776001",
+        "nike-air-max-270-boys-grade-school-black-white-evergreen-aura-43345042",
+        "nike-air-max-270-boys-grade-school-black-white-vivid-purple-43345044",
+        "nike-air-max-270-boys-grade-school-racer-blue-black-white-43345415",
+        "nike-air-max-270-boys-grade-school-white-white-metallic-silver-43345103",
+        "nike-air-zoom-pegasus-41-women-black-black-d2723001",
+        "nike-air-zoom-pegasus-41-women-black-white-d2723002",
+        "nike-air-zoom-pegasus-41-women-playful-pink-off-noir-d2723605",
+        "nike-air-zoom-pegasus-41-women-purple-dynasty-brt-violet-violet-mist-d2723503",
+        "nike-free-metcon-6-men-astronomy-blue-black-hyper-crimson-f7127401",
+        "nike-free-metcon-6-men-cannon-black-lt-silver-j7127007",
+        "nike-free-metcon-6-men-white-black-green-strike-j7127107",
+        "nike-free-metcon-6-men-white-gum-lt-brown-hemp-j7127105",
+        "on-cloudmonster-void-women-black-black-10491043",
+        "on-cloudmonster-void-women-iceberg-tin-10811344",
+        "on-cloudmonster-void-women-ivory-pink-10814561",
+        "on-cloudmonster-void-women-ivory-seashell-10814680",
+        "on-cloudmonster-void-women-linen-seedling-10814754",
+        "on-cloudmonster-void-women-purple-purple-10944928",
+        "on-cloudmonster-void-women-white-ivory-10943334",
+        "on-cloudmonster-void-women-white-white-10491200",
+        "on-cloudmonster-void-women-white-white-10811200",
+        "salomon-xt-whisper-women-castlerock-footwear-silver-49219300",
+        "salomon-xt-whisper-women-lilac-ash-fiesta-dawn-pink-l491859",
+        "under-armour-slipspeed-trainer-men-white-stellar-pink-metallic-silver-27049131",
+        "under-armour-slipspeed-trainer-men-white-white-white-27049125",
+        "adidas-3s-sprinter-shorts-women-aurora-coffee-sandy-pink-kc9006",
+        "adidas-3s-sprinter-shorts-women-black-white-kd7977",
+        "adidas-hyperglam-training-leggings-women-black-kc7673",
+        "adidas-originals-samba-women-footwear-white-coffee-metallic-gum-kk2504",
+        "adidas-originals-samba-women-gum-wonder-quartz-off-white-la6882",
+        "adidas-originals-samba-women-off-white-tropic-bloom-gum-la6395",
+        "adidas-samba-jane-satin-girls-grade-school-silver-metallic-footwear-white-gum-kj659987",
+        "new-balance-530-women-angora-turtledove-52508353",
+        "new-balance-530-women-daybreak-silver-metallic-u53052n",
+        "new-balance-530-women-grey-white-mr530ck",
+        "new-balance-530-women-pink-silver-52530022",
+        "new-balance-530-women-sea-salt-brown-cw527988",
+        "new-balance-530-women-white-natural-indigo-mr530sg",
+        "new-balance-530-women-white-silver-mr530ema",
+        "nike-air-force-1-girls-grade-school-black-black-62244801",
+        "nike-air-force-1-girls-grade-school-pink-white-grey-ir65059",
+        "nike-air-force-1-girls-grade-school-white-pink-ct3839",
+        "nike-air-max-90-men-black-black-42454010",
+        "nike-air-max-90-men-black-black-black-n8490003",
+        "nike-air-max-90-men-blue-crystal-light-smoke-grey-white-m0029122",
+        "nike-air-max-90-men-iron-grey-white-dark-smoke-grey-n8490002",
+        "nike-air-max-90-men-phantom-phantom-med-olive-f5446003",
+        "nike-air-max-90-men-white-black-university-red-v2867100",
+        "nike-air-max-90-men-white-grey-red-m002902",
+        "nike-air-max-90-men-white-white-wolf-grey-n8490100",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-black-sail-ih011010",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-light-orewood-brown-white-ih011104",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-playful-pink-sail-h1011675",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-sail-lt-medium-blue-h1011460",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-sail-pink-foam-h1011663",
+        "nike-zoom-vomero-5-women-black-black-court-purple-j2028004",
+        "nike-zoom-vomero-5-women-black-chrome-v4311002",
+        "nike-zoom-vomero-5-women-grey-gold-7723001",
+        "nike-zoom-vomero-5-women-metallic-silver-photon-dust-pink-foam-f1877001",
+        "nike-zoom-vomero-5-women-photon-dust-charcoal-d0884025",
+        "asics-gel-1130-women-white-brown-a256113",
+        "mizuno-wave-rider-29-men-goblin-green-sailor-blue-4538sb4c",
+        "mizuno-wave-rider-29-men-white-curds-and-whey-45388t00",
+        "puma-speedcat-etoile-women-pink-40767303",
+        "puma-speedcat-etoile-women-white-butter-40767301"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314092257373",
+      "handle": "nike-copy",
+      "title": "Hoka",
+      "kind": "automatic",
+      "adminMembers": 41,
+      "products": 18,
+      "clean": 18,
+      "legacy": 0,
+      "cleanHandles": [
+        "hoka-clifton-10-men-black-black-2030bblc",
+        "hoka-clifton-10-men-white-stellar-230stllr",
+        "hoka-clifton-10-men-white-black-2030bwht",
+        "hoka-clifton-10-men-asteroid-galactic-grey-2030gyst",
+        "hoka-clifton-10-men-asteroid-silver-2030adsl",
+        "hoka-clifton-10-men-black-silver-2030bksv",
+        "hoka-clifton-10-men-black-varsity-navy-62030vck",
+        "hoka-clifton-10-men-carbon-black-satellite-grey-2030ccks",
+        "hoka-clifton-10-men-galactic-grey-asteroid-2032gyst",
+        "hoka-clifton-10-men-oatmeal-oat-milk-2030oltm",
+        "hoka-clifton-10-men-white-black-2030wblc",
+        "hoka-rincon-4-men-black-black-130bblc",
+        "hoka-rincon-4-men-black-white-5130bwht",
+        "hoka-rincon-4-men-white-black-5132bwht",
+        "hoka-rincon-4-men-white-marble-5130wblc",
+        "hoka-clifton-10-women-vanilla-birch-62031vch",
+        "hoka-speedgoat-2-men-black-brown-2710bhlt",
+        "hoka-speedgoat-2-men-yellow-black-nz422710"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314092486749",
+      "handle": "on-running",
+      "title": "On Running",
+      "kind": "automatic",
+      "adminMembers": 20,
+      "products": 14,
+      "clean": 14,
+      "legacy": 0,
+      "cleanHandles": [
+        "on-cloudmonster-void-men-alloy-black-30075831",
+        "on-cloudmonster-void-men-black-black-49085831",
+        "on-cloudmonster-void-men-fog-pearl-10911344",
+        "on-cloudmonster-void-men-iceberg-tin-10914415",
+        "on-cloudmonster-void-men-ivory-blue-11095280",
+        "on-cloudmonster-void-women-black-black-10491043",
+        "on-cloudmonster-void-women-iceberg-tin-10811344",
+        "on-cloudmonster-void-women-ivory-pink-10814561",
+        "on-cloudmonster-void-women-ivory-seashell-10814680",
+        "on-cloudmonster-void-women-linen-seedling-10814754",
+        "on-cloudmonster-void-women-purple-purple-10944928",
+        "on-cloudmonster-void-women-white-ivory-10943334",
+        "on-cloudmonster-void-women-white-white-10491200",
+        "on-cloudmonster-void-women-white-white-10811200"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314092421213",
+      "handle": "on-running-copy",
+      "title": "Under Armour",
+      "kind": "automatic",
+      "adminMembers": 12,
+      "products": 2,
+      "clean": 2,
+      "legacy": 0,
+      "cleanHandles": [
+        "under-armour-slipspeed-trainer-men-white-stellar-pink-metallic-silver-27049131",
+        "under-armour-slipspeed-trainer-men-white-white-white-27049125"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314091896925",
+      "handle": "on-sale",
+      "title": "On Sale",
+      "kind": "automatic",
+      "adminMembers": 85,
+      "products": 34,
+      "clean": 34,
+      "legacy": 0,
+      "cleanHandles": [
+        "hoka-clifton-10-men-black-black-2030bblc",
+        "hoka-clifton-10-men-white-stellar-230stllr",
+        "hoka-clifton-10-men-white-black-2030bwht",
+        "adidas-adizero-evo-sl-men-black-yellow-red-kj6160",
+        "hoka-clifton-10-men-asteroid-galactic-grey-2030gyst",
+        "hoka-clifton-10-men-asteroid-silver-2030adsl",
+        "hoka-clifton-10-men-black-varsity-navy-62030vck",
+        "hoka-clifton-10-men-carbon-black-satellite-grey-2030ccks",
+        "hoka-clifton-10-men-oatmeal-oat-milk-2030oltm",
+        "hoka-clifton-10-men-white-black-2030wblc",
+        "hoka-rincon-4-men-black-black-130bblc",
+        "hoka-rincon-4-men-white-marble-5130wblc",
+        "lckr-basic-t-shirt-men-black-black-122kt1bk",
+        "lckr-basic-t-shirt-men-parchment-22kt1par",
+        "lckr-basic-t-shirt-men-white-white-122kt1wh",
+        "nike-6-pack-everyday-plus-cushioned-socks-men-black-white-6897010",
+        "nike-6-pack-everyday-plus-cushioned-socks-men-black-white-6897100",
+        "on-cloudmonster-void-men-fog-pearl-10911344",
+        "on-cloudmonster-void-men-iceberg-tin-10914415",
+        "hoka-clifton-10-women-vanilla-birch-62031vch",
+        "nike-air-force-1-low-easyon-boys-preschool-sail-light-silver-n0237007",
+        "nike-air-max-270-boys-grade-school-black-white-vivid-purple-43345044",
+        "nike-air-zoom-pegasus-41-women-black-black-d2723001",
+        "nike-air-zoom-pegasus-41-women-black-white-d2723002",
+        "nike-air-zoom-pegasus-41-women-playful-pink-off-noir-d2723605",
+        "on-cloudmonster-void-women-iceberg-tin-10811344",
+        "on-cloudmonster-void-women-ivory-pink-10814561",
+        "on-cloudmonster-void-women-purple-purple-10944928",
+        "on-cloudmonster-void-women-white-ivory-10943334",
+        "adidas-3s-sprinter-shorts-women-aurora-coffee-sandy-pink-kc9006",
+        "adidas-3s-sprinter-shorts-women-black-white-kd7977",
+        "new-balance-530-women-daybreak-silver-metallic-u53052n",
+        "new-balance-530-women-pink-silver-52530022",
+        "nike-air-max-90-men-blue-crystal-light-smoke-grey-white-m0029122"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314889273437",
+      "handle": "run-socks",
+      "title": "Run Socks",
+      "kind": "automatic",
+      "adminMembers": 4,
+      "products": 2,
+      "clean": 2,
+      "legacy": 0,
+      "cleanHandles": [
+        "nike-6-pack-everyday-plus-cushioned-socks-men-black-white-6897010",
+        "nike-6-pack-everyday-plus-cushioned-socks-men-black-white-6897100"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/313861734493",
+      "handle": "running-training",
+      "title": "Running & Training",
+      "kind": "automatic",
+      "adminMembers": 122,
+      "products": 58,
+      "clean": 58,
+      "legacy": 0,
+      "cleanHandles": [
+        "hoka-clifton-10-men-black-black-2030bblc",
+        "hoka-clifton-10-men-white-stellar-230stllr",
+        "hoka-clifton-10-men-white-black-2030bwht",
+        "adidas-adizero-evo-sl-men-black-black-kh9858",
+        "adidas-adizero-evo-sl-men-black-white-jh6206",
+        "adidas-adizero-evo-sl-men-black-white-jp7149",
+        "adidas-adizero-evo-sl-men-black-yellow-red-kj6160",
+        "adidas-adizero-evo-sl-men-grey-footwear-white-42112284",
+        "adidas-adizero-evo-sl-men-pure-ruby-bright-royal-footwear-white-42112883",
+        "adidas-adizero-evo-sl-men-silver-red-ki3381",
+        "hoka-clifton-10-men-asteroid-galactic-grey-2030gyst",
+        "hoka-clifton-10-men-asteroid-silver-2030adsl",
+        "hoka-clifton-10-men-black-silver-2030bksv",
+        "hoka-clifton-10-men-black-varsity-navy-62030vck",
+        "hoka-clifton-10-men-carbon-black-satellite-grey-2030ccks",
+        "hoka-clifton-10-men-galactic-grey-asteroid-2032gyst",
+        "hoka-clifton-10-men-oatmeal-oat-milk-2030oltm",
+        "hoka-clifton-10-men-white-black-2030wblc",
+        "hoka-rincon-4-men-black-black-130bblc",
+        "hoka-rincon-4-men-black-white-5130bwht",
+        "hoka-rincon-4-men-white-black-5132bwht",
+        "hoka-rincon-4-men-white-marble-5130wblc",
+        "on-cloudmonster-void-men-alloy-black-30075831",
+        "on-cloudmonster-void-men-black-black-49085831",
+        "on-cloudmonster-void-men-fog-pearl-10911344",
+        "on-cloudmonster-void-men-iceberg-tin-10914415",
+        "on-cloudmonster-void-men-ivory-blue-11095280",
+        "adidas-adizero-evo-sl-women-aurora-coffee-iron-metallic-blush-pink-kk1952",
+        "adidas-adizero-evo-sl-women-silver-met-lucid-red-iron-met-ki3383",
+        "adidas-adizero-evo-sl-women-white-blue-fusion-js4454",
+        "adidas-adizero-evo-sl-women-white-white-core-black-jh6208",
+        "adidas-adizero-evo-sl-women-wonder-white-crystal-linen-ki6951",
+        "hoka-clifton-10-women-vanilla-birch-62031vch",
+        "hoka-speedgoat-2-men-black-brown-2710bhlt",
+        "hoka-speedgoat-2-men-yellow-black-nz422710",
+        "nike-air-zoom-pegasus-41-women-black-black-d2723001",
+        "nike-air-zoom-pegasus-41-women-black-white-d2723002",
+        "nike-air-zoom-pegasus-41-women-playful-pink-off-noir-d2723605",
+        "nike-air-zoom-pegasus-41-women-purple-dynasty-brt-violet-violet-mist-d2723503",
+        "nike-free-metcon-6-men-astronomy-blue-black-hyper-crimson-f7127401",
+        "nike-free-metcon-6-men-cannon-black-lt-silver-j7127007",
+        "nike-free-metcon-6-men-white-black-green-strike-j7127107",
+        "nike-free-metcon-6-men-white-gum-lt-brown-hemp-j7127105",
+        "on-cloudmonster-void-women-black-black-10491043",
+        "on-cloudmonster-void-women-iceberg-tin-10811344",
+        "on-cloudmonster-void-women-ivory-pink-10814561",
+        "on-cloudmonster-void-women-ivory-seashell-10814680",
+        "on-cloudmonster-void-women-linen-seedling-10814754",
+        "on-cloudmonster-void-women-purple-purple-10944928",
+        "on-cloudmonster-void-women-white-ivory-10943334",
+        "on-cloudmonster-void-women-white-white-10491200",
+        "on-cloudmonster-void-women-white-white-10811200",
+        "salomon-xt-whisper-women-castlerock-footwear-silver-49219300",
+        "salomon-xt-whisper-women-lilac-ash-fiesta-dawn-pink-l491859",
+        "under-armour-slipspeed-trainer-men-white-stellar-pink-metallic-silver-27049131",
+        "under-armour-slipspeed-trainer-men-white-white-white-27049125",
+        "mizuno-wave-rider-29-men-goblin-green-sailor-blue-4538sb4c",
+        "mizuno-wave-rider-29-men-white-curds-and-whey-45388t00"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314198065245",
+      "handle": "sale",
+      "title": "Sale",
+      "kind": "automatic",
+      "adminMembers": 85,
+      "products": 34,
+      "clean": 34,
+      "legacy": 0,
+      "cleanHandles": [
+        "hoka-clifton-10-men-black-black-2030bblc",
+        "hoka-clifton-10-men-white-stellar-230stllr",
+        "hoka-clifton-10-men-white-black-2030bwht",
+        "adidas-adizero-evo-sl-men-black-yellow-red-kj6160",
+        "hoka-clifton-10-men-asteroid-galactic-grey-2030gyst",
+        "hoka-clifton-10-men-asteroid-silver-2030adsl",
+        "hoka-clifton-10-men-black-varsity-navy-62030vck",
+        "hoka-clifton-10-men-carbon-black-satellite-grey-2030ccks",
+        "hoka-clifton-10-men-oatmeal-oat-milk-2030oltm",
+        "hoka-clifton-10-men-white-black-2030wblc",
+        "hoka-rincon-4-men-black-black-130bblc",
+        "hoka-rincon-4-men-white-marble-5130wblc",
+        "lckr-basic-t-shirt-men-black-black-122kt1bk",
+        "lckr-basic-t-shirt-men-parchment-22kt1par",
+        "lckr-basic-t-shirt-men-white-white-122kt1wh",
+        "nike-6-pack-everyday-plus-cushioned-socks-men-black-white-6897010",
+        "nike-6-pack-everyday-plus-cushioned-socks-men-black-white-6897100",
+        "on-cloudmonster-void-men-fog-pearl-10911344",
+        "on-cloudmonster-void-men-iceberg-tin-10914415",
+        "hoka-clifton-10-women-vanilla-birch-62031vch",
+        "nike-air-force-1-low-easyon-boys-preschool-sail-light-silver-n0237007",
+        "nike-air-max-270-boys-grade-school-black-white-vivid-purple-43345044",
+        "nike-air-zoom-pegasus-41-women-black-black-d2723001",
+        "nike-air-zoom-pegasus-41-women-black-white-d2723002",
+        "nike-air-zoom-pegasus-41-women-playful-pink-off-noir-d2723605",
+        "on-cloudmonster-void-women-iceberg-tin-10811344",
+        "on-cloudmonster-void-women-ivory-pink-10814561",
+        "on-cloudmonster-void-women-purple-purple-10944928",
+        "on-cloudmonster-void-women-white-ivory-10943334",
+        "adidas-3s-sprinter-shorts-women-aurora-coffee-sandy-pink-kc9006",
+        "adidas-3s-sprinter-shorts-women-black-white-kd7977",
+        "new-balance-530-women-daybreak-silver-metallic-u53052n",
+        "new-balance-530-women-pink-silver-52530022",
+        "nike-air-max-90-men-blue-crystal-light-smoke-grey-white-m0029122"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314889306205",
+      "handle": "shoe-care",
+      "title": "Shoe Care",
+      "kind": "automatic",
+      "adminMembers": 0,
+      "products": 0,
+      "clean": 0,
+      "legacy": 0,
+      "cleanHandles": []
+    },
+    {
+      "id": "gid://shopify/Collection/314050936925",
+      "handle": "sneaker-care",
+      "title": "Sneaker Care",
+      "kind": "manual",
+      "adminMembers": 0,
+      "products": 0,
+      "clean": 0,
+      "legacy": 0,
+      "cleanHandles": []
+    },
+    {
+      "id": "gid://shopify/Collection/314889109597",
+      "handle": "tennis",
+      "title": "Tennis",
+      "kind": "automatic",
+      "adminMembers": 10,
+      "products": 1,
+      "clean": 1,
+      "legacy": 0,
+      "cleanHandles": [
+        "nike-zoom-vomero-5-women-black-black-court-purple-j2028004"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314051362909",
+      "handle": "top-picks",
+      "title": "Top Picks",
+      "kind": "manual",
+      "adminMembers": 20,
+      "products": 20,
+      "clean": 20,
+      "legacy": 0,
+      "cleanHandles": [
+        "nike-6-pack-everyday-plus-cushioned-socks-men-black-white-6897100",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-work-blue-cool-grey-black-v0949486",
+        "nike-varsity-elite-backpack-adult-white-red-navy-u3779410",
+        "adidas-adizero-evo-sl-women-wonder-white-crystal-linen-ki6951",
+        "hoka-clifton-10-women-vanilla-birch-62031vch",
+        "hoka-speedgoat-2-men-yellow-black-nz422710",
+        "nike-air-zoom-pegasus-41-women-purple-dynasty-brt-violet-violet-mist-d2723503",
+        "nike-free-metcon-6-men-white-gum-lt-brown-hemp-j7127105",
+        "on-cloudmonster-void-women-white-white-10811200",
+        "salomon-xt-whisper-women-lilac-ash-fiesta-dawn-pink-l491859",
+        "under-armour-slipspeed-trainer-men-white-white-white-27049125",
+        "adidas-3s-sprinter-shorts-women-black-white-kd7977",
+        "adidas-hyperglam-training-leggings-women-black-kc7673",
+        "adidas-samba-jane-satin-girls-grade-school-silver-metallic-footwear-white-gum-kj659987",
+        "new-balance-530-women-white-silver-mr530ema",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-sail-pink-foam-h1011663",
+        "nike-zoom-vomero-5-women-photon-dust-charcoal-d0884025",
+        "asics-gel-1130-women-white-brown-a256113",
+        "mizuno-wave-rider-29-men-white-curds-and-whey-45388t00",
+        "puma-speedcat-etoile-women-white-butter-40767301"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314091733085",
+      "handle": "trail-outdoor",
+      "title": "Trail & Outdoor",
+      "kind": "automatic",
+      "adminMembers": 22,
+      "products": 4,
+      "clean": 4,
+      "legacy": 0,
+      "cleanHandles": [
+        "hoka-speedgoat-2-men-black-brown-2710bhlt",
+        "hoka-speedgoat-2-men-yellow-black-nz422710",
+        "salomon-xt-whisper-women-castlerock-footwear-silver-49219300",
+        "salomon-xt-whisper-women-lilac-ash-fiesta-dawn-pink-l491859"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314889044061",
+      "handle": "training",
+      "title": "Training",
+      "kind": "automatic",
+      "adminMembers": 24,
+      "products": 6,
+      "clean": 6,
+      "legacy": 0,
+      "cleanHandles": [
+        "nike-free-metcon-6-men-astronomy-blue-black-hyper-crimson-f7127401",
+        "nike-free-metcon-6-men-cannon-black-lt-silver-j7127007",
+        "nike-free-metcon-6-men-white-black-green-strike-j7127107",
+        "nike-free-metcon-6-men-white-gum-lt-brown-hemp-j7127105",
+        "under-armour-slipspeed-trainer-men-white-stellar-pink-metallic-silver-27049131",
+        "under-armour-slipspeed-trainer-men-white-white-white-27049125"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314889011293",
+      "handle": "walking",
+      "title": "Walking",
+      "kind": "automatic",
+      "adminMembers": 26,
+      "products": 16,
+      "clean": 16,
+      "legacy": 0,
+      "cleanHandles": [
+        "hoka-clifton-10-men-carbon-black-satellite-grey-2030ccks",
+        "hoka-clifton-10-men-galactic-grey-asteroid-2032gyst",
+        "hoka-clifton-10-men-oatmeal-oat-milk-2030oltm",
+        "hoka-clifton-10-men-white-black-2030wblc",
+        "hoka-clifton-10-women-vanilla-birch-62031vch",
+        "on-cloudmonster-void-women-linen-seedling-10814754",
+        "on-cloudmonster-void-women-purple-purple-10944928",
+        "on-cloudmonster-void-women-white-ivory-10943334",
+        "on-cloudmonster-void-women-white-white-10491200",
+        "on-cloudmonster-void-women-white-white-10811200",
+        "new-balance-530-women-daybreak-silver-metallic-u53052n",
+        "new-balance-530-women-grey-white-mr530ck",
+        "new-balance-530-women-pink-silver-52530022",
+        "new-balance-530-women-sea-salt-brown-cw527988",
+        "new-balance-530-women-white-natural-indigo-mr530sg",
+        "new-balance-530-women-white-silver-mr530ema"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314091700317",
+      "handle": "womens-shoes",
+      "title": "Women's Shoes",
+      "kind": "automatic",
+      "adminMembers": 96,
+      "products": 47,
+      "clean": 47,
+      "legacy": 0,
+      "cleanHandles": [
+        "adidas-adizero-evo-sl-women-aurora-coffee-iron-metallic-blush-pink-kk1952",
+        "adidas-adizero-evo-sl-women-silver-met-lucid-red-iron-met-ki3383",
+        "adidas-adizero-evo-sl-women-white-blue-fusion-js4454",
+        "adidas-adizero-evo-sl-women-white-white-core-black-jh6208",
+        "adidas-adizero-evo-sl-women-wonder-white-crystal-linen-ki6951",
+        "hoka-clifton-10-women-vanilla-birch-62031vch",
+        "nike-air-zoom-pegasus-41-women-black-black-d2723001",
+        "nike-air-zoom-pegasus-41-women-black-white-d2723002",
+        "nike-air-zoom-pegasus-41-women-playful-pink-off-noir-d2723605",
+        "nike-air-zoom-pegasus-41-women-purple-dynasty-brt-violet-violet-mist-d2723503",
+        "on-cloudmonster-void-women-black-black-10491043",
+        "on-cloudmonster-void-women-iceberg-tin-10811344",
+        "on-cloudmonster-void-women-ivory-pink-10814561",
+        "on-cloudmonster-void-women-ivory-seashell-10814680",
+        "on-cloudmonster-void-women-linen-seedling-10814754",
+        "on-cloudmonster-void-women-purple-purple-10944928",
+        "on-cloudmonster-void-women-white-ivory-10943334",
+        "on-cloudmonster-void-women-white-white-10491200",
+        "on-cloudmonster-void-women-white-white-10811200",
+        "salomon-xt-whisper-women-castlerock-footwear-silver-49219300",
+        "salomon-xt-whisper-women-lilac-ash-fiesta-dawn-pink-l491859",
+        "adidas-3s-sprinter-shorts-women-aurora-coffee-sandy-pink-kc9006",
+        "adidas-3s-sprinter-shorts-women-black-white-kd7977",
+        "adidas-hyperglam-training-leggings-women-black-kc7673",
+        "adidas-originals-samba-women-footwear-white-coffee-metallic-gum-kk2504",
+        "adidas-originals-samba-women-gum-wonder-quartz-off-white-la6882",
+        "adidas-originals-samba-women-off-white-tropic-bloom-gum-la6395",
+        "new-balance-530-women-angora-turtledove-52508353",
+        "new-balance-530-women-daybreak-silver-metallic-u53052n",
+        "new-balance-530-women-grey-white-mr530ck",
+        "new-balance-530-women-pink-silver-52530022",
+        "new-balance-530-women-sea-salt-brown-cw527988",
+        "new-balance-530-women-white-natural-indigo-mr530sg",
+        "new-balance-530-women-white-silver-mr530ema",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-black-sail-ih011010",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-light-orewood-brown-white-ih011104",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-playful-pink-sail-h1011675",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-sail-lt-medium-blue-h1011460",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-sail-pink-foam-h1011663",
+        "nike-zoom-vomero-5-women-black-black-court-purple-j2028004",
+        "nike-zoom-vomero-5-women-black-chrome-v4311002",
+        "nike-zoom-vomero-5-women-grey-gold-7723001",
+        "nike-zoom-vomero-5-women-metallic-silver-photon-dust-pink-foam-f1877001",
+        "nike-zoom-vomero-5-women-photon-dust-charcoal-d0884025",
+        "asics-gel-1130-women-white-brown-a256113",
+        "puma-speedcat-etoile-women-pink-40767303",
+        "puma-speedcat-etoile-women-white-butter-40767301"
+      ]
+    }
+  ],
+  "manualCollections": [
+    {
+      "id": "gid://shopify/Collection/299310350429",
+      "handle": "frontpage",
+      "title": "Home page",
+      "kind": "manual",
+      "adminMembers": 12,
+      "products": 12,
+      "clean": 12,
+      "legacy": 0,
+      "cleanHandles": [
+        "on-cloudmonster-void-women-white-white-10811200",
+        "salomon-xt-whisper-women-lilac-ash-fiesta-dawn-pink-l491859",
+        "under-armour-slipspeed-trainer-men-white-white-white-27049125",
+        "adidas-3s-sprinter-shorts-women-black-white-kd7977",
+        "adidas-hyperglam-training-leggings-women-black-kc7673",
+        "adidas-samba-jane-satin-girls-grade-school-silver-metallic-footwear-white-gum-kj659987",
+        "new-balance-530-women-white-silver-mr530ema",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-sail-pink-foam-h1011663",
+        "nike-zoom-vomero-5-women-photon-dust-charcoal-d0884025",
+        "asics-gel-1130-women-white-brown-a256113",
+        "mizuno-wave-rider-29-men-white-curds-and-whey-45388t00",
+        "puma-speedcat-etoile-women-white-butter-40767301"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314198556765",
+      "handle": "homepage-new-arrivals",
+      "title": "Homepage New Arrivals",
+      "kind": "manual",
+      "adminMembers": 20,
+      "products": 20,
+      "clean": 20,
+      "legacy": 0,
+      "cleanHandles": [
+        "nike-air-max-90-men-iron-grey-white-dark-smoke-grey-n8490002",
+        "nike-air-max-90-men-phantom-phantom-med-olive-f5446003",
+        "nike-air-max-90-men-white-black-university-red-v2867100",
+        "nike-air-max-90-men-white-grey-red-m002902",
+        "nike-air-max-90-men-white-white-wolf-grey-n8490100",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-black-sail-ih011010",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-light-orewood-brown-white-ih011104",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-playful-pink-sail-h1011675",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-sail-lt-medium-blue-h1011460",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-sail-pink-foam-h1011663",
+        "nike-zoom-vomero-5-women-black-black-court-purple-j2028004",
+        "nike-zoom-vomero-5-women-black-chrome-v4311002",
+        "nike-zoom-vomero-5-women-grey-gold-7723001",
+        "nike-zoom-vomero-5-women-metallic-silver-photon-dust-pink-foam-f1877001",
+        "nike-zoom-vomero-5-women-photon-dust-charcoal-d0884025",
+        "asics-gel-1130-women-white-brown-a256113",
+        "mizuno-wave-rider-29-men-goblin-green-sailor-blue-4538sb4c",
+        "mizuno-wave-rider-29-men-white-curds-and-whey-45388t00",
+        "puma-speedcat-etoile-women-pink-40767303",
+        "puma-speedcat-etoile-women-white-butter-40767301"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314198589533",
+      "handle": "homepage-top-picks",
+      "title": "Homepage Top Picks",
+      "kind": "manual",
+      "adminMembers": 20,
+      "products": 20,
+      "clean": 20,
+      "legacy": 0,
+      "cleanHandles": [
+        "nike-6-pack-everyday-plus-cushioned-socks-men-black-white-6897100",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-work-blue-cool-grey-black-v0949486",
+        "nike-varsity-elite-backpack-adult-white-red-navy-u3779410",
+        "adidas-adizero-evo-sl-women-wonder-white-crystal-linen-ki6951",
+        "hoka-clifton-10-women-vanilla-birch-62031vch",
+        "hoka-speedgoat-2-men-yellow-black-nz422710",
+        "nike-air-zoom-pegasus-41-women-purple-dynasty-brt-violet-violet-mist-d2723503",
+        "nike-free-metcon-6-men-white-gum-lt-brown-hemp-j7127105",
+        "on-cloudmonster-void-women-white-white-10811200",
+        "salomon-xt-whisper-women-lilac-ash-fiesta-dawn-pink-l491859",
+        "under-armour-slipspeed-trainer-men-white-white-white-27049125",
+        "adidas-3s-sprinter-shorts-women-black-white-kd7977",
+        "adidas-hyperglam-training-leggings-women-black-kc7673",
+        "adidas-samba-jane-satin-girls-grade-school-silver-metallic-footwear-white-gum-kj659987",
+        "new-balance-530-women-white-silver-mr530ema",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-sail-pink-foam-h1011663",
+        "nike-zoom-vomero-5-women-photon-dust-charcoal-d0884025",
+        "asics-gel-1130-women-white-brown-a256113",
+        "mizuno-wave-rider-29-men-white-curds-and-whey-45388t00",
+        "puma-speedcat-etoile-women-white-butter-40767301"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/314050936925",
+      "handle": "sneaker-care",
+      "title": "Sneaker Care",
+      "kind": "manual",
+      "adminMembers": 0,
+      "products": 0,
+      "clean": 0,
+      "legacy": 0,
+      "cleanHandles": []
+    },
+    {
+      "id": "gid://shopify/Collection/314051362909",
+      "handle": "top-picks",
+      "title": "Top Picks",
+      "kind": "manual",
+      "adminMembers": 20,
+      "products": 20,
+      "clean": 20,
+      "legacy": 0,
+      "cleanHandles": [
+        "nike-6-pack-everyday-plus-cushioned-socks-men-black-white-6897100",
+        "nike-tech-fleece-full-zip-windrunner-hoodie-men-work-blue-cool-grey-black-v0949486",
+        "nike-varsity-elite-backpack-adult-white-red-navy-u3779410",
+        "adidas-adizero-evo-sl-women-wonder-white-crystal-linen-ki6951",
+        "hoka-clifton-10-women-vanilla-birch-62031vch",
+        "hoka-speedgoat-2-men-yellow-black-nz422710",
+        "nike-air-zoom-pegasus-41-women-purple-dynasty-brt-violet-violet-mist-d2723503",
+        "nike-free-metcon-6-men-white-gum-lt-brown-hemp-j7127105",
+        "on-cloudmonster-void-women-white-white-10811200",
+        "salomon-xt-whisper-women-lilac-ash-fiesta-dawn-pink-l491859",
+        "under-armour-slipspeed-trainer-men-white-white-white-27049125",
+        "adidas-3s-sprinter-shorts-women-black-white-kd7977",
+        "adidas-hyperglam-training-leggings-women-black-kc7673",
+        "adidas-samba-jane-satin-girls-grade-school-silver-metallic-footwear-white-gum-kj659987",
+        "new-balance-530-women-white-silver-mr530ema",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-sail-pink-foam-h1011663",
+        "nike-zoom-vomero-5-women-photon-dust-charcoal-d0884025",
+        "asics-gel-1130-women-white-brown-a256113",
+        "mizuno-wave-rider-29-men-white-curds-and-whey-45388t00",
+        "puma-speedcat-etoile-women-white-butter-40767301"
+      ]
+    }
+  ],
+  "legacy": [
+    {
+      "id": "gid://shopify/Product/8182658334813",
+      "handle": "nike-pegasus-42-men-white-silver",
+      "title": "Nike Pegasus 42 Men - White Silver",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182658367581",
+      "handle": "asics-sonicblast-men-green",
+      "title": "ASICS Sonicblast Men - Green",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182658400349",
+      "handle": "mizuno-wave-rider-30-men-blue",
+      "title": "Mizuno Wave Rider 30 Men - Blue",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182658433117",
+      "handle": "under-armour-turbulence-3-men-black",
+      "title": "Under Armour Turbulence 3 Men - Black",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182658465885",
+      "handle": "nike-dunk-low-retro-men-black-white",
+      "title": "Nike Dunk Low Retro Men - Black White",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182658498653",
+      "handle": "adidas-barreda-lo-men-core-black",
+      "title": "Adidas Barreda Lo Men - Core Black",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182658531421",
+      "handle": "asics-jog-100s-men-grey",
+      "title": "ASICS JOG 100S Men - Grey",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182658564189",
+      "handle": "hoka-bondi-7-men-black",
+      "title": "HOKA Bondi 7 Men - Black",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182658596957",
+      "handle": "hoka-speedgoat-6-men-white-neon",
+      "title": "HOKA Speedgoat 6 Men - White Neon",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182658629725",
+      "handle": "hoka-mafate-x-men-black",
+      "title": "HOKA Mafate X Men - Black",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182658662493",
+      "handle": "on-cloudsoma-men-white",
+      "title": "On CloudSoma Men - White",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182658695261",
+      "handle": "asics-fujispeed-4-men-yellow",
+      "title": "ASICS FujiSpeed 4 Men - Yellow",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182658728029",
+      "handle": "adidas-dropset-4-men-core-black",
+      "title": "adidas Dropset 4 Men - Core Black",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182658760797",
+      "handle": "nike-promina-men-black-white",
+      "title": "Nike Promina Men - Black White",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182658793565",
+      "handle": "under-armour-charged-edge-men-black",
+      "title": "Under Armour Charged Edge Men - Black",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182658826333",
+      "handle": "under-armour-dynamic-2-men-stone-brown",
+      "title": "Under Armour Dynamic 2 Men - Stone Brown",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182658859101",
+      "handle": "adidas-advantage-kids-white",
+      "title": "adidas Advantage Kids - White",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182658957405",
+      "handle": "adidas-droids-grand-court-2-0-kids-white",
+      "title": "adidas Droids Grand Court 2.0 Kids - White",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182658990173",
+      "handle": "hoka-clifton-9-youth-black-white",
+      "title": "HOKA Clifton 9 Youth - Black White",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182659022941",
+      "handle": "nike-jr-tiempo-maestro-academy-kids-black-blue",
+      "title": "Nike Jr Tiempo Maestro Academy Kids - Black Blue",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182682222685",
+      "handle": "women-s-adidas-adizero-adios-pro-4-running-shoes-white-ki1471",
+      "title": "Women's Adidas Adizero Adios Pro 4 Running Shoes - White",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182682255453",
+      "handle": "women-s-adidas-adizero-adios-pro-4-running-shoes-blue-js2580",
+      "title": "Women's Adidas Adizero Adios Pro 4 Running Shoes - Blue",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182682288221",
+      "handle": "men-s-adidas-adizero-adios-pro-4-running-shoes-white-kj7036",
+      "title": "Men's Adidas Adizero Adios Pro 4 Running Shoes - White",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182682353757",
+      "handle": "women-s-nike-downshifter-14-running-shoes-beige-ib1899-100",
+      "title": "Women's Nike Downshifter 14 Running Shoes - Beige",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182682386525",
+      "handle": "men-s-nike-downshifter-14-running-shoes-red-ib1895-103",
+      "title": "Men's Nike Downshifter 14 Running Shoes - Red",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182682419293",
+      "handle": "men-s-adidas-adizero-adios-pro-4-running-shoes-blue-js2579",
+      "title": "Men's Adidas Adizero Adios Pro 4 Running Shoes - Blue",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182682452061",
+      "handle": "women-s-adidas-supernova-rise-3-running-shoes-white-jr7375",
+      "title": "Women's Adidas Supernova Rise 3 Running Shoes - White",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182682484829",
+      "handle": "men-s-adidas-adizero-adios-9-running-shoes-blue-jq0764",
+      "title": "Men's Adidas Adizero Adios 9 Running Shoes - Blue",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182682517597",
+      "handle": "women-s-adidas-adizero-adios-9-running-shoes-blue-jq0767",
+      "title": "Women's Adidas Adizero Adios 9 Running Shoes - Blue",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182682550365",
+      "handle": "men-s-adidas-adizero-evo-sl-exo-running-shoes-gray-kj0430",
+      "title": "Men's Adidas Adizero Evo Sl Exo Running Shoes - Gray",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182682615901",
+      "handle": "men-s-adidas-adizero-evo-sl-wove-running-shoes-orange-kj2521",
+      "title": "Men's Adidas Adizero Evo Sl Wove Running Shoes - Orange",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182682648669",
+      "handle": "men-s-nike-journey-run-running-shoes-white-fn0228-111",
+      "title": "Men's Nike Journey Run Running Shoes - White",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182682681437",
+      "handle": "women-s-asics-gel-cumulus-28-running-shoes-multicolor-1012b986-400",
+      "title": "Women's Asics Gel-Cumulus 28 Running Shoes - Multicolor",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182682714205",
+      "handle": "women-s-adidas-adizero-evo-sl-wove-running-shoes-beige-ki6928",
+      "title": "Women's Adidas Adizero Evo Sl Wove Running Shoes - Beige",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182682746973",
+      "handle": "men-s-hoka-mach-7-running-shoes-orange-1171904-bllp",
+      "title": "Men's HOKA Mach 7 Running Shoes - Orange",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182682779741",
+      "handle": "women-s-hoka-mach-7-running-shoes-orange-1171938-bllp",
+      "title": "Women's HOKA Mach 7 Running Shoes - Orange",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182682812509",
+      "handle": "men-s-adidas-adizero-adios-pro-4-running-shoes-mint-jr7429",
+      "title": "Men's Adidas Adizero Adios Pro 4 Running Shoes - Mint",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182682845277",
+      "handle": "women-s-adidas-adizero-evo-sl-exo-running-shoes-gray-kj0440",
+      "title": "Women's Adidas Adizero Evo Sl Exo Running Shoes - Gray",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182682878045",
+      "handle": "women-s-adidas-adizero-adios-pro-4-running-shoes-mint-jr7430",
+      "title": "Women's Adidas Adizero Adios Pro 4 Running Shoes - Mint",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182682910813",
+      "handle": "men-s-hoka-arahi-9-glm-running-shoes-navy-1179196-wshd",
+      "title": "Men's HOKA Arahi 9 Glm Running Shoes - Navy",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182682943581",
+      "handle": "men-s-asics-gel-kayano-33-running-shoes-white-1011c167-100",
+      "title": "Men's Asics Gel-Kayano 33 Running Shoes - White",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182682976349",
+      "handle": "men-s-asics-gel-nimbus-28-running-shoes-black-1011c127-003",
+      "title": "Men's Asics Gel-Nimbus 28 Running Shoes - Black",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182683009117",
+      "handle": "women-s-asics-gel-kayano-33-running-shoes-white-1012b939-100",
+      "title": "Women's Asics Gel-Kayano 33 Running Shoes - White",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182683074653",
+      "handle": "women-s-nike-air-winflo-11-running-shoes-red-fj9510-114",
+      "title": "Women's Nike Air Winflo 11 Running Shoes - Red",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182683107421",
+      "handle": "women-s-hoka-skyward-x-2-running-shoes-pink-1171926-lrmt",
+      "title": "Women's HOKA Skyward X 2 Running Shoes - Pink",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182683140189",
+      "handle": "men-s-nike-air-zoopegasus-41-running-shoes-green-fd2722-120",
+      "title": "Men's Nike Air Zoopegasus 41 Running Shoes - Green",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182683172957",
+      "handle": "men-s-nike-dunk-low-retro-sneakers-black-hf5441-100",
+      "title": "Men's Nike Dunk Low Retro Sneakers - Black",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182683205725",
+      "handle": "women-s-nike-dunk-low-sneaker-red-io4244-103",
+      "title": "Women's Nike Dunk Low Sneaker - Red",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182683238493",
+      "handle": "women-s-nike-dunk-low-sneakers-pink-im6572-103",
+      "title": "Women's Nike Dunk Low Sneakers - Pink",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182683271261",
+      "handle": "women-s-nike-initiator-sneaker-beige-394053-103",
+      "title": "Women's Nike Initiator Sneaker - Beige",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182683304029",
+      "handle": "men-s-nike-dunk-low-retro-sneakers-gray-hf5441-105",
+      "title": "Men's Nike Dunk Low Retro Sneakers - Gray",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182683336797",
+      "handle": "women-s-nike-initiator-sneakers-pink-394053-009",
+      "title": "Women's Nike Initiator Sneakers - Pink",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182683369565",
+      "handle": "men-s-nike-cortez-leather-sneakers-white-dm4044-108",
+      "title": "Men's Nike Cortez Leather Sneakers - White",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182683402333",
+      "handle": "women-s-nike-court-legacy-lift-sneakers-ir1388-001",
+      "title": "Women's Nike Court Legacy Lift Sneakers - Black / White",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182683435101",
+      "handle": "men-s-nike-initiator-sneaker-gray-394055-001",
+      "title": "Men's Nike Initiator Sneaker - Gray",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182683500637",
+      "handle": "men-s-nike-initiator-sneaker-gray-hq1179-001",
+      "title": "Men's Nike Initiator Sneaker - Gray",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182683533405",
+      "handle": "women-s-nike-dunk-low-sneaker-beige-io4244-105",
+      "title": "Women's Nike Dunk Low Sneaker - Beige",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182683566173",
+      "handle": "women-s-nike-air-max-excee-sneaker-mint-cd5432-152",
+      "title": "Women's Nike Air Max Excee Sneaker - Mint",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182683598941",
+      "handle": "men-s-nike-initiator-sneakers-white-394055-100",
+      "title": "Men's Nike Initiator Sneakers - White",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182683631709",
+      "handle": "women-s-adidas-barreda-mary-jane-sneakers-beige-kj2245",
+      "title": "Women's Adidas Barreda Mary Jane Sneakers - Beige",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182683664477",
+      "handle": "men-s-adidas-purechill-sneakers-black-kh6421",
+      "title": "Men's Adidas Purechill Sneakers - Black",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182683697245",
+      "handle": "men-s-nike-air-max-90-sneaker-multicolor-dm0029-121",
+      "title": "Men's Nike Air Max 90 Sneaker - Multicolor",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182683730013",
+      "handle": "women-s-adidas-barreda-mary-jane-sneakers-white-jq2127",
+      "title": "Women's Adidas Barreda Mary Jane Sneakers - White",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182683762781",
+      "handle": "women-s-adidas-barreda-lo-sneakers-beige-ki6726",
+      "title": "Women's Adidas Barreda Lo Sneakers - Beige",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182683795549",
+      "handle": "unisex-hoka-stinson-breeze-sneakers-brown-1174450-snns",
+      "title": "Unisex HOKA Stinson Breeze Sneakers - Brown",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182683828317",
+      "handle": "women-s-hoka-mach-remastered-sneaker-beige-1176251-fcg",
+      "title": "Women's HOKA Mach Remastered Sneaker - Beige",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182683861085",
+      "handle": "women-s-hoka-mach-remastered-sneaker-purple-1176251-bypt",
+      "title": "Women's HOKA Mach Remastered Sneaker - Purple",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182683893853",
+      "handle": "men-s-hoka-mach-remastered-sneaker-gray-1176250-gygl",
+      "title": "Men's HOKA Mach Remastered Sneaker - Gray",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182683926621",
+      "handle": "women-s-nike-free-metcon-6-training-shoes-coral-fj7126-112",
+      "title": "Women's Nike Free Metcon 6 Training Shoes - Coral",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182683959389",
+      "handle": "women-s-nike-bella-7-training-shoes-gray-fz1689-008",
+      "title": "Women's Nike Bella 7 Training Shoes - Gray",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182683992157",
+      "handle": "men-s-nike-air-max-alpha-trainer-6-training-shoes-orange-fq1833-014",
+      "title": "Men's Nike Air Max Alpha Trainer 6 Training Shoes - Orange",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182684024925",
+      "handle": "men-s-adidas-dropset-control-trainer-training-shoes-white-js3118",
+      "title": "Men's Adidas Dropset Control Trainer Training Shoes - White",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182684057693",
+      "handle": "men-s-asics-fuji-lite-7-trail-running-shoes-brown-1013a232-200",
+      "title": "Men's Asics Fuji Lite 7 Trail Running Shoes - Brown",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182684090461",
+      "handle": "men-s-asics-fujispeed-4-trail-running-shoes-lime-1013a179-750",
+      "title": "Men's Asics Fujispeed 4 Trail Running Shoes - Lime",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182684123229",
+      "handle": "women-s-on-running-cloudsoma-trail-running-shoes-pink-3wf30375313",
+      "title": "Women's On Running Cloudsoma Trail Running Shoes - Pink",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182684155997",
+      "handle": "men-s-asics-trabuco-max-5-trail-running-shoes-multicolor-1011c164-600",
+      "title": "Men's Asics Trabuco Max 5 Trail Running Shoes - Multicolor",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182684188765",
+      "handle": "men-s-under-armour-edge-leather-training-shoes-3028375-110",
+      "title": "Men's Under Armour Edge Leather Training Shoes - Gray",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182684221533",
+      "handle": "men-s-adidas-dropset-4-training-shoes-black-jr4671",
+      "title": "Men's Adidas Dropset 4 Training Shoes - Black",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182684254301",
+      "handle": "women-s-hoka-speedgoat-7-wide-trail-running-shoes-multicolor-1171931-bms",
+      "title": "Women's HOKA Speedgoat 7 Wide Trail Running Shoes - Multicolor",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182684287069",
+      "handle": "men-s-under-armour-charged-edge-training-shoes-3026727-408",
+      "title": "Men's Under Armour Charged Edge Training Shoes - Navy",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182684319837",
+      "handle": "women-s-adidas-dropset-4-trainer-training-shoes-white-jr4661",
+      "title": "Women's Adidas Dropset 4 Trainer Training Shoes - White",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182684352605",
+      "handle": "women-s-hoka-challenger-8-trail-running-shoes-blue-1168717-gblt",
+      "title": "Women's HOKA Challenger 8 Trail Running Shoes - Blue",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182684385373",
+      "handle": "men-s-hoka-speedgoat-7-trail-running-shoes-navy-1171928-vrl",
+      "title": "Men's HOKA Speedgoat 7 Trail Running Shoes - Navy",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182684418141",
+      "handle": "men-s-on-running-cloudsoma-trail-running-shoes-white-3mf30651200",
+      "title": "Men's On Running Cloudsoma Trail Running Shoes - White",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182684450909",
+      "handle": "men-s-hoka-hopara-2-hiking-shoes-brown-1147650-spbr",
+      "title": "Men's HOKA Hopara 2 Hiking Shoes - Brown",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182684483677",
+      "handle": "women-s-hoka-speedgoat-7-trail-running-shoes-yellow-1171929-byfl",
+      "title": "Women's HOKA Speedgoat 7 Trail Running Shoes - Yellow",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182684516445",
+      "handle": "women-s-hoka-speedgoat-7-wide-trail-running-shoes-white-1171931-fyz",
+      "title": "Women's HOKA Speedgoat 7 Wide Trail Running Shoes - White",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182684549213",
+      "handle": "men-s-hoka-bondi-9-wide-running-shoes-white-1162013-flck",
+      "title": "Men's HOKA Bondi 9 Wide Running Shoes - White",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182684581981",
+      "handle": "women-s-hoka-bondi-9-running-shoes-navy-1162012-fdnv",
+      "title": "Women's HOKA Bondi 9 Running Shoes - Navy",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182684614749",
+      "handle": "women-s-under-armour-reign-xt-training-shoes-6005927-023",
+      "title": "Women's Under Armour Reign XT Training Shoes - White",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182684647517",
+      "handle": "women-s-mizuno-neo-zen-2-running-shoes-navy-j1gd268673",
+      "title": "Women's Mizuno Neo Zen 2 Running Shoes - Navy",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182684680285",
+      "handle": "men-s-under-armour-reign-xt-training-shoes-6005926-713",
+      "title": "Men's Under Armour Reign XT Training Shoes - Red",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182684713053",
+      "handle": "men-s-under-armour-reign-xt-training-shoes-6005926-391",
+      "title": "Men's Under Armour Reign XT Training Shoes - Black",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182684745821",
+      "handle": "women-s-mizuno-neo-zen-2-running-shoes-gray-j1gd268671",
+      "title": "Women's Mizuno Neo Zen 2 Running Shoes - Gray",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182684778589",
+      "handle": "women-s-mizuno-wave-rider-30-running-shoes-gray-j1gw262076",
+      "title": "Women's Mizuno Wave Rider 30 Running Shoes - Balsam Green / Mentholated / White",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182684811357",
+      "handle": "women-s-mizuno-wave-rider-30-running-shoes-gray-j1gw262075",
+      "title": "Women's Mizuno Wave Rider 30 Running Shoes - Dapple Gray / Dark Slate / Pink Drink",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182684844125",
+      "handle": "men-s-on-running-cloudvista-2-trail-running-shoes-brown-3me30113323",
+      "title": "Men's On Running Cloudvista 2 Trail Running Shoes - Brown",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182684876893",
+      "handle": "women-s-on-running-cloudvista-2-trail-running-shoes-beige-3we30134854",
+      "title": "Women's On Running Cloudvista 2 Trail Running Shoes - Beige",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182684909661",
+      "handle": "men-s-on-running-cloudultra-3-trail-running-shoes-mint-3mf30234788",
+      "title": "Men's On Running Cloudultra 3 Trail Running Shoes - Mint",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182684942429",
+      "handle": "women-s-under-armour-reign-xt-training-shoes-6005927-100",
+      "title": "Women's Under Armour Reign XT Training Shoes - Gray",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182684975197",
+      "handle": "kids-under-armour-gs-curry-12-strn-basketball-shoes-3028505-280",
+      "title": "Kids' Under Armour GS Curry 12 STRN Basketball Shoes - Beige",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182685007965",
+      "handle": "men-s-nike-promina-training-shoes-blue-fv5285-402",
+      "title": "Men's Nike Promina Training Shoes - Blue",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182685040733",
+      "handle": "women-s-nike-promina-training-shoes-beige-fv6343-110",
+      "title": "Women's Nike Promina Training Shoes - Beige",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182685073501",
+      "handle": "men-s-mizuno-wave-rider-30-running-shoes-j1gm262056",
+      "title": "Men's Mizuno Wave Rider 30 Running Shoes - Army Green",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182685106269",
+      "handle": "men-s-hoka-bondi-9-wide-running-shoes-blue-1162013-vsf",
+      "title": "Men's HOKA Bondi 9 Wide Running Shoes - Blue",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182685139037",
+      "handle": "men-s-hoka-bondi-9-wide-running-shoes-beige-1162013-rrck",
+      "title": "Men's HOKA Bondi 9 Wide Running Shoes - Beige",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182685171805",
+      "handle": "women-s-hoka-bondi-9-wide-running-shoes-gray-1162014-rrym",
+      "title": "Women's HOKA Bondi 9 Wide Running Shoes - Gray",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182685204573",
+      "handle": "kids-adidas-f50-hyperfast-league-turf-football-boots-white-kk1321",
+      "title": "Kids' Adidas F50 Hyperfast League Turf Football Boots - White",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182685237341",
+      "handle": "kids-nike-jr-phantom-6-low-club-turf-football-boots-pink-ih1799-901",
+      "title": "Kids' Nike Jr. Phantom 6 Low Club Turf Football Boots - Pink",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182685270109",
+      "handle": "kids-nike-jr-zvapor-16-academy-fg-mg-football-boots-red-io8474-661",
+      "title": "Kids' Nike Jr. Zvapor 16 Academy Fg/Mg Football Boots - Red",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182685302877",
+      "handle": "kids-nike-jr-tiempo-maestro-academy-turf-black-ib5028-040",
+      "title": "Kids' Nike Jr Tiempo Maestro Academy Turf - Black",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182685335645",
+      "handle": "boys-nike-court-borough-low-recraft-ps-sneakers-white-dv5457-113",
+      "title": "Boys' Nike Court Borough Low Recraft (Ps) Sneakers - White",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182685368413",
+      "handle": "boys-nike-court-legacy-psv-sneakers-da5381-124",
+      "title": "Boys' Nike Court Legacy (PSV) Sneakers - White",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182685401181",
+      "handle": "boys-nike-court-borough-lorecraft-ps-sneakers-white-dv5457-106",
+      "title": "Boys' Nike Court Borough Lorecraft (Ps) Sneakers - White",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182685433949",
+      "handle": "girls-nike-freak-5-se-gs-sneakers-blue-fn1356-300",
+      "title": "Girls' Nike Freak 5 Se (Gs) Sneakers - Blue",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182685466717",
+      "handle": "kids-adidas-x-disney-lion-king-grand-court-sneakers-black-if4094",
+      "title": "Kids' Adidas  X Disney Lion King Grand Court Sneakers - Black",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182685499485",
+      "handle": "kids-adidas-advantage-sneakers-white-ig2511",
+      "title": "Kids' Adidas Advantage Sneakers - White",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182685532253",
+      "handle": "kids-adidas-droids-grand-court-2-0-el-c-sneakers-white-ih1137",
+      "title": "Kids' Adidas Droids Grand Court 2.0 EL C Sneakers - Cloud White / Crew Orange / Core Black",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182685565021",
+      "handle": "kids-adidas-droids-grand-court-2-0-el-c-sneakers-white-ih1136",
+      "title": "Kids' Adidas Droids Grand Court 2.0 EL C Sneakers - Cloud White / Silver Metallic / Royal Blue",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8182685597789",
+      "handle": "kids-adidas-droids-grand-court-2-0-el-c-sneakers-white-ih1135",
+      "title": "Kids' Adidas Droids Grand Court 2.0 EL C Sneakers - Cloud White / Gold Metallic / Preloved Bronze",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8185293045853",
+      "handle": "unisex-puma-speedcat-og-sneakers-black-39884601",
+      "title": "Unisex PUMA Speedcat OG Sneakers - Black",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8185293439069",
+      "handle": "unisex-puma-speedcat-og-sneakers-red-39884602",
+      "title": "Unisex PUMA Speedcat OG Sneakers - Red",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8185293471837",
+      "handle": "unisex-puma-speedcat-og-sneakers-brown-39884631",
+      "title": "Unisex PUMA Speedcat OG Sneakers - Brown",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8185293504605",
+      "handle": "unisex-puma-speedcat-og-sneakers-gray-39884649",
+      "title": "Unisex PUMA Speedcat OG Sneakers - Gray",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8185293570141",
+      "handle": "unisex-puma-replicatch-suede-sneakers-black-40509701",
+      "title": "Unisex PUMA Replicatch Suede Sneakers - Black",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8185293635677",
+      "handle": "unisex-puma-replicatch-suede-sneakers-red-40509703",
+      "title": "Unisex PUMA Replicatch Suede Sneakers - Red",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8185293701213",
+      "handle": "unisex-puma-replicatch-suede-sneakers-brown-40509704",
+      "title": "Unisex PUMA Replicatch Suede Sneakers - Brown",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8185293733981",
+      "handle": "unisex-puma-palermo-leather-sneakers-white-39646401",
+      "title": "Unisex PUMA Palermo Leather Sneakers - White",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8185293799517",
+      "handle": "unisex-puma-palermo-leather-sneakers-black-39646403",
+      "title": "Unisex PUMA Palermo Leather Sneakers - Black",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8200391458909",
+      "handle": "nike-aeroswift-mens-running-top-black",
+      "title": "Nike AeroSwift Men's Dri-FIT ADV Running Top - Black",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8200391491677",
+      "handle": "adidas-own-the-run-shorts-black",
+      "title": "adidas Own The Run Shorts - Black",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8200391524445",
+      "handle": "adidas-own-the-run-tee-blue",
+      "title": "adidas Own the Run Tee - Blue",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8200391655517",
+      "handle": "nike-brasilia-9-5-training-duffel-60l-black",
+      "title": "Nike Brasilia 9.5 Training Duffel Bag 60L - Black",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8200391786589",
+      "handle": "nike-brasilia-9-5-training-backpack-30l-black",
+      "title": "Nike Brasilia 9.5 Training Backpack 30L - Black",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8200391950429",
+      "handle": "nike-everyday-plus-cushioned-crew-socks-6-pack",
+      "title": "Nike Everyday Plus Cushioned Crew Socks 6-Pack - Multi",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8200392114269",
+      "handle": "adidas-cushioned-sportswear-crew-socks-3-pack-blue",
+      "title": "adidas Cushioned Sportswear Crew Socks 3-Pack - Blue",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8205430751325",
+      "handle": "nike-stride-mens-dri-fit-running-jacket-black-io1419-010",
+      "title": "Nike Stride Men's Dri-FIT Running Jacket - Black",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8205430816861",
+      "handle": "nike-swift-womens-dri-fit-running-top-medium-ash-io4242-254",
+      "title": "Nike Swift Women's Dri-FIT Running Top - Medium Ash",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8205430849629",
+      "handle": "nike-swift-womens-dri-fit-seamless-running-top-black-im7538-010",
+      "title": "Nike Swift Women's Dri-FIT Seamless Running Top - Black",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8205430882397",
+      "handle": "nike-stride-mens-dri-fit-adv-running-top-black-ir4484-010",
+      "title": "Nike Stride Men's Dri-FIT ADV Running Top - Black",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8205430947933",
+      "handle": "nike-stride-mens-dri-fit-7-running-shorts-thunder-blue-dm4761-437",
+      "title": "Nike Stride Men's Dri-FIT 7-Inch Running Shorts - Thunder Blue",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8205430980701",
+      "handle": "adidas-own-the-run-womens-jacket-black-in1576",
+      "title": "adidas Own The Run Women's Running Jacket - Black",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8205431046237",
+      "handle": "adidas-adi365-running-climacool-iconic-tank-top-white-kq8079",
+      "title": "adidas ADI365 Climacool Running Tank Top - White",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8205431079005",
+      "handle": "adidas-adi365-running-iconic-shorts-wonder-sage-kc9069",
+      "title": "adidas ADI365 Running Iconic Shorts - Wonder Sage",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8205431144541",
+      "handle": "adidas-adi365-formotion-womens-jacket-black-jz5145",
+      "title": "adidas ADI365 FORMOTION Women's Running Jacket - Black",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8205431177309",
+      "handle": "adidas-adi365-climacool-womens-running-leggings-black-ka0123",
+      "title": "adidas ADI365 Climacool Women's Running Leggings - Black",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8205431210077",
+      "handle": "adidas-own-the-run-mens-tee-wonder-beige-iv5403",
+      "title": "adidas Own The Run Men's Tee - Wonder Beige",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8205477970013",
+      "handle": "adidas-adizero-running-tee-black-jf3473",
+      "title": "adidas Adizero Running Tee - Black",
+      "status": "ARCHIVED",
+      "published": false
+    },
+    {
+      "id": "gid://shopify/Product/8205478002781",
+      "handle": "adidas-adi365-aspyre-running-t-shirt-black-kq8649",
+      "title": "adidas ADI365 Aspyre Running T-Shirt - Black",
+      "status": "ARCHIVED",
+      "published": false
+    }
+  ]
+}

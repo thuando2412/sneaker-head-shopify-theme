@@ -3,10 +3,16 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const batchDir = path.join(root, 'outputs', 'footlocker-catalog-batch');
+function arg(name, fallback) {
+  const index = process.argv.indexOf(name);
+  return index >= 0 && process.argv[index + 1] ? process.argv[index + 1] : fallback;
+}
+const batchDir = path.resolve(root, arg('--batch', 'outputs/footlocker-catalog-batch'));
+const batchTag = arg('--batch-tag', 'footlocker-clean-batch-2026-09');
 const apply = process.argv.includes('--apply');
 const payload = JSON.parse(await fs.readFile(path.join(batchDir, 'product-payload.json'), 'utf8'));
 const familyManifest = JSON.parse(await fs.readFile(path.join(batchDir, 'colorway-metaobject-manifest.json'), 'utf8'));
+const linkableFamilyHandles = new Set(familyManifest.map((family) => family.handle));
 
 async function loadEnv() {
   const candidates = [
@@ -61,11 +67,28 @@ const baseline = await gql(`query FootlockerCatalogBaseline {
   shop { name myshopifyDomain }
   locations(first: 10) { nodes { id name isActive } }
   publications(first: 20) { nodes { id name } }
-  products(first: 250) { nodes { id handle mediaCount { count } } }
   metaobjectDefinitionByType(type: "colorway_family") { id }
   metafieldDefinition(identifier: { namespace: "custom", key: "colorway_family", ownerType: PRODUCT }) { id type { name } }
   metaobjects(type: "colorway_family", first: 250) { nodes { id handle displayName } }
 }`);
+
+async function loadAllProducts() {
+  const products = [];
+  let after = null;
+  do {
+    const page = await gql(`query FootlockerExistingProducts($after: String) {
+      products(first: 250, after: $after) {
+        nodes { id handle mediaCount { count } }
+        pageInfo { hasNextPage endCursor }
+      }
+    }`, { after });
+    products.push(...page.products.nodes);
+    after = page.products.pageInfo.hasNextPage ? page.products.pageInfo.endCursor : null;
+  } while (after);
+  return products;
+}
+
+const allExistingProducts = await loadAllProducts();
 
 const location = baseline.locations.nodes.find((item) => item.isActive) ?? baseline.locations.nodes[0];
 const publication = baseline.publications.nodes.find((item) => /online store/i.test(item.name));
@@ -74,7 +97,7 @@ if (!baseline.metaobjectDefinitionByType || !baseline.metafieldDefinition) {
   throw new Error('Required Colorway Family metaobject/metafield definitions are missing.');
 }
 
-const existingByHandle = new Map(baseline.products.nodes.map((product) => [product.handle, product]));
+const existingByHandle = new Map(allExistingProducts.map((product) => [product.handle, product]));
 const report = {
   generatedAt: new Date().toISOString(),
   mode: apply ? 'apply' : 'dry-run',
@@ -130,7 +153,7 @@ for (let index = 0; index < payload.length; index += 1) {
       inventoryItem: {
         tracked: true,
         requiresShipping: true,
-        measurement: { weight: { value: product.productType === 'Running Shoes' ? 300 : product.productType === 'Backpacks' ? 700 : 250, unit: 'GRAMS' } },
+        measurement: { weight: { value: /Shoes|Sneakers/.test(product.productType) ? 300 : product.productType === 'Backpacks' ? 700 : 250, unit: 'GRAMS' } },
       },
       taxable: true,
     })),
@@ -165,6 +188,7 @@ for (let index = 0; index < payload.length; index += 1) {
       familyHandle: product.familyHandle,
       expectedImages: product.images.length,
       expectedVariants: product.variants.length,
+      familyRequired: linkableFamilyHandles.has(product.familyHandle),
       sourceUrl: product.sourceUrl,
       action: existing ? 'updated' : 'created',
     });
@@ -246,7 +270,7 @@ for (let attempt = 0; attempt < 25; attempt += 1) {
         metafield(namespace: "custom", key: "colorway_family") { value }
       }
     }
-  }`, { query: 'tag:footlocker-clean-batch-2026-09', publicationId: publication.id });
+  }`, { query: `tag:${batchTag}`, publicationId: publication.id });
   verified = verification.products.nodes;
   const allReady = report.products.every((product) => {
     const item = verified.find((candidate) => candidate.handle === product.handle);
@@ -256,7 +280,7 @@ for (let attempt = 0; attempt < 25; attempt += 1) {
       && item.variantsCount.count === product.expectedVariants
       && item.mediaCount.count >= product.expectedImages
       && item.media.nodes.slice(0, product.expectedImages).every((media) => media.status === 'READY' && /cdn\.shopify\.com/i.test(media.image?.url ?? ''))
-      && item.metafield?.value;
+      && (!product.familyRequired || item.metafield?.value);
   });
   if (allReady) break;
   console.log(`[verify] media/family processing ${attempt + 1}/25`);
@@ -274,6 +298,7 @@ const productChecks = report.products.map((product) => {
     imagesExpected: product.expectedImages,
     imagesActual: item?.mediaCount.count ?? 0,
     readyCdnImages: item?.media.nodes.filter((media) => media.status === 'READY' && /cdn\.shopify\.com/i.test(media.image?.url ?? '')).length ?? 0,
+    familyRequired: product.familyRequired,
     familyLinked: Boolean(item?.metafield?.value),
   };
 });
@@ -284,7 +309,7 @@ report.verification = {
     && check.variantsActual === check.variantsExpected
     && check.imagesActual >= check.imagesExpected
     && check.readyCdnImages >= check.imagesExpected
-    && check.familyLinked).length,
+    && (!check.familyRequired || check.familyLinked)).length,
   checks: productChecks,
 };
 

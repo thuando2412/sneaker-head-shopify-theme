@@ -1,0 +1,114 @@
+{
+  "generatedAt": "2026-09-09T04:09:58.739Z",
+  "source": "Foot Locker US",
+  "batchTag": "footlocker-clean-batch-2026-09",
+  "policy": {
+    "inStockOnly": true,
+    "minimumGalleryImages": 3,
+    "maximumGalleryImages": 5
+  },
+  "totals": {
+    "products": 35,
+    "variants": 290,
+    "images": 160,
+    "families": 9,
+    "excluded": 8
+  },
+  "families": [
+    {
+      "handle": "adidas-3s-sprinter-shorts-women",
+      "name": "adidas 3S Sprinter Shorts Women's",
+      "products": 2
+    },
+    {
+      "handle": "adidas-hyperglam-training-leggings-women",
+      "name": "adidas Hyperglam Training Leggings Women's",
+      "products": 1
+    },
+    {
+      "handle": "adidas-originals-samba-women",
+      "name": "adidas Originals Samba Women's",
+      "products": 3
+    },
+    {
+      "handle": "adidas-samba-jane-satin-girls-grade-school",
+      "name": "adidas Samba Jane Satin - Girls' Grade School",
+      "products": 1
+    },
+    {
+      "handle": "new-balance-530-women",
+      "name": "New Balance 530 Women's",
+      "products": 7
+    },
+    {
+      "handle": "nike-air-force-1-girls-grade-school",
+      "name": "Nike Air Force 1 - Girls' Grade School",
+      "products": 3
+    },
+    {
+      "handle": "nike-air-max-90-men",
+      "name": "Nike Air Max 90 Men's",
+      "products": 8
+    },
+    {
+      "handle": "nike-phoenix-fleece-high-rise-wide-pants-women",
+      "name": "Nike Phoenix Fleece High Rise Wide Pants Women's",
+      "products": 5
+    },
+    {
+      "handle": "nike-zoom-vomero-5-women",
+      "name": "Nike Zoom Vomero 5 Women's",
+      "products": 5
+    }
+  ],
+  "excluded": [
+    {
+      "sku": "FJ028200",
+      "family": "Nike Zoom Vomero 5 - Women's",
+      "color": "Cacao Wow/Lt Khaki/Lt British Tan",
+      "reason": "no in-stock size"
+    },
+    {
+      "sku": "FJ028402",
+      "family": "Nike Zoom Vomero 5 - Women's",
+      "color": "Old Royal/Pink Rise/Bleached Lilac",
+      "reason": "no in-stock size"
+    },
+    {
+      "sku": "FJ028603",
+      "family": "Nike Zoom Vomero 5 - Women's",
+      "color": "White/Pink Rise/Bleached Lilac",
+      "reason": "no in-stock size"
+    },
+    {
+      "sku": "IV738133",
+      "family": "Nike Zoom Vomero 5 - Women's",
+      "color": "Sail/Barely Green/Cucumber Calm",
+      "reason": "no in-stock size"
+    },
+    {
+      "sku": "KA8846",
+      "family": "adidas Hyperglam Training Leggings - Women's",
+      "color": "Aurora Coffee",
+      "reason": "no in-stock size"
+    },
+    {
+      "sku": "KJ659988",
+      "family": "adidas Samba Jane Satin - Girls' Grade School",
+      "color": "Footwear White/Wonder Mauve/Gum",
+      "reason": "no in-stock size"
+    },
+    {
+      "sku": "R0595002",
+      "family": "Nike Air Force 1 - Girls' Grade School",
+      "color": "Vast Grey/Dark Smoke Grey/Black",
+      "reason": "no in-stock size"
+    },
+    {
+      "sku": "U530SCB",
+      "family": "New Balance 530 - Women's",
+      "color": "Sea Salt/Arid Stone",
+      "reason": "no in-stock size"
+    }
+  ]
+}

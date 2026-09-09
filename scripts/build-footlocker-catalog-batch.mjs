@@ -3,9 +3,13 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const detailDir = path.join(root, 'data', 'footlocker', 'details');
-const outputDir = path.join(root, 'outputs', 'footlocker-catalog-batch');
-const batchTag = 'footlocker-clean-batch-2026-09';
+function arg(name, fallback) {
+  const index = process.argv.indexOf(name);
+  return index >= 0 && process.argv[index + 1] ? process.argv[index + 1] : fallback;
+}
+const detailDir = path.resolve(root, arg('--details', 'data/footlocker/details'));
+const outputDir = path.resolve(root, arg('--output', 'outputs/footlocker-catalog-batch'));
+const batchTag = arg('--batch-tag', 'footlocker-clean-batch-2026-09');
 const minGalleryImages = 3;
 const maxGalleryImages = 5;
 
@@ -65,21 +69,37 @@ function normalizeGender(model) {
 function productTypeFor(record) {
   const title = record.groupTitle.toLowerCase();
   if (record.category === 'running') return 'Running Shoes';
+  if (record.category === 'trail') return 'Trail Shoes';
+  if (record.category === 'training') return 'Training Shoes';
+  if (record.category === 'basketball') return 'Basketball Shoes';
+  if (record.category === 'lifestyle') return 'Lifestyle Sneakers';
   if (title.includes('hoodie') || title.includes('jacket') || title.includes('windrunner')) return 'Hoodies & Sweatshirts';
   if (title.includes('t-shirt') || title.includes('tee')) return 'T-Shirts';
+  if (title.includes('legging')) return 'Leggings';
+  if (title.includes('short')) return 'Shorts';
+  if (title.includes('pant')) return 'Pants';
+  if (title.includes('bra')) return 'Sports Bras';
   if (title.includes('sock')) return 'Run Socks';
   if (title.includes('backpack')) return 'Backpacks';
   return record.category === 'clothing' ? 'Clothing' : 'Accessories';
 }
 
 function productCategoryFor(record) {
-  if (record.category === 'running') return 'Apparel & Accessories > Shoes';
-  if (record.category === 'clothing') return 'Apparel & Accessories > Clothing';
+  if (['running', 'trail', 'training', 'basketball', 'lifestyle'].includes(record.category)) return 'Apparel & Accessories > Shoes';
+  if (record.category === 'clothing') {
+    const title = record.groupTitle.toLowerCase();
+    if (title.includes('legging') || title.includes('pant')) return 'Apparel & Accessories > Clothing > Pants';
+    if (title.includes('short')) return 'Apparel & Accessories > Clothing > Shorts';
+    if (title.includes('hoodie')) return 'Apparel & Accessories > Clothing > Activewear';
+    if (title.includes('t-shirt') || title.includes('tee')) return 'Apparel & Accessories > Clothing > Shirts & Tops';
+    return 'Apparel & Accessories > Clothing';
+  }
   return 'Apparel & Accessories > Handbags, Wallets & Cases > Backpacks';
 }
 
 function vendorFor(value) {
   if (/^on$/i.test(value)) return 'On Running';
+  if (/^asics/i.test(value)) return 'ASICS';
   if (/^adidas$/i.test(value)) return 'adidas';
   return value;
 }
@@ -97,7 +117,14 @@ function familyHandleFor(record) {
 
 function titleFor(record, type, color) {
   let base = familyNameFor(record);
-  if (type === 'Running Shoes' && !/shoes?\b/i.test(base)) base += ' Running Shoes';
+  const suffixByType = {
+    'Running Shoes': 'Running Shoes',
+    'Trail Shoes': 'Trail Shoes',
+    'Training Shoes': 'Training Shoes',
+    'Basketball Shoes': 'Basketball Shoes',
+    'Lifestyle Sneakers': 'Sneakers',
+  };
+  if (suffixByType[type] && !/shoes?|sneakers?\b/i.test(base)) base += ` ${suffixByType[type]}`;
   return `${base} - ${color}`;
 }
 
@@ -119,10 +146,14 @@ function galleryImages(record) {
 function tagsFor(record, productType, vendor, compareAtPrice, price) {
   const tags = [batchTag, 'footlocker-source', 'new-arrivals', slugify(vendor), `style:${record.data.style.sku}`];
   const gender = normalizeGender(record.data.model).toLowerCase();
-  if (gender.includes('men')) tags.push('men');
-  if (gender.includes('women')) tags.push('women');
-  if (gender.includes('kid')) tags.push('kids');
+  if (/^men\b|men's/.test(gender) && !/women/.test(gender)) tags.push('men');
+  if (/^women\b|women's/.test(gender)) tags.push('women');
+  if (record.segment === 'kids' || /kid|boy|girl|preschool|grade school|toddler/.test(gender)) tags.push('kids');
   if (record.category === 'running') tags.push('Running', 'running');
+  if (record.category === 'trail') tags.push('trail', 'Running');
+  if (record.category === 'training') tags.push('training');
+  if (record.category === 'basketball') tags.push('basketball');
+  if (record.category === 'lifestyle') tags.push('everyday');
   if (record.category === 'clothing') tags.push('clothing');
   if (record.category === 'accessories') tags.push('accessories');
   if (productType === 'Backpacks') tags.push('bags-packs');
@@ -211,6 +242,8 @@ const families = [...new Map(products.map((product) => [product.familyHandle, {
   name: product.familyName,
   productHandles: products.filter((candidate) => candidate.familyHandle === product.familyHandle).map((candidate) => candidate.handle),
 }])).values()];
+const linkableFamilies = families.filter((family) => family.productHandles.length >= 2);
+const linkableFamilyHandles = new Set(linkableFamilies.map((family) => family.handle));
 
 const productRows = [];
 for (const product of products) {
@@ -236,7 +269,7 @@ for (const product of products) {
     'Inventory tracker': 'shopify',
     'Inventory quantity': variant.inventoryQuantity,
     'Continue selling when out of stock': 'DENY',
-    'Weight value (grams)': product.productType === 'Running Shoes' ? 300 : product.productType === 'Backpacks' ? 700 : 250,
+    'Weight value (grams)': /Shoes|Sneakers/.test(product.productType) ? 300 : product.productType === 'Backpacks' ? 700 : 250,
     'Weight unit for display': 'g',
     'Requires shipping': 'TRUE',
     'Fulfillment service': 'manual',
@@ -260,7 +293,7 @@ for (const product of products) {
   }));
 }
 
-const linkRows = products.map((product) => ({
+const linkRows = products.filter((product) => linkableFamilyHandles.has(product.familyHandle)).map((product) => ({
   'Title': product.title,
   'URL handle': product.handle,
   'Colorway Family (product.metafields.custom.colorway_family)': product.familyHandle,
@@ -269,6 +302,7 @@ const linkRows = products.map((product) => ({
 const audit = {
   generatedAt: new Date().toISOString(),
   source: 'Foot Locker US',
+  batchTag,
   policy: { inStockOnly: true, minimumGalleryImages: minGalleryImages, maximumGalleryImages: maxGalleryImages },
   totals: {
     products: products.length,
@@ -284,7 +318,7 @@ const audit = {
 await fs.writeFile(path.join(outputDir, 'products-import.csv'), '\ufeff' + toCsv(productRows, csvHeaders), 'utf8');
 await fs.writeFile(path.join(outputDir, 'colorway-link-update.csv'), '\ufeff' + toCsv(linkRows, Object.keys(linkRows[0])), 'utf8');
 await fs.writeFile(path.join(outputDir, 'product-payload.json'), JSON.stringify(products, null, 2) + '\n', 'utf8');
-await fs.writeFile(path.join(outputDir, 'colorway-metaobject-manifest.json'), JSON.stringify(families, null, 2) + '\n', 'utf8');
+await fs.writeFile(path.join(outputDir, 'colorway-metaobject-manifest.json'), JSON.stringify(linkableFamilies, null, 2) + '\n', 'utf8');
 await fs.writeFile(path.join(outputDir, 'source-audit.json'), JSON.stringify(audit, null, 2) + '\n', 'utf8');
 
 console.log(JSON.stringify(audit.totals, null, 2));

@@ -1,0 +1,207 @@
+{
+  "generatedAt": "2026-09-09T04:20:20.416Z",
+  "mode": "apply",
+  "shop": {
+    "name": "Sneaker Head",
+    "myshopifyDomain": "thuandotest.myshopify.com"
+  },
+  "location": {
+    "id": "gid://shopify/Location/76188057693",
+    "name": "Shop location"
+  },
+  "publication": {
+    "id": "gid://shopify/Publication/148514111581",
+    "name": "Online Store"
+  },
+  "planned": {
+    "products": 5,
+    "families": 2
+  },
+  "products": [
+    {
+      "id": "gid://shopify/Product/8231333101661",
+      "handle": "asics-gel-1130-women-white-brown-a256113",
+      "title": "ASICS® GEL-1130 Women's Sneakers - White/Brown",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 6
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "asics-gel-1130-women",
+      "expectedImages": 5,
+      "expectedVariants": 6,
+      "familyRequired": false,
+      "sourceUrl": "https://www.footlocker.com/product/asics-gel-1130-womens/A256113.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231333199965",
+      "handle": "mizuno-wave-rider-29-men-goblin-green-sailor-blue-4538sb4c",
+      "title": "Mizuno Wave Rider 29 Men's Running Shoes - Goblin Green/Sailor Blue",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 1
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "mizuno-wave-rider-29-men",
+      "expectedImages": 5,
+      "expectedVariants": 1,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/mizuno-wave-rider-29-mens/4538SB4C.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231333298269",
+      "handle": "mizuno-wave-rider-29-men-white-curds-and-whey-45388t00",
+      "title": "Mizuno Wave Rider 29 Men's Running Shoes - White/Curds And Whey",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 9
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "mizuno-wave-rider-29-men",
+      "expectedImages": 5,
+      "expectedVariants": 9,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/mizuno-wave-rider-29-mens/45388T00.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231333396573",
+      "handle": "puma-speedcat-etoile-women-pink-40767303",
+      "title": "PUMA Speedcat Etoile Women's Sneakers - Pink",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 9
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "puma-speedcat-etoile-women",
+      "expectedImages": 5,
+      "expectedVariants": 9,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/puma-speedcat-etoile-womens/40767303.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231333560413",
+      "handle": "puma-speedcat-etoile-women-white-butter-40767301",
+      "title": "PUMA Speedcat Etoile Women's Sneakers - White Butter",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 9
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "puma-speedcat-etoile-women",
+      "expectedImages": 5,
+      "expectedVariants": 9,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/puma-speedcat-etoile-womens/40767301.html",
+      "action": "created"
+    }
+  ],
+  "families": [
+    {
+      "id": "gid://shopify/Metaobject/322422014045",
+      "handle": "mizuno-wave-rider-29-men",
+      "displayName": "Mizuno Wave Rider 29 Men's",
+      "productIds": [
+        "gid://shopify/Product/8231333199965",
+        "gid://shopify/Product/8231333298269"
+      ],
+      "productHandles": [
+        "mizuno-wave-rider-29-men-goblin-green-sailor-blue-4538sb4c",
+        "mizuno-wave-rider-29-men-white-curds-and-whey-45388t00"
+      ]
+    },
+    {
+      "id": "gid://shopify/Metaobject/322422243421",
+      "handle": "puma-speedcat-etoile-women",
+      "displayName": "PUMA Speedcat Etoile Women's",
+      "productIds": [
+        "gid://shopify/Product/8231333396573",
+        "gid://shopify/Product/8231333560413"
+      ],
+      "productHandles": [
+        "puma-speedcat-etoile-women-pink-40767303",
+        "puma-speedcat-etoile-women-white-butter-40767301"
+      ]
+    }
+  ],
+  "failures": [],
+  "verification": {
+    "checkedProducts": 5,
+    "passedProducts": 5,
+    "checks": [
+      {
+        "handle": "asics-gel-1130-women-white-brown-a256113",
+        "active": true,
+        "published": true,
+        "variantsExpected": 6,
+        "variantsActual": 6,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": false,
+        "familyLinked": false
+      },
+      {
+        "handle": "mizuno-wave-rider-29-men-goblin-green-sailor-blue-4538sb4c",
+        "active": true,
+        "published": true,
+        "variantsExpected": 1,
+        "variantsActual": 1,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "mizuno-wave-rider-29-men-white-curds-and-whey-45388t00",
+        "active": true,
+        "published": true,
+        "variantsExpected": 9,
+        "variantsActual": 9,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "puma-speedcat-etoile-women-pink-40767303",
+        "active": true,
+        "published": true,
+        "variantsExpected": 9,
+        "variantsActual": 9,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "puma-speedcat-etoile-women-white-butter-40767301",
+        "active": true,
+        "published": true,
+        "variantsExpected": 9,
+        "variantsActual": 9,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      }
+    ]
+  }
+}

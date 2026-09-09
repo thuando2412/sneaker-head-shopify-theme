@@ -1,0 +1,7 @@
+{
+  "models": [
+    { "segment": "women", "category": "lifestyle", "url": "https://www.footlocker.com/product/model/asics-gel-1130-womens/427225.html" },
+    { "segment": "men", "category": "running", "url": "https://www.footlocker.com/product/model/mizuno-wave-rider-29-mens/465420.html" },
+    { "segment": "women", "category": "lifestyle", "url": "https://www.footlocker.com/product/model/puma-speedcat-etoile-womens/475769.html" }
+  ]
+}

@@ -39,7 +39,7 @@
       "block_order": ["everyday", "running", "basketball", "tennis", "training", "trail", "football", "skateboarding"],
       "settings": { "heading": "Shop by activity", "view_all_label": "Shop all", "view_all_link": "/collections/all" }
     },
-    "hot_deals": { "type": "sneaker-hot-deals", "settings": { "heading": "Hot deals", "collection": "sale", "featured_product": "hoka-speedgoat-6-men-white-neon", "end_date": "2026-12-31T23:59:00-05:00", "ended_label": "Deal ended", "view_all_label": "View all deals" } },
+    "hot_deals": { "type": "sneaker-hot-deals", "settings": { "heading": "Hot deals", "collection": "sale", "featured_product": "", "end_date": "2026-12-31T23:59:00-05:00", "ended_label": "Deal ended", "view_all_label": "View all deals" } },
     "trending": { "type": "sneaker-product-rail", "settings": { "heading": "Trending now", "collection": "new-arrivals", "products_to_show": 20, "show_view_all": true, "view_all_label": "View all" } },
     "brand_navigation": {
       "type": "sneaker-brand-navigation",

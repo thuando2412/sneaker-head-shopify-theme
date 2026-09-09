@@ -1,6 +1,6 @@
 # Sneaker Head theme handoff
 
-Last updated: 2026-09-08
+Last updated: 2026-09-09
 
 ## Latest session checkpoint
 
@@ -12,8 +12,11 @@ Last updated: 2026-09-08
 - User performed visual QA for the latest positioning changes and requested direct targeted pushes without further browser QA.
 - A new homepage design is being prepared separately; do not infer that it has already been implemented here.
 - This is a source checkpoint, not a fresh full pull of the live theme. Existing repository templates and other unrelated baseline files were retained.
-- Published the first clean Foot Locker catalog batch on 2026-09-08: 53 active products, 371 variants, 243 Shopify-CDN images and 9 linked Colorway Family metaobjects. All 53 products passed Admin API verification with zero apply failures.
-- The batch intentionally includes only in-stock colorways with at least three valid gallery images. It does not yet cover the full women, kids, trail and sport assortment, so the old catalog remains untouched until replacement coverage is complete.
+- Completed the Foot Locker catalog replacement on 2026-09-09. The live storefront now has 129 clean active/published products; the 149 legacy products were archived, not deleted.
+- Across all clean batches there are 912 active size variants and 608 Shopify-CDN product images. Every clean product has inventory, at least three media items and at least one variant; all batch apply jobs completed with zero failures.
+- Coverage now includes men, women, kids, running, training, trail, lifestyle, clothing, accessories, bags, socks and the ASICS/Mizuno/PUMA brand gaps. Sixteen suitable cushioned products were tagged into Walking.
+- Manual collections `frontpage`, `homepage-new-arrivals`, `homepage-top-picks` and `top-picks` were replaced with clean products. Automatic storefront collections contain zero active legacy products.
+- Storefront QA passed on homepage, key collections and a new PDP: no broken images; Hot Deals automatically selected a valid new sale product; a legacy PDP returned 404 after archive.
 - Shopify CLI/API operations must target the permanent shop domain `thuandotest.myshopify.com`; `sneakerheadvn.myshopify.com` is the current primary public domain and caused an OAuth callback mismatch when used as the CLI store identifier.
 
 ## Project
@@ -90,8 +93,9 @@ Always search the repository for the live selector/component before editing; fil
 - Future product batches use the approved two-pass import approach: product import first, colorway-link update second.
 - Product imagery should be visually consistent and use real, high-quality product assets.
 - Current Foot Locker source snapshot, crawler and batch scripts are in `data/footlocker`, `scripts/crawl-footlocker-catalog.mjs`, `scripts/build-footlocker-catalog-batch.mjs`, and `scripts/apply-footlocker-catalog-batch.mjs`.
-- Generated two-pass artifacts and apply verification are in `outputs/footlocker-catalog-batch/`: `products-import.csv`, `colorway-link-update.csv`, `source-audit.json`, and `api-apply-report.json`.
-- The apply script is repeatable and non-destructive to old products. Do not archive the old catalog until later source batches provide approved coverage for every live navigation category and homepage collection.
+- Generated two-pass artifacts and apply verification are in `outputs/footlocker-catalog-batch/`, `outputs/footlocker-expansion-batch/`, `outputs/footlocker-completion-batch/` and `outputs/footlocker-brand-gap-batch/`.
+- `scripts/audit-footlocker-store.mjs` produces the current storefront-aware catalog/collection audit. `scripts/cutover-footlocker-catalog.mjs` is the reproducible dry-run/apply cutover that seeds manual collections, tags Walking and archives non-Foot-Locker legacy products.
+- The final live cutover evidence is in `outputs/footlocker-catalog-cutover-report.json`; the latest post-cutover audit is `data/footlocker/store-catalog-audit.json`.
 
 ## Current open design topic
 

@@ -1,0 +1,119 @@
+{
+  "generatedAt": "2026-09-09T03:54:43.418Z",
+  "source": "Foot Locker US",
+  "batchTag": "footlocker-expansion-batch-2026-09",
+  "policy": {
+    "inStockOnly": true,
+    "minimumGalleryImages": 3,
+    "maximumGalleryImages": 5
+  },
+  "totals": {
+    "products": 36,
+    "variants": 217,
+    "images": 180,
+    "families": 10,
+    "excluded": 8
+  },
+  "families": [
+    {
+      "handle": "adidas-adizero-evo-sl-women",
+      "name": "adidas Adizero Evo SL Women's",
+      "products": 5
+    },
+    {
+      "handle": "hoka-clifton-10-women",
+      "name": "HOKA Clifton 10 Women's",
+      "products": 1
+    },
+    {
+      "handle": "hoka-speedgoat-2-men",
+      "name": "HOKA Speedgoat 2 Men's",
+      "products": 2
+    },
+    {
+      "handle": "nike-air-force-1-low-easyon-boys-preschool",
+      "name": "Nike Air Force 1 Low EasyOn - Boys' Preschool",
+      "products": 2
+    },
+    {
+      "handle": "nike-air-max-270-boys-grade-school",
+      "name": "Nike Air Max 270 - Boys' Grade School",
+      "products": 5
+    },
+    {
+      "handle": "nike-air-zoom-pegasus-41-women",
+      "name": "Nike Air Zoom Pegasus 41 Women's",
+      "products": 4
+    },
+    {
+      "handle": "nike-free-metcon-6-men",
+      "name": "Nike Free Metcon 6 Men's",
+      "products": 4
+    },
+    {
+      "handle": "on-cloudmonster-void-women",
+      "name": "On Cloudmonster Void Women's",
+      "products": 9
+    },
+    {
+      "handle": "salomon-xt-whisper-women",
+      "name": "Salomon XT-Whisper Women's",
+      "products": 2
+    },
+    {
+      "handle": "under-armour-slipspeed-trainer-men",
+      "name": "Under Armour Slipspeed Trainer Men's",
+      "products": 2
+    }
+  ],
+  "excluded": [
+    {
+      "sku": "2031BHLB",
+      "family": "HOKA Clifton 10 - Women's",
+      "color": "Birch/Alabaster",
+      "reason": "gallery has 1 image(s)"
+    },
+    {
+      "sku": "43345020",
+      "family": "Nike Air Max 270 - Boys' Grade School",
+      "color": "Black/Metallic Silver/Smoke Grey",
+      "reason": "no in-stock size"
+    },
+    {
+      "sku": "HQ620102",
+      "family": "Nike Metcon 10 - Women's",
+      "color": "Mtlc Silver/Lt Orewood Brn/Phantom",
+      "reason": "no in-stock size"
+    },
+    {
+      "sku": "HQ620401",
+      "family": "Nike Metcon 10 - Women's",
+      "color": "Hydrogen Blue/Aluminum/Hydrogen Blue",
+      "reason": "no in-stock size"
+    },
+    {
+      "sku": "HQ620502",
+      "family": "Nike Metcon 10 - Women's",
+      "color": "Lt Magenta/Bleached Lilac/Pink Rise",
+      "reason": "no in-stock size"
+    },
+    {
+      "sku": "JQ4412",
+      "family": "adidas Adizero Evo SL - Women's",
+      "color": "Court Green/Lucid Red/Ftwr White",
+      "reason": "no in-stock size"
+    },
+    {
+      "sku": "KI4794",
+      "family": "adidas Adizero Evo SL - Women's",
+      "color": "Off White/Ice Gold Met/Granite",
+      "reason": "no in-stock size"
+    },
+    {
+      "sku": "KI9440",
+      "family": "adidas Adizero Evo SL - Women's",
+      "color": "Ftwr White/Ftwr White/Warm Sandstone",
+      "reason": "no in-stock size"
+    }
+  ]
+}

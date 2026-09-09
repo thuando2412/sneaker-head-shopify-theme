@@ -14,6 +14,7 @@
 Thumbs.db
 .idea/
 .vscode/
+node_modules/
 
 # Temporary QA and generated output
 *.log
@@ -25,4 +26,3 @@ screenshots/
 # Local transfer archives
 *.zip
 *.bundle
-

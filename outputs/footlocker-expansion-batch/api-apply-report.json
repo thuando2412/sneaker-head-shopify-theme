@@ -1,0 +1,1262 @@
+{
+  "generatedAt": "2026-09-09T03:55:26.306Z",
+  "mode": "apply",
+  "shop": {
+    "name": "Sneaker Head",
+    "myshopifyDomain": "thuandotest.myshopify.com"
+  },
+  "location": {
+    "id": "gid://shopify/Location/76188057693",
+    "name": "Shop location"
+  },
+  "publication": {
+    "id": "gid://shopify/Publication/148514111581",
+    "name": "Online Store"
+  },
+  "planned": {
+    "products": 36,
+    "families": 9
+  },
+  "products": [
+    {
+      "id": "gid://shopify/Product/8231308787805",
+      "handle": "adidas-adizero-evo-sl-women-aurora-coffee-iron-metallic-blush-pink-kk1952",
+      "title": "adidas Adizero Evo SL Women's Running Shoes - Aurora Coffee/Iron Metallic/Blush Pink",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 8
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "adidas-adizero-evo-sl-women",
+      "expectedImages": 5,
+      "expectedVariants": 8,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/adidas-adizero-evo-sl-womens/KK1952.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231308853341",
+      "handle": "adidas-adizero-evo-sl-women-silver-met-lucid-red-iron-met-ki3383",
+      "title": "adidas Adizero Evo SL Women's Running Shoes - Silver Met/Lucid Red/Iron Met",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 2
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "adidas-adizero-evo-sl-women",
+      "expectedImages": 5,
+      "expectedVariants": 2,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/adidas-adizero-evo-sl-womens/KI3383.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231308886109",
+      "handle": "adidas-adizero-evo-sl-women-white-blue-fusion-js4454",
+      "title": "adidas Adizero Evo SL Women's Running Shoes - White/Blue Fusion",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 2
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "adidas-adizero-evo-sl-women",
+      "expectedImages": 5,
+      "expectedVariants": 2,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/adidas-adizero-evo-sl-womens/JS4454.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231308918877",
+      "handle": "adidas-adizero-evo-sl-women-white-white-core-black-jh6208",
+      "title": "adidas Adizero Evo SL Women's Running Shoes - White/White/Core Black",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 13
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "adidas-adizero-evo-sl-women",
+      "expectedImages": 5,
+      "expectedVariants": 13,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/adidas-adizero-evo-sl-womens/JH6208.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231308951645",
+      "handle": "adidas-adizero-evo-sl-women-wonder-white-crystal-linen-ki6951",
+      "title": "adidas Adizero Evo SL Women's Running Shoes - Wonder White/Crystal Linen",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 1
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "adidas-adizero-evo-sl-women",
+      "expectedImages": 5,
+      "expectedVariants": 1,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/adidas-adizero-evo-sl-womens/KI6951.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231308984413",
+      "handle": "hoka-clifton-10-women-vanilla-birch-62031vch",
+      "title": "HOKA Clifton 10 Women's Running Shoes - Vanilla/Birch",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 9
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "hoka-clifton-10-women",
+      "expectedImages": 5,
+      "expectedVariants": 9,
+      "familyRequired": false,
+      "sourceUrl": "https://www.footlocker.com/product/hoka-clifton-10-womens/62031VCH.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231309049949",
+      "handle": "hoka-speedgoat-2-men-black-brown-2710bhlt",
+      "title": "HOKA Speedgoat 2 Men's Trail Shoes - Black/Brown",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 10
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "hoka-speedgoat-2-men",
+      "expectedImages": 5,
+      "expectedVariants": 10,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/hoka-speedgoat-2-mens/2710BHLT.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231309082717",
+      "handle": "hoka-speedgoat-2-men-yellow-black-nz422710",
+      "title": "HOKA Speedgoat 2 Men's Trail Shoes - Yellow/Black",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 11
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "hoka-speedgoat-2-men",
+      "expectedImages": 5,
+      "expectedVariants": 11,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/hoka-speedgoat-2-mens/NZ422710.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231309115485",
+      "handle": "nike-air-force-1-low-easyon-boys-preschool-black-black-n0237001",
+      "title": "Nike Air Force 1 Low EasyOn - Boys' Preschool Sneakers - Black/Black",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 6
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "nike-air-force-1-low-easyon-boys-preschool",
+      "expectedImages": 5,
+      "expectedVariants": 6,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-air-force-1-low-easyon-boys-preschool/N0237001.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231309148253",
+      "handle": "nike-air-force-1-low-easyon-boys-preschool-sail-light-silver-n0237007",
+      "title": "Nike Air Force 1 Low EasyOn - Boys' Preschool Sneakers - Sail/Light Silver",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 2
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "nike-air-force-1-low-easyon-boys-preschool",
+      "expectedImages": 5,
+      "expectedVariants": 2,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-air-force-1-low-easyon-boys-preschool/N0237007.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231309181021",
+      "handle": "nike-air-max-270-boys-grade-school-black-black-black-q5776001",
+      "title": "Nike Air Max 270 - Boys' Grade School Sneakers - Black/Black/Black",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 8
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "nike-air-max-270-boys-grade-school",
+      "expectedImages": 5,
+      "expectedVariants": 8,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-air-max-270-boys-grade-school/Q5776001.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231309213789",
+      "handle": "nike-air-max-270-boys-grade-school-black-white-evergreen-aura-43345042",
+      "title": "Nike Air Max 270 - Boys' Grade School Sneakers - Black/White/Evergreen Aura",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 2
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "nike-air-max-270-boys-grade-school",
+      "expectedImages": 5,
+      "expectedVariants": 2,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-air-max-270-boys-grade-school/43345042.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231309246557",
+      "handle": "nike-air-max-270-boys-grade-school-black-white-vivid-purple-43345044",
+      "title": "Nike Air Max 270 - Boys' Grade School Sneakers - Black/White/Vivid Purple",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 1
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "nike-air-max-270-boys-grade-school",
+      "expectedImages": 5,
+      "expectedVariants": 1,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-air-max-270-boys-grade-school/43345044.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231309279325",
+      "handle": "nike-air-max-270-boys-grade-school-racer-blue-black-white-43345415",
+      "title": "Nike Air Max 270 - Boys' Grade School Sneakers - Racer Blue/Black/White",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 5
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "nike-air-max-270-boys-grade-school",
+      "expectedImages": 5,
+      "expectedVariants": 5,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-air-max-270-boys-grade-school/43345415.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231309312093",
+      "handle": "nike-air-max-270-boys-grade-school-white-white-metallic-silver-43345103",
+      "title": "Nike Air Max 270 - Boys' Grade School Sneakers - White/White/Metallic Silver",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 8
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "nike-air-max-270-boys-grade-school",
+      "expectedImages": 5,
+      "expectedVariants": 8,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-air-max-270-boys-grade-school/43345103.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231309344861",
+      "handle": "nike-air-zoom-pegasus-41-women-black-black-d2723001",
+      "title": "Nike Air Zoom Pegasus 41 Women's Running Shoes - Black/Black",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 3
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "nike-air-zoom-pegasus-41-women",
+      "expectedImages": 5,
+      "expectedVariants": 3,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-air-zoom-pegasus-41-womens/D2723001.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231309377629",
+      "handle": "nike-air-zoom-pegasus-41-women-black-white-d2723002",
+      "title": "Nike Air Zoom Pegasus 41 Women's Running Shoes - Black/White",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 10
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "nike-air-zoom-pegasus-41-women",
+      "expectedImages": 5,
+      "expectedVariants": 10,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-air-zoom-pegasus-41-womens/D2723002.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231309410397",
+      "handle": "nike-air-zoom-pegasus-41-women-playful-pink-off-noir-d2723605",
+      "title": "Nike Air Zoom Pegasus 41 Women's Running Shoes - Playful Pink/Off Noir",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 1
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "nike-air-zoom-pegasus-41-women",
+      "expectedImages": 5,
+      "expectedVariants": 1,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-air-zoom-pegasus-41-womens/D2723605.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231309443165",
+      "handle": "nike-air-zoom-pegasus-41-women-purple-dynasty-brt-violet-violet-mist-d2723503",
+      "title": "Nike Air Zoom Pegasus 41 Women's Running Shoes - Purple Dynasty/Brt Violet/Violet Mist",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 1
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "nike-air-zoom-pegasus-41-women",
+      "expectedImages": 5,
+      "expectedVariants": 1,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-air-zoom-pegasus-41-womens/D2723503.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231309475933",
+      "handle": "nike-free-metcon-6-men-astronomy-blue-black-hyper-crimson-f7127401",
+      "title": "Nike Free Metcon 6 Men's Training Shoes - Astronomy Blue/Black/Hyper Crimson",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 12
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "nike-free-metcon-6-men",
+      "expectedImages": 5,
+      "expectedVariants": 12,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-free-metcon-6-mens/F7127401.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231309508701",
+      "handle": "nike-free-metcon-6-men-cannon-black-lt-silver-j7127007",
+      "title": "Nike Free Metcon 6 Men's Training Shoes - Cannon/Black/Lt Silver",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 1
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "nike-free-metcon-6-men",
+      "expectedImages": 5,
+      "expectedVariants": 1,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-free-metcon-6-mens/J7127007.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231309541469",
+      "handle": "nike-free-metcon-6-men-white-black-green-strike-j7127107",
+      "title": "Nike Free Metcon 6 Men's Training Shoes - White/Black/Green Strike",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 1
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "nike-free-metcon-6-men",
+      "expectedImages": 5,
+      "expectedVariants": 1,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-free-metcon-6-mens/J7127107.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231309574237",
+      "handle": "nike-free-metcon-6-men-white-gum-lt-brown-hemp-j7127105",
+      "title": "Nike Free Metcon 6 Men's Training Shoes - White/Gum Lt Brown/Hemp",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 11
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "nike-free-metcon-6-men",
+      "expectedImages": 5,
+      "expectedVariants": 11,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-free-metcon-6-mens/J7127105.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231309607005",
+      "handle": "on-cloudmonster-void-women-black-black-10491043",
+      "title": "On Cloudmonster Void Women's Running Shoes - Black/Black",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 6
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "on-cloudmonster-void-women",
+      "expectedImages": 5,
+      "expectedVariants": 6,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/on-cloudmonster-void-womens/10491043.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231309639773",
+      "handle": "on-cloudmonster-void-women-iceberg-tin-10811344",
+      "title": "On Cloudmonster Void Women's Running Shoes - Iceberg/Tin",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 8
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "on-cloudmonster-void-women",
+      "expectedImages": 5,
+      "expectedVariants": 8,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/on-cloudmonster-void-womens/10811344.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231309672541",
+      "handle": "on-cloudmonster-void-women-ivory-pink-10814561",
+      "title": "On Cloudmonster Void Women's Running Shoes - Ivory/Pink",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 9
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "on-cloudmonster-void-women",
+      "expectedImages": 5,
+      "expectedVariants": 9,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/on-cloudmonster-void-womens/10814561.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231309705309",
+      "handle": "on-cloudmonster-void-women-ivory-seashell-10814680",
+      "title": "On Cloudmonster Void Women's Running Shoes - Ivory/Seashell",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 9
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "on-cloudmonster-void-women",
+      "expectedImages": 5,
+      "expectedVariants": 9,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/on-cloudmonster-void-womens/10814680.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231309770845",
+      "handle": "on-cloudmonster-void-women-linen-seedling-10814754",
+      "title": "On Cloudmonster Void Women's Running Shoes - Linen/Seedling",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 9
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "on-cloudmonster-void-women",
+      "expectedImages": 5,
+      "expectedVariants": 9,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/on-cloudmonster-void-womens/10814754.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231309803613",
+      "handle": "on-cloudmonster-void-women-purple-purple-10944928",
+      "title": "On Cloudmonster Void Women's Running Shoes - Purple/Purple",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 10
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "on-cloudmonster-void-women",
+      "expectedImages": 5,
+      "expectedVariants": 10,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/on-cloudmonster-void-womens/10944928.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231309836381",
+      "handle": "on-cloudmonster-void-women-white-ivory-10943334",
+      "title": "On Cloudmonster Void Women's Running Shoes - White/Ivory",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 9
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "on-cloudmonster-void-women",
+      "expectedImages": 5,
+      "expectedVariants": 9,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/on-cloudmonster-void-womens/10943334.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231309869149",
+      "handle": "on-cloudmonster-void-women-white-white-10491200",
+      "title": "On Cloudmonster Void Women's Running Shoes - White/White",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 9
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "on-cloudmonster-void-women",
+      "expectedImages": 5,
+      "expectedVariants": 9,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/on-cloudmonster-void-womens/10491200.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231309901917",
+      "handle": "on-cloudmonster-void-women-white-white-10811200",
+      "title": "On Cloudmonster Void Women's Running Shoes - White/White",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 9
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "on-cloudmonster-void-women",
+      "expectedImages": 5,
+      "expectedVariants": 9,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/on-cloudmonster-void-womens/10811200.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231309934685",
+      "handle": "salomon-xt-whisper-women-castlerock-footwear-silver-49219300",
+      "title": "Salomon XT-Whisper Women's Trail Shoes - Castlerock/Footwear Silver",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 1
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "salomon-xt-whisper-women",
+      "expectedImages": 5,
+      "expectedVariants": 1,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/salomon-xt-whisper-womens/49219300.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231309967453",
+      "handle": "salomon-xt-whisper-women-lilac-ash-fiesta-dawn-pink-l491859",
+      "title": "Salomon XT-Whisper Women's Trail Shoes - Lilac Ash/Fiesta/Dawn Pink",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 7
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "salomon-xt-whisper-women",
+      "expectedImages": 5,
+      "expectedVariants": 7,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/salomon-xt-whisper-womens/L491859.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231310000221",
+      "handle": "under-armour-slipspeed-trainer-men-white-stellar-pink-metallic-silver-27049131",
+      "title": "Under Armour Slipspeed Trainer Men's Training Shoes - White/Stellar Pink/Metallic Silver",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 2
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "under-armour-slipspeed-trainer-men",
+      "expectedImages": 5,
+      "expectedVariants": 2,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/under-armour-slipspeed-trainer-mens/27049131.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231310032989",
+      "handle": "under-armour-slipspeed-trainer-men-white-white-white-27049125",
+      "title": "Under Armour Slipspeed Trainer Men's Training Shoes - White/White/White",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 1
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "under-armour-slipspeed-trainer-men",
+      "expectedImages": 5,
+      "expectedVariants": 1,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/under-armour-slipspeed-trainer-mens/27049125.html",
+      "action": "created"
+    }
+  ],
+  "families": [
+    {
+      "id": "gid://shopify/Metaobject/322386559069",
+      "handle": "adidas-adizero-evo-sl-women",
+      "displayName": "adidas Adizero Evo SL Women's",
+      "productIds": [
+        "gid://shopify/Product/8231308787805",
+        "gid://shopify/Product/8231308853341",
+        "gid://shopify/Product/8231308886109",
+        "gid://shopify/Product/8231308918877",
+        "gid://shopify/Product/8231308951645"
+      ],
+      "productHandles": [
+        "adidas-adizero-evo-sl-women-aurora-coffee-iron-metallic-blush-pink-kk1952",
+        "adidas-adizero-evo-sl-women-silver-met-lucid-red-iron-met-ki3383",
+        "adidas-adizero-evo-sl-women-white-blue-fusion-js4454",
+        "adidas-adizero-evo-sl-women-white-white-core-black-jh6208",
+        "adidas-adizero-evo-sl-women-wonder-white-crystal-linen-ki6951"
+      ]
+    },
+    {
+      "id": "gid://shopify/Metaobject/322386591837",
+      "handle": "hoka-speedgoat-2-men",
+      "displayName": "HOKA Speedgoat 2 Men's",
+      "productIds": [
+        "gid://shopify/Product/8231309049949",
+        "gid://shopify/Product/8231309082717"
+      ],
+      "productHandles": [
+        "hoka-speedgoat-2-men-black-brown-2710bhlt",
+        "hoka-speedgoat-2-men-yellow-black-nz422710"
+      ]
+    },
+    {
+      "id": "gid://shopify/Metaobject/322386624605",
+      "handle": "nike-air-force-1-low-easyon-boys-preschool",
+      "displayName": "Nike Air Force 1 Low EasyOn - Boys' Preschool",
+      "productIds": [
+        "gid://shopify/Product/8231309115485",
+        "gid://shopify/Product/8231309148253"
+      ],
+      "productHandles": [
+        "nike-air-force-1-low-easyon-boys-preschool-black-black-n0237001",
+        "nike-air-force-1-low-easyon-boys-preschool-sail-light-silver-n0237007"
+      ]
+    },
+    {
+      "id": "gid://shopify/Metaobject/322386690141",
+      "handle": "nike-air-max-270-boys-grade-school",
+      "displayName": "Nike Air Max 270 - Boys' Grade School",
+      "productIds": [
+        "gid://shopify/Product/8231309181021",
+        "gid://shopify/Product/8231309213789",
+        "gid://shopify/Product/8231309246557",
+        "gid://shopify/Product/8231309279325",
+        "gid://shopify/Product/8231309312093"
+      ],
+      "productHandles": [
+        "nike-air-max-270-boys-grade-school-black-black-black-q5776001",
+        "nike-air-max-270-boys-grade-school-black-white-evergreen-aura-43345042",
+        "nike-air-max-270-boys-grade-school-black-white-vivid-purple-43345044",
+        "nike-air-max-270-boys-grade-school-racer-blue-black-white-43345415",
+        "nike-air-max-270-boys-grade-school-white-white-metallic-silver-43345103"
+      ]
+    },
+    {
+      "id": "gid://shopify/Metaobject/322386985053",
+      "handle": "nike-air-zoom-pegasus-41-women",
+      "displayName": "Nike Air Zoom Pegasus 41 Women's",
+      "productIds": [
+        "gid://shopify/Product/8231309344861",
+        "gid://shopify/Product/8231309377629",
+        "gid://shopify/Product/8231309410397",
+        "gid://shopify/Product/8231309443165"
+      ],
+      "productHandles": [
+        "nike-air-zoom-pegasus-41-women-black-black-d2723001",
+        "nike-air-zoom-pegasus-41-women-black-white-d2723002",
+        "nike-air-zoom-pegasus-41-women-playful-pink-off-noir-d2723605",
+        "nike-air-zoom-pegasus-41-women-purple-dynasty-brt-violet-violet-mist-d2723503"
+      ]
+    },
+    {
+      "id": "gid://shopify/Metaobject/322387345501",
+      "handle": "nike-free-metcon-6-men",
+      "displayName": "Nike Free Metcon 6 Men's",
+      "productIds": [
+        "gid://shopify/Product/8231309475933",
+        "gid://shopify/Product/8231309508701",
+        "gid://shopify/Product/8231309541469",
+        "gid://shopify/Product/8231309574237"
+      ],
+      "productHandles": [
+        "nike-free-metcon-6-men-astronomy-blue-black-hyper-crimson-f7127401",
+        "nike-free-metcon-6-men-cannon-black-lt-silver-j7127007",
+        "nike-free-metcon-6-men-white-black-green-strike-j7127107",
+        "nike-free-metcon-6-men-white-gum-lt-brown-hemp-j7127105"
+      ]
+    },
+    {
+      "id": "gid://shopify/Metaobject/322387705949",
+      "handle": "on-cloudmonster-void-women",
+      "displayName": "On Cloudmonster Void Women's",
+      "productIds": [
+        "gid://shopify/Product/8231309607005",
+        "gid://shopify/Product/8231309639773",
+        "gid://shopify/Product/8231309672541",
+        "gid://shopify/Product/8231309705309",
+        "gid://shopify/Product/8231309770845",
+        "gid://shopify/Product/8231309803613",
+        "gid://shopify/Product/8231309836381",
+        "gid://shopify/Product/8231309869149",
+        "gid://shopify/Product/8231309901917"
+      ],
+      "productHandles": [
+        "on-cloudmonster-void-women-black-black-10491043",
+        "on-cloudmonster-void-women-iceberg-tin-10811344",
+        "on-cloudmonster-void-women-ivory-pink-10814561",
+        "on-cloudmonster-void-women-ivory-seashell-10814680",
+        "on-cloudmonster-void-women-linen-seedling-10814754",
+        "on-cloudmonster-void-women-purple-purple-10944928",
+        "on-cloudmonster-void-women-white-ivory-10943334",
+        "on-cloudmonster-void-women-white-white-10491200",
+        "on-cloudmonster-void-women-white-white-10811200"
+      ]
+    },
+    {
+      "id": "gid://shopify/Metaobject/322388000861",
+      "handle": "salomon-xt-whisper-women",
+      "displayName": "Salomon XT-Whisper Women's",
+      "productIds": [
+        "gid://shopify/Product/8231309934685",
+        "gid://shopify/Product/8231309967453"
+      ],
+      "productHandles": [
+        "salomon-xt-whisper-women-castlerock-footwear-silver-49219300",
+        "salomon-xt-whisper-women-lilac-ash-fiesta-dawn-pink-l491859"
+      ]
+    },
+    {
+      "id": "gid://shopify/Metaobject/322388361309",
+      "handle": "under-armour-slipspeed-trainer-men",
+      "displayName": "Under Armour Slipspeed Trainer Men's",
+      "productIds": [
+        "gid://shopify/Product/8231310000221",
+        "gid://shopify/Product/8231310032989"
+      ],
+      "productHandles": [
+        "under-armour-slipspeed-trainer-men-white-stellar-pink-metallic-silver-27049131",
+        "under-armour-slipspeed-trainer-men-white-white-white-27049125"
+      ]
+    }
+  ],
+  "failures": [],
+  "verification": {
+    "checkedProducts": 36,
+    "passedProducts": 36,
+    "checks": [
+      {
+        "handle": "adidas-adizero-evo-sl-women-aurora-coffee-iron-metallic-blush-pink-kk1952",
+        "active": true,
+        "published": true,
+        "variantsExpected": 8,
+        "variantsActual": 8,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "adidas-adizero-evo-sl-women-silver-met-lucid-red-iron-met-ki3383",
+        "active": true,
+        "published": true,
+        "variantsExpected": 2,
+        "variantsActual": 2,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "adidas-adizero-evo-sl-women-white-blue-fusion-js4454",
+        "active": true,
+        "published": true,
+        "variantsExpected": 2,
+        "variantsActual": 2,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "adidas-adizero-evo-sl-women-white-white-core-black-jh6208",
+        "active": true,
+        "published": true,
+        "variantsExpected": 13,
+        "variantsActual": 13,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "adidas-adizero-evo-sl-women-wonder-white-crystal-linen-ki6951",
+        "active": true,
+        "published": true,
+        "variantsExpected": 1,
+        "variantsActual": 1,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "hoka-clifton-10-women-vanilla-birch-62031vch",
+        "active": true,
+        "published": true,
+        "variantsExpected": 9,
+        "variantsActual": 9,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": false,
+        "familyLinked": false
+      },
+      {
+        "handle": "hoka-speedgoat-2-men-black-brown-2710bhlt",
+        "active": true,
+        "published": true,
+        "variantsExpected": 10,
+        "variantsActual": 10,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "hoka-speedgoat-2-men-yellow-black-nz422710",
+        "active": true,
+        "published": true,
+        "variantsExpected": 11,
+        "variantsActual": 11,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-air-force-1-low-easyon-boys-preschool-black-black-n0237001",
+        "active": true,
+        "published": true,
+        "variantsExpected": 6,
+        "variantsActual": 6,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-air-force-1-low-easyon-boys-preschool-sail-light-silver-n0237007",
+        "active": true,
+        "published": true,
+        "variantsExpected": 2,
+        "variantsActual": 2,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-air-max-270-boys-grade-school-black-black-black-q5776001",
+        "active": true,
+        "published": true,
+        "variantsExpected": 8,
+        "variantsActual": 8,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-air-max-270-boys-grade-school-black-white-evergreen-aura-43345042",
+        "active": true,
+        "published": true,
+        "variantsExpected": 2,
+        "variantsActual": 2,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-air-max-270-boys-grade-school-black-white-vivid-purple-43345044",
+        "active": true,
+        "published": true,
+        "variantsExpected": 1,
+        "variantsActual": 1,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-air-max-270-boys-grade-school-racer-blue-black-white-43345415",
+        "active": true,
+        "published": true,
+        "variantsExpected": 5,
+        "variantsActual": 5,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-air-max-270-boys-grade-school-white-white-metallic-silver-43345103",
+        "active": true,
+        "published": true,
+        "variantsExpected": 8,
+        "variantsActual": 8,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-air-zoom-pegasus-41-women-black-black-d2723001",
+        "active": true,
+        "published": true,
+        "variantsExpected": 3,
+        "variantsActual": 3,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-air-zoom-pegasus-41-women-black-white-d2723002",
+        "active": true,
+        "published": true,
+        "variantsExpected": 10,
+        "variantsActual": 10,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-air-zoom-pegasus-41-women-playful-pink-off-noir-d2723605",
+        "active": true,
+        "published": true,
+        "variantsExpected": 1,
+        "variantsActual": 1,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-air-zoom-pegasus-41-women-purple-dynasty-brt-violet-violet-mist-d2723503",
+        "active": true,
+        "published": true,
+        "variantsExpected": 1,
+        "variantsActual": 1,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-free-metcon-6-men-astronomy-blue-black-hyper-crimson-f7127401",
+        "active": true,
+        "published": true,
+        "variantsExpected": 12,
+        "variantsActual": 12,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-free-metcon-6-men-cannon-black-lt-silver-j7127007",
+        "active": true,
+        "published": true,
+        "variantsExpected": 1,
+        "variantsActual": 1,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-free-metcon-6-men-white-black-green-strike-j7127107",
+        "active": true,
+        "published": true,
+        "variantsExpected": 1,
+        "variantsActual": 1,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-free-metcon-6-men-white-gum-lt-brown-hemp-j7127105",
+        "active": true,
+        "published": true,
+        "variantsExpected": 11,
+        "variantsActual": 11,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "on-cloudmonster-void-women-black-black-10491043",
+        "active": true,
+        "published": true,
+        "variantsExpected": 6,
+        "variantsActual": 6,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "on-cloudmonster-void-women-iceberg-tin-10811344",
+        "active": true,
+        "published": true,
+        "variantsExpected": 8,
+        "variantsActual": 8,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "on-cloudmonster-void-women-ivory-pink-10814561",
+        "active": true,
+        "published": true,
+        "variantsExpected": 9,
+        "variantsActual": 9,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "on-cloudmonster-void-women-ivory-seashell-10814680",
+        "active": true,
+        "published": true,
+        "variantsExpected": 9,
+        "variantsActual": 9,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "on-cloudmonster-void-women-linen-seedling-10814754",
+        "active": true,
+        "published": true,
+        "variantsExpected": 9,
+        "variantsActual": 9,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "on-cloudmonster-void-women-purple-purple-10944928",
+        "active": true,
+        "published": true,
+        "variantsExpected": 10,
+        "variantsActual": 10,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "on-cloudmonster-void-women-white-ivory-10943334",
+        "active": true,
+        "published": true,
+        "variantsExpected": 9,
+        "variantsActual": 9,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "on-cloudmonster-void-women-white-white-10491200",
+        "active": true,
+        "published": true,
+        "variantsExpected": 9,
+        "variantsActual": 9,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "on-cloudmonster-void-women-white-white-10811200",
+        "active": true,
+        "published": true,
+        "variantsExpected": 9,
+        "variantsActual": 9,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "salomon-xt-whisper-women-castlerock-footwear-silver-49219300",
+        "active": true,
+        "published": true,
+        "variantsExpected": 1,
+        "variantsActual": 1,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "salomon-xt-whisper-women-lilac-ash-fiesta-dawn-pink-l491859",
+        "active": true,
+        "published": true,
+        "variantsExpected": 7,
+        "variantsActual": 7,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "under-armour-slipspeed-trainer-men-white-stellar-pink-metallic-silver-27049131",
+        "active": true,
+        "published": true,
+        "variantsExpected": 2,
+        "variantsActual": 2,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "under-armour-slipspeed-trainer-men-white-white-white-27049125",
+        "active": true,
+        "published": true,
+        "variantsExpected": 1,
+        "variantsActual": 1,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,1210 @@
+{
+  "generatedAt": "2026-09-09T04:10:52.428Z",
+  "mode": "apply",
+  "shop": {
+    "name": "Sneaker Head",
+    "myshopifyDomain": "thuandotest.myshopify.com"
+  },
+  "location": {
+    "id": "gid://shopify/Location/76188057693",
+    "name": "Shop location"
+  },
+  "publication": {
+    "id": "gid://shopify/Publication/148514111581",
+    "name": "Online Store"
+  },
+  "planned": {
+    "products": 35,
+    "families": 7
+  },
+  "products": [
+    {
+      "id": "gid://shopify/Product/8231316553821",
+      "handle": "adidas-3s-sprinter-shorts-women-aurora-coffee-sandy-pink-kc9006",
+      "title": "adidas 3S Sprinter Shorts Women's - Aurora Coffee/Sandy Pink",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 5
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "adidas-3s-sprinter-shorts-women",
+      "expectedImages": 5,
+      "expectedVariants": 5,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/adidas-3s-sprinter-shorts-womens/KC9006.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231316652125",
+      "handle": "adidas-3s-sprinter-shorts-women-black-white-kd7977",
+      "title": "adidas 3S Sprinter Shorts Women's - Black/White",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 5
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "adidas-3s-sprinter-shorts-women",
+      "expectedImages": 5,
+      "expectedVariants": 5,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/adidas-3s-sprinter-shorts-womens/KD7977.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231316750429",
+      "handle": "adidas-hyperglam-training-leggings-women-black-kc7673",
+      "title": "adidas Hyperglam Training Leggings Women's - Black",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 5
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "adidas-hyperglam-training-leggings-women",
+      "expectedImages": 5,
+      "expectedVariants": 5,
+      "familyRequired": false,
+      "sourceUrl": "https://www.footlocker.com/product/adidas-hyperglam-training-leggings-womens/KC7673.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231316848733",
+      "handle": "adidas-originals-samba-women-footwear-white-coffee-metallic-gum-kk2504",
+      "title": "adidas Originals Samba Women's Sneakers - Footwear White/Coffee Metallic/Gum",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 13
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "adidas-originals-samba-women",
+      "expectedImages": 5,
+      "expectedVariants": 13,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/adidas-originals-samba-womens/KK2504.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231316979805",
+      "handle": "adidas-originals-samba-women-gum-wonder-quartz-off-white-la6882",
+      "title": "adidas Originals Samba Women's Sneakers - Gum/Wonder Quartz/Off White",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 13
+      },
+      "mediaCount": {
+        "count": 3
+      },
+      "familyHandle": "adidas-originals-samba-women",
+      "expectedImages": 3,
+      "expectedVariants": 13,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/adidas-originals-samba-womens/LA6882.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231317078109",
+      "handle": "adidas-originals-samba-women-off-white-tropic-bloom-gum-la6395",
+      "title": "adidas Originals Samba Women's Sneakers - Off White/Tropic Bloom/Gum",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 10
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "adidas-originals-samba-women",
+      "expectedImages": 5,
+      "expectedVariants": 10,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/adidas-originals-samba-womens/LA6395.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231317143645",
+      "handle": "adidas-samba-jane-satin-girls-grade-school-silver-metallic-footwear-white-gum-kj659987",
+      "title": "adidas Samba Jane Satin - Girls' Grade School Sneakers - Silver Metallic/Footwear White/Gum",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 8
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "adidas-samba-jane-satin-girls-grade-school",
+      "expectedImages": 5,
+      "expectedVariants": 8,
+      "familyRequired": false,
+      "sourceUrl": "https://www.footlocker.com/product/adidas-samba-jane-satin-girls-grade-school/KJ659987.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231317176413",
+      "handle": "new-balance-530-women-angora-turtledove-52508353",
+      "title": "New Balance 530 Women's Sneakers - Angora/Turtledove",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 9
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "new-balance-530-women",
+      "expectedImages": 5,
+      "expectedVariants": 9,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/new-balance-530-womens/52508353.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231317241949",
+      "handle": "new-balance-530-women-daybreak-silver-metallic-u53052n",
+      "title": "New Balance 530 Women's Sneakers - Daybreak/Silver Metallic",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 10
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "new-balance-530-women",
+      "expectedImages": 5,
+      "expectedVariants": 10,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/new-balance-530-womens/U53052N.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231317340253",
+      "handle": "new-balance-530-women-grey-white-mr530ck",
+      "title": "New Balance 530 Women's Sneakers - Grey/White",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 8
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "new-balance-530-women",
+      "expectedImages": 5,
+      "expectedVariants": 8,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/new-balance-530-womens/MR530CK.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231317438557",
+      "handle": "new-balance-530-women-pink-silver-52530022",
+      "title": "New Balance 530 Women's Sneakers - Pink/Silver",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 7
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "new-balance-530-women",
+      "expectedImages": 5,
+      "expectedVariants": 7,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/new-balance-530-womens/52530022.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231317471325",
+      "handle": "new-balance-530-women-sea-salt-brown-cw527988",
+      "title": "New Balance 530 Women's Sneakers - Sea Salt/Brown",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 9
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "new-balance-530-women",
+      "expectedImages": 5,
+      "expectedVariants": 9,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/new-balance-530-womens/CW527988.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231317536861",
+      "handle": "new-balance-530-women-white-natural-indigo-mr530sg",
+      "title": "New Balance 530 Women's Sneakers - White/Natural Indigo",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 10
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "new-balance-530-women",
+      "expectedImages": 5,
+      "expectedVariants": 10,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/new-balance-530-womens/MR530SG.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231317635165",
+      "handle": "new-balance-530-women-white-silver-mr530ema",
+      "title": "New Balance 530 Women's Sneakers - White/Silver",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 9
+      },
+      "mediaCount": {
+        "count": 4
+      },
+      "familyHandle": "new-balance-530-women",
+      "expectedImages": 4,
+      "expectedVariants": 9,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/new-balance-530-womens/MR530EMA.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231317733469",
+      "handle": "nike-air-force-1-girls-grade-school-black-black-62244801",
+      "title": "Nike Air Force 1 - Girls' Grade School Sneakers - Black/Black",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 7
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "nike-air-force-1-girls-grade-school",
+      "expectedImages": 5,
+      "expectedVariants": 7,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-air-force-1-girls-grade-school/62244801.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231317864541",
+      "handle": "nike-air-force-1-girls-grade-school-pink-white-grey-ir65059",
+      "title": "Nike Air Force 1 - Girls' Grade School Sneakers - Pink/White/Grey",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 7
+      },
+      "mediaCount": {
+        "count": 4
+      },
+      "familyHandle": "nike-air-force-1-girls-grade-school",
+      "expectedImages": 4,
+      "expectedVariants": 7,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-air-force-1-girls-grade-school/IR65059.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231317962845",
+      "handle": "nike-air-force-1-girls-grade-school-white-pink-ct3839",
+      "title": "Nike Air Force 1 - Girls' Grade School Sneakers - White/Pink",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 7
+      },
+      "mediaCount": {
+        "count": 4
+      },
+      "familyHandle": "nike-air-force-1-girls-grade-school",
+      "expectedImages": 4,
+      "expectedVariants": 7,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-air-force-1-girls-grade-school/CT3839.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231318093917",
+      "handle": "nike-air-max-90-men-black-black-42454010",
+      "title": "Nike Air Max 90 Men's Sneakers - Black/Black",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 13
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "nike-air-max-90-men",
+      "expectedImages": 5,
+      "expectedVariants": 13,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-air-max-90-mens/42454010.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231318192221",
+      "handle": "nike-air-max-90-men-black-black-black-n8490003",
+      "title": "Nike Air Max 90 Men's Sneakers - Black/Black/Black",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 12
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "nike-air-max-90-men",
+      "expectedImages": 5,
+      "expectedVariants": 12,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-air-max-90-mens/N8490003.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231318323293",
+      "handle": "nike-air-max-90-men-blue-crystal-light-smoke-grey-white-m0029122",
+      "title": "Nike Air Max 90 Men's Sneakers - Blue Crystal/Light Smoke Grey/White",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 11
+      },
+      "mediaCount": {
+        "count": 4
+      },
+      "familyHandle": "nike-air-max-90-men",
+      "expectedImages": 4,
+      "expectedVariants": 11,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-air-max-90-mens/M0029122.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231318421597",
+      "handle": "nike-air-max-90-men-iron-grey-white-dark-smoke-grey-n8490002",
+      "title": "Nike Air Max 90 Men's Sneakers - Iron Grey/White/Dark Smoke Grey",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 13
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "nike-air-max-90-men",
+      "expectedImages": 5,
+      "expectedVariants": 13,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-air-max-90-mens/N8490002.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231318519901",
+      "handle": "nike-air-max-90-men-phantom-phantom-med-olive-f5446003",
+      "title": "Nike Air Max 90 Men's Sneakers - Phantom/Phantom/Med Olive",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 1
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "nike-air-max-90-men",
+      "expectedImages": 5,
+      "expectedVariants": 1,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-air-max-90-mens/F5446003.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231318650973",
+      "handle": "nike-air-max-90-men-white-black-university-red-v2867100",
+      "title": "Nike Air Max 90 Men's Sneakers - White/Black/University Red",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 12
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "nike-air-max-90-men",
+      "expectedImages": 5,
+      "expectedVariants": 12,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-air-max-90-mens/V2867100.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231318749277",
+      "handle": "nike-air-max-90-men-white-grey-red-m002902",
+      "title": "Nike Air Max 90 Men's Sneakers - White/Grey/Red",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 12
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "nike-air-max-90-men",
+      "expectedImages": 5,
+      "expectedVariants": 12,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-air-max-90-mens/M002902.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231318880349",
+      "handle": "nike-air-max-90-men-white-white-wolf-grey-n8490100",
+      "title": "Nike Air Max 90 Men's Sneakers - White/White/Wolf Grey",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 13
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "nike-air-max-90-men",
+      "expectedImages": 5,
+      "expectedVariants": 13,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-air-max-90-mens/N8490100.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231318978653",
+      "handle": "nike-phoenix-fleece-high-rise-wide-pants-women-black-sail-ih011010",
+      "title": "Nike Phoenix Fleece High Rise Wide Pants Women's - Black/Sail",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 4
+      },
+      "mediaCount": {
+        "count": 3
+      },
+      "familyHandle": "nike-phoenix-fleece-high-rise-wide-pants-women",
+      "expectedImages": 3,
+      "expectedVariants": 4,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-phoenix-fleece-high-rise-wide-pants-womens/IH011010.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231319076957",
+      "handle": "nike-phoenix-fleece-high-rise-wide-pants-women-light-orewood-brown-white-ih011104",
+      "title": "Nike Phoenix Fleece High Rise Wide Pants Women's - Light Orewood Brown/White",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 5
+      },
+      "mediaCount": {
+        "count": 3
+      },
+      "familyHandle": "nike-phoenix-fleece-high-rise-wide-pants-women",
+      "expectedImages": 3,
+      "expectedVariants": 5,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-phoenix-fleece-high-rise-wide-pants-womens/IH011104.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231319175261",
+      "handle": "nike-phoenix-fleece-high-rise-wide-pants-women-playful-pink-sail-h1011675",
+      "title": "Nike Phoenix Fleece High Rise Wide Pants Women's - Playful Pink/Sail",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 5
+      },
+      "mediaCount": {
+        "count": 3
+      },
+      "familyHandle": "nike-phoenix-fleece-high-rise-wide-pants-women",
+      "expectedImages": 3,
+      "expectedVariants": 5,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-phoenix-fleece-high-rise-wide-pants-womens/H1011675.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231319273565",
+      "handle": "nike-phoenix-fleece-high-rise-wide-pants-women-sail-lt-medium-blue-h1011460",
+      "title": "Nike Phoenix Fleece High Rise Wide Pants Women's - Sail/Lt Medium Blue",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 1
+      },
+      "mediaCount": {
+        "count": 4
+      },
+      "familyHandle": "nike-phoenix-fleece-high-rise-wide-pants-women",
+      "expectedImages": 4,
+      "expectedVariants": 1,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-phoenix-fleece-high-rise-wide-pants-womens/H1011460.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231319371869",
+      "handle": "nike-phoenix-fleece-high-rise-wide-pants-women-sail-pink-foam-h1011663",
+      "title": "Nike Phoenix Fleece High Rise Wide Pants Women's - Sail/Pink Foam",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 5
+      },
+      "mediaCount": {
+        "count": 4
+      },
+      "familyHandle": "nike-phoenix-fleece-high-rise-wide-pants-women",
+      "expectedImages": 4,
+      "expectedVariants": 5,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-phoenix-fleece-high-rise-wide-pants-womens/H1011663.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231319470173",
+      "handle": "nike-zoom-vomero-5-women-black-black-court-purple-j2028004",
+      "title": "Nike Zoom Vomero 5 Women's Sneakers - Black/Black/Court Purple",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 7
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "nike-zoom-vomero-5-women",
+      "expectedImages": 5,
+      "expectedVariants": 7,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-zoom-vomero-5-womens/J2028004.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231319601245",
+      "handle": "nike-zoom-vomero-5-women-black-chrome-v4311002",
+      "title": "Nike Zoom Vomero 5 Women's Sneakers - Black/Chrome",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 11
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "nike-zoom-vomero-5-women",
+      "expectedImages": 5,
+      "expectedVariants": 11,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-zoom-vomero-5-womens/V4311002.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231319699549",
+      "handle": "nike-zoom-vomero-5-women-grey-gold-7723001",
+      "title": "Nike Zoom Vomero 5 Women's Sneakers - Grey/Gold",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 10
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "nike-zoom-vomero-5-women",
+      "expectedImages": 5,
+      "expectedVariants": 10,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-zoom-vomero-5-womens/7723001.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231319830621",
+      "handle": "nike-zoom-vomero-5-women-metallic-silver-photon-dust-pink-foam-f1877001",
+      "title": "Nike Zoom Vomero 5 Women's Sneakers - Metallic Silver/Photon Dust/Pink Foam",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 10
+      },
+      "mediaCount": {
+        "count": 4
+      },
+      "familyHandle": "nike-zoom-vomero-5-women",
+      "expectedImages": 4,
+      "expectedVariants": 10,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-zoom-vomero-5-womens/F1877001.html",
+      "action": "created"
+    },
+    {
+      "id": "gid://shopify/Product/8231319928925",
+      "handle": "nike-zoom-vomero-5-women-photon-dust-charcoal-d0884025",
+      "title": "Nike Zoom Vomero 5 Women's Sneakers - Photon Dust/Charcoal",
+      "status": "ACTIVE",
+      "variantsCount": {
+        "count": 3
+      },
+      "mediaCount": {
+        "count": 5
+      },
+      "familyHandle": "nike-zoom-vomero-5-women",
+      "expectedImages": 5,
+      "expectedVariants": 3,
+      "familyRequired": true,
+      "sourceUrl": "https://www.footlocker.com/product/nike-zoom-vomero-5-womens/D0884025.html",
+      "action": "created"
+    }
+  ],
+  "families": [
+    {
+      "id": "gid://shopify/Metaobject/322414411869",
+      "handle": "adidas-3s-sprinter-shorts-women",
+      "displayName": "adidas 3S Sprinter Shorts Women's",
+      "productIds": [
+        "gid://shopify/Product/8231316553821",
+        "gid://shopify/Product/8231316652125"
+      ],
+      "productHandles": [
+        "adidas-3s-sprinter-shorts-women-aurora-coffee-sandy-pink-kc9006",
+        "adidas-3s-sprinter-shorts-women-black-white-kd7977"
+      ]
+    },
+    {
+      "id": "gid://shopify/Metaobject/322414444637",
+      "handle": "adidas-originals-samba-women",
+      "displayName": "adidas Originals Samba Women's",
+      "productIds": [
+        "gid://shopify/Product/8231316848733",
+        "gid://shopify/Product/8231316979805",
+        "gid://shopify/Product/8231317078109"
+      ],
+      "productHandles": [
+        "adidas-originals-samba-women-footwear-white-coffee-metallic-gum-kk2504",
+        "adidas-originals-samba-women-gum-wonder-quartz-off-white-la6882",
+        "adidas-originals-samba-women-off-white-tropic-bloom-gum-la6395"
+      ]
+    },
+    {
+      "id": "gid://shopify/Metaobject/322414510173",
+      "handle": "new-balance-530-women",
+      "displayName": "New Balance 530 Women's",
+      "productIds": [
+        "gid://shopify/Product/8231317176413",
+        "gid://shopify/Product/8231317241949",
+        "gid://shopify/Product/8231317340253",
+        "gid://shopify/Product/8231317438557",
+        "gid://shopify/Product/8231317471325",
+        "gid://shopify/Product/8231317536861",
+        "gid://shopify/Product/8231317635165"
+      ],
+      "productHandles": [
+        "new-balance-530-women-angora-turtledove-52508353",
+        "new-balance-530-women-daybreak-silver-metallic-u53052n",
+        "new-balance-530-women-grey-white-mr530ck",
+        "new-balance-530-women-pink-silver-52530022",
+        "new-balance-530-women-sea-salt-brown-cw527988",
+        "new-balance-530-women-white-natural-indigo-mr530sg",
+        "new-balance-530-women-white-silver-mr530ema"
+      ]
+    },
+    {
+      "id": "gid://shopify/Metaobject/322414542941",
+      "handle": "nike-air-force-1-girls-grade-school",
+      "displayName": "Nike Air Force 1 - Girls' Grade School",
+      "productIds": [
+        "gid://shopify/Product/8231317733469",
+        "gid://shopify/Product/8231317864541",
+        "gid://shopify/Product/8231317962845"
+      ],
+      "productHandles": [
+        "nike-air-force-1-girls-grade-school-black-black-62244801",
+        "nike-air-force-1-girls-grade-school-pink-white-grey-ir65059",
+        "nike-air-force-1-girls-grade-school-white-pink-ct3839"
+      ]
+    },
+    {
+      "id": "gid://shopify/Metaobject/322414575709",
+      "handle": "nike-air-max-90-men",
+      "displayName": "Nike Air Max 90 Men's",
+      "productIds": [
+        "gid://shopify/Product/8231318093917",
+        "gid://shopify/Product/8231318192221",
+        "gid://shopify/Product/8231318323293",
+        "gid://shopify/Product/8231318421597",
+        "gid://shopify/Product/8231318519901",
+        "gid://shopify/Product/8231318650973",
+        "gid://shopify/Product/8231318749277",
+        "gid://shopify/Product/8231318880349"
+      ],
+      "productHandles": [
+        "nike-air-max-90-men-black-black-42454010",
+        "nike-air-max-90-men-black-black-black-n8490003",
+        "nike-air-max-90-men-blue-crystal-light-smoke-grey-white-m0029122",
+        "nike-air-max-90-men-iron-grey-white-dark-smoke-grey-n8490002",
+        "nike-air-max-90-men-phantom-phantom-med-olive-f5446003",
+        "nike-air-max-90-men-white-black-university-red-v2867100",
+        "nike-air-max-90-men-white-grey-red-m002902",
+        "nike-air-max-90-men-white-white-wolf-grey-n8490100"
+      ]
+    },
+    {
+      "id": "gid://shopify/Metaobject/322414608477",
+      "handle": "nike-phoenix-fleece-high-rise-wide-pants-women",
+      "displayName": "Nike Phoenix Fleece High Rise Wide Pants Women's",
+      "productIds": [
+        "gid://shopify/Product/8231318978653",
+        "gid://shopify/Product/8231319076957",
+        "gid://shopify/Product/8231319175261",
+        "gid://shopify/Product/8231319273565",
+        "gid://shopify/Product/8231319371869"
+      ],
+      "productHandles": [
+        "nike-phoenix-fleece-high-rise-wide-pants-women-black-sail-ih011010",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-light-orewood-brown-white-ih011104",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-playful-pink-sail-h1011675",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-sail-lt-medium-blue-h1011460",
+        "nike-phoenix-fleece-high-rise-wide-pants-women-sail-pink-foam-h1011663"
+      ]
+    },
+    {
+      "id": "gid://shopify/Metaobject/322414641245",
+      "handle": "nike-zoom-vomero-5-women",
+      "displayName": "Nike Zoom Vomero 5 Women's",
+      "productIds": [
+        "gid://shopify/Product/8231319470173",
+        "gid://shopify/Product/8231319601245",
+        "gid://shopify/Product/8231319699549",
+        "gid://shopify/Product/8231319830621",
+        "gid://shopify/Product/8231319928925"
+      ],
+      "productHandles": [
+        "nike-zoom-vomero-5-women-black-black-court-purple-j2028004",
+        "nike-zoom-vomero-5-women-black-chrome-v4311002",
+        "nike-zoom-vomero-5-women-grey-gold-7723001",
+        "nike-zoom-vomero-5-women-metallic-silver-photon-dust-pink-foam-f1877001",
+        "nike-zoom-vomero-5-women-photon-dust-charcoal-d0884025"
+      ]
+    }
+  ],
+  "failures": [],
+  "verification": {
+    "checkedProducts": 35,
+    "passedProducts": 35,
+    "checks": [
+      {
+        "handle": "adidas-3s-sprinter-shorts-women-aurora-coffee-sandy-pink-kc9006",
+        "active": true,
+        "published": true,
+        "variantsExpected": 5,
+        "variantsActual": 5,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "adidas-3s-sprinter-shorts-women-black-white-kd7977",
+        "active": true,
+        "published": true,
+        "variantsExpected": 5,
+        "variantsActual": 5,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "adidas-hyperglam-training-leggings-women-black-kc7673",
+        "active": true,
+        "published": true,
+        "variantsExpected": 5,
+        "variantsActual": 5,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": false,
+        "familyLinked": false
+      },
+      {
+        "handle": "adidas-originals-samba-women-footwear-white-coffee-metallic-gum-kk2504",
+        "active": true,
+        "published": true,
+        "variantsExpected": 13,
+        "variantsActual": 13,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "adidas-originals-samba-women-gum-wonder-quartz-off-white-la6882",
+        "active": true,
+        "published": true,
+        "variantsExpected": 13,
+        "variantsActual": 13,
+        "imagesExpected": 3,
+        "imagesActual": 3,
+        "readyCdnImages": 3,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "adidas-originals-samba-women-off-white-tropic-bloom-gum-la6395",
+        "active": true,
+        "published": true,
+        "variantsExpected": 10,
+        "variantsActual": 10,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "adidas-samba-jane-satin-girls-grade-school-silver-metallic-footwear-white-gum-kj659987",
+        "active": true,
+        "published": true,
+        "variantsExpected": 8,
+        "variantsActual": 8,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": false,
+        "familyLinked": false
+      },
+      {
+        "handle": "new-balance-530-women-angora-turtledove-52508353",
+        "active": true,
+        "published": true,
+        "variantsExpected": 9,
+        "variantsActual": 9,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "new-balance-530-women-daybreak-silver-metallic-u53052n",
+        "active": true,
+        "published": true,
+        "variantsExpected": 10,
+        "variantsActual": 10,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "new-balance-530-women-grey-white-mr530ck",
+        "active": true,
+        "published": true,
+        "variantsExpected": 8,
+        "variantsActual": 8,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "new-balance-530-women-pink-silver-52530022",
+        "active": true,
+        "published": true,
+        "variantsExpected": 7,
+        "variantsActual": 7,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "new-balance-530-women-sea-salt-brown-cw527988",
+        "active": true,
+        "published": true,
+        "variantsExpected": 9,
+        "variantsActual": 9,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "new-balance-530-women-white-natural-indigo-mr530sg",
+        "active": true,
+        "published": true,
+        "variantsExpected": 10,
+        "variantsActual": 10,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "new-balance-530-women-white-silver-mr530ema",
+        "active": true,
+        "published": true,
+        "variantsExpected": 9,
+        "variantsActual": 9,
+        "imagesExpected": 4,
+        "imagesActual": 4,
+        "readyCdnImages": 4,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-air-force-1-girls-grade-school-black-black-62244801",
+        "active": true,
+        "published": true,
+        "variantsExpected": 7,
+        "variantsActual": 7,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-air-force-1-girls-grade-school-pink-white-grey-ir65059",
+        "active": true,
+        "published": true,
+        "variantsExpected": 7,
+        "variantsActual": 7,
+        "imagesExpected": 4,
+        "imagesActual": 4,
+        "readyCdnImages": 4,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-air-force-1-girls-grade-school-white-pink-ct3839",
+        "active": true,
+        "published": true,
+        "variantsExpected": 7,
+        "variantsActual": 7,
+        "imagesExpected": 4,
+        "imagesActual": 4,
+        "readyCdnImages": 4,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-air-max-90-men-black-black-42454010",
+        "active": true,
+        "published": true,
+        "variantsExpected": 13,
+        "variantsActual": 13,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-air-max-90-men-black-black-black-n8490003",
+        "active": true,
+        "published": true,
+        "variantsExpected": 12,
+        "variantsActual": 12,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-air-max-90-men-blue-crystal-light-smoke-grey-white-m0029122",
+        "active": true,
+        "published": true,
+        "variantsExpected": 11,
+        "variantsActual": 11,
+        "imagesExpected": 4,
+        "imagesActual": 4,
+        "readyCdnImages": 4,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-air-max-90-men-iron-grey-white-dark-smoke-grey-n8490002",
+        "active": true,
+        "published": true,
+        "variantsExpected": 13,
+        "variantsActual": 13,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-air-max-90-men-phantom-phantom-med-olive-f5446003",
+        "active": true,
+        "published": true,
+        "variantsExpected": 1,
+        "variantsActual": 1,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-air-max-90-men-white-black-university-red-v2867100",
+        "active": true,
+        "published": true,
+        "variantsExpected": 12,
+        "variantsActual": 12,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-air-max-90-men-white-grey-red-m002902",
+        "active": true,
+        "published": true,
+        "variantsExpected": 12,
+        "variantsActual": 12,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-air-max-90-men-white-white-wolf-grey-n8490100",
+        "active": true,
+        "published": true,
+        "variantsExpected": 13,
+        "variantsActual": 13,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-phoenix-fleece-high-rise-wide-pants-women-black-sail-ih011010",
+        "active": true,
+        "published": true,
+        "variantsExpected": 4,
+        "variantsActual": 4,
+        "imagesExpected": 3,
+        "imagesActual": 3,
+        "readyCdnImages": 3,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-phoenix-fleece-high-rise-wide-pants-women-light-orewood-brown-white-ih011104",
+        "active": true,
+        "published": true,
+        "variantsExpected": 5,
+        "variantsActual": 5,
+        "imagesExpected": 3,
+        "imagesActual": 3,
+        "readyCdnImages": 3,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-phoenix-fleece-high-rise-wide-pants-women-playful-pink-sail-h1011675",
+        "active": true,
+        "published": true,
+        "variantsExpected": 5,
+        "variantsActual": 5,
+        "imagesExpected": 3,
+        "imagesActual": 3,
+        "readyCdnImages": 3,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-phoenix-fleece-high-rise-wide-pants-women-sail-lt-medium-blue-h1011460",
+        "active": true,
+        "published": true,
+        "variantsExpected": 1,
+        "variantsActual": 1,
+        "imagesExpected": 4,
+        "imagesActual": 4,
+        "readyCdnImages": 4,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-phoenix-fleece-high-rise-wide-pants-women-sail-pink-foam-h1011663",
+        "active": true,
+        "published": true,
+        "variantsExpected": 5,
+        "variantsActual": 5,
+        "imagesExpected": 4,
+        "imagesActual": 4,
+        "readyCdnImages": 4,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-zoom-vomero-5-women-black-black-court-purple-j2028004",
+        "active": true,
+        "published": true,
+        "variantsExpected": 7,
+        "variantsActual": 7,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-zoom-vomero-5-women-black-chrome-v4311002",
+        "active": true,
+        "published": true,
+        "variantsExpected": 11,
+        "variantsActual": 11,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-zoom-vomero-5-women-grey-gold-7723001",
+        "active": true,
+        "published": true,
+        "variantsExpected": 10,
+        "variantsActual": 10,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-zoom-vomero-5-women-metallic-silver-photon-dust-pink-foam-f1877001",
+        "active": true,
+        "published": true,
+        "variantsExpected": 10,
+        "variantsActual": 10,
+        "imagesExpected": 4,
+        "imagesActual": 4,
+        "readyCdnImages": 4,
+        "familyRequired": true,
+        "familyLinked": true
+      },
+      {
+        "handle": "nike-zoom-vomero-5-women-photon-dust-charcoal-d0884025",
+        "active": true,
+        "published": true,
+        "variantsExpected": 3,
+        "variantsActual": 3,
+        "imagesExpected": 5,
+        "imagesActual": 5,
+        "readyCdnImages": 5,
+        "familyRequired": true,
+        "familyLinked": true
+      }
+    ]
+  }
+}

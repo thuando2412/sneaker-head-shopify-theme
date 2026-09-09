@@ -1,0 +1,91 @@
+[
+  {
+    "handle": "adidas-adizero-evo-sl-women",
+    "name": "adidas Adizero Evo SL Women's",
+    "productHandles": [
+      "adidas-adizero-evo-sl-women-aurora-coffee-iron-metallic-blush-pink-kk1952",
+      "adidas-adizero-evo-sl-women-silver-met-lucid-red-iron-met-ki3383",
+      "adidas-adizero-evo-sl-women-white-blue-fusion-js4454",
+      "adidas-adizero-evo-sl-women-white-white-core-black-jh6208",
+      "adidas-adizero-evo-sl-women-wonder-white-crystal-linen-ki6951"
+    ]
+  },
+  {
+    "handle": "hoka-speedgoat-2-men",
+    "name": "HOKA Speedgoat 2 Men's",
+    "productHandles": [
+      "hoka-speedgoat-2-men-black-brown-2710bhlt",
+      "hoka-speedgoat-2-men-yellow-black-nz422710"
+    ]
+  },
+  {
+    "handle": "nike-air-force-1-low-easyon-boys-preschool",
+    "name": "Nike Air Force 1 Low EasyOn - Boys' Preschool",
+    "productHandles": [
+      "nike-air-force-1-low-easyon-boys-preschool-black-black-n0237001",
+      "nike-air-force-1-low-easyon-boys-preschool-sail-light-silver-n0237007"
+    ]
+  },
+  {
+    "handle": "nike-air-max-270-boys-grade-school",
+    "name": "Nike Air Max 270 - Boys' Grade School",
+    "productHandles": [
+      "nike-air-max-270-boys-grade-school-black-black-black-q5776001",
+      "nike-air-max-270-boys-grade-school-black-white-evergreen-aura-43345042",
+      "nike-air-max-270-boys-grade-school-black-white-vivid-purple-43345044",
+      "nike-air-max-270-boys-grade-school-racer-blue-black-white-43345415",
+      "nike-air-max-270-boys-grade-school-white-white-metallic-silver-43345103"
+    ]
+  },
+  {
+    "handle": "nike-air-zoom-pegasus-41-women",
+    "name": "Nike Air Zoom Pegasus 41 Women's",
+    "productHandles": [
+      "nike-air-zoom-pegasus-41-women-black-black-d2723001",
+      "nike-air-zoom-pegasus-41-women-black-white-d2723002",
+      "nike-air-zoom-pegasus-41-women-playful-pink-off-noir-d2723605",
+      "nike-air-zoom-pegasus-41-women-purple-dynasty-brt-violet-violet-mist-d2723503"
+    ]
+  },
+  {
+    "handle": "nike-free-metcon-6-men",
+    "name": "Nike Free Metcon 6 Men's",
+    "productHandles": [
+      "nike-free-metcon-6-men-astronomy-blue-black-hyper-crimson-f7127401",
+      "nike-free-metcon-6-men-cannon-black-lt-silver-j7127007",
+      "nike-free-metcon-6-men-white-black-green-strike-j7127107",
+      "nike-free-metcon-6-men-white-gum-lt-brown-hemp-j7127105"
+    ]
+  },
+  {
+    "handle": "on-cloudmonster-void-women",
+    "name": "On Cloudmonster Void Women's",
+    "productHandles": [
+      "on-cloudmonster-void-women-black-black-10491043",
+      "on-cloudmonster-void-women-iceberg-tin-10811344",
+      "on-cloudmonster-void-women-ivory-pink-10814561",
+      "on-cloudmonster-void-women-ivory-seashell-10814680",
+      "on-cloudmonster-void-women-linen-seedling-10814754",
+      "on-cloudmonster-void-women-purple-purple-10944928",
+      "on-cloudmonster-void-women-white-ivory-10943334",
+      "on-cloudmonster-void-women-white-white-10491200",
+      "on-cloudmonster-void-women-white-white-10811200"
+    ]
+  },
+  {
+    "handle": "salomon-xt-whisper-women",
+    "name": "Salomon XT-Whisper Women's",
+    "productHandles": [
+      "salomon-xt-whisper-women-castlerock-footwear-silver-49219300",
+      "salomon-xt-whisper-women-lilac-ash-fiesta-dawn-pink-l491859"
+    ]
+  },
+  {
+    "handle": "under-armour-slipspeed-trainer-men",
+    "name": "Under Armour Slipspeed Trainer Men's",
+    "productHandles": [
+      "under-armour-slipspeed-trainer-men-white-stellar-pink-metallic-silver-27049131",
+      "under-armour-slipspeed-trainer-men-white-white-white-27049125"
+    ]
+  }
+]

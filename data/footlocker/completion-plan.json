@@ -1,0 +1,18 @@
+{
+  "models": [
+    { "segment": "women", "category": "lifestyle", "url": "https://www.footlocker.com/product/model/nike-zoom-vomero-5-womens/425247.html" },
+    { "segment": "women", "category": "lifestyle", "url": "https://www.footlocker.com/product/model/adidas-originals-samba-womens/447749.html" },
+    { "segment": "women", "category": "lifestyle", "url": "https://www.footlocker.com/product/model/new-balance-530-womens/237600.html" },
+    { "segment": "men", "category": "lifestyle", "url": "https://www.footlocker.com/product/model/new-balance-9060-mens/433346.html" },
+    { "segment": "men", "category": "lifestyle", "url": "https://www.footlocker.com/product/model/nike-air-max-90-mens/148253.html" },
+    { "segment": "women", "category": "clothing", "url": "https://www.footlocker.com/product/model/nike-phoenix-fleece-high-rise-wide-pants-womens/451015.html" },
+    { "segment": "women", "category": "clothing", "url": "https://www.footlocker.com/product/model/nike-phoenix-fleece-os-pullover-hoodie-womens/465135.html" },
+    { "segment": "women", "category": "clothing", "url": "https://www.footlocker.com/product/model/nike-dri-fit-a-ja-short-sleeve-t-shirt-womens/456695.html" },
+    { "segment": "women", "category": "clothing", "url": "https://www.footlocker.com/product/model/adidas-hyperglam-training-leggings-womens/476937.html" },
+    { "segment": "women", "category": "clothing", "url": "https://www.footlocker.com/product/model/adidas-3s-sprinter-shorts-womens/459844.html" },
+    { "segment": "adult", "category": "accessories", "url": "https://www.footlocker.com/product/model/nike-utility-speed-backpack-adult/332076.html" },
+    { "segment": "adult", "category": "accessories", "url": "https://www.footlocker.com/product/model/adidas-originals-daily-backpack-adult/429986.html" },
+    { "segment": "kids", "category": "lifestyle", "url": "https://www.footlocker.com/product/model/nike-air-force-1-girls-grade-school/309191.html" },
+    { "segment": "kids", "category": "lifestyle", "url": "https://www.footlocker.com/product/model/adidas-samba-jane-satin-girls-grade-school/472838.html" }
+  ]
+}

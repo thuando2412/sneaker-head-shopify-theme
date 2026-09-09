@@ -4,7 +4,10 @@ import { fileURLToPath } from 'node:url';
 import { Workbook } from '@oai/artifact-tool';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const batchDir = path.join(root, 'outputs', 'footlocker-catalog-batch');
+const batchArgIndex = process.argv.indexOf('--batch');
+const batchDir = path.resolve(root, batchArgIndex >= 0 && process.argv[batchArgIndex + 1]
+  ? process.argv[batchArgIndex + 1]
+  : 'outputs/footlocker-catalog-batch');
 const files = ['products-import.csv', 'colorway-link-update.csv'];
 const results = [];
 

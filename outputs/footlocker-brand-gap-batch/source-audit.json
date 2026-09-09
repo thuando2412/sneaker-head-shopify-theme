@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-09-09T04:20:01.437Z",
+  "source": "Foot Locker US",
+  "batchTag": "footlocker-clean-batch-2026-09",
+  "policy": {
+    "inStockOnly": true,
+    "minimumGalleryImages": 3,
+    "maximumGalleryImages": 5
+  },
+  "totals": {
+    "products": 5,
+    "variants": 34,
+    "images": 25,
+    "families": 3,
+    "excluded": 1
+  },
+  "families": [
+    {
+      "handle": "asics-gel-1130-women",
+      "name": "ASICS® GEL-1130 Women's",
+      "products": 1
+    },
+    {
+      "handle": "mizuno-wave-rider-29-men",
+      "name": "Mizuno Wave Rider 29 Men's",
+      "products": 2
+    },
+    {
+      "handle": "puma-speedcat-etoile-women",
+      "name": "PUMA Speedcat Etoile Women's",
+      "products": 2
+    }
+  ],
+  "excluded": [
+    {
+      "sku": "2A256118",
+      "family": "ASICS® GEL-1130 - Women's",
+      "color": "Grey/White/White",
+      "reason": "no in-stock size"
+    }
+  ]
+}

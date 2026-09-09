@@ -1,0 +1,741 @@
+{
+  "generated_at": "2026-09-09T03:48:02.766Z",
+  "groups": [
+    {
+      "brand": "HOKA",
+      "category": "running",
+      "segment": "women",
+      "colorways": [
+        {
+          "availability": "InStock",
+          "color": "Vanilla/Birch",
+          "compare_at_price_usd": 155,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/62031VCH"
+          ],
+          "price_usd": 123.99,
+          "sku": "62031VCH",
+          "source_url": "https://www.footlocker.com/product/hoka-clifton-10-womens/62031VCH.html",
+          "title": "HOKA Clifton 10 - Women's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Birch/Alabaster",
+          "compare_at_price_usd": 155,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/2031BHLB"
+          ],
+          "price_usd": 123.99,
+          "sku": "2031BHLB",
+          "source_url": "https://www.footlocker.com/product/hoka-clifton-10-womens/2031BHLB.html",
+          "title": "HOKA Clifton 10 - Women's"
+        }
+      ],
+      "description": "'Lighter and more cushioned than ever before, the Hoka Clifton 10 empowers runners like you to log miles no matter the challenge. Constructed with a jacquard knit upper, these shoes offer superior breathability and comfort with every step. The smooth MetaRocker and CMEVA midsole provide a stable, springy ride with an improved forefoot fit. Plus, the rearfoot-focused Active Foot Frame ensures an enhanced underfoot transition and supports every step. Effortlessly blend style and performance with the Hoka Clifton 10. Hoka Clifton 10 features:  Double-lace lock ensures a secure fit. Molded EVA sockliner adds maximum comfort. Reflective upper details enable low-light visibility. Durable abrasion rubber outsole offers superior traction. Weight: 8 oz. Long walks, daily miles, and busy days on your feet feel easier when comfort leads the way. The HOKA Clifton 10 balances lightweight cushioning with a smooth, stable ride, pairing a breathable jacquard knit upper with CMEVA cushioning, MetaRocker geometry, and a rearfoot-focused Active Foot Frame for fluid transitions and dependable support. Jacquard knit upper for breathable comfortDouble-lace lock helps create a secure fitMolded EVA sockliner adds soft underfoot comfortReflective upper details enhance low-light visibilityDurable abrasion rubber outsole for reliable tractionWeight: 8 oz.  Size &amp; Fit Guidance Reviews point to a secure, close-to-foot feel. For the best fit, we recommend your usual size if you like a snug, locked-in hold through the midfoot.  Best For Best for walking, long shifts, everyday training, and anyone who wants plush comfort throughout the day.  Cushioning &amp; Road Feel This ride leans soft, smooth, and protective rather than firm and ground-close. Wearers consistently call out the cushioning as a standout, while the MetaRocker shape helps keep transitions feeling easy and efficient.  Break-In &amp; Durability Many wearers find the Clifton 10 comfortable right away, making it an easy choice for regular rotation. The supportive platform and abrasion rubber outsole are built to handle repeated daily wear.\"",
+      "product_group_id": "440649",
+      "source": "Foot Locker US",
+      "source_url": "https://www.footlocker.com/product/model/hoka-clifton-10-womens/440649.html",
+      "title": "HOKA Clifton 10 - Women's"
+    },
+    {
+      "brand": "On",
+      "category": "running",
+      "segment": "women",
+      "colorways": [
+        {
+          "availability": "InStock",
+          "color": "White/White",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/10491200"
+          ],
+          "price_usd": 170,
+          "sku": "10491200",
+          "source_url": "https://www.footlocker.com/product/on-cloudmonster-void-womens/10491200.html",
+          "title": "On Cloudmonster Void - Women's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Black/Black",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/10491043"
+          ],
+          "price_usd": 170,
+          "sku": "10491043",
+          "source_url": "https://www.footlocker.com/product/on-cloudmonster-void-womens/10491043.html",
+          "title": "On Cloudmonster Void - Women's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Ivory/Seashell",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/10814680"
+          ],
+          "price_usd": 170,
+          "sku": "10814680",
+          "source_url": "https://www.footlocker.com/product/on-cloudmonster-void-womens/10814680.html",
+          "title": "On Cloudmonster Void - Women's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Purple/Purple",
+          "compare_at_price_usd": 170,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/10944928"
+          ],
+          "price_usd": 159.99,
+          "sku": "10944928",
+          "source_url": "https://www.footlocker.com/product/on-cloudmonster-void-womens/10944928.html",
+          "title": "On Cloudmonster Void - Women's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Iceberg/Tin",
+          "compare_at_price_usd": 170,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/10811344"
+          ],
+          "price_usd": 119.99,
+          "sku": "10811344",
+          "source_url": "https://www.footlocker.com/product/on-cloudmonster-void-womens/10811344.html",
+          "title": "On Cloudmonster Void - Women's"
+        },
+        {
+          "availability": "InStock",
+          "color": "White/Ivory",
+          "compare_at_price_usd": 170,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/10943334"
+          ],
+          "price_usd": 139.99,
+          "sku": "10943334",
+          "source_url": "https://www.footlocker.com/product/on-cloudmonster-void-womens/10943334.html",
+          "title": "On Cloudmonster Void - Women's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Ivory/Pink",
+          "compare_at_price_usd": 170,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/10814561"
+          ],
+          "price_usd": 129.99,
+          "sku": "10814561",
+          "source_url": "https://www.footlocker.com/product/on-cloudmonster-void-womens/10814561.html",
+          "title": "On Cloudmonster Void - Women's"
+        },
+        {
+          "availability": "InStock",
+          "color": "White/White",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/10811200"
+          ],
+          "price_usd": 170,
+          "sku": "10811200",
+          "source_url": "https://www.footlocker.com/product/on-cloudmonster-void-womens/10811200.html",
+          "title": "On Cloudmonster Void - Women's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Linen/Seedling",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/10814754"
+          ],
+          "price_usd": 170,
+          "sku": "10814754",
+          "source_url": "https://www.footlocker.com/product/on-cloudmonster-void-womens/10814754.html",
+          "title": "On Cloudmonster Void - Women's"
+        }
+      ],
+      "description": "'Redefine your style and stride with the On Cloudmonster Void. Featuring a Helion superfoam midsole with the same iconic cushioning and bottom unit as the OG, these maximalist silhouettes provide unmatched comfort and stability for every adventure. The updated haptic mesh upper offers excellent ventilation and a lightweight fit for all-day comfort. Plus, the rubber pads on the outsole ensure a secure grip and traction. Stay bold, celebrate your uniqueness, and get weird all day with the On Cloudmonster Void. On Cloudmonster Void features:  Soft finish on the tongue provides comfort. Durable TPU eyelet stays bring strength and durability. Upgraded branded elements add a pop of style and a modern touch. Long days on your feet call for cushioning that stays comfortable from morning to night. The On Cloudmonster Void blends the bold, max-cushioned feel of the original with an updated haptic mesh upper for lightweight breathability, while the soft tongue and grippy outsole pads help keep every step smooth, stable, and ready for whatever the day brings.Helion superfoam midsole delivers the same iconic cushioning and bottom unit as the OG.Updated haptic mesh upper provides a light, airy feel.Soft-finish tongue adds step-in comfort.Durable TPU eyelet stays help reinforce the lacing system.Rubber pads on the outsole enhance traction.Upgraded branded details add a modern finish.  Size &amp; Fit GuidanceFor the best fit, we recommend going with your usual size for most wearers. If you prefer a little extra toe room or are between sizes, some reviewers found a half-size up more comfortable.  Best ForIdeal for all-day wear, commuting, school, travel, and jobs that keep you on your feet, with enough versatility for light runs and mixed workouts.  Styling &amp; VersatilityThe sleek upper and oversized CloudTec sole give this pair a modern, performance-inspired look that works easily into everyday rotation. Reviewers especially like it for pairing with casual outfits and workwear like scrubs when comfort is the priority.\"",
+      "product_group_id": "440165",
+      "source": "Foot Locker US",
+      "source_url": "https://www.footlocker.com/product/model/on-cloudmonster-void-womens/440165.html",
+      "title": "On Cloudmonster Void - Women's"
+    },
+    {
+      "brand": "adidas",
+      "category": "running",
+      "segment": "women",
+      "colorways": [
+        {
+          "availability": "InStock",
+          "color": "White/White/Core Black",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/JH6208"
+          ],
+          "price_usd": 150,
+          "sku": "JH6208",
+          "source_url": "https://www.footlocker.com/product/adidas-adizero-evo-sl-womens/JH6208.html",
+          "title": "adidas Adizero Evo SL - Women's"
+        },
+        {
+          "availability": "InStock",
+          "color": "White/Blue Fusion",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/JS4454"
+          ],
+          "price_usd": 150,
+          "sku": "JS4454",
+          "source_url": "https://www.footlocker.com/product/adidas-adizero-evo-sl-womens/JS4454.html",
+          "title": "adidas Adizero Evo SL - Women's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Wonder White/Crystal Linen",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/KI6951"
+          ],
+          "price_usd": 150,
+          "sku": "KI6951",
+          "source_url": "https://www.footlocker.com/product/adidas-adizero-evo-sl-womens/KI6951.html",
+          "title": "adidas Adizero Evo SL - Women's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Silver Met/Lucid Red/Iron Met",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/KI3383"
+          ],
+          "price_usd": 150,
+          "sku": "KI3383",
+          "source_url": "https://www.footlocker.com/product/adidas-adizero-evo-sl-womens/KI3383.html",
+          "title": "adidas Adizero Evo SL - Women's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Aurora Coffee/Iron Metallic/Blush Pink",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/KK1952"
+          ],
+          "price_usd": 150,
+          "sku": "KK1952",
+          "source_url": "https://www.footlocker.com/product/adidas-adizero-evo-sl-womens/KK1952.html",
+          "title": "adidas Adizero Evo SL - Women's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Court Green/Lucid Red/Ftwr White",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/JQ4412"
+          ],
+          "price_usd": 150,
+          "sku": "JQ4412",
+          "source_url": "https://www.footlocker.com/product/adidas-adizero-evo-sl-womens/JQ4412.html",
+          "title": "adidas Adizero Evo SL - Women's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Ftwr White/Ftwr White/Warm Sandstone",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/KI9440"
+          ],
+          "price_usd": 150,
+          "sku": "KI9440",
+          "source_url": "https://www.footlocker.com/product/adidas-adizero-evo-sl-womens/KI9440.html",
+          "title": "adidas Adizero Evo SL - Women's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Off White/Ice Gold Met/Granite",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/KI4794"
+          ],
+          "price_usd": 150,
+          "sku": "KI4794",
+          "source_url": "https://www.footlocker.com/product/adidas-adizero-evo-sl-womens/KI4794.html",
+          "title": "adidas Adizero Evo SL - Women's"
+        }
+      ],
+      "description": "'Feel the surge of speed with the adidas Adizero Evo. Inspired by the world-record-breaking EVO 1, these breathable running shoes carry the same ultra-fast mentality as a versatile tempo trainer, perfect for pushing your limits in every step. The synthetic and textile upper ensures durability and targeted support, while the Lightstrike Pro technology delivers super-light cushioning to keep you quick and agile on your feet. Constructed with at least 20% recycled content, the adidas adiZero Evo brings peak performance and sustainability, making your every step count. adidas adiZero Evo features:  Regular fit gives a relaxed feel. Lace closure provides a customised fit. Textile lining maximises comfort. 3-Stripes add a bold, signature look. Small stiffening element ensures a little extra snap in each step. Continental Rubber outsole delivers grip and reliable traction.  *By reusing materials that have already been created, adidas helps to reduce waste and reliance on finite resources and reduce the footprint of the products.From daily miles to tempo sessions and race-day efforts, this lightweight runner is built to help you move fast without giving up comfort. Inspired by the record-setting EVO 1, the adidas Adizero Evo SL pairs a breathable synthetic and textile upper with ultra-light Lightstrike Pro cushioning for a smooth, energetic ride. A streamlined shape, subtle stiffening element, and dependable Continental Rubber outsole keep the feel quick, efficient, and ready for repeat miles.Regular fitLace closure for a secure feelTextile lining for added comfortLightstrike Pro midsole for lightweight cushioning and energy returnSmall stiffening element for extra snap through transitionsContinental Rubber outsole for road-ready tractionMade with at least 20% recycled content  Size &amp; Fit GuidanceFor the best fit, most runners can start with their usual size. If you prefer a little extra room for long runs or thicker socks, a half size up may feel best. The fit is generally secure through the midfoot with enough forefoot space for many runners.  Best ForBest for daily training, long runs, tempo work, and runners who want one shoe that can also handle race day.  Cushioning &amp; Road FeelReviewers consistently call out the soft, bouncy ride and lightweight feel, with enough cushioning to stay comfortable over everything from short runs to half and full marathon training. The platform feels lively and responsive rather than bulky, giving you smooth landings with quick turnover.  Break-In &amp; DurabilityMost runners find it comfortable right away, while some say it settles in even more after a few runs. The lightweight build has also earned praise for holding up through regular training mileage, especially in a road-running rotation.\"",
+      "product_group_id": "444950",
+      "source": "Foot Locker US",
+      "source_url": "https://www.footlocker.com/product/model/adidas-adizero-evo-sl-womens/444950.html",
+      "title": "adidas Adizero Evo SL - Women's"
+    },
+    {
+      "brand": "Nike",
+      "category": "running",
+      "segment": "women",
+      "colorways": [
+        {
+          "availability": "InStock",
+          "color": "Black/White",
+          "compare_at_price_usd": 145,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/D2723002"
+          ],
+          "price_usd": 109.99,
+          "sku": "D2723002",
+          "source_url": "https://www.footlocker.com/product/nike-air-zoom-pegasus-41-womens/D2723002.html",
+          "title": "Nike Air Zoom Pegasus 41 - Women's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Black/Black",
+          "compare_at_price_usd": 145,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/D2723001"
+          ],
+          "price_usd": 72.49,
+          "sku": "D2723001",
+          "source_url": "https://www.footlocker.com/product/nike-air-zoom-pegasus-41-womens/D2723001.html",
+          "title": "Nike Air Zoom Pegasus 41 - Women's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Playful Pink/Off Noir",
+          "compare_at_price_usd": 145,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/D2723605"
+          ],
+          "price_usd": 72.49,
+          "sku": "D2723605",
+          "source_url": "https://www.footlocker.com/product/nike-air-zoom-pegasus-41-womens/D2723605.html",
+          "title": "Nike Air Zoom Pegasus 41 - Women's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Purple Dynasty/Brt Violet/Violet Mist",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/D2723503"
+          ],
+          "price_usd": 145,
+          "sku": "D2723503",
+          "source_url": "https://www.footlocker.com/product/nike-air-zoom-pegasus-41-womens/D2723503.html",
+          "title": "Nike Air Zoom Pegasus 41 - Women's"
+        }
+      ],
+      "description": "'Faithful, reliable, and revolutionary, the Nike Air Zoom Pegasus 41 is unlike any other Peg that has ever been made before. Built with the same internal materials and padding as its predecessor, these running silhouettes are here to push the running world forward while still putting your wants and needs on top of the priority list. The two Zoom Air units combined with the Nike ReactX foam promise you a bouncy, springy sensation and an energised feel at toe-off. Interesting fact: the Nike ReactX foam is engineered to reduce carbon footprints by at least 43%, so you can take a stride towards a sustainable future. Whether you're logging long marathon miles or squeezing in a speed session before the sun goes down, you can put your faith in the Nike Air Zoom Pegasus 41‚Äîday after day, run after run. Nike Air Zoom Pegasus 41 features:  Engineered mesh upper feels lightweight and breathable. Broadened forefoot and heel width leave space for the springy Zoom Air engine to deliver a cushioned ride. Implemented midfoot band offers a more secure but forgiving sensation. Midfoot strap provides a moulded fit that is shaped for all-sized arches. Built for everything from easy miles to busy days on your feet, this pair delivers the light, cushioned ride runners love without feeling overly soft. The Nike Air Zoom Pegasus 41 updates the trusted Peg formula with a breathable engineered mesh upper, dual Zoom Air units, and responsive ReactX foam for smooth comfort on runs, walks, and everyday wear.Engineered mesh upper for lightweight breathability.Dual Zoom Air units help add springy responsiveness.ReactX foam provides soft, energized cushioning.Broadened forefoot and heel create a stable platform.Midfoot band and strap help secure the fit.  Size &amp; Fit Guidance Most reviewers say the fit feels true to size and secure. For the best fit, we recommend starting with your usual size, or going up half a size if you prefer extra toe room, wear thicker socks, or want a little more space through the forefoot. Runners with narrow feet often like the locked-in feel.  Best For Best for everyday training, treadmill sessions, walking, and all-day wear when you want one shoe that feels light, cushioned, and dependable.  Cushioning &amp; Road Feel Reviewers consistently describe the ride as lightweight, bouncy, and supportive, with enough cushioning for distance without losing control of the road. It lands in a balanced sweet spot for runners who want shock absorption and smooth turnover instead of an overly high, ultra-soft feel.  Break-In &amp; Durability Most reviewers found them comfortable from the first wear, with little to no break-in needed. Over time, the upper and cushioning continue to feel supportive for regular runs, walking routines, and repeated miles.\"",
+      "product_group_id": "429341",
+      "source": "Foot Locker US",
+      "source_url": "https://www.footlocker.com/product/model/nike-air-zoom-pegasus-41-womens/429341.html",
+      "title": "Nike Air Zoom Pegasus 41 - Women's"
+    },
+    {
+      "brand": "Nike",
+      "category": "lifestyle",
+      "segment": "kids",
+      "colorways": [
+        {
+          "availability": "InStock",
+          "color": "White/White/Metallic Silver",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/43345103"
+          ],
+          "price_usd": 132,
+          "sku": "43345103",
+          "source_url": "https://www.footlocker.com/product/nike-air-max-270-boys-grade-school/43345103.html",
+          "title": "Nike Air Max 270 - Boys' Grade School"
+        },
+        {
+          "availability": "InStock",
+          "color": "Black/Black/Black",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/Q5776001"
+          ],
+          "price_usd": 132,
+          "sku": "Q5776001",
+          "source_url": "https://www.footlocker.com/product/nike-air-max-270-boys-grade-school/Q5776001.html",
+          "title": "Nike Air Max 270 - Boys' Grade School"
+        },
+        {
+          "availability": "InStock",
+          "color": "Black/White/Evergreen Aura",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/43345042"
+          ],
+          "price_usd": 132,
+          "sku": "43345042",
+          "source_url": "https://www.footlocker.com/product/nike-air-max-270-boys-grade-school/43345042.html",
+          "title": "Nike Air Max 270 - Boys' Grade School"
+        },
+        {
+          "availability": "InStock",
+          "color": "Black/White/Vivid Purple",
+          "compare_at_price_usd": 132,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/43345044"
+          ],
+          "price_usd": 99,
+          "sku": "43345044",
+          "source_url": "https://www.footlocker.com/product/nike-air-max-270-boys-grade-school/43345044.html",
+          "title": "Nike Air Max 270 - Boys' Grade School"
+        },
+        {
+          "availability": "InStock",
+          "color": "Racer Blue/Black/White",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/43345415"
+          ],
+          "price_usd": 132,
+          "sku": "43345415",
+          "source_url": "https://www.footlocker.com/product/nike-air-max-270-boys-grade-school/43345415.html",
+          "title": "Nike Air Max 270 - Boys' Grade School"
+        },
+        {
+          "availability": "InStock",
+          "color": "Black/Metallic Silver/Smoke Grey",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/43345020"
+          ],
+          "price_usd": 132,
+          "sku": "43345020",
+          "source_url": "https://www.footlocker.com/product/nike-air-max-270-boys-grade-school/43345020.html",
+          "title": "Nike Air Max 270 - Boys' Grade School"
+        }
+      ],
+      "description": "The Nike Air Max 270 is a grade-school lifestyle sneaker built for school days, weekends, and everyday wear. A breathable mesh and synthetic upper helps keep the feel light, while dual-density foam works with the 270-degree visible Max Air unit in the heel for cushioned impact protection. A TPU heel clip adds structure through the back of the shoe for a more stable ride.Nike Air Max 270 features:270-degree visible Max Air unit cushions heel impact.Dual-density foam midsole balances soft cushioning and support.Mesh and synthetic upper improves breathability and durability.TPU heel clip adds rearfoot stability.Rubber outsole delivers durable traction for everyday wear.",
+      "product_group_id": "288918",
+      "source": "Foot Locker US",
+      "source_url": "https://www.footlocker.com/product/model/nike-air-max-270-boys-grade-school/288918.html",
+      "title": "Nike Air Max 270 - Boys' Grade School"
+    },
+    {
+      "brand": "Nike",
+      "category": "lifestyle",
+      "segment": "kids",
+      "colorways": [
+        {
+          "availability": "InStock",
+          "color": "Black/Black",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/N0237001"
+          ],
+          "price_usd": 70,
+          "sku": "N0237001",
+          "source_url": "https://www.footlocker.com/product/nike-air-force-1-low-easyon-boys-preschool/N0237001.html",
+          "title": "Nike Air Force 1 Low EasyOn - Boys' Preschool"
+        },
+        {
+          "availability": "InStock",
+          "color": "Sail/Light Silver",
+          "compare_at_price_usd": 70,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/N0237007"
+          ],
+          "price_usd": 49.99,
+          "sku": "N0237007",
+          "source_url": "https://www.footlocker.com/product/nike-air-force-1-low-easyon-boys-preschool/N0237007.html",
+          "title": "Nike Air Force 1 Low EasyOn - Boys' Preschool"
+        }
+      ],
+      "description": "Knock, knock! Open the door to a world of limitless fun and excitement for your little boys with the Nike Air Force 1 Low Easy On. Featuring mock laces with two loops attached to a hook-and-loop strap, these shoes help you fasten up your kiddos' little feet instantly and ground their look in DNA style. Designed with more foam, these extra soft and cushy sneakers let your little boys run, jump, and chase their playtime goals in ultimate comfort. Swinging, sliding, or playing ball games—your active kiddos will be on top of everything they do with the Nike Air Force 1 Low Easy On. Nike Air Force 1 Low Easy On features:   Elastic laces offer a snug fit. Perforations on the toe add breathability.  Full rubber sole with a circular tread pattern gives durable traction. ",
+      "product_group_id": "424108",
+      "source": "Foot Locker US",
+      "source_url": "https://www.footlocker.com/product/model/nike-air-force-1-low-easyon-boys-preschool/424108.html",
+      "title": "Nike Air Force 1 Low EasyOn - Boys' Preschool"
+    },
+    {
+      "brand": "Salomon",
+      "category": "trail",
+      "segment": "trail",
+      "colorways": [
+        {
+          "availability": "InStock",
+          "color": "Lilac Ash/Fiesta/Dawn Pink",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/L491859"
+          ],
+          "price_usd": 145,
+          "sku": "L491859",
+          "source_url": "https://www.footlocker.com/product/salomon-xt-whisper-womens/L491859.html",
+          "title": "Salomon XT-Whisper - Women's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Castlerock/Footwear Silver",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/49219300"
+          ],
+          "price_usd": 145,
+          "sku": "49219300",
+          "source_url": "https://www.footlocker.com/product/salomon-xt-whisper-womens/49219300.html",
+          "title": "Salomon XT-Whisper - Women's"
+        }
+      ],
+      "description": "Conquer the terrain with the Salomon XT-WHISPER. Rooted in the legendary XT lineage, these sneakers blend a provocatively textured upper with a modern wavy SensiFit design for a secure foothold. The play on matte and shiny finishes adds depth, while the Agile Chassis System provides the stability and dampening needed for every stride. Step into heritage performance with the Salomon XT-WHISPER.3D open mesh upper provides maximum breathabilitySensiFit cradles the foot for a virtually customized fitQuicklace system ensures a snug and impeccable holdAnti-debris tongue offers an extra level of protectionAgile Chassis System works with the EnergyCell midsole for stabilityLugged rubber outsole delivers reliable tractionMaterial & CareTextile and synthetic upperRubber outsoleSize & FitLow-top activewear silhouetteFlexible insole for comfortable movementArch support for all-day wearability",
+      "product_group_id": "475988",
+      "source": "Foot Locker US",
+      "source_url": "https://www.footlocker.com/product/model/salomon-xt-whisper-womens/475988.html",
+      "title": "Salomon XT-Whisper - Women's"
+    },
+    {
+      "brand": "HOKA",
+      "category": "trail",
+      "segment": "trail",
+      "colorways": [
+        {
+          "availability": "InStock",
+          "color": "Black/Brown",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/2710BHLT"
+          ],
+          "price_usd": 160,
+          "sku": "2710BHLT",
+          "source_url": "https://www.footlocker.com/product/hoka-speedgoat-2-mens/2710BHLT.html",
+          "title": "HOKA Speedgoat 2 - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Yellow/Black",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/NZ422710"
+          ],
+          "price_usd": 160,
+          "sku": "NZ422710",
+          "source_url": "https://www.footlocker.com/product/hoka-speedgoat-2-mens/NZ422710.html",
+          "title": "HOKA Speedgoat 2 - Men's"
+        }
+      ],
+      "description": "Truly designed to go the extra mile, the Hoka One One Speedgoat 2 is inspired by Karl Meltzer, the runner who holds the record for the most 100-mile trail race wins. His competitive spirit and drive are reflected in the Speedgoat 2, which combines aggressive traction patterns in the outsole with soft cushioning, so you can attack any terrain in comfort, from mile one to 100.  Open, engineered mesh upper for a breathable, lightweight fit and feel. Oversize EVA midsole for plush comfort with every step. Vibram MegaGrip outsole delivers unmatched traction, thanks to multidirectional 5mm lugs that dig in to uneven terrain and keep you running strong. Wt. 9.8 oz. When trails get technical and the miles stack up, the HOKA Speedgoat 2 is engineered to keep you moving with confidence. Inspired by Karl Meltzer, the record holder for the most 100-mile trail race wins, this shoe channels elite endurance into every outing, pairing relentless grip with the plush cushioning HOKA is built on. Whether you're navigating loose shale, slick roots, or long climbs, the Speedgoat 2 delivers the protection and traction to attack any terrain from mile one to 100.  Open, engineered mesh upper provides a breathable, lightweight fit that stays comfortable over long distances. Oversized EVA midsole delivers plush cushioning that absorbs impact on rocky descents and uneven singletrack. Vibram MegaGrip outsole with multidirectional 5mm lugs digs into loose dirt, gravel, and technical terrain for unmatched grip. Lightweight build at just 9.8 oz keeps your stride feeling effortless mile after mile.  Cushioning & Road Feel The oversized EVA midsole is the core of the Speedgoat 2's ride, absorbing the punishment of rocky trails and steep descents while keeping each foot strike feeling soft and controlled. The Vibram MegaGrip outsole works in tandem to translate that cushioned comfort into confident ground feel, giving you the feedback and stability to push harder on everything from fire roads to technical alpine terrain.",
+      "product_group_id": "283653",
+      "source": "Foot Locker US",
+      "source_url": "https://www.footlocker.com/product/model/hoka-speedgoat-2-mens/283653.html",
+      "title": "HOKA Speedgoat 2 - Men's"
+    },
+    {
+      "brand": "Nike",
+      "category": "training",
+      "segment": "training",
+      "colorways": [
+        {
+          "availability": "InStock",
+          "color": "Lt Magenta/Bleached Lilac/Pink Rise",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/HQ620502"
+          ],
+          "price_usd": 155,
+          "sku": "HQ620502",
+          "source_url": "https://www.footlocker.com/product/nike-metcon-10-womens/HQ620502.html",
+          "title": "Nike Metcon 10 - Women's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Mtlc Silver/Lt Orewood Brn/Phantom",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/HQ620102"
+          ],
+          "price_usd": 155,
+          "sku": "HQ620102",
+          "source_url": "https://www.footlocker.com/product/nike-metcon-10-womens/HQ620102.html",
+          "title": "Nike Metcon 10 - Women's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Hydrogen Blue/Aluminum/Hydrogen Blue",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/HQ620401"
+          ],
+          "price_usd": 155,
+          "sku": "HQ620401",
+          "source_url": "https://www.footlocker.com/product/nike-metcon-10-womens/HQ620401.html",
+          "title": "Nike Metcon 10 - Women's"
+        }
+      ],
+      "description": "No weak points. No wasted energy. The Nike Metcon 10 is your foundation for conquering every cross-training session. Featuring a midsole rubber wrap that is more tuned, lighter, and less bulky than the Metcon 9, these shoes help you dominate your toughest workouts. The updated midsole with a lightweight ReactX foam maximizes energy return, while the ultra-strong Hyperlift plate under the heel ensures optimal stability for heavy lifts. The sturdy heel cup and lace tuck allow you to focus on your form—no shifting, no slipping, just locked-in control with every rep. The flex grooves on the outsole give you the flexibility to crush box jumps, sprints, and high-intensity movements without missing a beat. Engineered for excellence, the Nike Metcon 10 ensures every step fuels your progress. Nike Metcon 10 features:  Open-holed engineered mesh offers breathability. Wider toe box compared to the Metcon 9 helps toes extend outward and optimizes performance. Midfoot band provides a secure fit. Sticky texture strategically placed on the midfoot and toe delivers durability. Tough plastic heel clip maximizes durability. New traction pattern ensures grip on sweaty surfaces. When heavy lifts, circuits, and gym training are on the agenda, this shoe helps you stay grounded, stable, and ready to move with confidence. The Nike Metcon 10 updates the training favorite with a lighter, less bulky midsole wrap, responsive ReactX foam, a Hyperlift plate under the heel, and flex grooves that support both strength work and quick transitions.Open-holed engineered mesh helps keep airflow moving.Wider toe box than the Metcon 9 is designed to let toes spread more naturally.Midfoot band adds a secure, locked-in feel.Sticky texture on the midfoot and toe helps reinforce high-wear areas.Tough heel construction and a lace tuck help keep your setup secure.Updated traction pattern is built for grip on gym surfaces. Size & Fit GuidanceFor the best fit, we recommend going up a half size, as many reviewers found that gave them the right amount of length for training. Some preferred a full size up for extra toe room, while shoppers who like a very close, locked-in fit sometimes stayed with their usual size. Best ForBest for lifting, strength training, HIIT, and gym sessions where stability and grip matter more than plush cushioning. Styling & VersatilityA sleek, low-profile shape gives the Metcon 10 a cleaner look than many training shoes, so it feels just as easy to wear for errands or all-day routines as it does in the gym. Details like the lace tuck keep the look streamlined and distraction-free. Break-In & DurabilityReviewers consistently call out the strong, supportive build and durable feel. Some say it benefits from a few wears to fully break in, with the structured upper and firm platform feeling more natural after a handful of sessions. Care & MaintenanceReviewers found the upper easy to wipe down, so regular spot cleaning is a simple way to keep it looking fresh. Clearing debris from the outsole tread can also help preserve confident grip for training.",
+      "product_group_id": "466492",
+      "source": "Foot Locker US",
+      "source_url": "https://www.footlocker.com/product/model/nike-metcon-10-womens/466492.html",
+      "title": "Nike Metcon 10 - Women's"
+    },
+    {
+      "brand": "Nike",
+      "category": "training",
+      "segment": "training",
+      "colorways": [
+        {
+          "availability": "InStock",
+          "color": "Astronomy Blue/Black/Hyper Crimson",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/F7127401"
+          ],
+          "price_usd": 120,
+          "sku": "F7127401",
+          "source_url": "https://www.footlocker.com/product/nike-free-metcon-6-mens/F7127401.html",
+          "title": "Nike Free Metcon 6 - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "White/Gum Lt Brown/Hemp",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/J7127105"
+          ],
+          "price_usd": 125,
+          "sku": "J7127105",
+          "source_url": "https://www.footlocker.com/product/nike-free-metcon-6-mens/J7127105.html",
+          "title": "Nike Free Metcon 6 - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "Cannon/Black/Lt Silver",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/J7127007"
+          ],
+          "price_usd": 125,
+          "sku": "J7127007",
+          "source_url": "https://www.footlocker.com/product/nike-free-metcon-6-mens/J7127007.html",
+          "title": "Nike Free Metcon 6 - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "White/Black/Green Strike",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/J7127107"
+          ],
+          "price_usd": 125,
+          "sku": "J7127107",
+          "source_url": "https://www.footlocker.com/product/nike-free-metcon-6-mens/J7127107.html",
+          "title": "Nike Free Metcon 6 - Men's"
+        }
+      ],
+      "description": "Get your beast mode on! Hustle for muscles with the Nike Free Metcon 6. Designed to keep you pushing through the challenging HIIT workouts, these silhouettes feature laser-siped foam in the forefoot and midsole to keep your feet cushioned and comfortable on the treadmill or during weight training. The rounded big-toe of the forefoot ensures optimum agility and quickness, while the inner sleeve improves ankle support and provides a seamless fit. Featuring a laser-siped outsole with multi-surface traction pattern, these trainers provide ultimate flexibility and grip during jumps, planks, and burpees. Excel in every rep with the Nike Free Metcon 6. Nike Free Metcon 6 features:  Upper made of breathable, supportive engineered mesh with built-in stretch offers a cool, dry, and snug fit. Flywire cables provide a dynamic fit. Extra foam in the reinforced heel elevates comfort.  ",
+      "product_group_id": "433053",
+      "source": "Foot Locker US",
+      "source_url": "https://www.footlocker.com/product/model/nike-free-metcon-6-mens/433053.html",
+      "title": "Nike Free Metcon 6 - Men's"
+    },
+    {
+      "brand": "Under Armour",
+      "category": "training",
+      "segment": "training",
+      "colorways": [
+        {
+          "availability": "InStock",
+          "color": "White/White/White",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/27049125"
+          ],
+          "price_usd": 120,
+          "sku": "27049125",
+          "source_url": "https://www.footlocker.com/product/under-armour-slipspeed-trainer-mens/27049125.html",
+          "title": "Under Armour Slipspeed Trainer - Men's"
+        },
+        {
+          "availability": "InStock",
+          "color": "White/Stellar Pink/Metallic Silver",
+          "compare_at_price_usd": null,
+          "currency": "USD",
+          "images": [
+            "https://images.footlocker.com/is/image/EBFL2/27049131"
+          ],
+          "price_usd": 120,
+          "sku": "27049131",
+          "source_url": "https://www.footlocker.com/product/under-armour-slipspeed-trainer-mens/27049131.html",
+          "title": "Under Armour Slipspeed Trainer - Men's"
+        }
+      ],
+      "description": "You're not like the rest: You stay relentless in your pursuit of peak athletic ability. Get gear that pushes you to perform at that level with the Under Armour Slipspeed Trainer. Packed and powered to help you push past your limitations, these trainers feature the original UA FLOW Cushioning that puts a spring under your step. The BOA Fit system adapts to the contours of your feet and delivers the perfect fit, while the ISO-Chill padded interior keeps your feet cool at all times. Shush your doubters and break personal records in the Under Armour Slipspeed Trainer.  Breathable upper maximizes comfort. Convertible heel adds functionality. Weight: 10.8 oz. ",
+      "product_group_id": "413702",
+      "source": "Foot Locker US",
+      "source_url": "https://www.footlocker.com/product/model/under-armour-slipspeed-trainer-mens/413702.html",
+      "title": "Under Armour Slipspeed Trainer - Men's"
+    }
+  ],
+  "failures": [
+    {
+      "url": "https://www.footlocker.com/product/model/jordan-air-jordan-1-low-se-boys-grade-school/386685.html",
+      "segment": "kids",
+      "category": "basketball",
+      "error": "Product variants were not found"
+    },
+    {
+      "url": "https://www.footlocker.com/product/model/adidas-samba-knit-heel-girls-grade-school/477009.html",
+      "segment": "kids",
+      "category": "lifestyle",
+      "error": "Product variants were not found"
+    },
+    {
+      "url": "https://www.footlocker.com/product/model/nike-reactx-pegasus-trail-5-gtx-womens/442601.html",
+      "segment": "trail",
+      "category": "trail",
+      "error": "Product variants were not found"
+    },
+    {
+      "url": "https://www.footlocker.com/product/model/nike-reactx-pegasus-trail-5-gtx-mens/442519.html",
+      "segment": "trail",
+      "category": "trail",
+      "error": "Product variants were not found"
+    },
+    {
+      "url": "https://www.footlocker.com/product/model/nike-free-metcon-5-womens/402018.html",
+      "segment": "training",
+      "category": "training",
+      "error": "Product variants were not found"
+    }
+  ]
+}

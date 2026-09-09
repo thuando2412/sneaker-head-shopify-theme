@@ -1,0 +1,349 @@
+{
+  "generatedAt": "2026-09-09T03:55:09.211Z",
+  "mode": "dry-run",
+  "shop": {
+    "name": "Sneaker Head",
+    "myshopifyDomain": "thuandotest.myshopify.com"
+  },
+  "location": {
+    "id": "gid://shopify/Location/76188057693",
+    "name": "Shop location"
+  },
+  "publication": {
+    "id": "gid://shopify/Publication/148514111581",
+    "name": "Online Store"
+  },
+  "planned": {
+    "products": 36,
+    "families": 9
+  },
+  "products": [
+    {
+      "handle": "adidas-adizero-evo-sl-women-aurora-coffee-iron-metallic-blush-pink-kk1952",
+      "title": "adidas Adizero Evo SL Women's Running Shoes - Aurora Coffee/Iron Metallic/Blush Pink",
+      "familyHandle": "adidas-adizero-evo-sl-women",
+      "variants": 8,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "adidas-adizero-evo-sl-women-silver-met-lucid-red-iron-met-ki3383",
+      "title": "adidas Adizero Evo SL Women's Running Shoes - Silver Met/Lucid Red/Iron Met",
+      "familyHandle": "adidas-adizero-evo-sl-women",
+      "variants": 2,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "adidas-adizero-evo-sl-women-white-blue-fusion-js4454",
+      "title": "adidas Adizero Evo SL Women's Running Shoes - White/Blue Fusion",
+      "familyHandle": "adidas-adizero-evo-sl-women",
+      "variants": 2,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "adidas-adizero-evo-sl-women-white-white-core-black-jh6208",
+      "title": "adidas Adizero Evo SL Women's Running Shoes - White/White/Core Black",
+      "familyHandle": "adidas-adizero-evo-sl-women",
+      "variants": 13,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "adidas-adizero-evo-sl-women-wonder-white-crystal-linen-ki6951",
+      "title": "adidas Adizero Evo SL Women's Running Shoes - Wonder White/Crystal Linen",
+      "familyHandle": "adidas-adizero-evo-sl-women",
+      "variants": 1,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "hoka-clifton-10-women-vanilla-birch-62031vch",
+      "title": "HOKA Clifton 10 Women's Running Shoes - Vanilla/Birch",
+      "familyHandle": "hoka-clifton-10-women",
+      "variants": 9,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "hoka-speedgoat-2-men-black-brown-2710bhlt",
+      "title": "HOKA Speedgoat 2 Men's Trail Shoes - Black/Brown",
+      "familyHandle": "hoka-speedgoat-2-men",
+      "variants": 10,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "hoka-speedgoat-2-men-yellow-black-nz422710",
+      "title": "HOKA Speedgoat 2 Men's Trail Shoes - Yellow/Black",
+      "familyHandle": "hoka-speedgoat-2-men",
+      "variants": 11,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-air-force-1-low-easyon-boys-preschool-black-black-n0237001",
+      "title": "Nike Air Force 1 Low EasyOn - Boys' Preschool Sneakers - Black/Black",
+      "familyHandle": "nike-air-force-1-low-easyon-boys-preschool",
+      "variants": 6,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-air-force-1-low-easyon-boys-preschool-sail-light-silver-n0237007",
+      "title": "Nike Air Force 1 Low EasyOn - Boys' Preschool Sneakers - Sail/Light Silver",
+      "familyHandle": "nike-air-force-1-low-easyon-boys-preschool",
+      "variants": 2,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-air-max-270-boys-grade-school-black-black-black-q5776001",
+      "title": "Nike Air Max 270 - Boys' Grade School Sneakers - Black/Black/Black",
+      "familyHandle": "nike-air-max-270-boys-grade-school",
+      "variants": 8,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-air-max-270-boys-grade-school-black-white-evergreen-aura-43345042",
+      "title": "Nike Air Max 270 - Boys' Grade School Sneakers - Black/White/Evergreen Aura",
+      "familyHandle": "nike-air-max-270-boys-grade-school",
+      "variants": 2,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-air-max-270-boys-grade-school-black-white-vivid-purple-43345044",
+      "title": "Nike Air Max 270 - Boys' Grade School Sneakers - Black/White/Vivid Purple",
+      "familyHandle": "nike-air-max-270-boys-grade-school",
+      "variants": 1,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-air-max-270-boys-grade-school-racer-blue-black-white-43345415",
+      "title": "Nike Air Max 270 - Boys' Grade School Sneakers - Racer Blue/Black/White",
+      "familyHandle": "nike-air-max-270-boys-grade-school",
+      "variants": 5,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-air-max-270-boys-grade-school-white-white-metallic-silver-43345103",
+      "title": "Nike Air Max 270 - Boys' Grade School Sneakers - White/White/Metallic Silver",
+      "familyHandle": "nike-air-max-270-boys-grade-school",
+      "variants": 8,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-air-zoom-pegasus-41-women-black-black-d2723001",
+      "title": "Nike Air Zoom Pegasus 41 Women's Running Shoes - Black/Black",
+      "familyHandle": "nike-air-zoom-pegasus-41-women",
+      "variants": 3,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-air-zoom-pegasus-41-women-black-white-d2723002",
+      "title": "Nike Air Zoom Pegasus 41 Women's Running Shoes - Black/White",
+      "familyHandle": "nike-air-zoom-pegasus-41-women",
+      "variants": 10,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-air-zoom-pegasus-41-women-playful-pink-off-noir-d2723605",
+      "title": "Nike Air Zoom Pegasus 41 Women's Running Shoes - Playful Pink/Off Noir",
+      "familyHandle": "nike-air-zoom-pegasus-41-women",
+      "variants": 1,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-air-zoom-pegasus-41-women-purple-dynasty-brt-violet-violet-mist-d2723503",
+      "title": "Nike Air Zoom Pegasus 41 Women's Running Shoes - Purple Dynasty/Brt Violet/Violet Mist",
+      "familyHandle": "nike-air-zoom-pegasus-41-women",
+      "variants": 1,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-free-metcon-6-men-astronomy-blue-black-hyper-crimson-f7127401",
+      "title": "Nike Free Metcon 6 Men's Training Shoes - Astronomy Blue/Black/Hyper Crimson",
+      "familyHandle": "nike-free-metcon-6-men",
+      "variants": 12,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-free-metcon-6-men-cannon-black-lt-silver-j7127007",
+      "title": "Nike Free Metcon 6 Men's Training Shoes - Cannon/Black/Lt Silver",
+      "familyHandle": "nike-free-metcon-6-men",
+      "variants": 1,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-free-metcon-6-men-white-black-green-strike-j7127107",
+      "title": "Nike Free Metcon 6 Men's Training Shoes - White/Black/Green Strike",
+      "familyHandle": "nike-free-metcon-6-men",
+      "variants": 1,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "nike-free-metcon-6-men-white-gum-lt-brown-hemp-j7127105",
+      "title": "Nike Free Metcon 6 Men's Training Shoes - White/Gum Lt Brown/Hemp",
+      "familyHandle": "nike-free-metcon-6-men",
+      "variants": 11,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "on-cloudmonster-void-women-black-black-10491043",
+      "title": "On Cloudmonster Void Women's Running Shoes - Black/Black",
+      "familyHandle": "on-cloudmonster-void-women",
+      "variants": 6,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "on-cloudmonster-void-women-iceberg-tin-10811344",
+      "title": "On Cloudmonster Void Women's Running Shoes - Iceberg/Tin",
+      "familyHandle": "on-cloudmonster-void-women",
+      "variants": 8,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "on-cloudmonster-void-women-ivory-pink-10814561",
+      "title": "On Cloudmonster Void Women's Running Shoes - Ivory/Pink",
+      "familyHandle": "on-cloudmonster-void-women",
+      "variants": 9,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "on-cloudmonster-void-women-ivory-seashell-10814680",
+      "title": "On Cloudmonster Void Women's Running Shoes - Ivory/Seashell",
+      "familyHandle": "on-cloudmonster-void-women",
+      "variants": 9,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "on-cloudmonster-void-women-linen-seedling-10814754",
+      "title": "On Cloudmonster Void Women's Running Shoes - Linen/Seedling",
+      "familyHandle": "on-cloudmonster-void-women",
+      "variants": 9,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "on-cloudmonster-void-women-purple-purple-10944928",
+      "title": "On Cloudmonster Void Women's Running Shoes - Purple/Purple",
+      "familyHandle": "on-cloudmonster-void-women",
+      "variants": 10,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "on-cloudmonster-void-women-white-ivory-10943334",
+      "title": "On Cloudmonster Void Women's Running Shoes - White/Ivory",
+      "familyHandle": "on-cloudmonster-void-women",
+      "variants": 9,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "on-cloudmonster-void-women-white-white-10491200",
+      "title": "On Cloudmonster Void Women's Running Shoes - White/White",
+      "familyHandle": "on-cloudmonster-void-women",
+      "variants": 9,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "on-cloudmonster-void-women-white-white-10811200",
+      "title": "On Cloudmonster Void Women's Running Shoes - White/White",
+      "familyHandle": "on-cloudmonster-void-women",
+      "variants": 9,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "salomon-xt-whisper-women-castlerock-footwear-silver-49219300",
+      "title": "Salomon XT-Whisper Women's Trail Shoes - Castlerock/Footwear Silver",
+      "familyHandle": "salomon-xt-whisper-women",
+      "variants": 1,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "salomon-xt-whisper-women-lilac-ash-fiesta-dawn-pink-l491859",
+      "title": "Salomon XT-Whisper Women's Trail Shoes - Lilac Ash/Fiesta/Dawn Pink",
+      "familyHandle": "salomon-xt-whisper-women",
+      "variants": 7,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "under-armour-slipspeed-trainer-men-white-stellar-pink-metallic-silver-27049131",
+      "title": "Under Armour Slipspeed Trainer Men's Training Shoes - White/Stellar Pink/Metallic Silver",
+      "familyHandle": "under-armour-slipspeed-trainer-men",
+      "variants": 2,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    },
+    {
+      "handle": "under-armour-slipspeed-trainer-men-white-white-white-27049125",
+      "title": "Under Armour Slipspeed Trainer Men's Training Shoes - White/White/White",
+      "familyHandle": "under-armour-slipspeed-trainer-men",
+      "variants": 1,
+      "images": 5,
+      "action": "create",
+      "willPublish": true
+    }
+  ],
+  "families": [],
+  "failures": [],
+  "verification": null
+}
