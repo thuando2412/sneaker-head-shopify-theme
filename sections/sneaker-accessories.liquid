@@ -1,3 +1,7 @@
+{{ 'quick-add.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+
 {% assign accessory_collection = section.settings.collection %}
 {% if section.blocks.size > 0 %}
   <section class="sh-home-section page-width sh-home-accessories">
@@ -5,69 +9,76 @@
       <h2 class="sh-home-title" id="SneakerAccessoriesHeading-{{ section.id }}">{{ section.settings.heading | escape }}</h2>
       {% if accessory_collection != blank %}<a class="sh-home-link" href="{{ accessory_collection.url }}">{{ section.settings.view_all_label | escape }}</a>{% endif %}
     </div>
+
     <div class="sh-home-accessories__cards">
       {% for block in section.blocks %}
-{{ 'quick-add.css' | asset_url | stylesheet_tag }}
-<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
-
-{% liquid
+        {% liquid
           assign card_link = block.settings.link
           if card_link == blank and block.settings.collection != blank
             assign card_link = block.settings.collection.url
           endif
+          case forloop.index
+            when 1
+              assign accessory_asset = 'sh-home-bags.jpg'
+            when 2
+              assign accessory_asset = 'sh-home-socks.jpg'
+            else
+              assign accessory_asset = 'sh-home-care.jpg'
+          endcase
         %}
         {% if card_link != blank %}
           <a class="sh-home-accessory" href="{{ card_link }}" {{ block.shopify_attributes }}>
             {% if block.settings.image != blank %}
-              {{ block.settings.image | image_url: width: 1000 | image_tag: widths: '420, 640, 820, 1000', sizes: '(min-width: 750px) 33vw, 82vw', loading: 'lazy', alt: block.settings.image.alt | default: block.settings.heading }}
+              {% assign image_position = '--sh-image-position: ' | append: block.settings.image.presentation.focal_point | append: ';' %}
+              {{ block.settings.image | image_url: width: 1800 | image_tag: widths: '390, 560, 760, 1000, 1400, 1800', sizes: '(min-width: 750px) 33vw, 100vw', loading: 'lazy', class: 'sh-home-accessory__image', style: image_position, alt: block.settings.image.alt | default: block.settings.heading }}
             {% else %}
-              {% case forloop.index %}
-                {% when 1 %}{% assign accessory_asset = 'sh-home-bags.jpg' %}
-                {% when 2 %}{% assign accessory_asset = 'sh-home-socks.jpg' %}
-                {% else %}{% assign accessory_asset = 'sh-home-care.jpg' %}
-              {% endcase %}
-              <img src="{{ accessory_asset | asset_img_url: '1000x' }}" alt="{{ block.settings.heading | escape }}" width="800" height="1000" loading="lazy">
+              <img class="sh-home-accessory__image" src="{{ accessory_asset | asset_img_url: '1800x' }}" alt="{{ block.settings.heading | escape }}" width="1800" height="2400" loading="lazy">
             {% endif %}
+            <span class="sh-home-accessory__shade" aria-hidden="true"></span>
             <div class="sh-home-accessory__content">
               {% if block.settings.eyebrow != blank %}<p class="sh-home-collection-card__eyebrow">{{ block.settings.eyebrow | escape }}</p>{% endif %}
               <h3 class="sh-home-accessory__title">{{ block.settings.heading | escape }}</h3>
               {% if block.settings.copy != blank %}<p class="sh-home-collection-card__copy">{{ block.settings.copy | escape }}</p>{% endif %}
-              <span class="sh-home-editorial-cta">{{ block.settings.button_label | escape }}</span>
             </div>
+            <span class="sh-home-accessory__cta-wrap"><span class="sh-home-editorial-cta">{{ block.settings.button_label | escape }}</span></span>
           </a>
         {% endif %}
       {% endfor %}
+      <span class="sh-home-accessories__dwell" aria-hidden="true"></span>
     </div>
-    {% if accessory_collection != blank and accessory_collection.products_count > 0 %}
-      <sneaker-home-rail class="sh-home-rail sh-home-accessories__rail" data-product-rail data-desktop-page-size="5" data-tablet-page-size="3" data-mobile-page-size="2" aria-labelledby="SneakerAccessoriesHeading-{{ section.id }}" style="display:block;margin-top:2.8rem">
-        <ul class="sh-home-rail__list" data-rail-list role="list">
-          {% liquid
-            assign rendered_products = 0
-            assign seen_colorway_families = '|'
-          %}
-          {% for product in accessory_collection.products limit: 50 %}
+
+    <div class="sh-home-accessories__products-stage">
+      {% if accessory_collection != blank and accessory_collection.products_count > 0 %}
+        <sneaker-home-rail class="sh-home-rail sh-home-accessories__rail" data-product-rail data-desktop-page-size="5" data-tablet-page-size="3" data-mobile-page-size="2" aria-labelledby="SneakerAccessoriesHeading-{{ section.id }}">
+          <ul class="sh-home-rail__list" data-rail-list role="list">
             {% liquid
-              assign product_colorway_family = product.metafields.custom.colorway_family.value | first
-              assign family_key = product_colorway_family.system.handle | default: product_colorway_family.id | default: product.id
-              assign family_marker = '|' | append: family_key | append: '|'
+              assign rendered_products = 0
+              assign seen_colorway_families = '|'
             %}
-            {% unless seen_colorway_families contains family_marker %}
-              <li class="sh-home-rail__item">{% render 'card-product', card_product: product, media_aspect_ratio: 'square', image_shape: 'default', show_secondary_image: true, show_vendor: true, show_colorways: true, show_rating: false, quick_add: false, quick_add_in_media: true, section_id: section.id %}</li>
+            {% for product in accessory_collection.products limit: 50 %}
               {% liquid
-                assign seen_colorway_families = seen_colorway_families | append: family_key | append: '|'
-                assign rendered_products = rendered_products | plus: 1
+                assign product_colorway_family = product.metafields.custom.colorway_family.value | first
+                assign family_key = product_colorway_family.system.handle | default: product_colorway_family.id | default: product.id
+                assign family_marker = '|' | append: family_key | append: '|'
               %}
-              {% if rendered_products >= 15 %}{% break %}{% endif %}
-            {% endunless %}
-          {% endfor %}
-        </ul>
-        <div class="sh-home-rail__footer"><div class="sh-home-rail__status"><div class="sh-home-rail__progress" data-rail-progress><span></span></div><span class="sh-home-rail__count" data-rail-count>1 / 1</span></div><div class="sh-home-rail__controls"><button class="sh-home-icon-button" type="button" data-rail-prev aria-label="Previous accessories">‹</button><button class="sh-home-icon-button" type="button" data-rail-next aria-label="Next accessories">›</button></div></div>
-      </sneaker-home-rail>
-    {% endif %}
-    {% if accessory_collection != blank %}<a class="sh-home-mobile-view-all" href="{{ accessory_collection.url }}">{{ section.settings.view_all_label | escape }}</a>{% endif %}
+              {% unless seen_colorway_families contains family_marker %}
+                <li class="sh-home-rail__item">{% render 'card-product', card_product: product, media_aspect_ratio: 'square', image_shape: 'default', show_secondary_image: true, show_vendor: true, show_colorways: true, show_rating: false, quick_add: false, quick_add_in_media: true, section_id: section.id %}</li>
+                {% liquid
+                  assign seen_colorway_families = seen_colorway_families | append: family_key | append: '|'
+                  assign rendered_products = rendered_products | plus: 1
+                %}
+                {% if rendered_products >= 15 %}{% break %}{% endif %}
+              {% endunless %}
+            {% endfor %}
+          </ul>
+          <div class="sh-home-rail__footer"><div class="sh-home-rail__status"><div class="sh-home-rail__progress" data-rail-progress><span></span></div><span class="sh-home-rail__count" data-rail-count>1 / 1</span></div><div class="sh-home-rail__controls"><button class="sh-home-icon-button" type="button" data-rail-prev aria-label="Previous accessories">‹</button><button class="sh-home-icon-button" type="button" data-rail-next aria-label="Next accessories">›</button></div></div>
+        </sneaker-home-rail>
+      {% endif %}
+      {% if accessory_collection != blank %}<a class="sh-home-mobile-view-all" href="{{ accessory_collection.url }}">{{ section.settings.view_all_label | escape }}</a>{% endif %}
+    </div>
   </section>
 {% endif %}
+
 {% schema %}
 {
   "name": "Sneaker accessories",
