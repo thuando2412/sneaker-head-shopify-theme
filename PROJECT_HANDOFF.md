@@ -14,6 +14,12 @@ Last updated: 2026-09-14
 - Source validation passed: JSON parse, JavaScript syntax, `git diff --check`, and Shopify Theme Check with zero errors. Theme Check still reports the 10 pre-existing warnings across 8 unrelated files.
 - Important live drift: the live `layout/theme.liquid` differs from the repository version and contains tracking/script-order work that is not committed in Git; its homepage block also omitted the Quick Add assets. The three affected homepage sections now load their own guarded Dawn Quick Add dependencies, so the feature works without overwriting that live layout. Do not run a full-theme push until the live layout changes are reconciled into Git.
 - This is the product-rail/Hot Deals foundation checkpoint, not completion of the full homepage revamp. Continue the remaining homepage sections against `HOMEPAGE_REVAMP_AUDIT.md` and Handoff 4, preserving the existing card/colorway/secondary-image behavior.
+- Second homepage-body checkpoint: `bc94034` (`feat: ship homepage hero and activity experience`). It was deployed with a targeted live push to theme `151150559325`; the live-only `layout/theme.liquid` was not touched.
+- Hero now follows the shipped responsive ratios (mobile 2:3, tablet 16:9, desktop 12:5), responsive typography/CTA sizing and centered desktop composition. Autoplay defaults to 10 seconds with a progress ring; pause preserves elapsed time, play resumes the remainder, arrow/dot/touch interaction stops automatic advancement, and reduced motion disables autoplay.
+- Hero dots and Activity audience tabs use production tab semantics and keyboard navigation. Hero arrow states clamp at the ends while autoplay still loops.
+- Quick Links now use the canonical 132 px minimum pill, 11 px label, 44 px desktop/tablet height and 40 px mobile height without document overflow.
+- Shop by Activity now has Men/Women/Kids feeds, 8 cards per tab, 4-up desktop pages, 56% tablet cards and 88% mobile cards. Cards use 3:4 media, a persistent 44 px touch CTA and desktop-only hover treatment. Women's and Kids' activity links intentionally fall back to the broad `/collections/womens-shoes` and `/collections/kids-shoes` routes until the catalog/collection agent supplies curated activity collections.
+- Live browser QA passed at 390, 768, 1280, 1440 and 1920 px: no horizontal overflow or console errors. Hero autoplay/pause/resume/manual-stop/reduced-motion and Activity tab switching all passed. Theme Check remains at zero errors and the same 10 unrelated existing warnings.
 
 ## Latest session checkpoint
 
