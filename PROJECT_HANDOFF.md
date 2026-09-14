@@ -1,6 +1,19 @@
 # Sneaker Head theme handoff
 
-Last updated: 2026-09-09
+Last updated: 2026-09-14
+
+## Homepage revamp implementation checkpoint — 2026-09-14
+
+- Active implementation branch: `work/machine-b-homepage-revamp`.
+- First shipped checkpoint: `f70d406` (`feat: align homepage product rails with shipped design`). Live-QA follow-up: `4f70c3f` (`fix: verify homepage rails on live theme`).
+- The user explicitly authorized deploying this homepage work to the live theme for shared testing. Only the affected files were pushed with `--nodelete`; no full-theme upload was performed. Live theme: `151150559325`, `Sneaker Head - Homepage Redesign`.
+- Implemented the Handoff 4 rail contract in the Dawn theme: Trending and Accessories render 15 unique colorway families; desktop/tablet/mobile show 5/3/2 product cards; Hot Deals renders `1 Top Deal + 20` regular cards on desktop/tablet and 20 regular cards without Top Deal on mobile.
+- All rail tracks use zero-minimum columns/items, a 12 px gap, card-level scroll snap and the approved next-card peek. Vendor/type metadata is one line with ellipsis. The main homepage content caps at 1920 px.
+- Live measurements passed: product cards are 210.4 px at 1280, 228 px at 768 and 167 px at 390; Hot Deals compact cards are 173.33 px at 1280, 228 px at 768 and 167 px at 390. No document-level horizontal overflow was detected.
+- Desktop product rail pagination reaches `3 / 3`; Hot Deals reaches `2 / 2`; the last item is visible and Next disables at the end. Native Quick Add opens successfully after its section dependencies were made self-contained.
+- Source validation passed: JSON parse, JavaScript syntax, `git diff --check`, and Shopify Theme Check with zero errors. Theme Check still reports the 10 pre-existing warnings across 8 unrelated files.
+- Important live drift: the live `layout/theme.liquid` differs from the repository version and contains tracking/script-order work that is not committed in Git; its homepage block also omitted the Quick Add assets. The three affected homepage sections now load their own guarded Dawn Quick Add dependencies, so the feature works without overwriting that live layout. Do not run a full-theme push until the live layout changes are reconciled into Git.
+- This is the product-rail/Hot Deals foundation checkpoint, not completion of the full homepage revamp. Continue the remaining homepage sections against `HOMEPAGE_REVAMP_AUDIT.md` and Handoff 4, preserving the existing card/colorway/secondary-image behavior.
 
 ## Latest session checkpoint
 
