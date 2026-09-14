@@ -9,7 +9,7 @@
         "race_drop": { "type": "slide", "settings": { "fallback_image": "race", "eyebrow": "RACE SEASON", "heading": "Fly on race day.", "copy": "<p>Featherlight racers built for the marathon block ahead.</p>", "button_label": "Shop race day", "button_link": "/collections/running-training", "secondary_button_label": "", "secondary_button_link": "" } }
       },
       "block_order": ["brand_story", "member_week", "retro_drop", "race_drop"],
-      "settings": { "accessibility_info": "Featured Sneaker Head campaigns", "auto_rotate": false, "change_slides_speed": 6 }
+      "settings": { "accessibility_info": "Featured Sneaker Head campaigns", "auto_rotate": true, "change_slides_speed": 10 }
     },
     "quick_shop": {
       "type": "sneaker-quick-shop",
@@ -27,17 +27,33 @@
     "shop_by_activity": {
       "type": "sneaker-activity-grid",
       "blocks": {
-        "everyday": { "type": "activity", "settings": { "heading": "Everyday", "copy": "Icons made for daily rotation.", "link": "/collections/everyday-sneakers" } },
-        "running": { "type": "activity", "settings": { "heading": "Running", "copy": "Road, race and daily training.", "link": "/collections/running-training" } },
-        "basketball": { "type": "activity", "settings": { "heading": "Basketball", "copy": "Court-ready grip and impact control.", "link": "/collections/basketball" } },
-        "tennis": { "type": "activity", "settings": { "heading": "Tennis", "copy": "Fast cuts and durable traction.", "link": "/collections/tennis" } },
-        "training": { "type": "activity", "settings": { "heading": "Training", "copy": "Stable support for every session.", "link": "/collections/training" } },
-        "trail": { "type": "activity", "settings": { "heading": "Hiking", "copy": "Grip and protection beyond the road.", "link": "/collections/trail-outdoor" } },
-        "football": { "type": "activity", "settings": { "heading": "Football", "copy": "Control and speed on the pitch.", "link": "/collections/football" } },
-        "skateboarding": { "type": "activity", "settings": { "heading": "Skateboarding", "copy": "Boardfeel, grip and street-ready durability.", "link": "/collections/lifestyle-sneakers" } }
+        "everyday": { "type": "activity", "settings": { "heading": "Everyday", "copy": "Icons made for daily rotation.", "audience": "men", "link": "/collections/everyday-sneakers" } },
+        "running": { "type": "activity", "settings": { "heading": "Running", "copy": "Road, race and daily training.", "audience": "men", "link": "/collections/running-training" } },
+        "basketball": { "type": "activity", "settings": { "heading": "Basketball", "copy": "Court-ready grip and impact control.", "audience": "men", "link": "/collections/basketball" } },
+        "tennis": { "type": "activity", "settings": { "heading": "Tennis", "copy": "Fast cuts and durable traction.", "audience": "men", "link": "/collections/tennis" } },
+        "training": { "type": "activity", "settings": { "heading": "Training", "copy": "Stable support for every session.", "audience": "men", "link": "/collections/training" } },
+        "trail": { "type": "activity", "settings": { "heading": "Hiking", "copy": "Grip and protection beyond the road.", "audience": "men", "link": "/collections/trail-outdoor" } },
+        "football": { "type": "activity", "settings": { "heading": "Football", "copy": "Control and speed on the pitch.", "audience": "men", "link": "/collections/football" } },
+        "skateboarding": { "type": "activity", "settings": { "heading": "Skateboarding", "copy": "Boardfeel, grip and street-ready durability.", "audience": "men", "link": "/collections/lifestyle-sneakers" } },
+        "women_everyday": { "type": "activity", "settings": { "heading": "Everyday", "copy": "Daily icons curated for women.", "audience": "women", "link": "/collections/womens-shoes" } },
+        "women_running": { "type": "activity", "settings": { "heading": "Running", "copy": "Road, race and daily training.", "audience": "women", "link": "/collections/womens-shoes" } },
+        "women_yoga": { "type": "activity", "settings": { "heading": "Yoga & Studio", "copy": "Flexible support for studio sessions.", "audience": "women", "link": "/collections/womens-shoes" } },
+        "women_tennis": { "type": "activity", "settings": { "heading": "Tennis", "copy": "Fast cuts and durable traction.", "audience": "women", "link": "/collections/womens-shoes" } },
+        "women_training": { "type": "activity", "settings": { "heading": "Training", "copy": "Stable support for every session.", "audience": "women", "link": "/collections/womens-shoes" } },
+        "women_hiking": { "type": "activity", "settings": { "heading": "Hiking", "copy": "Grip and protection beyond the road.", "audience": "women", "link": "/collections/womens-shoes" } },
+        "women_dance": { "type": "activity", "settings": { "heading": "Dance", "copy": "Responsive comfort made to move.", "audience": "women", "link": "/collections/womens-shoes" } },
+        "women_walking": { "type": "activity", "settings": { "heading": "Walking", "copy": "Cushioned comfort for all-day steps.", "audience": "women", "link": "/collections/womens-shoes" } },
+        "kids_school": { "type": "activity", "settings": { "heading": "School", "copy": "Durable pairs for every school day.", "audience": "kids", "link": "/collections/kids-shoes" } },
+        "kids_running": { "type": "activity", "settings": { "heading": "Running", "copy": "Light support for fast feet.", "audience": "kids", "link": "/collections/kids-shoes" } },
+        "kids_basketball": { "type": "activity", "settings": { "heading": "Basketball", "copy": "Court-ready grip and support.", "audience": "kids", "link": "/collections/kids-shoes" } },
+        "kids_football": { "type": "activity", "settings": { "heading": "Football", "copy": "Control and speed on the pitch.", "audience": "kids", "link": "/collections/kids-shoes" } },
+        "kids_playground": { "type": "activity", "settings": { "heading": "Playground", "copy": "Everyday comfort built for play.", "audience": "kids", "link": "/collections/kids-shoes" } },
+        "kids_skateboarding": { "type": "activity", "settings": { "heading": "Skateboarding", "copy": "Grip and street-ready durability.", "audience": "kids", "link": "/collections/kids-shoes" } },
+        "kids_swim": { "type": "activity", "settings": { "heading": "Swim", "copy": "Easy pairs for poolside days.", "audience": "kids", "link": "/collections/kids-shoes" } },
+        "kids_first_steps": { "type": "activity", "settings": { "heading": "First Steps", "copy": "Flexible support for early walkers.", "audience": "kids", "link": "/collections/kids-shoes" } }
       },
-      "block_order": ["everyday", "running", "basketball", "tennis", "training", "trail", "football", "skateboarding"],
-      "settings": { "heading": "Shop by activity", "view_all_label": "Shop all", "view_all_link": "/collections/all" }
+      "block_order": ["everyday", "running", "basketball", "tennis", "training", "trail", "football", "skateboarding", "women_everyday", "women_running", "women_yoga", "women_tennis", "women_training", "women_hiking", "women_dance", "women_walking", "kids_school", "kids_running", "kids_basketball", "kids_football", "kids_playground", "kids_skateboarding", "kids_swim", "kids_first_steps"],
+      "settings": { "heading": "Shop by activity", "show_audience_tabs": true, "view_all_label": "Shop all", "view_all_link": "/collections/all" }
     },
     "hot_deals": { "type": "sneaker-hot-deals", "settings": { "heading": "Hot deals", "collection": "sale", "featured_product": "", "end_date": "2026-12-31T23:59:00-05:00", "ended_label": "Deal ended", "view_all_label": "View all deals" } },
     "trending": { "type": "sneaker-product-rail", "settings": { "heading": "Trending now", "collection": "new-arrivals", "products_to_show": 15, "show_view_all": true, "view_all_label": "View all" } },

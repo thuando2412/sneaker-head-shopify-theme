@@ -4,46 +4,191 @@ if (!customElements.get('sneaker-home-hero')) {
       this.track = this.querySelector('[data-hero-track]');
       this.slides = [...this.querySelectorAll('[data-hero-slide]')];
       this.dots = [...this.querySelectorAll('[data-hero-dot]')];
+      this.previous = this.querySelector('[data-hero-prev]');
+      this.next = this.querySelector('[data-hero-next]');
+      this.autoplay = this.querySelector('[data-hero-autoplay]');
+      this.progress = this.querySelector('[data-hero-progress]');
+      this.interval = Number(this.dataset.interval || 10000);
+      this.remaining = this.interval;
       this.index = 0;
-      this.querySelector('[data-hero-prev]')?.addEventListener('click', () => this.go(this.index - 1, true));
-      this.querySelector('[data-hero-next]')?.addEventListener('click', () => this.go(this.index + 1, true));
-      this.dots.forEach((dot, index) => dot.addEventListener('click', () => this.go(index, true)));
-      this.addEventListener('mouseenter', () => this.stopTimer());
-      this.addEventListener('mouseleave', () => this.startTimer());
-      this.addEventListener('focusin', () => this.stopTimer());
-      this.addEventListener('focusout', event => { if (!this.contains(event.relatedTarget)) this.startTimer(); });
+      this.userPaused = false;
+      this.environmentPaused = false;
+      this.reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+      this.previous?.addEventListener('click', () => this.go(this.index - 1, { manual:true }));
+      this.next?.addEventListener('click', () => this.go(this.index + 1, { manual:true }));
+      this.dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => this.go(index, { manual:true }));
+        dot.addEventListener('keydown', event => this.onDotKeydown(event, index));
+      });
+      this.autoplay?.addEventListener('click', () => this.toggleAutoplay());
+      this.track?.addEventListener('pointerdown', event => {
+        if (event.pointerType === 'touch') this.pauseFromInteraction();
+      }, { passive:true });
       this.track?.addEventListener('scroll', () => {
         if (matchMedia('(max-width: 767px)').matches) {
           const index = Math.round(this.track.scrollLeft / Math.max(1, this.track.clientWidth));
           if (index !== this.index) this.setState(index);
         }
       }, { passive:true });
+      this.onVisibilityChange = () => {
+        this.environmentPaused = document.hidden || !this.isIntersecting;
+        this.syncClock();
+      };
+      this.onReducedMotionChange = () => {
+        if (this.reducedMotion.matches) this.remaining = this.interval;
+        this.syncClock();
+      };
+      document.addEventListener('visibilitychange', this.onVisibilityChange);
+      this.reducedMotion.addEventListener?.('change', this.onReducedMotionChange);
+      this.intersectionObserver = new IntersectionObserver(entries => {
+        this.isIntersecting = entries[0]?.isIntersecting ?? true;
+        this.onVisibilityChange();
+      }, { threshold:.15 });
+      this.isIntersecting = true;
+      this.intersectionObserver.observe(this);
       this.setState(0);
-      this.startTimer();
+      this.syncClock();
     }
-    disconnectedCallback() { this.stopTimer(); }
-    startTimer() {
-      if (this.timer || this.dataset.autoplay !== 'true' || matchMedia('(prefers-reduced-motion: reduce)').matches || this.slides.length < 2) return;
-      this.timer = setInterval(() => this.go(this.index + 1), Number(this.dataset.interval || 6000));
+    disconnectedCallback() {
+      this.stopClock();
+      this.intersectionObserver?.disconnect();
+      document.removeEventListener('visibilitychange', this.onVisibilityChange);
+      this.reducedMotion?.removeEventListener?.('change', this.onReducedMotionChange);
     }
-    stopTimer() { clearInterval(this.timer); this.timer = null; }
+    canRun() {
+      return this.dataset.autoplay === 'true' && this.slides.length > 1 && !this.userPaused && !this.environmentPaused && !this.reducedMotion.matches;
+    }
+    syncClock() {
+      if (this.canRun()) this.startClock();
+      else this.stopClock();
+      this.updateAutoplayControl();
+    }
+    startClock() {
+      if (this.frame) return;
+      this.lastTimestamp = performance.now();
+      const tick = timestamp => {
+        const elapsed = Math.max(0, timestamp - this.lastTimestamp);
+        this.lastTimestamp = timestamp;
+        this.remaining -= elapsed;
+        if (this.remaining <= 0) {
+          this.remaining = this.interval;
+          this.go(this.index + 1, { autoplay:true });
+        }
+        this.updateProgress();
+        this.frame = requestAnimationFrame(tick);
+      };
+      this.frame = requestAnimationFrame(tick);
+    }
+    stopClock() {
+      cancelAnimationFrame(this.frame);
+      this.frame = null;
+      this.lastTimestamp = null;
+      this.updateProgress();
+    }
+    pauseFromInteraction() {
+      this.userPaused = true;
+      this.syncClock();
+    }
+    toggleAutoplay() {
+      if (this.reducedMotion.matches || this.dataset.autoplay !== 'true') return;
+      this.userPaused = !this.userPaused;
+      this.syncClock();
+    }
+    updateProgress() {
+      if (!this.progress) return;
+      const elapsedRatio = Math.min(1, Math.max(0, 1 - (this.remaining / this.interval)));
+      this.progress.style.strokeDashoffset = String(100 - (elapsedRatio * 100));
+    }
+    updateAutoplayControl() {
+      if (!this.autoplay) return;
+      const unavailable = this.dataset.autoplay !== 'true' || this.reducedMotion.matches || this.slides.length < 2;
+      const paused = unavailable || this.userPaused;
+      this.autoplay.disabled = unavailable;
+      this.autoplay.dataset.paused = paused ? 'true' : 'false';
+      this.autoplay.setAttribute('aria-pressed', paused ? 'true' : 'false');
+      this.autoplay.setAttribute('aria-label', unavailable ? 'Autoplay unavailable' : (paused ? 'Play autoplay' : 'Pause autoplay'));
+    }
     setState(index) {
       this.index = (index + this.slides.length) % this.slides.length;
-      this.dots.forEach((dot, i) => dot.setAttribute('aria-current', i === this.index ? 'true' : 'false'));
+      this.dots.forEach((dot, i) => {
+        const selected = i === this.index;
+        dot.setAttribute('aria-selected', selected ? 'true' : 'false');
+        dot.tabIndex = selected ? 0 : -1;
+      });
       this.slides.forEach((slide, i) => {
         const hidden = i !== this.index;
         slide.setAttribute('aria-hidden', hidden ? 'true' : 'false');
         if (!matchMedia('(max-width:767px)').matches) slide.inert = hidden;
         else slide.inert = false;
       });
+      if (this.previous) this.previous.disabled = this.index === 0;
+      if (this.next) this.next.disabled = this.index === this.slides.length - 1;
     }
-    go(index, resetTimer = false) {
+    go(index, { manual = false, autoplay = false } = {}) {
       if (!this.slides.length) return;
-      const target = (index + this.slides.length) % this.slides.length;
+      if (manual) this.pauseFromInteraction();
+      const target = autoplay
+        ? (index + this.slides.length) % this.slides.length
+        : Math.max(0, Math.min(this.slides.length - 1, index));
       this.setState(target);
       if (matchMedia('(max-width:767px)').matches) this.track.scrollTo({ left:target * this.track.clientWidth, behavior:'smooth' });
       else this.track.style.transform = `translate3d(-${target * 100}%,0,0)`;
-      if (resetTimer && this.timer) { this.stopTimer(); this.startTimer(); }
+      if (autoplay) this.remaining = this.interval;
+      this.updateProgress();
+    }
+    onDotKeydown(event, index) {
+      let target = null;
+      if (event.key === 'ArrowRight') target = Math.min(this.dots.length - 1, index + 1);
+      if (event.key === 'ArrowLeft') target = Math.max(0, index - 1);
+      if (event.key === 'Home') target = 0;
+      if (event.key === 'End') target = this.dots.length - 1;
+      if (target === null) return;
+      event.preventDefault();
+      this.go(target, { manual:true });
+      this.dots[target]?.focus();
+    }
+  });
+}
+
+if (!customElements.get('sneaker-home-activity')) {
+  customElements.define('sneaker-home-activity', class extends HTMLElement {
+    connectedCallback() {
+      this.tablist = this.querySelector('[data-activity-tabs]');
+      this.tabs = [...this.querySelectorAll('[data-activity-tab]')];
+      this.cards = [...this.querySelectorAll('[data-activity-card]')];
+      this.track = this.querySelector('[data-rail-list]');
+      this.rail = this.querySelector('sneaker-home-rail');
+      this.tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => this.select(tab.dataset.activityTab));
+        tab.addEventListener('keydown', event => this.onKeydown(event, index));
+      });
+      this.select(this.tabs.find(tab => tab.getAttribute('aria-selected') === 'true')?.dataset.activityTab || 'men', false);
+    }
+    select(audience, focus = false) {
+      const selectedIndex = Math.max(0, this.tabs.findIndex(tab => tab.dataset.activityTab === audience));
+      this.tabs.forEach((tab, index) => {
+        const selected = index === selectedIndex;
+        tab.setAttribute('aria-selected', selected ? 'true' : 'false');
+        tab.tabIndex = selected ? 0 : -1;
+      });
+      this.tablist?.style.setProperty('--sh-tab-index', String(selectedIndex));
+      this.cards.forEach(card => {
+        const cardAudience = card.dataset.activityAudience || 'men';
+        card.hidden = cardAudience !== 'all' && cardAudience !== audience;
+      });
+      if (this.track) this.track.scrollLeft = 0;
+      requestAnimationFrame(() => this.rail?.update?.());
+      if (focus) this.tabs[selectedIndex]?.focus();
+    }
+    onKeydown(event, index) {
+      let target = null;
+      if (event.key === 'ArrowRight') target = (index + 1) % this.tabs.length;
+      if (event.key === 'ArrowLeft') target = (index + this.tabs.length - 1) % this.tabs.length;
+      if (event.key === 'Home') target = 0;
+      if (event.key === 'End') target = this.tabs.length - 1;
+      if (target === null) return;
+      event.preventDefault();
+      this.select(this.tabs[target].dataset.activityTab, true);
     }
   });
 }

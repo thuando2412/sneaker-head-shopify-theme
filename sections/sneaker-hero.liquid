@@ -7,11 +7,19 @@
 >
   <div class="sh-home-hero__track" data-hero-track>
     {% for block in section.blocks %}
-      <article class="sh-home-hero__slide" data-hero-slide {{ block.shopify_attributes }}>
+      <article
+        class="sh-home-hero__slide"
+        id="Hero-{{ section.id }}-{{ forloop.index }}"
+        data-hero-slide
+        role="group"
+        aria-roledescription="slide"
+        aria-label="{{ forloop.index }} of {{ section.blocks.size }}"
+        {{ block.shopify_attributes }}
+      >
         <div class="sh-home-hero__media">
           <picture>
             {% if block.settings.mobile_image != blank %}
-              <source media="(max-width: 749px)" srcset="{{ block.settings.mobile_image | image_url: width: 900 }}">
+              <source media="(max-width: 767px)" srcset="{{ block.settings.mobile_image | image_url: width: 900 }}">
             {% endif %}
             {% if block.settings.image != blank %}
               {{ block.settings.image | image_url: width: 2400 | image_tag: widths: '750, 1100, 1500, 2000, 2400', sizes: '100vw', loading: 'eager', fetchpriority: 'high', alt: block.settings.image.alt | default: block.settings.heading }}
@@ -46,11 +54,21 @@
   {% if section.blocks.size > 1 %}
     <div class="sh-home-hero__controls">
       <div class="sh-home-hero__dots" role="tablist" aria-label="Slides">
-        {% for block in section.blocks %}<button type="button" class="sh-home-hero__dot" data-hero-dot aria-label="Go to slide {{ forloop.index }}" aria-current="{% if forloop.first %}true{% else %}false{% endif %}"></button>{% endfor %}
+        {% for block in section.blocks %}<button type="button" class="sh-home-hero__dot" data-hero-dot role="tab" aria-controls="Hero-{{ section.id }}-{{ forloop.index }}" aria-label="Go to slide {{ forloop.index }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}" tabindex="{% if forloop.first %}0{% else %}-1{% endif %}"></button>{% endfor %}
       </div>
-      <div class="sh-home-hero__arrows">
-        <button type="button" class="sh-home-icon-button" data-hero-prev aria-label="Previous slide">‹</button>
-        <button type="button" class="sh-home-icon-button" data-hero-next aria-label="Next slide">›</button>
+      <div class="sh-home-hero__control-cluster">
+        <button type="button" class="sh-home-hero__autoplay" data-hero-autoplay aria-label="Pause autoplay" aria-pressed="false">
+          <svg class="sh-home-hero__progress" viewBox="0 0 44 44" aria-hidden="true">
+            <circle cx="22" cy="22" r="21" pathLength="100"></circle>
+            <circle class="sh-home-hero__progress-value" data-hero-progress cx="22" cy="22" r="21" pathLength="100"></circle>
+          </svg>
+          <svg class="sh-home-hero__pause-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M4 2.5v7M8 2.5v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg>
+          <svg class="sh-home-hero__play-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M4.5 2.8l5 3.2-5 3.2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path></svg>
+        </button>
+        <div class="sh-home-hero__arrows">
+          <button type="button" class="sh-home-icon-button" data-hero-prev aria-label="Previous slide">‹</button>
+          <button type="button" class="sh-home-icon-button" data-hero-next aria-label="Next slide">›</button>
+        </div>
       </div>
     </div>
   {% endif %}
@@ -62,8 +80,8 @@
   "max_blocks": 4,
   "settings": [
     { "type": "text", "id": "accessibility_info", "label": "Accessibility label", "default": "Featured campaigns" },
-    { "type": "checkbox", "id": "auto_rotate", "label": "Auto-rotate slides", "default": false },
-    { "type": "range", "id": "change_slides_speed", "min": 4, "max": 10, "step": 1, "unit": "s", "label": "Change slides every", "default": 6 }
+    { "type": "checkbox", "id": "auto_rotate", "label": "Auto-rotate slides", "default": true },
+    { "type": "range", "id": "change_slides_speed", "min": 4, "max": 10, "step": 1, "unit": "s", "label": "Change slides every", "default": 10 }
   ],
   "blocks": [{
     "type": "slide",

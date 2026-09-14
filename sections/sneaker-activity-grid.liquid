@@ -1,10 +1,27 @@
-<section class="sh-home-section sh-home-activity page-width">
-  <div class="sh-home-head">
+<sneaker-home-activity class="sh-home-section sh-home-activity page-width">
+  <div class="sh-home-head sh-home-activity__head">
     {% if section.settings.heading != blank %}<h2 class="sh-home-title">{{ section.settings.heading | escape }}</h2>{% endif %}
-    {% if section.settings.view_all_label != blank and section.settings.view_all_link != blank %}<a class="sh-home-link" href="{{ section.settings.view_all_link }}">{{ section.settings.view_all_label | escape }}</a>{% endif %}
+    {% if section.settings.show_audience_tabs %}
+      <div class="sh-home-activity__tabs-viewport">
+        <div class="sh-home-audience-tabs" role="tablist" aria-label="Shop by audience" data-activity-tabs>
+          {% assign audiences = 'men,women,kids' | split: ',' %}
+          {% for audience in audiences %}
+            <button
+              type="button"
+              class="sh-home-audience-tab"
+              role="tab"
+              data-activity-tab="{{ audience }}"
+              aria-controls="ActivityTrack-{{ section.id }}"
+              aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+              tabindex="{% if forloop.first %}0{% else %}-1{% endif %}"
+            >{{ audience | capitalize }}</button>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
   </div>
   <sneaker-home-rail class="sh-home-editorial-rail" data-desktop-page-size="4" data-mobile-page-size="1">
-  <div class="sh-home-activity__track" data-rail-list>
+  <div class="sh-home-activity__track" id="ActivityTrack-{{ section.id }}" role="tabpanel" aria-live="polite" data-rail-list>
     {% for block in section.blocks %}
       {% liquid
         assign activity_link = block.settings.link
@@ -15,13 +32,15 @@
         if activity_link != blank and block.settings.heading != blank
           assign show_block = true
         endif
+        assign activity_button_label = block.settings.button_label | default: 'Shop now'
+        assign fallback_index = forloop.index0 | modulo: 8 | plus: 1
       %}
       {% if show_block %}
-        <a class="sh-home-activity-card" href="{{ activity_link }}" {{ block.shopify_attributes }}>
+        <a class="sh-home-activity-card" href="{{ activity_link }}" data-activity-card data-activity-audience="{{ block.settings.audience }}"{% unless block.settings.audience == 'men' or block.settings.audience == 'all' %} hidden{% endunless %} {{ block.shopify_attributes }}>
           {% if block.settings.image != blank %}
             {{ block.settings.image | image_url: width: 1200 | image_tag: widths: '360, 520, 760, 980, 1200', sizes: '(min-width: 990px) 25vw, 76vw', loading: 'lazy', alt: block.settings.image.alt | default: block.settings.heading }}
           {% else %}
-            {% case forloop.index %}
+            {% case fallback_index %}
               {% when 1 %}{% assign fallback = 'sh-home-activity-running.webp' %}
               {% when 2 %}{% assign fallback = 'sh-home-activity-everyday.webp' %}
               {% when 3 %}{% assign fallback = 'sh-home-activity-trail.webp' %}
@@ -36,7 +55,7 @@
           <div class="sh-home-activity-card__content">
             <h3 class="sh-home-activity-card__title">{{ block.settings.heading | escape }}</h3>
             {% if block.settings.copy != blank %}<p class="sh-home-activity-card__copy">{{ block.settings.copy | escape }}</p>{% endif %}
-            <span class="sh-home-editorial-cta">Shop {{ block.settings.heading | escape }}</span>
+            <span class="sh-home-editorial-cta">{{ activity_button_label | escape }}</span>
           </div>
         </a>
       {% endif %}
@@ -50,15 +69,13 @@
     </div>
   </div>
   </sneaker-home-rail>
-  {% if section.settings.view_all_label != blank and section.settings.view_all_link != blank %}
-    <a class="sh-home-mobile-view-all" href="{{ section.settings.view_all_link }}">{{ section.settings.view_all_label | escape }}</a>
-  {% endif %}
-</section>
+</sneaker-home-activity>
 {% schema %}
 {
   "name": "Sneaker activity grid",
   "settings": [
     { "type": "text", "id": "heading", "label": "Heading", "default": "Shop by activity" },
+    { "type": "checkbox", "id": "show_audience_tabs", "label": "Show Men, Women and Kids tabs", "default": true },
     { "type": "text", "id": "view_all_label", "label": "View all label" },
     { "type": "url", "id": "view_all_link", "label": "View all link" }
   ],
@@ -66,10 +83,12 @@
     { "type": "image_picker", "id": "image", "label": "Image" },
     { "type": "text", "id": "heading", "label": "Heading", "default": "Running" },
     { "type": "text", "id": "copy", "label": "Short description", "default": "Performance for every mile." },
+    { "type": "text", "id": "button_label", "label": "Button label", "default": "Shop now" },
+    { "type": "select", "id": "audience", "label": "Audience tab", "default": "men", "options": [{ "value": "men", "label": "Men" }, { "value": "women", "label": "Women" }, { "value": "kids", "label": "Kids" }, { "value": "all", "label": "Show in all tabs" }] },
     { "type": "collection", "id": "collection", "label": "Collection" },
     { "type": "url", "id": "link", "label": "Custom link override" }
   ] }],
-  "max_blocks": 8,
+  "max_blocks": 24,
   "presets": [{ "name": "Sneaker activity grid", "blocks": [{ "type": "activity" }, { "type": "activity" }, { "type": "activity" }, { "type": "activity" }] }]
 }
 {% endschema %}
