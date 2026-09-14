@@ -7,7 +7,11 @@
     </div>
     <div class="sh-home-accessories__cards">
       {% for block in section.blocks %}
-        {% liquid
+{{ 'quick-add.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+
+{% liquid
           assign card_link = block.settings.link
           if card_link == blank and block.settings.collection != blank
             assign card_link = block.settings.collection.url

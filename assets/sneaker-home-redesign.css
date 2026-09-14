@@ -126,7 +126,7 @@
 
 /* Deals */
 .sh-home-deals { margin-top:60px; color:var(--sh-home-ink); }
-.sh-home-deals > .page-width { width:auto; max-width:none; margin-inline:var(--sh-home-gutter); padding:0; }
+.template-index #MainContent .sh-home-deals > .page-width { width:auto; max-width:none; margin-inline:var(--sh-home-gutter); padding:0; }
 .sh-home-deals .sh-home-head { min-height:84px; margin:0; padding:16px 24px; background:var(--sh-home-ink); color:#fff; }
 .sh-home-deals .sh-home-title { display:inline-block; padding:3px 14px 7px; background:var(--sh-home-volt); color:var(--sh-home-ink); }
 .sh-home-deals .sh-home-link { border-color:rgba(255,255,255,.4); background:transparent; box-shadow:none; color:#fff; }
@@ -639,6 +639,7 @@
 
 @media (max-width:767px) {
   .template-index { --sh-home-gutter:16px; }
+  .template-index #MainContent .sh-home-deals > .page-width { width:100%; margin:0; padding:0; }
   .template-index #MainContent .page-width.sh-home-section--product-rail { max-width:none; padding-inline:0; }
   .template-index [data-product-rail] .sh-home-head { margin-bottom:16px; padding-inline:16px; }
   .template-index [data-product-rail] .sh-home-title { font-size:32px; }
