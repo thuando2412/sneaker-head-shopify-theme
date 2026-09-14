@@ -297,12 +297,31 @@
 .template-index :is(button,.button)[aria-disabled='true'] { opacity:.35; pointer-events:none; }
 
 /* Brands */
-.template-index .sh-brand-navigation { padding-block:56px 0 !important; background:transparent; }
+.template-index .sh-brand-navigation { padding-block:60px 0 !important; background:transparent; }
 .template-index .sh-brand-navigation .page-width { max-width:none; padding-inline:48px; }
 .template-index .sh-brand-navigation__header { display:flex; align-items:center; justify-content:space-between; margin-bottom:20px; }
 .template-index .sh-brand-navigation__list { display:grid; grid-template-columns:repeat(8,minmax(0,1fr)); gap:10px; }
-.template-index .sh-brand-navigation__link { height:92px; padding:10px 20px; border:1px solid var(--sh-home-border); border-radius:4px; background:#fff; }
-.template-index .sh-brand-navigation__link:hover { border-color:var(--sh-home-ink); }
+.template-index .sh-brand-navigation__link { height:92px; min-height:92px; padding:10px 20px; border:1px solid var(--sh-home-border); border-radius:4px; background:#fff; transition:transform .22s cubic-bezier(.34,1.56,.64,1),border-color .2s; }
+.template-index .sh-brand-navigation__link:hover { border-color:var(--sh-home-ink); transform:scale(1.05); }
+
+/* Collector's Pick */
+.template-index .sh-home-collectors { padding-top:56px; }
+.template-index .sh-home-collectors .sh-home-collection-card { min-width:0; flex-basis:calc((100% - 24px)/3); aspect-ratio:3/4; }
+.template-index .sh-home-collectors .sh-home-collection-card::after { height:52%; top:auto; background:linear-gradient(0deg,rgba(16,19,24,.78) 0%,rgba(16,19,24,.3) 55%,transparent 100%); }
+.template-index .sh-home-collectors .sh-home-collection-card__content { left:20px; right:20px; bottom:24px; pointer-events:none; }
+.template-index .sh-home-collectors .sh-home-collection-card__eyebrow { font-size:10px; letter-spacing:.14em; text-shadow:0 1px 6px rgba(16,19,24,.6); }
+.template-index .sh-home-collectors .sh-home-collection-card__title { margin-top:10px; font-size:34px; line-height:.9; letter-spacing:-.01em; text-wrap:balance; text-shadow:0 2px 14px rgba(16,19,24,.45); }
+.template-index .sh-home-collectors .sh-home-collection-card__cta { position:absolute; z-index:2; inset:50% auto auto 50%; min-width:190px; height:52px; min-height:52px; justify-content:center; margin:0; padding:0 24px; border:3px solid transparent; border-radius:999px; background:rgba(255,255,255,.06); box-shadow:inset 0 0 0 1px rgba(255,255,255,.12),inset 2px 1px 0 -1px rgba(255,255,255,.5),inset -1.5px -1px 0 -1px rgba(255,255,255,.4),inset -2px -6px 1px -5px rgba(255,255,255,.3),inset -1px 2px 3px -1px rgba(0,0,0,.35),inset 0 -4px 1px -2px rgba(0,0,0,.18),0 3px 10px rgba(0,0,0,.3); font-size:12px; text-shadow:0 1px 3px rgba(16,19,24,.4); transform:translate(-50%,-50%); -webkit-backdrop-filter:blur(2px) saturate(1.4); backdrop-filter:blur(2px) saturate(1.4); }
+.template-index .sh-home-collectors .sh-home-rail__footer { margin-top:16px; }
+.template-index .sh-home-collectors .sh-home-rail__count { display:none; }
+.template-index .sh-home-collectors .sh-home-rail__progress { gap:8px; }
+.template-index .sh-home-collectors .sh-home-rail__dot { width:6px; height:6px; flex-basis:6px; background:rgba(16,19,24,.25); transition:width .25s,flex-basis .25s,background .25s; }
+.template-index .sh-home-collectors .sh-home-rail__dot::after { content:none; }
+.template-index .sh-home-collectors .sh-home-rail__dot[aria-current=true] { width:28px; flex-basis:28px; background:var(--sh-home-ink); }
+
+@media (hover:hover) and (pointer:fine) and (min-width:1280px) {
+  .template-index .sh-home-collectors .sh-home-collection-card:hover .sh-home-collection-card__cta { border-color:transparent; background:var(--sh-home-volt); box-shadow:0 0 14px rgba(199,255,50,.45); color:var(--sh-home-ink); text-shadow:none; transform:translate(-50%,-50%) scale(1.07); -webkit-backdrop-filter:none; backdrop-filter:none; }
+}
 
 /* Spotlight */
 .template-index .sh-spotlight { padding-block:64px 0 !important; background:transparent; }
@@ -427,6 +446,27 @@
   .sh-home-activity__track:has(.sh-home-activity-card:hover) .sh-home-activity-card:not(:hover) img { opacity:1; }
   .sh-home-activity-card:hover .sh-home-editorial-cta { border-color:rgba(255,255,255,.18); background:rgba(255,255,255,.08); color:#fff; transform:none; }
   .sh-home-activity .sh-home-rail__footer { display:none; }
+  .template-index .sh-home-collectors { padding-top:48px; }
+  .template-index .sh-home-collectors .sh-home-head { margin-bottom:20px; }
+  .template-index .sh-home-collectors .sh-home-title { font-size:38px; }
+  .template-index .sh-home-collectors .sh-home-head .sh-home-link,
+  .template-index .sh-brand-navigation__header .sh-section-view-all { display:none; }
+  .template-index .sh-home-collectors .sh-home-collections__track { margin-inline:-24px; padding-inline:24px; scroll-padding-inline:24px; }
+  .template-index .sh-home-collectors .sh-home-collection-card { flex-basis:82%; }
+  .template-index .sh-home-collectors .sh-home-collection-card__content { left:24px; right:24px; bottom:92px; }
+  .template-index .sh-home-collectors .sh-home-collection-card__eyebrow { font-size:11px; }
+  .template-index .sh-home-collectors .sh-home-collection-card__title { margin-top:.23em; font-size:34px; line-height:.95; }
+  .template-index .sh-home-collectors .sh-home-collection-card__cta { inset:auto auto 24px 24px; min-width:168px; height:48px; min-height:48px; transform:none; }
+  .template-index .sh-home-collectors .sh-home-rail__footer { display:none; }
+  .template-index .sh-home-collectors>.sh-home-mobile-view-all,
+  .template-index .sh-brand-navigation .sh-home-mobile-view-all { width:fit-content; display:flex; align-items:center; justify-content:center; height:44px; min-width:112px; min-height:44px; margin:28px auto 0; padding:0 16px; border:1px solid rgba(16,19,24,.35); border-radius:999px; background:#fff; box-shadow:0 1px 4px rgba(16,19,24,.12); color:var(--sh-home-ink); font:600 11px/1 var(--font-body-family); letter-spacing:.06em; text-transform:uppercase; text-decoration:none; }
+  .template-index .sh-brand-navigation { padding-top:48px !important; }
+  .template-index .sh-brand-navigation .page-width { padding-inline:24px; }
+  .template-index .sh-brand-navigation__header { margin-bottom:20px; }
+  .template-index .sh-brand-navigation__header .sh-heading { font-size:38px; }
+  .template-index .sh-brand-navigation__list { grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; }
+  .template-index .sh-brand-navigation__link { height:72px; min-height:72px; padding:8px 12px; }
+  .template-index .sh-brand-navigation__link:hover { transform:none; }
   .sh-home-deals__carousel--wide { display:none; }
   .sh-home-deals__carousel--tablet { display:block; }
   .sh-home-rail__list { grid-template-rows:1fr; grid-auto-columns:calc((100% - 120px)/4); }
@@ -496,6 +536,16 @@
   .sh-home-activity__track:has(.sh-home-activity-card:hover) .sh-home-activity-card:not(:hover) img { opacity:1; }
   .sh-home-activity-card:hover .sh-home-editorial-cta { border-color:rgba(255,255,255,.18); background:rgba(255,255,255,.08); color:#fff; transform:none; }
   .sh-home-activity .sh-home-rail__footer { display:none; }
+  .template-index .sh-home-collectors { padding-top:48px; }
+  .template-index .sh-home-collectors .sh-home-head { margin-bottom:20px; }
+  .template-index .sh-home-collectors .sh-home-collections__track { margin-inline:-16px; padding:0 16px; scroll-padding-inline:16px; }
+  .template-index .sh-home-collectors .sh-home-collection-card { flex-basis:calc(100% - 12px); aspect-ratio:3/4; }
+  .template-index .sh-home-collectors .sh-home-collection-card__content { left:16px; right:16px; bottom:76px; }
+  .template-index .sh-home-collectors .sh-home-collection-card__title { margin-top:6px; font-size:26px; line-height:.9; }
+  .template-index .sh-home-collectors .sh-home-collection-card__cta { inset:auto auto 16px 16px; min-width:156px; height:48px; min-height:48px; padding-inline:22px; transform:none; }
+  .template-index .sh-home-collectors .sh-home-rail__footer { display:none; }
+  .template-index .sh-home-collectors>.sh-home-mobile-view-all,
+  .template-index .sh-brand-navigation .sh-home-mobile-view-all { width:fit-content; min-width:96px; margin:28px auto 0; }
   .sh-home-deals { margin-top:40px; padding-inline:16px; }
   .sh-home-deals>.page-width { width:100%; margin:0; padding:0; }
   .sh-home-deals .sh-home-head { min-height:58px; margin:0; padding:13px 14px; }
@@ -547,13 +597,14 @@
   .template-index .sh-home-deals__mobile .sh-home-deal-card--hero .price__sale { height:22px; min-height:22px; }
   .template-index .sh-home-deals__mobile .sh-home-deal-card--hero .sh-home-card-cta-wrap--below-info { height:48px; margin:2px 16px; align-self:center; }
   .template-index .sh-home-deals__mobile .sh-home-deal-card--hero .sh-home-card-cta-wrap--below-info .sh-home-card-cta { display:flex; }
-  .template-index .sh-brand-navigation { padding-top:40px !important; }
+  .template-index .sh-brand-navigation { padding-top:48px !important; }
   .template-index .sh-brand-navigation .page-width { padding-inline:16px; }
-  .template-index .sh-brand-navigation__header { margin-bottom:14px; }
+  .template-index .sh-brand-navigation__header { margin-bottom:20px; }
   .template-index .sh-brand-navigation nav { margin-inline:-16px; }
-  .template-index .sh-brand-navigation__list { display:flex; gap:8px; overflow-x:auto; padding:0 16px 8px; scrollbar-width:none; }
-  .template-index .sh-brand-navigation__list>li { flex:0 0 84px; }
-  .template-index .sh-brand-navigation__link { width:84px; height:64px; min-height:64px; padding:8px 10px; }
+  .template-index .sh-brand-navigation__list { display:flex; gap:10px; overflow-x:auto; padding:0 16px; scrollbar-width:none; }
+  .template-index .sh-brand-navigation__list>li { flex:0 0 124px; }
+  .template-index .sh-brand-navigation__link { width:124px; height:72px; min-height:72px; padding:8px 16px; }
+  .template-index .sh-brand-navigation__link:hover { transform:none; }
   .sh-home-collections__track { margin-inline:-16px; padding:0 16px 8px; }
   .sh-home-collection-card { flex-basis:316px; aspect-ratio:16/11; }
   .sh-home-collection-card__content { left:16px; right:16px; bottom:16px; }

@@ -70,20 +70,20 @@
         "puma": { "type": "brand", "settings": { "label": "PUMA", "link": "/collections/brand-puma" } }
       },
       "block_order": ["nike", "adidas", "hoka", "ua", "asics", "mizuno", "on", "puma"],
-      "settings": { "heading": "Shop by brand", "navigation_label": "Shop by brand", "view_all_label": "Shop all brands", "view_all_link": "/collections/all", "color_scheme": "scheme-1", "padding_top": 56, "padding_bottom": 0 }
+      "settings": { "heading": "Shop by brand", "navigation_label": "Shop by brand", "view_all_label": "View all", "view_all_link": "/collections/all", "color_scheme": "scheme-1", "padding_top": 60, "padding_bottom": 0 }
     },
     "new_collections": {
       "type": "sneaker-collection-carousel",
       "blocks": {
-        "collabs": { "type": "collection", "settings": { "collection": "new-arrivals", "fallback_image": "collab", "eyebrow": "Limited · Drops", "heading": "Limited collabs.", "copy": "Small-batch releases before they sell out.", "button_label": "Shop limited drops" } },
-        "summer": { "type": "collection", "settings": { "collection": "running-training", "fallback_image": "summer", "eyebrow": "Seasonal · Summer 2026", "heading": "Summer miles.", "copy": "Light, breathable pairs built for hot-weather running.", "button_label": "Shop summer miles" } },
-        "trail": { "type": "collection", "settings": { "collection": "trail-outdoor", "fallback_image": "trail", "eyebrow": "Seasonal · Fall preview", "heading": "Trail season.", "copy": "Grip and protection for golden-hour trails.", "button_label": "Shop trail season" } },
-        "marathon": { "type": "collection", "settings": { "collection": "running-training", "fallback_image": "marathon", "eyebrow": "Training block", "heading": "Marathon prep.", "copy": "Daily trainers and tempo shoes for the big build.", "button_label": "Shop marathon prep" } },
-        "cushion": { "type": "collection", "settings": { "collection": "walking", "fallback_image": "cushion", "eyebrow": "Comfort edit", "heading": "Max cushion.", "copy": "The plushest stacks for long, easy miles.", "button_label": "Shop max cushion" } },
-        "rain": { "type": "collection", "settings": { "collection": "trail-outdoor", "fallback_image": "rain", "eyebrow": "Weatherproof edit", "heading": "Rainy-day ready.", "copy": "Water-repellent uppers and wet-grip outsoles.", "button_label": "Shop weatherproof" } }
+        "collabs": { "type": "collection", "settings": { "collection": "new-arrivals", "link": "/collections/new-arrivals", "fallback_image": "collab", "eyebrow": "Limited · Drops", "heading": "Limited collabs.", "copy": "Small-batch releases before they sell out.", "button_label": "Shop now" } },
+        "summer": { "type": "collection", "settings": { "collection": "running-training", "link": "/collections/running-training", "fallback_image": "summer", "eyebrow": "Seasonal · Summer 2026", "heading": "Summer miles.", "copy": "Light, breathable pairs built for hot-weather running.", "button_label": "Shop now" } },
+        "trail": { "type": "collection", "settings": { "collection": "trail-outdoor", "link": "/collections/trail-outdoor", "fallback_image": "trail", "eyebrow": "Seasonal · Fall preview", "heading": "Trail season.", "copy": "Grip and protection for golden-hour trails.", "button_label": "Shop now" } },
+        "marathon": { "type": "collection", "settings": { "collection": "running-training", "link": "/collections/running-training", "fallback_image": "marathon", "eyebrow": "Training block", "heading": "Marathon prep.", "copy": "Daily trainers and tempo shoes for the big build.", "button_label": "Shop now" } },
+        "cushion": { "type": "collection", "settings": { "collection": "walking", "link": "/collections/walking", "fallback_image": "cushion", "eyebrow": "Comfort edit", "heading": "Max cushion.", "copy": "The plushest stacks for long, easy miles.", "button_label": "Shop now" } },
+        "rain": { "type": "collection", "settings": { "collection": "trail-outdoor", "link": "/collections/trail-outdoor", "fallback_image": "rain", "eyebrow": "Weatherproof edit", "heading": "Rainy-day ready.", "copy": "Water-repellent uppers and wet-grip outsoles.", "button_label": "Shop now" } }
       },
       "block_order": ["collabs", "summer", "trail", "marathon", "cushion", "rain"],
-      "settings": { "heading": "New collections", "view_all_label": "View all collections", "view_all_link": "/collections" }
+      "settings": { "heading": "Collector's pick", "view_all_label": "View all", "view_all_link": "/collections" }
     },
     "top_picks": { "type": "sneaker-product-rail", "settings": { "heading": "Top picks", "collection": "running-training", "products_to_show": 15, "show_view_all": true, "view_all_label": "View all" } },
     "flagship_spotlight": { "type": "sneaker-flagship-spotlight", "settings": { "product": "men-s-nike-dunk-low-retro-sneakers-black-hf5441-100", "eyebrow": "FEATURED", "heading": "The hoops icon. Off the court.", "copy": "<p>The Dunk Low returns with crisp leather, classic color blocking and everyday comfort.</p>", "show_price": true, "benefit_1": "Premium leather upper", "benefit_2": "Classic low-profile fit", "benefit_3": "Durable rubber traction", "button_label": "Shop Nike Dunk Low", "color_scheme": "scheme-1", "padding_top": 64, "padding_bottom": 0 } },
@@ -118,5 +118,5 @@
       "settings": { "color_scheme": "scheme-1", "full_width": true, "button_label": "Sign me up", "privacy_note": "Get updates. Unsubscribe anytime.", "privacy_link_label": "Privacy policy", "privacy_link": "/policies/privacy-policy", "padding_top": 20, "padding_bottom": 20 }
     }
   },
-  "order": ["sneaker_hero", "quick_shop", "shop_by_activity", "hot_deals", "trending", "brand_navigation", "new_collections", "top_picks", "flagship_spotlight", "clothing", "accessories", "sneaker_journal", "app_promo", "sneaker_trust", "newsletter"]
+  "order": ["sneaker_hero", "quick_shop", "shop_by_activity", "hot_deals", "trending", "new_collections", "brand_navigation", "top_picks", "flagship_spotlight", "clothing", "accessories", "sneaker_journal", "app_promo", "sneaker_trust", "newsletter"]
 }
