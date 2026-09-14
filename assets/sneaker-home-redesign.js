@@ -229,6 +229,99 @@ if (!customElements.get('sneaker-home-new-arrivals')) {
   });
 }
 
+if (!customElements.get('sneaker-home-trending')) {
+  customElements.define('sneaker-home-trending', class extends HTMLElement {
+    connectedCallback() {
+      this.tablist = this.querySelector('[data-trending-tabs]');
+      this.tabs = [...this.querySelectorAll('[data-trending-tab]')];
+      this.panels = [...this.querySelectorAll('[data-trending-panel]')];
+      this.headLinks = [...this.querySelectorAll('[data-trending-head-link]')];
+      this.tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => this.select(tab.dataset.trendingTab));
+        tab.addEventListener('keydown', event => this.onKeydown(event, index));
+      });
+      this.select(this.tabs.find(tab => tab.getAttribute('aria-selected') === 'true')?.dataset.trendingTab || 'sneakers');
+    }
+    select(category, focus = false) {
+      const selectedIndex = Math.max(0, this.tabs.findIndex(tab => tab.dataset.trendingTab === category));
+      this.tabs.forEach((tab, index) => {
+        const selected = index === selectedIndex;
+        tab.setAttribute('aria-selected', selected ? 'true' : 'false');
+        tab.tabIndex = selected ? 0 : -1;
+      });
+      this.tablist?.style.setProperty('--sh-tab-index', String(selectedIndex));
+      this.panels.forEach(panel => { panel.hidden = panel.dataset.trendingPanel !== category; });
+      this.headLinks.forEach(link => { link.hidden = link.dataset.trendingHeadLink !== category; });
+      const activePanel = this.panels.find(panel => panel.dataset.trendingPanel === category);
+      requestAnimationFrame(() => {
+        activePanel?.querySelector('sneaker-home-banner-carousel')?.go?.(0);
+        activePanel?.querySelector('sneaker-home-rail')?.update?.();
+      });
+      if (focus) this.tabs[selectedIndex]?.focus();
+    }
+    onKeydown(event, index) {
+      let target = null;
+      if (event.key === 'ArrowRight') target = (index + 1) % this.tabs.length;
+      if (event.key === 'ArrowLeft') target = (index + this.tabs.length - 1) % this.tabs.length;
+      if (event.key === 'Home') target = 0;
+      if (event.key === 'End') target = this.tabs.length - 1;
+      if (target === null) return;
+      event.preventDefault();
+      this.select(this.tabs[target].dataset.trendingTab, true);
+    }
+  });
+}
+
+if (!customElements.get('sneaker-home-banner-carousel')) {
+  customElements.define('sneaker-home-banner-carousel', class extends HTMLElement {
+    connectedCallback() {
+      this.track = this.querySelector('[data-banner-track]');
+      this.slides = [...this.querySelectorAll('[data-banner-slide]')];
+      this.dots = this.querySelector('[data-banner-dots]');
+      this.previous = this.querySelector('[data-banner-prev]');
+      this.next = this.querySelector('[data-banner-next]');
+      this.index = 0;
+      this.previous?.addEventListener('click', () => this.go(this.index - 1));
+      this.next?.addEventListener('click', () => this.go(this.index + 1));
+      this.track?.addEventListener('scroll', () => {
+        if (!matchMedia('(max-width:1279px)').matches) return;
+        const index = Math.round(this.track.scrollLeft / Math.max(1, this.track.clientWidth));
+        if (index !== this.index) this.setState(index);
+      }, { passive:true });
+      this.buildDots();
+      this.setState(0);
+    }
+    buildDots() {
+      if (!this.dots) return;
+      this.dots.replaceChildren();
+      this.slides.forEach((_, index) => {
+        const dot = document.createElement('button');
+        dot.type = 'button';
+        dot.setAttribute('aria-label', `Go to campaign ${index + 1}`);
+        dot.addEventListener('click', () => this.go(index));
+        this.dots.append(dot);
+      });
+    }
+    setState(index) {
+      this.index = Math.max(0, Math.min(this.slides.length - 1, index));
+      this.slides.forEach((slide, slideIndex) => {
+        const hidden = slideIndex !== this.index;
+        slide.setAttribute('aria-hidden', hidden ? 'true' : 'false');
+        slide.inert = hidden;
+      });
+      [...(this.dots?.children || [])].forEach((dot, dotIndex) => dot.setAttribute('aria-current', dotIndex === this.index ? 'true' : 'false'));
+      if (this.previous) this.previous.disabled = this.index === 0;
+      if (this.next) this.next.disabled = this.index >= this.slides.length - 1;
+    }
+    go(index) {
+      if (!this.slides.length) return;
+      this.setState(index);
+      if (matchMedia('(max-width:1279px)').matches) this.track?.scrollTo({ left:this.index * this.track.clientWidth, behavior:'smooth' });
+      else if (this.track) this.track.style.transform = `translate3d(-${this.index * 100}%,0,0)`;
+    }
+  });
+}
+
 if (!customElements.get('sneaker-home-rail')) {
   customElements.define('sneaker-home-rail', class extends HTMLElement {
     connectedCallback() {

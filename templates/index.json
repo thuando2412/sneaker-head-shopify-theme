@@ -56,7 +56,22 @@
       "settings": { "heading": "Shop by activity", "show_audience_tabs": true, "view_all_label": "Shop all", "view_all_link": "/collections/all" }
     },
     "hot_deals": { "type": "sneaker-hot-deals", "settings": { "heading": "Hot deals", "collection": "sale", "featured_product": "", "end_date": "2026-12-31T23:59:00-05:00", "ended_label": "Deal ended", "view_all_label": "View all deals" } },
-    "trending": { "type": "sneaker-product-rail", "settings": { "heading": "Trending now", "collection": "new-arrivals", "products_to_show": 15, "show_view_all": true, "view_all_label": "View all" } },
+    "trending": {
+      "type": "sneaker-trending",
+      "blocks": {
+        "sneakers_1": { "type": "banner", "settings": { "category": "sneakers", "label": "Trending sneakers lifestyle", "link": "/collections/new-arrivals", "fallback_image": "running", "button_label": "Shop now" } },
+        "sneakers_2": { "type": "banner", "settings": { "category": "sneakers", "label": "Latest sneaker drops", "link": "/collections/new-arrivals", "fallback_image": "collab", "button_label": "Shop now" } },
+        "sneakers_3": { "type": "banner", "settings": { "category": "sneakers", "label": "Trending retro sneakers", "link": "/collections/new-arrivals", "fallback_image": "everyday", "button_label": "Shop now" } },
+        "apparel_1": { "type": "banner", "settings": { "category": "apparel", "label": "Trending apparel", "link": "/collections/clothing", "fallback_image": "clothing", "button_label": "Shop now" } },
+        "apparel_2": { "type": "banner", "settings": { "category": "apparel", "label": "Apparel capsule", "link": "/collections/clothing", "fallback_image": "summer", "button_label": "Shop now" } },
+        "apparel_3": { "type": "banner", "settings": { "category": "apparel", "label": "Performance layers", "link": "/collections/clothing", "fallback_image": "trail", "button_label": "Shop now" } },
+        "accessories_1": { "type": "banner", "settings": { "category": "accessories", "label": "Trending accessories", "link": "/collections/accessories", "fallback_image": "bags", "button_label": "Shop now" } },
+        "accessories_2": { "type": "banner", "settings": { "category": "accessories", "label": "Socks and caps", "link": "/collections/accessories", "fallback_image": "care", "button_label": "Shop now" } },
+        "accessories_3": { "type": "banner", "settings": { "category": "accessories", "label": "Bags and packs", "link": "/collections/accessories", "fallback_image": "rain", "button_label": "Shop now" } }
+      },
+      "block_order": ["sneakers_1", "sneakers_2", "sneakers_3", "apparel_1", "apparel_2", "apparel_3", "accessories_1", "accessories_2", "accessories_3"],
+      "settings": { "heading": "Trending now", "sneakers_label": "Sneakers", "sneakers_collection": "new-arrivals", "sneakers_link": "/collections/new-arrivals", "apparel_label": "Apparel", "apparel_collection": "clothing", "apparel_link": "/collections/clothing", "accessories_label": "Accessories", "accessories_collection": "accessories", "accessories_link": "/collections/accessories", "products_to_show": 15, "view_all_label": "View all" }
+    },
     "brand_navigation": {
       "type": "sneaker-brand-navigation",
       "blocks": {

@@ -340,6 +340,33 @@
   .template-index .sh-home-new-arrivals__card:hover .sh-home-new-arrivals__cta { background:var(--sh-home-volt); box-shadow:0 0 14px rgba(199,255,50,.45); color:var(--sh-home-ink); text-shadow:none; transform:translate(-50%,-50%) scale(1.07); -webkit-backdrop-filter:none; backdrop-filter:none; }
 }
 
+/* Trending category rail */
+.template-index .sh-home-trending { display:block; padding-top:60px; }
+.template-index .sh-home-trending__head { display:grid; grid-template-columns:minmax(0,1fr) auto minmax(0,1fr); align-items:center; }
+.template-index .sh-home-trending__tabs-viewport { min-width:0; justify-self:center; }
+.template-index .sh-home-trending__head-links { justify-self:end; }
+.template-index .sh-home-trending__head-links [hidden],
+.template-index .sh-home-trending__panel[hidden] { display:none; }
+.template-index .sh-home-trending-banner { position:relative; display:block; margin-bottom:16px; overflow:hidden; border-radius:4px; background:var(--sh-home-ink); }
+.template-index .sh-home-trending-banner__track { display:flex; transition:transform .42s cubic-bezier(.2,0,0,1); }
+.template-index .sh-home-trending-banner__slide { position:relative; flex:0 0 100%; display:block; aspect-ratio:16/5; overflow:hidden; color:#fff; text-decoration:none; }
+.template-index .sh-home-trending-banner__image { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:var(--sh-image-position,center); transition:transform .6s cubic-bezier(.2,0,0,1); }
+.template-index .sh-home-trending-banner__scrim { position:absolute; inset:0; background:linear-gradient(180deg,rgba(16,19,24,.05),transparent 35%,rgba(16,19,24,.35)); pointer-events:none; }
+.template-index .sh-home-trending-banner__cta { position:absolute; z-index:2; inset:50% auto auto 50%; min-width:190px; height:52px; display:inline-flex; align-items:center; justify-content:center; padding:0 24px; border:3px solid transparent; border-radius:999px; background:rgba(255,255,255,.06); box-shadow:inset 0 0 0 1px rgba(255,255,255,.12),inset 2px 1px 0 -1px rgba(255,255,255,.5),inset -1.5px -1px 0 -1px rgba(255,255,255,.4),inset -2px -6px 1px -5px rgba(255,255,255,.3),inset -1px 2px 3px -1px rgba(0,0,0,.35),inset 0 -4px 1px -2px rgba(0,0,0,.18),0 3px 10px rgba(0,0,0,.3); color:#fff; font:700 12px/1 var(--font-body-family); letter-spacing:.08em; text-shadow:0 1px 3px rgba(16,19,24,.4); text-transform:uppercase; transform:translate(-50%,-50%); transition:transform .26s cubic-bezier(.34,1.56,.64,1),background .25s,color .25s; -webkit-backdrop-filter:blur(2px) saturate(1.4); backdrop-filter:blur(2px) saturate(1.4); }
+.template-index .sh-home-trending-banner__dots { position:absolute; z-index:3; left:50%; bottom:12px; display:flex; gap:8px; transform:translateX(-50%); }
+.template-index .sh-home-trending-banner__dots button { width:6px; height:6px; padding:0; border:0; border-radius:999px; background:rgba(255,255,255,.35); cursor:pointer; transition:width .25s,background .25s; }
+.template-index .sh-home-trending-banner__dots button[aria-current=true] { width:28px; background:#fff; }
+.template-index .sh-home-trending-banner__arrow { position:absolute; z-index:3; top:50%; width:44px; height:44px; display:grid; place-items:center; padding:0; border:0; border-radius:999px; background:rgba(255,255,255,.06); box-shadow:inset 0 0 0 1px rgba(255,255,255,.12),0 3px 10px rgba(0,0,0,.3); color:#fff; font:400 16px/1 var(--font-body-family); cursor:pointer; transform:translateY(-50%); -webkit-backdrop-filter:blur(2px) saturate(1.4); backdrop-filter:blur(2px) saturate(1.4); }
+.template-index .sh-home-trending-banner__arrow--prev { left:12px; }
+.template-index .sh-home-trending-banner__arrow--next { right:12px; }
+.template-index .sh-home-trending__products { display:block; }
+
+@media (hover:hover) and (pointer:fine) and (min-width:1280px) {
+  .template-index .sh-home-trending-banner__slide:hover .sh-home-trending-banner__image { transform:scale(1.04); }
+  .template-index .sh-home-trending-banner__slide:hover .sh-home-trending-banner__cta { background:var(--sh-home-volt); box-shadow:0 0 14px rgba(199,255,50,.45); color:var(--sh-home-ink); text-shadow:none; transform:translate(-50%,-50%) scale(1.07); -webkit-backdrop-filter:none; backdrop-filter:none; }
+  .template-index .sh-home-trending-banner__arrow:not(:disabled):hover { background:rgba(255,255,255,.16); transform:translateY(-50%) scale(1.08); }
+}
+
 /* Spotlight */
 .template-index .sh-spotlight { padding-block:64px 0 !important; background:transparent; }
 .template-index .sh-spotlight .page-width { max-width:none; padding-inline:48px; }
@@ -494,6 +521,18 @@
   .template-index .sh-home-new-arrivals__card,
   .template-index .sh-home-new-arrivals__card--accessories { position:sticky; z-index:1; top:0; display:block; aspect-ratio:3/4; border-radius:0; }
   .template-index .sh-home-new-arrivals__cta { inset:auto auto 21.1cqw 50%; min-width:168px; height:48px; transform:translateX(-50%); }
+  .template-index #MainContent .page-width.sh-home-trending { padding-inline:0; }
+  .template-index .sh-home-trending { padding-top:48px; }
+  .template-index .sh-home-trending__head { display:block; margin-bottom:20px; padding-inline:24px; }
+  .template-index .sh-home-trending .sh-home-title { font-size:38px; }
+  .template-index .sh-home-trending__tabs-viewport { margin:16px -24px 0; padding:0 24px; overflow-x:auto; text-align:center; scrollbar-width:none; }
+  .template-index .sh-home-trending__head-links { display:none; }
+  .template-index .sh-home-trending-banner { margin-bottom:16px; border-radius:0; }
+  .template-index .sh-home-trending-banner__track { overflow-x:auto; scroll-snap-type:x mandatory; scrollbar-width:none; transform:none!important; transition:none; }
+  .template-index .sh-home-trending-banner__slide { aspect-ratio:16/9; scroll-snap-align:start; }
+  .template-index .sh-home-trending-banner__cta,
+  .template-index .sh-home-trending-banner__arrow { display:none; }
+  .template-index .sh-home-trending__panel>.sh-home-mobile-view-all { width:fit-content; display:flex; align-items:center; justify-content:center; height:44px; min-width:112px; min-height:44px; margin:28px auto 0; padding:0 16px; border:1px solid rgba(16,19,24,.35); border-radius:999px; background:#fff; box-shadow:0 1px 4px rgba(16,19,24,.12); color:var(--sh-home-ink); font:600 11px/1 var(--font-body-family); letter-spacing:.06em; text-transform:uppercase; text-decoration:none; }
   .sh-home-deals__carousel--wide { display:none; }
   .sh-home-deals__carousel--tablet { display:block; }
   .sh-home-rail__list { grid-template-rows:1fr; grid-auto-columns:calc((100% - 120px)/4); }
@@ -641,6 +680,18 @@
   .template-index .sh-home-new-arrivals__card,
   .template-index .sh-home-new-arrivals__card--accessories { position:sticky; z-index:1; top:0; display:block; aspect-ratio:9/16; border-radius:0; }
   .template-index .sh-home-new-arrivals__cta { inset:auto auto 110px 50%; min-width:156px; height:48px; padding-inline:22px; transform:translateX(-50%); }
+  .template-index #MainContent .page-width.sh-home-trending { padding-inline:0; }
+  .template-index .sh-home-trending { padding-top:48px; }
+  .template-index .sh-home-trending__head { display:block; margin-bottom:20px; padding-inline:16px; }
+  .template-index .sh-home-trending__tabs-viewport { margin:16px -16px 0; padding:0 16px; overflow-x:auto; text-align:center; scrollbar-width:none; }
+  .template-index .sh-home-trending__head-links { display:none; }
+  .template-index .sh-home-trending-banner { margin-bottom:16px; border-radius:0; }
+  .template-index .sh-home-trending-banner__track { overflow-x:auto; scroll-snap-type:x mandatory; scrollbar-width:none; transform:none!important; transition:none; }
+  .template-index .sh-home-trending-banner__slide { aspect-ratio:16/9; scroll-snap-align:start; }
+  .template-index .sh-home-trending-banner__dots { bottom:10px; }
+  .template-index .sh-home-trending-banner__cta,
+  .template-index .sh-home-trending-banner__arrow { display:none; }
+  .template-index .sh-home-trending__panel>.sh-home-mobile-view-all { width:fit-content; min-width:96px; margin:28px auto 0; }
   .sh-home-collections__track { margin-inline:-16px; padding:0 16px 8px; }
   .sh-home-collection-card { flex-basis:316px; aspect-ratio:16/11; }
   .sh-home-collection-card__content { left:16px; right:16px; bottom:16px; }
