@@ -103,7 +103,7 @@
           <div class="sh-home-rail__controls"><button class="sh-home-icon-button" type="button" data-rail-prev aria-label="Previous deals">&lsaquo;</button><button class="sh-home-icon-button" type="button" data-rail-next aria-label="Next deals">&rsaquo;</button></div>
         </div>
       </sneaker-home-rail>
-      <sneaker-home-rail class="sh-home-deals__carousel sh-home-deals__carousel--tablet" data-desktop-page-size="1" data-mobile-page-size="4" data-autoplay="false" data-interval="5000">
+      <sneaker-home-rail class="sh-home-deals__carousel sh-home-deals__carousel--tablet" data-desktop-page-size="1" data-tablet-page-size="1" data-mobile-page-size="1" data-autoplay="false" data-interval="5000">
         <div class="sh-home-deals__viewport">
           <div class="sh-home-deals__track" data-rail-list>
             <div class="sh-home-deals__page sh-home-deals__page--lead">
@@ -117,7 +117,7 @@
                   assign product_family_marker = '|' | append: product_family_key | append: '|'
                 %}
                 {% unless seen_families contains product_family_marker %}
-                  {% if visible_index < 4 %}{% render 'sneaker-home-deal-card', product: product, section_id: section.id, context: 'deals-tablet' %}{% endif %}
+                  {% if visible_index < 2 %}{% render 'sneaker-home-deal-card', product: product, section_id: section.id, context: 'deals-tablet' %}{% endif %}
                   {% assign seen_families = seen_families | append: product_family_key | append: '|' %}
                   {% assign visible_index = visible_index | plus: 1 %}
                 {% endunless %}
@@ -132,7 +132,7 @@
                 assign product_family_key = product_family.system.handle | default: product_family.id | default: product.id
                 assign product_family_marker = '|' | append: product_family_key | append: '|'
               %}
-              {% unless seen_families contains product_family_marker %}{% if visible_index >= 4 and remaining_count < 16 %}{% assign remaining_count = remaining_count | plus: 1 %}{% endif %}{% assign seen_families = seen_families | append: product_family_key | append: '|' %}{% assign visible_index = visible_index | plus: 1 %}{% endunless %}
+              {% unless seen_families contains product_family_marker %}{% if visible_index >= 2 and remaining_count < 18 %}{% assign remaining_count = remaining_count | plus: 1 %}{% endif %}{% assign seen_families = seen_families | append: product_family_key | append: '|' %}{% assign visible_index = visible_index | plus: 1 %}{% endunless %}
             {% endfor %}
             {% assign visible_index = 0 %}
             {% assign seen_families = featured_family_marker %}
@@ -143,12 +143,12 @@
                 assign product_family_marker = '|' | append: product_family_key | append: '|'
               %}
               {% unless seen_families contains product_family_marker %}
-                {% if visible_index >= 4 and visible_index < 20 %}
-                  {% assign remaining_index = visible_index | minus: 4 %}
-                  {% assign page_mod = remaining_index | modulo: 8 %}
+                {% if visible_index >= 2 and visible_index < 20 %}
+                  {% assign remaining_index = visible_index | minus: 2 %}
+                  {% assign page_mod = remaining_index | modulo: 6 %}
                   {% if page_mod == 0 %}<div class="sh-home-deals__page">{% endif %}{% render 'sneaker-home-deal-card', product: product, section_id: section.id, context: 'deals-tablet' %}
                   {% assign close_index = remaining_index | plus: 1 %}
-                  {% assign close_mod = close_index | modulo: 8 %}
+                  {% assign close_mod = close_index | modulo: 6 %}
                   {% if close_mod == 0 or close_index == remaining_count %}</div>{% endif %}
                 {% endif %}
                 {% assign seen_families = seen_families | append: product_family_key | append: '|' %}
@@ -163,8 +163,7 @@
         </div>
       </sneaker-home-rail>
       <div class="sh-home-deals__mobile" aria-label="Hot deals products">
-        {% render 'sneaker-home-deal-card', product: featured_deal, featured: true, section_id: section.id, context: 'deals-mobile-hero' %}
-        <sneaker-home-rail class="sh-home-deals__mobile-products" data-desktop-page-size="4" data-mobile-page-size="4">
+        <sneaker-home-rail class="sh-home-deals__mobile-products" data-desktop-page-size="4" data-tablet-page-size="4" data-mobile-page-size="4">
           <div class="sh-home-deals__mobile-rail" data-rail-list>
             {% assign seen_families = featured_family_marker %}
             {% assign visible_index = 0 %}

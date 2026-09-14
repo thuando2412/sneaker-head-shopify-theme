@@ -40,7 +40,7 @@
       "settings": { "heading": "Shop by activity", "view_all_label": "Shop all", "view_all_link": "/collections/all" }
     },
     "hot_deals": { "type": "sneaker-hot-deals", "settings": { "heading": "Hot deals", "collection": "sale", "featured_product": "", "end_date": "2026-12-31T23:59:00-05:00", "ended_label": "Deal ended", "view_all_label": "View all deals" } },
-    "trending": { "type": "sneaker-product-rail", "settings": { "heading": "Trending now", "collection": "new-arrivals", "products_to_show": 20, "show_view_all": true, "view_all_label": "View all" } },
+    "trending": { "type": "sneaker-product-rail", "settings": { "heading": "Trending now", "collection": "new-arrivals", "products_to_show": 15, "show_view_all": true, "view_all_label": "View all" } },
     "brand_navigation": {
       "type": "sneaker-brand-navigation",
       "blocks": {
@@ -69,7 +69,7 @@
       "block_order": ["collabs", "summer", "trail", "marathon", "cushion", "rain"],
       "settings": { "heading": "New collections", "view_all_label": "View all collections", "view_all_link": "/collections" }
     },
-    "top_picks": { "type": "sneaker-product-rail", "settings": { "heading": "Top picks", "collection": "running-training", "products_to_show": 20, "show_view_all": true, "view_all_label": "View all" } },
+    "top_picks": { "type": "sneaker-product-rail", "settings": { "heading": "Top picks", "collection": "running-training", "products_to_show": 15, "show_view_all": true, "view_all_label": "View all" } },
     "flagship_spotlight": { "type": "sneaker-flagship-spotlight", "settings": { "product": "men-s-nike-dunk-low-retro-sneakers-black-hf5441-100", "eyebrow": "FEATURED", "heading": "The hoops icon. Off the court.", "copy": "<p>The Dunk Low returns with crisp leather, classic color blocking and everyday comfort.</p>", "show_price": true, "benefit_1": "Premium leather upper", "benefit_2": "Classic low-profile fit", "benefit_3": "Durable rubber traction", "button_label": "Shop Nike Dunk Low", "color_scheme": "scheme-1", "padding_top": 64, "padding_bottom": 0 } },
     "clothing": { "type": "sneaker-clothing", "settings": { "heading": "Clothing", "collection": "clothing", "view_all_label": "View all clothing", "eyebrow": "New drop · Apparel", "editorial_heading": "Layer up for every run.", "copy": "<p>Tees, shorts and shells that work as hard as you do.</p>", "button_label": "Shop new drop" } },
     "accessories": {

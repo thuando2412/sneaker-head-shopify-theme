@@ -13,7 +13,7 @@ if (!customElements.get('sneaker-home-hero')) {
       this.addEventListener('focusin', () => this.stopTimer());
       this.addEventListener('focusout', event => { if (!this.contains(event.relatedTarget)) this.startTimer(); });
       this.track?.addEventListener('scroll', () => {
-        if (matchMedia('(max-width: 749px)').matches) {
+        if (matchMedia('(max-width: 767px)').matches) {
           const index = Math.round(this.track.scrollLeft / Math.max(1, this.track.clientWidth));
           if (index !== this.index) this.setState(index);
         }
@@ -33,7 +33,7 @@ if (!customElements.get('sneaker-home-hero')) {
       this.slides.forEach((slide, i) => {
         const hidden = i !== this.index;
         slide.setAttribute('aria-hidden', hidden ? 'true' : 'false');
-        if (!matchMedia('(max-width:749px)').matches) slide.inert = hidden;
+        if (!matchMedia('(max-width:767px)').matches) slide.inert = hidden;
         else slide.inert = false;
       });
     }
@@ -41,7 +41,7 @@ if (!customElements.get('sneaker-home-hero')) {
       if (!this.slides.length) return;
       const target = (index + this.slides.length) % this.slides.length;
       this.setState(target);
-      if (matchMedia('(max-width:749px)').matches) this.track.scrollTo({ left:target * this.track.clientWidth, behavior:'smooth' });
+      if (matchMedia('(max-width:767px)').matches) this.track.scrollTo({ left:target * this.track.clientWidth, behavior:'smooth' });
       else this.track.style.transform = `translate3d(-${target * 100}%,0,0)`;
       if (resetTimer && this.timer) { this.stopTimer(); this.startTimer(); }
     }
@@ -78,7 +78,7 @@ if (!customElements.get('sneaker-home-rail')) {
     }
     disconnectedCallback() { this.resizeObserver?.disconnect(); this.stopTimer(); }
     startTimer() {
-      if (this.timer || this.dataset.autoplay !== 'true' || this.offsetParent === null || matchMedia('(max-width:749px)').matches || matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+      if (this.timer || this.dataset.autoplay !== 'true' || this.offsetParent === null || matchMedia('(max-width:767px)').matches || matchMedia('(prefers-reduced-motion:reduce)').matches) return;
       const { pages } = this.pageMetrics();
       if (pages < 2) return;
       this.timer = setInterval(() => this.advance(), Number(this.dataset.interval || 5000));
@@ -92,8 +92,8 @@ if (!customElements.get('sneaker-home-rail')) {
     }
     pageMetrics() {
       if (!this.list) return { pages:1, stops:[0] };
-      const mobile = matchMedia('(max-width:749px)').matches;
-      const tablet = !mobile && matchMedia('(max-width:1599px)').matches;
+      const mobile = matchMedia('(max-width:767px)').matches;
+      const tablet = !mobile && matchMedia('(max-width:1279px)').matches;
       const pageSize = Number(mobile ? this.dataset.mobilePageSize : (tablet ? (this.dataset.tabletPageSize || this.dataset.desktopPageSize) : this.dataset.desktopPageSize)) || 1;
       const items = [...this.list.children];
       const max = Math.max(0, this.list.scrollWidth - this.list.clientWidth);

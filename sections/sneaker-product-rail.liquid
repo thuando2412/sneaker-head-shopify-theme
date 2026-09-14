@@ -3,14 +3,21 @@
   assign product_limit = section.settings.products_to_show
 %}
 {% if rail_collection != blank and rail_collection.products_count > 0 %}
-  <section class="sh-home-section page-width">
-    <sneaker-home-rail class="sh-home-rail" data-desktop-page-size="5" data-tablet-page-size="4" data-mobile-page-size="4">
+  <section class="sh-home-section sh-home-section--product-rail page-width">
+    <sneaker-home-rail
+      class="sh-home-rail"
+      data-product-rail
+      data-desktop-page-size="5"
+      data-tablet-page-size="3"
+      data-mobile-page-size="2"
+      aria-labelledby="SneakerRailHeading-{{ section.id }}"
+    >
       <div class="sh-home-head">
-        <h2 class="sh-home-title">{{ section.settings.heading | escape }}</h2>
+        <h2 class="sh-home-title" id="SneakerRailHeading-{{ section.id }}">{{ section.settings.heading | escape }}</h2>
         {% if section.settings.show_view_all %}<a class="sh-home-link" href="{{ rail_collection.url }}">{{ section.settings.view_all_label | escape }}</a>{% endif %}
       </div>
       <div class="sh-home-rail__viewport">
-        <ul class="sh-home-rail__list" data-rail-list role="list">
+        <ul class="sh-home-rail__list" data-rail-list role="list" aria-label="{{ section.settings.heading | escape }} products">
           {% liquid
             assign rendered_products = 0
             assign seen_colorway_families = '|'
@@ -35,7 +42,7 @@
         </ul>
       </div>
       <div class="sh-home-rail__footer">
-        <div class="sh-home-rail__status"><div class="sh-home-rail__progress" data-rail-progress aria-hidden="true"><span></span></div><span class="sh-home-rail__count" data-rail-count>1 / 1</span></div>
+        <div class="sh-home-rail__status"><div class="sh-home-rail__progress" data-rail-progress><span></span></div><span class="sh-home-rail__count" data-rail-count aria-live="polite">1 / 1</span></div>
         <div class="sh-home-rail__controls">
           <button class="sh-home-icon-button" type="button" data-rail-prev aria-label="Previous products">‹</button>
           <button class="sh-home-icon-button" type="button" data-rail-next aria-label="Next products">›</button>
@@ -52,7 +59,7 @@
   "settings": [
     { "type": "text", "id": "heading", "label": "Heading", "default": "Trending now" },
     { "type": "collection", "id": "collection", "label": "Collection" },
-    { "type": "range", "id": "products_to_show", "min": 4, "max": 20, "step": 1, "label": "Products to show", "default": 12 },
+    { "type": "range", "id": "products_to_show", "min": 5, "max": 30, "step": 1, "label": "Products to show", "default": 15 },
     { "type": "checkbox", "id": "show_view_all", "label": "Show view all", "default": true },
     { "type": "text", "id": "view_all_label", "label": "View all label", "default": "View all" }
   ],

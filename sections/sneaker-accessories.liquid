@@ -2,7 +2,7 @@
 {% if section.blocks.size > 0 %}
   <section class="sh-home-section page-width sh-home-accessories">
     <div class="sh-home-head">
-      <h2 class="sh-home-title">{{ section.settings.heading | escape }}</h2>
+      <h2 class="sh-home-title" id="SneakerAccessoriesHeading-{{ section.id }}">{{ section.settings.heading | escape }}</h2>
       {% if accessory_collection != blank %}<a class="sh-home-link" href="{{ accessory_collection.url }}">{{ section.settings.view_all_label | escape }}</a>{% endif %}
     </div>
     <div class="sh-home-accessories__cards">
@@ -36,7 +36,7 @@
       {% endfor %}
     </div>
     {% if accessory_collection != blank and accessory_collection.products_count > 0 %}
-      <sneaker-home-rail class="sh-home-rail sh-home-accessories__rail" data-desktop-page-size="5" data-tablet-page-size="4" data-mobile-page-size="4" style="display:block;margin-top:2.8rem">
+      <sneaker-home-rail class="sh-home-rail sh-home-accessories__rail" data-product-rail data-desktop-page-size="5" data-tablet-page-size="3" data-mobile-page-size="2" aria-labelledby="SneakerAccessoriesHeading-{{ section.id }}" style="display:block;margin-top:2.8rem">
         <ul class="sh-home-rail__list" data-rail-list role="list">
           {% liquid
             assign rendered_products = 0
