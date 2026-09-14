@@ -1,0 +1,131 @@
+<sneaker-home-new-arrivals class="sh-home-section sh-home-new-arrivals page-width">
+  <div class="sh-home-head sh-home-new-arrivals__head">
+    <h2 class="sh-home-title" id="SneakerNewArrivalsHeading-{{ section.id }}">{{ section.settings.heading | escape }}</h2>
+    <div class="sh-home-new-arrivals__tabs-viewport">
+      <div class="sh-home-audience-tabs" role="tablist" aria-label="{{ section.settings.heading | escape }} audience" data-new-arrivals-tabs>
+        {% for audience in (1..3) %}
+          {% liquid
+            case audience
+              when 1
+                assign audience_key = 'men'
+                assign audience_label = section.settings.men_label
+              when 2
+                assign audience_key = 'women'
+                assign audience_label = section.settings.women_label
+              when 3
+                assign audience_key = 'kids'
+                assign audience_label = section.settings.kids_label
+            endcase
+          %}
+          <button
+            class="sh-home-audience-tab"
+            type="button"
+            role="tab"
+            id="NewArrivalsTab-{{ section.id }}-{{ audience_key }}"
+            aria-controls="NewArrivalsPanel-{{ section.id }}-{{ audience_key }}"
+            aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+            tabindex="{% if forloop.first %}0{% else %}-1{% endif %}"
+            data-new-arrivals-tab="{{ audience_key }}"
+          >{{ audience_label | escape }}</button>
+        {% endfor %}
+      </div>
+    </div>
+    <span aria-hidden="true"></span>
+  </div>
+
+  {% for audience in (1..3) %}
+    {% liquid
+      case audience
+        when 1
+          assign audience_key = 'men'
+        when 2
+          assign audience_key = 'women'
+        when 3
+          assign audience_key = 'kids'
+      endcase
+    %}
+    <div
+      class="sh-home-new-arrivals__panel"
+      id="NewArrivalsPanel-{{ section.id }}-{{ audience_key }}"
+      role="tabpanel"
+      aria-labelledby="NewArrivalsTab-{{ section.id }}-{{ audience_key }}"
+      data-new-arrivals-panel="{{ audience_key }}"
+      {% unless forloop.first %}hidden{% endunless %}
+    >
+      {% for block in section.blocks %}
+        {% if block.settings.audience == audience_key %}
+          {% liquid
+            assign editorial_asset = blank
+            case block.settings.fallback_image
+              when 'running'
+                assign editorial_asset = 'sh-home-running.png'
+              when 'everyday'
+                assign editorial_asset = 'sh-home-everyday.png'
+              when 'basketball'
+                assign editorial_asset = 'sh-home-basketball.png'
+              when 'clothing'
+                assign editorial_asset = 'sh-home-clothing.png'
+              when 'bags'
+                assign editorial_asset = 'sh-home-bags.jpg'
+              when 'care'
+                assign editorial_asset = 'sh-home-care.jpg'
+              when 'collab'
+                assign editorial_asset = 'sh-home-collab.jpg'
+              when 'summer'
+                assign editorial_asset = 'sh-home-summer.png'
+              when 'trail'
+                assign editorial_asset = 'sh-home-trail.png'
+            endcase
+            assign card_link = block.settings.link | default: routes.all_products_collection_url
+            assign image_position = '--sh-image-position: ' | append: block.settings.image.presentation.focal_point | append: ';'
+          %}
+          <a
+            class="sh-home-new-arrivals__card sh-home-new-arrivals__card--{{ block.settings.category }}"
+            href="{{ card_link }}"
+            aria-label="{{ block.settings.label | escape }}"
+            {{ block.shopify_attributes }}
+          >
+            {% if block.settings.image != blank %}
+              {{ block.settings.image | image_url: width: 2200 | image_tag: widths: '520, 760, 1000, 1400, 1800, 2200', sizes: '(min-width: 1280px) 50vw, 100vw', loading: 'lazy', class: 'sh-home-new-arrivals__image', style: image_position, alt: block.settings.image.alt | default: block.settings.label }}
+            {% elsif editorial_asset != blank %}
+              <img class="sh-home-new-arrivals__image" src="{{ editorial_asset | asset_img_url: '2200x' }}" alt="{{ block.settings.label | escape }}" width="2200" height="1650" loading="lazy">
+            {% else %}
+              {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg sh-home-new-arrivals__image' }}
+            {% endif %}
+            <span class="sh-home-new-arrivals__scrim" aria-hidden="true"></span>
+            <span class="sh-home-new-arrivals__cta">{{ block.settings.button_label | default: 'Shop now' | escape }}</span>
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endfor %}
+</sneaker-home-new-arrivals>
+
+{% schema %}
+{
+  "name": "Sneaker new arrivals",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "New arrivals" },
+    { "type": "text", "id": "men_label", "label": "Men tab label", "default": "Men" },
+    { "type": "text", "id": "women_label", "label": "Women tab label", "default": "Women" },
+    { "type": "text", "id": "kids_label", "label": "Kids tab label", "default": "Kids" }
+  ],
+  "blocks": [
+    {
+      "type": "campaign",
+      "name": "Audience campaign",
+      "settings": [
+        { "type": "select", "id": "audience", "label": "Audience", "default": "men", "options": [{ "value": "men", "label": "Men" }, { "value": "women", "label": "Women" }, { "value": "kids", "label": "Kids" }] },
+        { "type": "select", "id": "category", "label": "Category position", "default": "sneakers", "options": [{ "value": "sneakers", "label": "Sneakers" }, { "value": "apparel", "label": "Apparel" }, { "value": "accessories", "label": "Accessories" }] },
+        { "type": "text", "id": "label", "label": "Accessible label", "default": "New arrivals" },
+        { "type": "url", "id": "link", "label": "Link" },
+        { "type": "image_picker", "id": "image", "label": "Campaign image" },
+        { "type": "select", "id": "fallback_image", "label": "Temporary fallback visual", "default": "running", "options": [{ "value": "running", "label": "Running" }, { "value": "everyday", "label": "Everyday" }, { "value": "basketball", "label": "Basketball" }, { "value": "clothing", "label": "Clothing" }, { "value": "bags", "label": "Bags" }, { "value": "care", "label": "Shoe care" }, { "value": "collab", "label": "Collab" }, { "value": "summer", "label": "Summer" }, { "value": "trail", "label": "Trail" }] },
+        { "type": "text", "id": "button_label", "label": "Button label", "default": "Shop now" }
+      ]
+    }
+  ],
+  "max_blocks": 9,
+  "presets": [{ "name": "Sneaker new arrivals", "blocks": [{ "type": "campaign" }, { "type": "campaign" }, { "type": "campaign" }] }]
+}
+{% endschema %}

@@ -85,7 +85,22 @@
       "block_order": ["collabs", "summer", "trail", "marathon", "cushion", "rain"],
       "settings": { "heading": "Collector's pick", "view_all_label": "View all", "view_all_link": "/collections" }
     },
-    "top_picks": { "type": "sneaker-product-rail", "settings": { "heading": "Top picks", "collection": "running-training", "products_to_show": 15, "show_view_all": true, "view_all_label": "View all" } },
+    "top_picks": {
+      "type": "sneaker-new-arrivals",
+      "blocks": {
+        "men_sneakers": { "type": "campaign", "settings": { "audience": "men", "category": "sneakers", "label": "New sneakers for men", "link": "/collections/mens-shoes", "fallback_image": "running", "button_label": "Shop now" } },
+        "men_apparel": { "type": "campaign", "settings": { "audience": "men", "category": "apparel", "label": "New apparel for men", "link": "/collections/clothing", "fallback_image": "clothing", "button_label": "Shop now" } },
+        "men_accessories": { "type": "campaign", "settings": { "audience": "men", "category": "accessories", "label": "New accessories for men", "link": "/collections/accessories", "fallback_image": "bags", "button_label": "Shop now" } },
+        "women_sneakers": { "type": "campaign", "settings": { "audience": "women", "category": "sneakers", "label": "New sneakers for women", "link": "/collections/womens-shoes", "fallback_image": "summer", "button_label": "Shop now" } },
+        "women_apparel": { "type": "campaign", "settings": { "audience": "women", "category": "apparel", "label": "New apparel for women", "link": "/collections/clothing", "fallback_image": "clothing", "button_label": "Shop now" } },
+        "women_accessories": { "type": "campaign", "settings": { "audience": "women", "category": "accessories", "label": "New accessories for women", "link": "/collections/accessories", "fallback_image": "care", "button_label": "Shop now" } },
+        "kids_sneakers": { "type": "campaign", "settings": { "audience": "kids", "category": "sneakers", "label": "New sneakers for kids", "link": "/collections/kids-shoes", "fallback_image": "basketball", "button_label": "Shop now" } },
+        "kids_apparel": { "type": "campaign", "settings": { "audience": "kids", "category": "apparel", "label": "New apparel for kids", "link": "/collections/clothing", "fallback_image": "everyday", "button_label": "Shop now" } },
+        "kids_accessories": { "type": "campaign", "settings": { "audience": "kids", "category": "accessories", "label": "New accessories for kids", "link": "/collections/accessories", "fallback_image": "bags", "button_label": "Shop now" } }
+      },
+      "block_order": ["men_sneakers", "men_apparel", "men_accessories", "women_sneakers", "women_apparel", "women_accessories", "kids_sneakers", "kids_apparel", "kids_accessories"],
+      "settings": { "heading": "New arrivals", "men_label": "Men", "women_label": "Women", "kids_label": "Kids" }
+    },
     "flagship_spotlight": { "type": "sneaker-flagship-spotlight", "settings": { "product": "men-s-nike-dunk-low-retro-sneakers-black-hf5441-100", "eyebrow": "FEATURED", "heading": "The hoops icon. Off the court.", "copy": "<p>The Dunk Low returns with crisp leather, classic color blocking and everyday comfort.</p>", "show_price": true, "benefit_1": "Premium leather upper", "benefit_2": "Classic low-profile fit", "benefit_3": "Durable rubber traction", "button_label": "Shop Nike Dunk Low", "color_scheme": "scheme-1", "padding_top": 64, "padding_bottom": 0 } },
     "clothing": { "type": "sneaker-clothing", "settings": { "heading": "Clothing", "collection": "clothing", "view_all_label": "View all clothing", "eyebrow": "New drop · Apparel", "editorial_heading": "Layer up for every run.", "copy": "<p>Tees, shorts and shells that work as hard as you do.</p>", "button_label": "Shop new drop" } },
     "accessories": {
@@ -118,5 +133,5 @@
       "settings": { "color_scheme": "scheme-1", "full_width": true, "button_label": "Sign me up", "privacy_note": "Get updates. Unsubscribe anytime.", "privacy_link_label": "Privacy policy", "privacy_link": "/policies/privacy-policy", "padding_top": 20, "padding_bottom": 20 }
     }
   },
-  "order": ["sneaker_hero", "quick_shop", "shop_by_activity", "hot_deals", "trending", "new_collections", "brand_navigation", "top_picks", "flagship_spotlight", "clothing", "accessories", "sneaker_journal", "app_promo", "sneaker_trust", "newsletter"]
+  "order": ["sneaker_hero", "quick_shop", "shop_by_activity", "hot_deals", "top_picks", "trending", "new_collections", "brand_navigation", "flagship_spotlight", "clothing", "accessories", "sneaker_journal", "app_promo", "sneaker_trust", "newsletter"]
 }

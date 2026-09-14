@@ -193,6 +193,42 @@ if (!customElements.get('sneaker-home-activity')) {
   });
 }
 
+if (!customElements.get('sneaker-home-new-arrivals')) {
+  customElements.define('sneaker-home-new-arrivals', class extends HTMLElement {
+    connectedCallback() {
+      this.tablist = this.querySelector('[data-new-arrivals-tabs]');
+      this.tabs = [...this.querySelectorAll('[data-new-arrivals-tab]')];
+      this.panels = [...this.querySelectorAll('[data-new-arrivals-panel]')];
+      this.tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => this.select(tab.dataset.newArrivalsTab));
+        tab.addEventListener('keydown', event => this.onKeydown(event, index));
+      });
+      this.select(this.tabs.find(tab => tab.getAttribute('aria-selected') === 'true')?.dataset.newArrivalsTab || 'men');
+    }
+    select(audience, focus = false) {
+      const selectedIndex = Math.max(0, this.tabs.findIndex(tab => tab.dataset.newArrivalsTab === audience));
+      this.tabs.forEach((tab, index) => {
+        const selected = index === selectedIndex;
+        tab.setAttribute('aria-selected', selected ? 'true' : 'false');
+        tab.tabIndex = selected ? 0 : -1;
+      });
+      this.tablist?.style.setProperty('--sh-tab-index', String(selectedIndex));
+      this.panels.forEach(panel => { panel.hidden = panel.dataset.newArrivalsPanel !== audience; });
+      if (focus) this.tabs[selectedIndex]?.focus();
+    }
+    onKeydown(event, index) {
+      let target = null;
+      if (event.key === 'ArrowRight') target = (index + 1) % this.tabs.length;
+      if (event.key === 'ArrowLeft') target = (index + this.tabs.length - 1) % this.tabs.length;
+      if (event.key === 'Home') target = 0;
+      if (event.key === 'End') target = this.tabs.length - 1;
+      if (target === null) return;
+      event.preventDefault();
+      this.select(this.tabs[target].dataset.newArrivalsTab, true);
+    }
+  });
+}
+
 if (!customElements.get('sneaker-home-rail')) {
   customElements.define('sneaker-home-rail', class extends HTMLElement {
     connectedCallback() {

@@ -15,7 +15,7 @@
 }
 .template-index #MainContent .page-width,
 .template-index #MainContent .page-width-desktop { max-width:1920px; padding-inline:var(--sh-home-gutter); }
-.template-index #MainContent { width:100%; min-width:0; overflow:hidden; }
+.template-index #MainContent { width:100%; min-width:0; overflow-x:clip; overflow-y:visible; }
 .template-index .footer .page-width,
 .template-index .footer .footer__content-bottom-wrapper { max-width:none; padding-inline:var(--sh-home-gutter); }
 .template-index .sh-home-section { padding-block:var(--sh-home-section) 0; }
@@ -323,6 +323,23 @@
   .template-index .sh-home-collectors .sh-home-collection-card:hover .sh-home-collection-card__cta { border-color:transparent; background:var(--sh-home-volt); box-shadow:0 0 14px rgba(199,255,50,.45); color:var(--sh-home-ink); text-shadow:none; transform:translate(-50%,-50%) scale(1.07); -webkit-backdrop-filter:none; backdrop-filter:none; }
 }
 
+/* New Arrivals campaign story */
+.template-index .sh-home-new-arrivals { display:block; padding-top:60px; }
+.template-index .sh-home-new-arrivals__head { display:grid; grid-template-columns:minmax(0,1fr) auto minmax(0,1fr); align-items:center; }
+.template-index .sh-home-new-arrivals__tabs-viewport { min-width:0; justify-self:center; }
+.template-index .sh-home-new-arrivals__panel { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+.template-index .sh-home-new-arrivals__panel[hidden] { display:none; }
+.template-index .sh-home-new-arrivals__card { position:relative; min-width:0; display:block; aspect-ratio:1/1; overflow:hidden; border-radius:4px; background:var(--sh-home-ink); color:#fff; text-decoration:none; }
+.template-index .sh-home-new-arrivals__card--accessories { grid-column:1/-1; aspect-ratio:16/5; }
+.template-index .sh-home-new-arrivals__image { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:var(--sh-image-position,center); transition:transform .6s cubic-bezier(.2,0,0,1); }
+.template-index .sh-home-new-arrivals__scrim { position:absolute; inset:0; background:linear-gradient(180deg,rgba(16,19,24,.05),transparent 35%,rgba(16,19,24,.45) 68%,rgba(16,19,24,.88)); pointer-events:none; }
+.template-index .sh-home-new-arrivals__cta { position:absolute; z-index:2; inset:50% auto auto 50%; min-width:190px; height:52px; display:inline-flex; align-items:center; justify-content:center; padding:0 24px; border:3px solid transparent; border-radius:999px; background:rgba(255,255,255,.06); box-shadow:inset 0 0 0 1px rgba(255,255,255,.12),inset 2px 1px 0 -1px rgba(255,255,255,.5),inset -1.5px -1px 0 -1px rgba(255,255,255,.4),inset -2px -6px 1px -5px rgba(255,255,255,.3),inset -1px 2px 3px -1px rgba(0,0,0,.35),inset 0 -4px 1px -2px rgba(0,0,0,.18),0 3px 10px rgba(0,0,0,.3); color:#fff; font:700 12px/1 var(--font-body-family); letter-spacing:.08em; text-shadow:0 1px 3px rgba(16,19,24,.4); text-transform:uppercase; transform:translate(-50%,-50%); transition:transform .26s cubic-bezier(.34,1.56,.64,1),background .25s,color .25s; -webkit-backdrop-filter:blur(2px) saturate(1.4); backdrop-filter:blur(2px) saturate(1.4); }
+
+@media (hover:hover) and (pointer:fine) and (min-width:1280px) {
+  .template-index .sh-home-new-arrivals__card:hover .sh-home-new-arrivals__image { transform:scale(1.04); }
+  .template-index .sh-home-new-arrivals__card:hover .sh-home-new-arrivals__cta { background:var(--sh-home-volt); box-shadow:0 0 14px rgba(199,255,50,.45); color:var(--sh-home-ink); text-shadow:none; transform:translate(-50%,-50%) scale(1.07); -webkit-backdrop-filter:none; backdrop-filter:none; }
+}
+
 /* Spotlight */
 .template-index .sh-spotlight { padding-block:64px 0 !important; background:transparent; }
 .template-index .sh-spotlight .page-width { max-width:none; padding-inline:48px; }
@@ -467,6 +484,16 @@
   .template-index .sh-brand-navigation__list { grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; }
   .template-index .sh-brand-navigation__link { height:72px; min-height:72px; padding:8px 12px; }
   .template-index .sh-brand-navigation__link:hover { transform:none; }
+  .template-index .sh-home-new-arrivals { padding-top:48px; }
+  .template-index .sh-home-new-arrivals__head { display:contents; }
+  .template-index .sh-home-new-arrivals .sh-home-title { font-size:38px; }
+  .template-index .sh-home-new-arrivals__tabs-viewport { position:sticky; z-index:3; top:16px; margin:20px -24px 24px; padding:0 24px; overflow-x:auto; text-align:center; scrollbar-width:none; }
+  .template-index .sh-home-new-arrivals__head>span { display:none; }
+  .template-index .sh-home-new-arrivals__panel { display:block; margin-inline:-24px; }
+  .template-index .sh-home-new-arrivals__panel[hidden] { display:none; }
+  .template-index .sh-home-new-arrivals__card,
+  .template-index .sh-home-new-arrivals__card--accessories { position:sticky; z-index:1; top:0; display:block; aspect-ratio:3/4; border-radius:0; }
+  .template-index .sh-home-new-arrivals__cta { inset:auto auto 21.1cqw 50%; min-width:168px; height:48px; transform:translateX(-50%); }
   .sh-home-deals__carousel--wide { display:none; }
   .sh-home-deals__carousel--tablet { display:block; }
   .sh-home-rail__list { grid-template-rows:1fr; grid-auto-columns:calc((100% - 120px)/4); }
@@ -605,6 +632,15 @@
   .template-index .sh-brand-navigation__list>li { flex:0 0 124px; }
   .template-index .sh-brand-navigation__link { width:124px; height:72px; min-height:72px; padding:8px 16px; }
   .template-index .sh-brand-navigation__link:hover { transform:none; }
+  .template-index .sh-home-new-arrivals { padding-top:48px; }
+  .template-index .sh-home-new-arrivals__head { display:contents; }
+  .template-index .sh-home-new-arrivals__tabs-viewport { position:sticky; z-index:3; top:10px; margin:16px -16px 20px; padding:0 16px; overflow-x:auto; text-align:center; scrollbar-width:none; }
+  .template-index .sh-home-new-arrivals__head>span { display:none; }
+  .template-index .sh-home-new-arrivals__panel { display:block; margin-inline:-16px; }
+  .template-index .sh-home-new-arrivals__panel[hidden] { display:none; }
+  .template-index .sh-home-new-arrivals__card,
+  .template-index .sh-home-new-arrivals__card--accessories { position:sticky; z-index:1; top:0; display:block; aspect-ratio:9/16; border-radius:0; }
+  .template-index .sh-home-new-arrivals__cta { inset:auto auto 110px 50%; min-width:156px; height:48px; padding-inline:22px; transform:translateX(-50%); }
   .sh-home-collections__track { margin-inline:-16px; padding:0 16px 8px; }
   .sh-home-collection-card { flex-basis:316px; aspect-ratio:16/11; }
   .sh-home-collection-card__content { left:16px; right:16px; bottom:16px; }
