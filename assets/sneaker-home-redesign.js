@@ -322,6 +322,141 @@ if (!customElements.get('sneaker-home-banner-carousel')) {
   });
 }
 
+if (!customElements.get('sneaker-complete-look')) {
+  customElements.define('sneaker-complete-look', class extends HTMLElement {
+    connectedCallback() {
+      this.tablist = this.querySelector('[data-look-tabs]');
+      this.tabs = [...this.querySelectorAll('[data-look-tab]')];
+      this.panels = [...this.querySelectorAll('[data-look-panel]')];
+      this.drawer = this.querySelector('[data-bundle-drawer]');
+      this.sheet = this.drawer?.querySelector('.sh-bundle-builder__sheet');
+      this.body = this.drawer?.querySelector('[data-bundle-body]');
+      this.submitButton = this.drawer?.querySelector('[data-bundle-submit]');
+      this.error = this.drawer?.querySelector('[data-bundle-error]');
+      this.sectionId = this.dataset.sectionId;
+      this.activeLook = this.tabs[0]?.dataset.lookTab;
+      this.tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => this.select(tab.dataset.lookTab, true));
+        tab.addEventListener('keydown', event => this.onTabKeydown(event, index));
+      });
+      this.querySelectorAll('[data-bundle-open]').forEach(button => button.addEventListener('click', () => this.openBundle(button)));
+      this.drawer?.querySelectorAll('[data-bundle-close]').forEach(button => button.addEventListener('click', () => this.closeBundle()));
+      this.drawer?.addEventListener('keydown', event => {
+        if (event.key === 'Escape') this.closeBundle();
+      });
+      this.submitButton?.addEventListener('click', () => this.addBundle());
+      this.select(this.activeLook);
+    }
+    select(lookId, focus = false) {
+      const selectedIndex = Math.max(0, this.tabs.findIndex(tab => tab.dataset.lookTab === lookId));
+      this.activeLook = this.tabs[selectedIndex]?.dataset.lookTab;
+      this.tabs.forEach((tab, index) => {
+        const selected = index === selectedIndex;
+        tab.setAttribute('aria-selected', selected ? 'true' : 'false');
+        tab.tabIndex = selected ? 0 : -1;
+      });
+      this.tablist?.style.setProperty('--sh-tab-index', String(selectedIndex));
+      this.panels.forEach(panel => { panel.hidden = panel.dataset.lookPanel !== this.activeLook; });
+      if (focus && matchMedia('(max-width:1279px)').matches) this.tabs[selectedIndex]?.scrollIntoView({ behavior:'smooth', block:'nearest', inline:'center' });
+      if (focus) this.tabs[selectedIndex]?.focus();
+    }
+    onTabKeydown(event, index) {
+      let target = null;
+      if (event.key === 'ArrowRight') target = (index + 1) % this.tabs.length;
+      if (event.key === 'ArrowLeft') target = (index + this.tabs.length - 1) % this.tabs.length;
+      if (event.key === 'Home') target = 0;
+      if (event.key === 'End') target = this.tabs.length - 1;
+      if (target === null) return;
+      event.preventDefault();
+      this.select(this.tabs[target].dataset.lookTab, true);
+    }
+    openBundle(trigger) {
+      const lookId = trigger.dataset.bundleOpen;
+      const template = this.querySelector(`template[data-bundle-template="${lookId}"]`);
+      if (!template || !this.drawer || !this.body) return;
+      this.trigger = trigger;
+      this.bundleLookId = lookId;
+      this.body.replaceChildren(template.content.cloneNode(true));
+      const eyebrow = this.body.querySelector('.sh-bundle-builder__eyebrow');
+      if (eyebrow && trigger.dataset.lookGenderLabel) eyebrow.textContent += ` · ${trigger.dataset.lookGenderLabel}`;
+      this.body.querySelectorAll('[data-bundle-variant]').forEach(select => {
+        const available = [...select.options].filter(option => option.value && !option.disabled);
+        if (select.hasAttribute('data-single-variant') || available.length === 1) select.value = available[0]?.value || '';
+        select.addEventListener('change', () => this.validateBundle());
+      });
+      this.showError();
+      this.validateBundle();
+      this.drawer.hidden = false;
+      document.body.classList.add('overflow-hidden');
+      this.sheet?.focus();
+      if (typeof trapFocus === 'function' && this.sheet) trapFocus(this.sheet, this.sheet.querySelector('[data-bundle-close]') || this.sheet);
+    }
+    closeBundle() {
+      if (!this.drawer || this.drawer.hidden) return;
+      this.drawer.hidden = true;
+      document.body.classList.remove('overflow-hidden');
+      if (typeof removeTrapFocus === 'function') removeTrapFocus(this.trigger);
+      else this.trigger?.focus();
+    }
+    validateBundle() {
+      const selects = [...(this.body?.querySelectorAll('[data-bundle-variant]') || [])];
+      const valid = selects.length > 0 && selects.every(select => select.value && !select.selectedOptions[0]?.disabled);
+      if (this.submitButton) this.submitButton.disabled = !valid;
+      return valid;
+    }
+    showError(message = '') {
+      if (!this.error) return;
+      this.error.textContent = message;
+      this.error.hidden = !message;
+    }
+    async addBundle() {
+      if (!this.validateBundle() || !this.submitButton) return;
+      const selects = [...this.body.querySelectorAll('[data-bundle-variant]')];
+      const lookLabel = this.body.querySelector('.sh-bundle-builder__eyebrow')?.textContent?.trim() || 'Complete the Look';
+      const bundleGroup = `${this.sectionId}-${this.bundleLookId}-${Date.now()}`;
+      const items = selects.map(select => ({
+        id: Number(select.value),
+        quantity: 1,
+        properties: {
+          '_Complete the Look': lookLabel,
+          '_Bundle group': bundleGroup,
+        },
+      }));
+      const cart = document.querySelector('cart-drawer') || document.querySelector('cart-notification');
+      const originalLabel = this.submitButton.textContent;
+      this.submitButton.disabled = true;
+      this.submitButton.setAttribute('aria-busy', 'true');
+      this.submitButton.textContent = 'Adding bundle…';
+      this.showError();
+      try {
+        const payload = { items };
+        if (cart?.getSectionsToRender) {
+          payload.sections = cart.getSectionsToRender().map(section => section.id);
+          payload.sections_url = window.location.pathname;
+          cart.setActiveElement?.(this.trigger);
+        }
+        const response = await fetch(window.routes?.cart_add_url || '/cart/add.js', {
+          method: 'POST',
+          headers: { 'Content-Type':'application/json', 'Accept':'application/json', 'X-Requested-With':'XMLHttpRequest' },
+          body: JSON.stringify(payload),
+        });
+        const result = await response.json();
+        if (!response.ok || result.status) throw new Error(result.description || result.message || 'The bundle could not be added.');
+        this.closeBundle();
+        if (cart?.classList.contains('is-empty')) cart.classList.remove('is-empty');
+        if (cart?.renderContents && result.sections) cart.renderContents(result);
+        else window.location.assign(window.routes?.cart_url || '/cart');
+      } catch (error) {
+        this.showError(error.message || 'The bundle could not be added. Please try again.');
+      } finally {
+        this.submitButton.removeAttribute('aria-busy');
+        this.submitButton.textContent = originalLabel;
+        this.validateBundle();
+      }
+    }
+  });
+}
+
 if (!customElements.get('sneaker-home-rail')) {
   customElements.define('sneaker-home-rail', class extends HTMLElement {
     connectedCallback() {

@@ -1,0 +1,228 @@
+{{ 'quick-add.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+
+<sneaker-complete-look class="sh-home-section sh-home-complete-look page-width" data-section-id="{{ section.id }}">
+  <div class="sh-home-head sh-home-complete-look__head">
+    <h2 class="sh-home-title" id="CompleteLookHeading-{{ section.id }}">{{ section.settings.heading | escape }}</h2>
+    <div class="sh-home-complete-look__tabs-viewport">
+      <div class="sh-home-audience-tabs" role="tablist" aria-label="{{ section.settings.heading | escape }}" data-look-tabs>
+        {% for block in section.blocks %}
+          <button
+            class="sh-home-audience-tab"
+            type="button"
+            role="tab"
+            id="CompleteLookTab-{{ section.id }}-{{ block.id }}"
+            aria-controls="CompleteLookPanel-{{ section.id }}-{{ block.id }}"
+            aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+            tabindex="{% if forloop.first %}0{% else %}-1{% endif %}"
+            data-look-tab="{{ block.id }}"
+          >{{ block.settings.tab_label | escape }}</button>
+        {% endfor %}
+      </div>
+    </div>
+    <a class="sh-home-link sh-home-complete-look__view-all" href="{{ section.settings.view_all_link | default: routes.all_products_collection_url }}">{{ section.settings.view_all_label | escape }}</a>
+  </div>
+
+  {% for block in section.blocks %}
+    {% liquid
+      assign look_product_count = 0
+      assign look_total = 0
+      for product_index in (1..5)
+        assign product_key = 'product_' | append: product_index
+        assign look_product = block.settings[product_key]
+        if look_product != blank
+          assign look_product_count = look_product_count | plus: 1
+          assign look_total = look_total | plus: look_product.price
+        endif
+      endfor
+    %}
+    <section
+      class="sh-home-complete-look__panel"
+      id="CompleteLookPanel-{{ section.id }}-{{ block.id }}"
+      role="tabpanel"
+      aria-labelledby="CompleteLookTab-{{ section.id }}-{{ block.id }}"
+      data-look-panel="{{ block.id }}"
+      {% unless forloop.first %}hidden{% endunless %}
+      {{ block.shopify_attributes }}
+    >
+      <div class="sh-home-complete-look__gender-grid">
+        {% for gender_index in (1..2) %}
+          {% liquid
+            if gender_index == 1
+              assign gender_key = 'men'
+              assign gender_label = block.settings.men_label
+              assign look_image = block.settings.men_image
+              assign look_eyebrow = block.settings.men_eyebrow
+              assign look_headline = block.settings.men_headline
+              assign look_copy = block.settings.men_copy
+            else
+              assign gender_key = 'women'
+              assign gender_label = block.settings.women_label
+              assign look_image = block.settings.women_image
+              assign look_eyebrow = block.settings.women_eyebrow
+              assign look_headline = block.settings.women_headline
+              assign look_copy = block.settings.women_copy
+            endif
+            assign fallback_asset = 'sh-home-running.png'
+            case block.settings.fallback_image
+              when 'trail'
+                assign fallback_asset = 'sh-home-trail.png'
+              when 'street'
+                assign fallback_asset = 'sh-home-clothing.png'
+              when 'gym'
+                assign fallback_asset = 'sh-home-training.png'
+              when 'everyday'
+                assign fallback_asset = 'sh-home-everyday.png'
+            endcase
+            assign card_section_id = section.id | append: '-' | append: block.id | append: '-' | append: gender_key
+          %}
+          <div class="sh-home-complete-look__gender" data-look-gender="{{ gender_key }}">
+            <div class="sh-home-complete-look__gender-layout">
+              <article class="sh-home-complete-look__banner">
+                {% if look_image != blank %}
+                  {% assign image_position = '--sh-image-position: ' | append: look_image.presentation.focal_point | append: ';' %}
+                  {{ look_image | image_url: width: 1800 | image_tag: widths: '390, 560, 760, 1000, 1400, 1800', sizes: '(min-width: 1280px) 38vw, (min-width: 750px) 72vw, 100vw', loading: 'lazy', class: 'sh-home-complete-look__banner-image', style: image_position, alt: look_image.alt | default: look_headline }}
+                {% else %}
+                  <img class="sh-home-complete-look__banner-image" src="{{ fallback_asset | asset_img_url: '1800x' }}" alt="{{ look_headline | escape }}" width="1800" height="2400" loading="lazy">
+                {% endif %}
+                <span class="sh-home-complete-look__gender-pill">{{ gender_label | escape }}</span>
+                <div class="sh-home-complete-look__story">
+                  <span class="sh-home-complete-look__story-glass" aria-hidden="true"></span>
+                  <div class="sh-home-complete-look__story-content">
+                    <p class="sh-home-complete-look__eyebrow">{{ look_eyebrow | escape }}</p>
+                    <h3 class="sh-home-complete-look__headline">{{ look_headline | escape }}</h3>
+                    {% if look_copy != blank %}<div class="sh-home-complete-look__copy rte">{{ look_copy }}</div>{% endif %}
+                    {% if look_product_count > 0 %}
+                      <p class="sh-home-complete-look__total"><strong>{{ look_total | money }}</strong><span>{{ look_product_count }}-piece total</span></p>
+                    {% endif %}
+                    <button class="sh-home-complete-look__cta" type="button" data-bundle-open="{{ block.id }}" data-look-gender-label="{{ gender_label | escape }}">{{ block.settings.button_label | escape }}</button>
+                  </div>
+                </div>
+              </article>
+
+              <div class="sh-home-complete-look__products-viewport">
+                <div class="sh-home-complete-look__products" role="list" aria-label="{{ look_headline | escape }} products">
+                  {% for product_index in (1..5) %}
+                    {% liquid
+                      assign product_key = 'product_' | append: product_index
+                      assign look_product = block.settings[product_key]
+                    %}
+                    {% if look_product != blank %}
+                      <div class="sh-home-complete-look__product" role="listitem">
+                        {% render 'card-product', card_product: look_product, media_aspect_ratio: 'square', image_shape: 'default', show_secondary_image: true, show_vendor: true, show_colorways: true, show_rating: false, quick_add: false, quick_add_in_media: true, section_id: card_section_id %}
+                      </div>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+                <span class="sh-home-complete-look__products-fade" aria-hidden="true"></span>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+      <template data-bundle-template="{{ block.id }}">
+        <div class="sh-bundle-builder__intro">
+          <p class="sh-bundle-builder__eyebrow">{{ block.settings.tab_label | escape }}</p>
+          <h3 id="BundleTitle-{{ section.id }}">{{ block.settings.bundle_heading | default: block.settings.men_headline | escape }}</h3>
+          <p>{{ section.settings.discount_note | escape }}</p>
+        </div>
+        <div class="sh-bundle-builder__items">
+          {% for product_index in (1..5) %}
+            {% liquid
+              assign product_key = 'product_' | append: product_index
+              assign look_product = block.settings[product_key]
+            %}
+            {% if look_product != blank %}
+              <div class="sh-bundle-builder__item" data-bundle-item>
+                <a href="{{ look_product.url }}" class="sh-bundle-builder__media" tabindex="-1">
+                  {% if look_product.featured_media != blank %}
+                    {{ look_product.featured_media | image_url: width: 240 | image_tag: width: 120, height: 120, loading: 'lazy', alt: look_product.featured_media.alt | default: look_product.title }}
+                  {% else %}
+                    {{ 'product-apparel-2' | placeholder_svg_tag: 'placeholder-svg' }}
+                  {% endif %}
+                </a>
+                <div class="sh-bundle-builder__item-info">
+                  <a href="{{ look_product.url }}">{{ look_product.title | escape }}</a>
+                  <span>{{ look_product.vendor | escape }} · {{ look_product.price | money }}</span>
+                  <label for="BundleVariant-{{ section.id }}-{{ block.id }}-{{ product_index }}">Choose size / option</label>
+                  <select id="BundleVariant-{{ section.id }}-{{ block.id }}-{{ product_index }}" data-bundle-variant {% if look_product.has_only_default_variant %}data-single-variant{% endif %}>
+                    {% unless look_product.has_only_default_variant %}<option value="">Select an option</option>{% endunless %}
+                    {% for variant in look_product.variants %}
+                      <option value="{{ variant.id }}" {% unless variant.available %}disabled{% endunless %} {% if look_product.has_only_default_variant and variant.available %}selected{% endif %}>{{ variant.title | escape }}{% unless variant.available %} — Sold out{% endunless %}</option>
+                    {% endfor %}
+                  </select>
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </template>
+      <a class="sh-home-mobile-view-all" href="{{ section.settings.view_all_link | default: routes.all_products_collection_url }}">{{ section.settings.view_all_label | escape }}</a>
+    </section>
+  {% endfor %}
+
+  <div class="sh-bundle-builder" data-bundle-drawer hidden>
+    <button class="sh-bundle-builder__overlay" type="button" data-bundle-close aria-label="Close bundle builder"></button>
+    <section class="sh-bundle-builder__sheet" role="dialog" aria-modal="true" aria-labelledby="BundleTitle-{{ section.id }}" tabindex="-1">
+      <div class="sh-bundle-builder__bar">
+        <span>{{ section.settings.drawer_label | escape }}</span>
+        <button type="button" data-bundle-close aria-label="Close bundle builder">×</button>
+      </div>
+      <div class="sh-bundle-builder__body" data-bundle-body></div>
+      <div class="sh-bundle-builder__footer">
+        <p class="sh-bundle-builder__error" data-bundle-error role="alert" hidden></p>
+        <button class="sh-bundle-builder__submit" type="button" data-bundle-submit disabled>{{ section.settings.add_bundle_label | escape }}</button>
+        <p>{{ section.settings.checkout_note | escape }}</p>
+      </div>
+    </section>
+  </div>
+</sneaker-complete-look>
+
+{% schema %}
+{
+  "name": "Complete the look",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Complete the look" },
+    { "type": "text", "id": "view_all_label", "label": "View all label", "default": "View all" },
+    { "type": "url", "id": "view_all_link", "label": "View all link" },
+    { "type": "text", "id": "drawer_label", "label": "Drawer label", "default": "Bundle builder" },
+    { "type": "text", "id": "add_bundle_label", "label": "Add bundle button", "default": "Add bundle to bag" },
+    { "type": "text", "id": "discount_note", "label": "Discount note", "default": "Bundle discount is applied in cart or checkout when eligible." },
+    { "type": "text", "id": "checkout_note", "label": "Checkout note", "default": "Every required option must be available before the bundle can be added." }
+  ],
+  "blocks": [
+    {
+      "type": "look",
+      "name": "Look",
+      "settings": [
+        { "type": "text", "id": "tab_label", "label": "Tab label", "default": "Daily run" },
+        { "type": "text", "id": "bundle_heading", "label": "Bundle builder heading", "default": "The everyday miles fit" },
+        { "type": "select", "id": "fallback_image", "label": "Temporary fallback visual", "default": "running", "options": [{ "value": "running", "label": "Running" }, { "value": "trail", "label": "Trail" }, { "value": "street", "label": "Street" }, { "value": "gym", "label": "Gym" }, { "value": "everyday", "label": "Everyday" }] },
+        { "type": "header", "content": "Men banner" },
+        { "type": "image_picker", "id": "men_image", "label": "Image" },
+        { "type": "text", "id": "men_label", "label": "Pill label", "default": "For him" },
+        { "type": "text", "id": "men_eyebrow", "label": "Eyebrow", "default": "Daily run · Men" },
+        { "type": "text", "id": "men_headline", "label": "Headline", "default": "The everyday miles fit." },
+        { "type": "richtext", "id": "men_copy", "label": "Copy", "default": "<p>Lace up and go. The kit that makes every morning run feel easy.</p>" },
+        { "type": "header", "content": "Women banner" },
+        { "type": "image_picker", "id": "women_image", "label": "Image" },
+        { "type": "text", "id": "women_label", "label": "Pill label", "default": "For her" },
+        { "type": "text", "id": "women_eyebrow", "label": "Eyebrow", "default": "Daily run · Women" },
+        { "type": "text", "id": "women_headline", "label": "Headline", "default": "Her daily loop, sorted." },
+        { "type": "richtext", "id": "women_copy", "label": "Copy", "default": "<p>Soft landings, clean lines. Made to move the way you do.</p>" },
+        { "type": "text", "id": "button_label", "label": "Button label", "default": "Shop look" },
+        { "type": "header", "content": "Bundle products" },
+        { "type": "product", "id": "product_1", "label": "Product 1" },
+        { "type": "product", "id": "product_2", "label": "Product 2" },
+        { "type": "product", "id": "product_3", "label": "Product 3" },
+        { "type": "product", "id": "product_4", "label": "Product 4" },
+        { "type": "product", "id": "product_5", "label": "Product 5" }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [{ "name": "Complete the look", "blocks": [{ "type": "look" }, { "type": "look" }, { "type": "look" }, { "type": "look" }] }]
+}
+{% endschema %}
