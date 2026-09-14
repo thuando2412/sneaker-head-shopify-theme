@@ -20,6 +20,9 @@ Last updated: 2026-09-14
 - Quick Links now use the canonical 132 px minimum pill, 11 px label, 44 px desktop/tablet height and 40 px mobile height without document overflow.
 - Shop by Activity now has Men/Women/Kids feeds, 8 cards per tab, 4-up desktop pages, 56% tablet cards and 88% mobile cards. Cards use 3:4 media, a persistent 44 px touch CTA and desktop-only hover treatment. Women's and Kids' activity links intentionally fall back to the broad `/collections/womens-shoes` and `/collections/kids-shoes` routes until the catalog/collection agent supplies curated activity collections.
 - Live browser QA passed at 390, 768, 1280, 1440 and 1920 px: no horizontal overflow or console errors. Hero autoplay/pause/resume/manual-stop/reduced-motion and Activity tab switching all passed. Theme Check remains at zero errors and the same 10 unrelated existing warnings.
+- Third homepage-body checkpoint: `d8e278c` (`feat: ship collector and brand homepage sections`). The old New Collections slot is now the approved Collector's Pick and appears before Shop by Brand. It renders all 6 editorial campaigns even while 5 destination collections are pending import, using explicit fallback collection URLs that yield to native collection URLs once available.
+- Collector's Pick uses 3 equal 3:4 cards per desktop page, an 82%-width tablet rail and a `calc(100% - 12px)` mobile rail. Desktop pagination reaches `2 / 2`; touch layouts hide rail controls and use the approved bottom View All. Campaign copy is retained in section data but intentionally not rendered because it is absent from Handoff 4.
+- Shop by Brand now matches the 8-column/92 px desktop, 4-column/72 px tablet and 124-by-72 px mobile-rail layouts. Targeted live QA passed at 390, 768, 1280 and 1920 px with all 6 campaign cards, all 8 brands, correct section order and no document-level horizontal overflow.
 
 ## Latest session checkpoint
 
