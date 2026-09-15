@@ -1,6 +1,6 @@
 # Sneaker Head theme handoff
 
-Last updated: 2026-09-14
+Last updated: 2026-09-15
 
 ## Homepage revamp implementation checkpoint — 2026-09-14
 
@@ -35,6 +35,11 @@ Last updated: 2026-09-14
 - Commerce dependency: the theme deliberately shows only the honest combined item total and does not fake a discounted bundle price. A Shopify app/Discount Function with Admin-managed percentage and eligibility rules is still required to enforce the discount at cart/checkout. Until that layer exists, the UI can build and add the grouped look but no guaranteed discount is applied.
 - Seventh homepage-body checkpoint: `f10e3dc` (`feat: align responsive accessories story`). Accessories now matches the shipped three-banner story: angled 3:4 banners on desktop, sticky full-bleed 3:4 banners on tablet and sticky full-bleed 9:16 banners on mobile, followed by the existing native 15-product rail. Image settings now honor Shopify focal points and Quick Add assets load once instead of once per banner.
 - Accessories live QA passed at 390, 768, 1280 and 1920 px: three banners, 15 unique product cards, 2/3/5 card rail sizing, no document overflow, sticky banners reach top 0, desktop pagination reaches `3 / 3`, the final product aligns with the rail edge and Next disables. Quick Add is now explicitly hidden across tablet and mobile, consistent with the owner decision for touch layouts.
+- Eighth homepage-body checkpoint: `e9967d7` (`feat: finish homepage journal and utility sections`). The empty Dawn Featured Blog placeholder was replaced by an editable Sneaker Journal section with three article blocks, repository-image fallbacks, a three-column desktop grid, a 44%-width tablet rail and 110 px mobile list thumbnails. Until a real article or fallback URL is assigned, story and View All controls render visibly disabled instead of linking to a missing `/blogs/news` route.
+- App Promo now matches the shipped desktop inset panel and full-width touch layouts, with 44/38/32 px responsive headings, 4:5 phone framing and editable app screenshot, QR and store links. App Store and Google Play badges remain visible but non-clickable when their URLs are empty; no fake download destination is used. The phone placeholder remains until the production app image is supplied.
+- Homepage trust points now use the approved centered check treatment and 4-column desktop/tablet, 2-column mobile layout. The newsletter background was restored to the shipped dark treatment. The current shipping copy still says `$100`; Handoff 4 says `$200`, so the owner must confirm the actual business threshold before that text or cart threshold is changed.
+- The Journal/App/Trust files were deployed to live theme `151150559325` with targeted `--nodelete` pushes only. A post-push pull matched all Liquid/CSS assets byte-for-byte; Shopify's pulled `templates/index.json` differs only by its standard auto-generated-file comment. JSON, `git diff --check` and Theme Check pass with zero errors and the same 10 pre-existing unrelated warnings.
+- Automated rendered storefront QA for this checkpoint still needs the storefront password (the public shop currently returns the Shopify password page and `shopify theme dev` requests the store password). Source/remote parity is confirmed, but visual measurements at 390/768/1280/1920 should be rerun once the password is supplied or the password page is disabled.
 
 ## Latest session checkpoint
 
