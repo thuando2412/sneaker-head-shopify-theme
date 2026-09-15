@@ -137,8 +137,17 @@
       "block_order": ["bags", "socks", "care"],
       "settings": { "heading": "Accessories", "collection": "accessories", "view_all_label": "View all accessories" }
     },
-    "sneaker_journal": { "type": "featured-blog", "settings": { "blog": "news", "post_limit": 3, "heading": "Sneaker Journal", "heading_size": "h2", "columns_desktop": 3, "show_view_all": true, "show_image": true, "show_date": true, "show_author": false, "color_scheme": "scheme-1", "padding_top": 64, "padding_bottom": 0 } },
-    "app_promo": { "type": "sneaker-app-promo", "settings": { "eyebrow": "Sneaker Head app", "heading": "Download the app. Never miss a drop.", "copy": "<p>Early access to new drops, member-only prices and instant size alerts.</p>" } },
+    "sneaker_journal": {
+      "type": "sneaker-journal",
+      "blocks": {
+        "trail_guide": { "type": "story", "settings": { "tag": "Guides", "reading_time": "5 min", "title": "A simple trail checklist for real miles." } },
+        "rotation_guide": { "type": "story", "settings": { "tag": "Culture", "reading_time": "6 min", "title": "How to build a sneaker rotation that works every day." } },
+        "running_guide": { "type": "story", "settings": { "tag": "Running", "reading_time": "5 min", "title": "How to find your everyday running shoe." } }
+      },
+      "block_order": ["trail_guide", "rotation_guide", "running_guide"],
+      "settings": { "heading": "Sneaker Journal", "blog": "news", "view_all_label": "View all" }
+    },
+    "app_promo": { "type": "sneaker-app-promo", "settings": { "eyebrow": "Sneaker Head app", "heading": "Download the app. Never miss a drop.", "copy": "<p>Early access to new drops, member-only prices and instant size exchanges — all in one place.</p>" } },
     "sneaker_trust": {
       "type": "sneaker-trust",
       "blocks": {

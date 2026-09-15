@@ -2,14 +2,7 @@
   <div class="page-width sh-trust__grid">
     {% for block in section.blocks %}
       {% if block.settings.link != blank %}<a class="sh-trust__item sh-trust__item--link" href="{{ block.settings.link }}" {{ block.shopify_attributes }}>{% else %}<article class="sh-trust__item" {{ block.shopify_attributes }}>{% endif %}
-        <span class="sh-trust__number" aria-hidden="true">
-          {% case forloop.index %}
-            {% when 1 %}↗
-            {% when 2 %}↻
-            {% when 3 %}◈
-            {% else %}▣
-          {% endcase %}
-        </span>
+        <span class="sh-trust__number" aria-hidden="true"><svg viewBox="0 0 24 24" width="15" height="15"><path d="M20 6 9 17l-5-5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         <div>
           <h3>{{ block.settings.heading }}</h3>
           <p>{{ block.settings.copy }}</p>

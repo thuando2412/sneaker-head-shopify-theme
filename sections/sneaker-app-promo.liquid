@@ -1,19 +1,38 @@
-  <section class="sh-home-app">
-    <div class="page-width sh-home-app__grid">
-      <div>
+<section class="page-width sh-home-app">
+  <div class="sh-home-app__frame">
+    <div class="sh-home-app__grid">
+      <div class="sh-home-app__content">
         {% if section.settings.eyebrow != blank %}<p class="sh-home-hero__eyebrow">{{ section.settings.eyebrow | escape }}</p>{% endif %}
         <h2 class="sh-home-app__title">{{ section.settings.heading | escape }}</h2>
         {% if section.settings.copy != blank %}<div class="sh-home-app__copy rte">{{ section.settings.copy }}</div>{% endif %}
         <div class="sh-home-app__actions">
-          {% if section.settings.app_store_link != blank %}<a href="{{ section.settings.app_store_link }}">Download on the App Store</a>{% endif %}
-          {% if section.settings.play_store_link != blank %}<a href="{{ section.settings.play_store_link }}">Get it on Google Play</a>{% endif %}
+          {% if section.settings.app_store_link != blank %}<a class="sh-home-app__store" href="{{ section.settings.app_store_link }}">{% else %}<span class="sh-home-app__store" aria-disabled="true">{% endif %}
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M17.1 12.5c0-2.7 2.2-4 2.3-4.1-1.3-1.9-3.3-2.1-4-2.1-1.7-.2-3.3 1-4.2 1-.9 0-2.2-1-3.7-.9-1.9 0-3.7 1.1-4.7 2.8-2 3.5-.5 8.7 1.5 11.5 1 1.4 2.1 2.9 3.7 2.8 1.5-.1 2.1-1 3.9-1s2.3 1 3.9 1c1.6 0 2.6-1.4 3.6-2.8 1.1-1.6 1.6-3.2 1.6-3.3-.1 0-3.9-1.5-3.9-5.9ZM14.3 4.5c.8-1 1.4-2.5 1.2-4-.1 0-1.6.1-2.8 1.3-1 .9-1.8 2.4-1.6 3.9 1.3.1 2.4-.5 3.2-1.2Z"/></svg>
+            <span><small>Download on the</small><strong>App Store</strong></span>
+          {% if section.settings.app_store_link != blank %}</a>{% else %}</span>{% endif %}
+          {% if section.settings.play_store_link != blank %}<a class="sh-home-app__store" href="{{ section.settings.play_store_link }}">{% else %}<span class="sh-home-app__store" aria-disabled="true">{% endif %}
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="#2196f3" d="M3 2.2v19.6L13.3 12 3 2.2Z"/><path fill="#4caf50" d="m4.6 1.4 11.8 6.8-3.1 3L4.6 1.4Z"/><path fill="#f44336" d="m4.6 22.6 11.8-6.8-3.1-3-8.7 9.8Z"/><path fill="#ffc107" d="m16.4 8.2 3.7 2.1c1.2.7 1.2 2.7 0 3.4l-3.7 2.1-3.1-3.8 3.1-3.8Z"/></svg>
+            <span><small>Get it on</small><strong>Google Play</strong></span>
+          {% if section.settings.play_store_link != blank %}</a>{% else %}</span>{% endif %}
+          {% if section.settings.qr_image != blank %}
+            <div class="sh-home-app__qr-wrap">
+              {{ section.settings.qr_image | image_url: width: 160 | image_tag: class: 'sh-home-app__qr', widths: '92, 120, 160', sizes: '56px', loading: 'lazy', alt: 'Download app QR code' }}
+              <span>Scan to download</span>
+            </div>
+          {% endif %}
         </div>
       </div>
       <div class="sh-home-app__visual">
-        {% if section.settings.phone_image != blank %}{{ section.settings.phone_image | image_url: width: 900 | image_tag: widths: '420, 620, 900', sizes: '(min-width: 750px) 40vw, 100vw', loading: 'lazy', alt: section.settings.phone_image.alt | default: section.settings.heading }}{% endif %}
-        {% if section.settings.qr_image != blank %}{{ section.settings.qr_image | image_url: width: 320 | image_tag: class: 'sh-home-app__qr', widths: '160, 240, 320', sizes: '140px', loading: 'lazy', alt: 'Download app QR code' }}{% endif %}
+        <div class="sh-home-app__screen">
+          {% if section.settings.phone_image != blank %}
+            {{ section.settings.phone_image | image_url: width: 900 | image_tag: widths: '372, 540, 900', sizes: '(min-width: 1280px) 246px, 162px', loading: 'lazy', alt: section.settings.phone_image.alt | default: section.settings.heading }}
+          {% else %}
+            <span>App screenshot</span>
+          {% endif %}
+        </div>
       </div>
     </div>
+  </div>
   </section>
 {% schema %}
 {

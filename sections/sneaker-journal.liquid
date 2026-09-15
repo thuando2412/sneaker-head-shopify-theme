@@ -1,0 +1,80 @@
+{% liquid
+  assign journal_url = section.settings.view_all_link
+  if section.settings.blog != blank
+    assign journal_url = section.settings.blog.url
+  endif
+%}
+
+<section class="sh-home-section page-width sh-home-journal">
+  <div class="sh-home-head">
+    <h2 class="sh-home-title">{{ section.settings.heading | escape }}</h2>
+    {% if journal_url != blank %}<a class="sh-home-link" href="{{ journal_url }}">{{ section.settings.view_all_label | escape }}</a>{% else %}<span class="sh-home-link" aria-disabled="true">{{ section.settings.view_all_label | escape }}</span>{% endif %}
+  </div>
+  <div class="sh-home-journal__grid" role="list">
+    {% for block in section.blocks %}
+      {% liquid
+        assign journal_article = block.settings.article
+        assign card_title = block.settings.title
+        assign card_link = block.settings.link | default: journal_url
+        assign card_tag = block.settings.tag
+        assign card_image = block.settings.image
+        if journal_article != blank
+          assign card_title = journal_article.title
+          assign card_link = journal_article.url
+          assign card_image = journal_article.image
+          if journal_article.tags.size > 0
+            assign card_tag = journal_article.tags.first
+          endif
+        endif
+        case forloop.index
+          when 1
+            assign fallback_asset = 'sh-home-running.png'
+          when 2
+            assign fallback_asset = 'sh-home-trail.png'
+          else
+            assign fallback_asset = 'sh-home-everyday.png'
+        endcase
+      %}
+      <article class="sh-home-journal__item" role="listitem" {{ block.shopify_attributes }}>
+        {% if card_link != blank %}<a class="sh-home-journal__media" href="{{ card_link }}" aria-label="{{ card_title | escape }}">{% else %}<div class="sh-home-journal__media">{% endif %}
+          {% if card_image != blank %}
+            {{ card_image | image_url: width: 1400 | image_tag: widths: '220, 420, 720, 1000, 1400', sizes: '(min-width: 768px) 31vw, 110px', loading: 'lazy', alt: card_image.alt | default: card_title }}
+          {% else %}
+            <img src="{{ fallback_asset | asset_img_url: '1400x' }}" alt="{{ card_title | escape }}" width="1400" height="788" loading="lazy">
+          {% endif %}
+        {% if card_link != blank %}</a>{% else %}</div>{% endif %}
+        <div class="sh-home-journal__content">
+          <p class="sh-home-journal__meta"><span>{{ card_tag | escape }}</span><span>{{ block.settings.reading_time | escape }}</span></p>
+          <h3>{% if card_link != blank %}<a href="{{ card_link }}">{{ card_title | escape }}</a>{% else %}<span>{{ card_title | escape }}</span>{% endif %}</h3>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+  {% if journal_url != blank %}<a class="sh-home-mobile-view-all sh-home-journal__view-all" href="{{ journal_url }}">{{ section.settings.view_all_label | escape }}</a>{% else %}<span class="sh-home-mobile-view-all sh-home-journal__view-all" aria-disabled="true">{{ section.settings.view_all_label | escape }}</span>{% endif %}
+</section>
+
+{% schema %}
+{
+  "name": "Sneaker journal",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Sneaker journal" },
+    { "type": "blog", "id": "blog", "label": "Blog for View all" },
+    { "type": "url", "id": "view_all_link", "label": "View all fallback link" },
+    { "type": "text", "id": "view_all_label", "label": "View all label", "default": "View all" }
+  ],
+  "blocks": [{
+    "type": "story",
+    "name": "Journal story",
+    "settings": [
+      { "type": "article", "id": "article", "label": "Published article" },
+      { "type": "image_picker", "id": "image", "label": "Fallback image" },
+      { "type": "text", "id": "tag", "label": "Tag", "default": "Guides" },
+      { "type": "text", "id": "reading_time", "label": "Reading time", "default": "5 min" },
+      { "type": "text", "id": "title", "label": "Fallback title", "default": "How to find your everyday running shoe" },
+      { "type": "url", "id": "link", "label": "Fallback story link" }
+    ]
+  }],
+  "max_blocks": 3,
+  "presets": [{ "name": "Sneaker journal", "blocks": [{ "type": "story" }, { "type": "story" }, { "type": "story" }] }]
+}
+{% endschema %}
